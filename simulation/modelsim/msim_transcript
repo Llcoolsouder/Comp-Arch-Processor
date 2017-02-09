@@ -1,40 +1,40 @@
-# Reading E:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
 # do Register_File_run_msim_rtl_verilog.do 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
 # }
 # vlib rtl_work
 # vmap work rtl_work
-# Copying E:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
-# ** Warning: Copied E:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vlog -vlog01compat -work work +incdir+E:/Users/Lonnie\ II/Desktop/Code/New-Comp-Arch-Processor {E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/TWOtoONE_MUX.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/baseb_000/Documents/New-Comp-Arch-Processor {C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/TWOtoONE_MUX.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module TWOtoONE_MUX
 # 
 # Top level modules:
 # 	TWOtoONE_MUX
-# vlog -vlog01compat -work work +incdir+E:/Users/Lonnie\ II/Desktop/Code/New-Comp-Arch-Processor {E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/FOURtoONE_MUX.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/baseb_000/Documents/New-Comp-Arch-Processor {C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/FOURtoONE_MUX.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module FOURtoONE_MUX
 # 
 # Top level modules:
 # 	FOURtoONE_MUX
-# vlog -vlog01compat -work work +incdir+E:/Users/Lonnie\ II/Desktop/Code/New-Comp-Arch-Processor {E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/CarryLookaheadAdder.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/baseb_000/Documents/New-Comp-Arch-Processor {C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/CarryLookaheadAdder.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module CarryLookaheadAdder
 # 
 # Top level modules:
 # 	CarryLookaheadAdder
-# vlog -vlog01compat -work work +incdir+E:/Users/Lonnie\ II/Desktop/Code/New-Comp-Arch-Processor {E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/ALU_16bit_v.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/baseb_000/Documents/New-Comp-Arch-Processor {C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/ALU_16bit_v.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module ALU_16bit_v
 # 
 # Top level modules:
 # 	ALU_16bit_v
-# vlog -vlog01compat -work work +incdir+E:/Users/Lonnie\ II/Desktop/Code/New-Comp-Arch-Processor {E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/ALU_4bit_v.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/baseb_000/Documents/New-Comp-Arch-Processor {C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/ALU_4bit_v.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module ALU_4bit_v
 # -- Compiling module and5_1
@@ -43,7 +43,7 @@
 # Top level modules:
 # 	ALU_4bit_v
 # 
-# vlog -vlog01compat -work work +incdir+E:/Users/Lonnie\ II/Desktop/Code/New-Comp-Arch-Processor {E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/ALU_16bit_t.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/baseb_000/Documents/New-Comp-Arch-Processor {C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/ALU_16bit_t.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module ALU_16bit_t
 # 
@@ -66,16 +66,16 @@
 # 
 #           File in use by: lonni  Hostname: LAPTOP-VI741MNF  ProcessID: 8424
 # 
-#           Attempting to use alternate WLF file "./wlftj7cxzz".
+#           Attempting to use alternate WLF file "./wlftjm2fdc".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlftj7cxzz
+#           Using alternate file: ./wlftjm2fdc
 # 
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# Break in Module ALU_16bit_t at E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/ALU_16bit_t.v line 66
-# Simulation Breakpoint: Break in Module ALU_16bit_t at E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/ALU_16bit_t.v line 66
+# Break in Module ALU_16bit_t at C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/ALU_16bit_t.v line 66
+# Simulation Breakpoint: Break in Module ALU_16bit_t at C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/ALU_16bit_t.v line 66
 # MACRO ./Register_File_run_msim_rtl_verilog.do PAUSED at line 21

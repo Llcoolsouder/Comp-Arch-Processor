@@ -465,6 +465,8 @@ input IN5;
 input IN4;
 output OUT;
 
+and(OUT,IN1,IN2,IN3,IN4,IN5);
+
 endmodule
 
 module or5_0(IN1,IN3,IN2,IN5,IN4,OUT);
@@ -476,5 +478,7 @@ input IN2;
 input IN5;
 input IN4;
 output OUT;
+
+or(OUT,IN1,IN2,IN3,IN4,IN5);
 
 endmodule

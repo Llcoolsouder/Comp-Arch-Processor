@@ -1,23 +1,16 @@
-Analysis & Synthesis report for CompArchProcessor
-Wed Feb 08 23:21:39 2017
-Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+Analysis & Elaboration report for CompArchProcessor
+Thu Feb 09 09:14:42 2017
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Synthesis Summary
-  3. Analysis & Synthesis Settings
-  4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. User-Specified and Inferred Latches
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Analysis & Elaboration Settings
+  5. Analysis & Elaboration Messages
 
 
 
@@ -40,36 +33,47 @@ applicable agreement for further details.
 
 
 
-+---------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                    ;
-+------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Feb 08 23:21:39 2017      ;
-; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
-; Revision Name                      ; CompArchProcessor                          ;
-; Top-level Entity Name              ; reg_file                                   ;
-; Family                             ; Cyclone IV GX                              ;
-; Total logic elements               ; 296                                        ;
-;     Total combinational functions  ; 296                                        ;
-;     Dedicated logic registers      ; 0                                          ;
-; Total registers                    ; 0                                          ;
-; Total pins                         ; 188                                        ;
-; Total virtual pins                 ; 0                                          ;
-; Total memory bits                  ; 0                                          ;
-; Embedded Multiplier 9-bit elements ; 0                                          ;
-; Total GXB Receiver Channel PCS     ; 0                                          ;
-; Total GXB Receiver Channel PMA     ; 0                                          ;
-; Total GXB Transmitter Channel PCS  ; 0                                          ;
-; Total GXB Transmitter Channel PMA  ; 0                                          ;
-; Total PLLs                         ; 0                                          ;
-+------------------------------------+--------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                                       ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Elaboration Status      ; Successful - Thu Feb 09 09:14:41 2017           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; CompArchProcessor                               ;
+; Top-level Entity Name              ; ALU16bit_v                                      ;
+; Family                             ; Cyclone IV GX                                   ;
+; Total logic elements               ; N/A until Partition Merge                       ;
+;     Total combinational functions  ; N/A until Partition Merge                       ;
+;     Dedicated logic registers      ; N/A until Partition Merge                       ;
+; Total registers                    ; N/A until Partition Merge                       ;
+; Total pins                         ; N/A until Partition Merge                       ;
+; Total virtual pins                 ; N/A until Partition Merge                       ;
+; Total memory bits                  ; N/A until Partition Merge                       ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
+; Total GXB Receiver Channel PCS     ; N/A until Partition Merge                       ;
+; Total GXB Receiver Channel PMA     ; N/A until Partition Merge                       ;
+; Total GXB Transmitter Channel PCS  ; N/A until Partition Merge                       ;
+; Total GXB Transmitter Channel PMA  ; N/A until Partition Merge                       ;
+; Total PLLs                         ; N/A until Partition Merge                       ;
++------------------------------------+-------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                        ;
+; Analysis & Elaboration Settings                                                                                      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; reg_file           ; CompArchProcessor  ;
+; Top-level entity name                                                      ; ALU16bit_v         ; CompArchProcessor  ;
 ; Family name                                                                ; Cyclone IV GX      ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -150,216 +154,17 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
-+-------------------------------------+
-; Parallel Compilation                ;
-+----------------------------+--------+
-; Processors                 ; Number ;
-+----------------------------+--------+
-; Number detected on machine ; 4      ;
-; Maximum allowed            ; 1      ;
-+----------------------------+--------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                     ;
-+----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                       ; Library ;
-+----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------+---------+
-; reg_file.v                       ; yes             ; User Verilog HDL File  ; E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/Seans Processor/reg_file.v ;         ;
-; reg16bit.v                       ; yes             ; User Verilog HDL File  ; E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/Seans Processor/reg16bit.v ;         ;
-; mux3to8.v                        ; yes             ; User Verilog HDL File  ; E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/Seans Processor/mux3to8.v  ;         ;
-; decoder.v                        ; yes             ; User Verilog HDL File  ; E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/Seans Processor/decoder.v  ;         ;
-+----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------+---------+
-
-
-+---------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary ;
-+--------------------------+------------------+
-; Resource                 ; Usage            ;
-+--------------------------+------------------+
-; I/O pins                 ; 188              ;
-; DSP block 9-bit elements ; 0                ;
-; Maximum fan-out node     ; Clear~input      ;
-; Maximum fan-out          ; 128              ;
-; Total fan-out            ; 1500             ;
-; Average fan-out          ; 2.23             ;
-+--------------------------+------------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                              ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+------------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name          ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+------------------------------+--------------+
-; |reg_file                  ; 296 (8)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 188  ; 0            ; |reg_file                    ; work         ;
-;    |mux3to8:b2v_inst10|    ; 80 (80)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |reg_file|mux3to8:b2v_inst10 ; work         ;
-;    |mux3to8:b2v_inst2|     ; 80 (80)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |reg_file|mux3to8:b2v_inst2  ; work         ;
-;    |reg16bit:b2v_inst1|    ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |reg_file|reg16bit:b2v_inst1 ; work         ;
-;    |reg16bit:b2v_inst3|    ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |reg_file|reg16bit:b2v_inst3 ; work         ;
-;    |reg16bit:b2v_inst4|    ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |reg_file|reg16bit:b2v_inst4 ; work         ;
-;    |reg16bit:b2v_inst5|    ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |reg_file|reg16bit:b2v_inst5 ; work         ;
-;    |reg16bit:b2v_inst6|    ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |reg_file|reg16bit:b2v_inst6 ; work         ;
-;    |reg16bit:b2v_inst7|    ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |reg_file|reg16bit:b2v_inst7 ; work         ;
-;    |reg16bit:b2v_inst8|    ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |reg_file|reg16bit:b2v_inst8 ; work         ;
-;    |reg16bit:b2v_inst9|    ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |reg_file|reg16bit:b2v_inst9 ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+------------------------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+-----------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                 ;
-+------------------------------------------------------+---------------------+------------------------+
-; Latch Name                                           ; Latch Enable Signal ; Free of Timing Hazards ;
-+------------------------------------------------------+---------------------+------------------------+
-; reg16bit:b2v_inst4|out[0]                            ; SYNTHESIZED_WIRE_26 ; yes                    ;
-; reg16bit:b2v_inst3|out[0]                            ; SYNTHESIZED_WIRE_25 ; yes                    ;
-; reg16bit:b2v_inst1|out[0]                            ; SYNTHESIZED_WIRE_0  ; yes                    ;
-; reg16bit:b2v_inst5|out[0]                            ; SYNTHESIZED_WIRE_27 ; yes                    ;
-; reg16bit:b2v_inst7|out[0]                            ; SYNTHESIZED_WIRE_29 ; yes                    ;
-; reg16bit:b2v_inst8|out[0]                            ; SYNTHESIZED_WIRE_30 ; yes                    ;
-; reg16bit:b2v_inst6|out[0]                            ; SYNTHESIZED_WIRE_28 ; yes                    ;
-; reg16bit:b2v_inst9|out[0]                            ; SYNTHESIZED_WIRE_31 ; yes                    ;
-; reg16bit:b2v_inst4|out[1]                            ; SYNTHESIZED_WIRE_26 ; yes                    ;
-; reg16bit:b2v_inst3|out[1]                            ; SYNTHESIZED_WIRE_25 ; yes                    ;
-; reg16bit:b2v_inst1|out[1]                            ; SYNTHESIZED_WIRE_0  ; yes                    ;
-; reg16bit:b2v_inst5|out[1]                            ; SYNTHESIZED_WIRE_27 ; yes                    ;
-; reg16bit:b2v_inst7|out[1]                            ; SYNTHESIZED_WIRE_29 ; yes                    ;
-; reg16bit:b2v_inst8|out[1]                            ; SYNTHESIZED_WIRE_30 ; yes                    ;
-; reg16bit:b2v_inst6|out[1]                            ; SYNTHESIZED_WIRE_28 ; yes                    ;
-; reg16bit:b2v_inst9|out[1]                            ; SYNTHESIZED_WIRE_31 ; yes                    ;
-; reg16bit:b2v_inst4|out[2]                            ; SYNTHESIZED_WIRE_26 ; yes                    ;
-; reg16bit:b2v_inst3|out[2]                            ; SYNTHESIZED_WIRE_25 ; yes                    ;
-; reg16bit:b2v_inst1|out[2]                            ; SYNTHESIZED_WIRE_0  ; yes                    ;
-; reg16bit:b2v_inst5|out[2]                            ; SYNTHESIZED_WIRE_27 ; yes                    ;
-; reg16bit:b2v_inst7|out[2]                            ; SYNTHESIZED_WIRE_29 ; yes                    ;
-; reg16bit:b2v_inst8|out[2]                            ; SYNTHESIZED_WIRE_30 ; yes                    ;
-; reg16bit:b2v_inst6|out[2]                            ; SYNTHESIZED_WIRE_28 ; yes                    ;
-; reg16bit:b2v_inst9|out[2]                            ; SYNTHESIZED_WIRE_31 ; yes                    ;
-; reg16bit:b2v_inst4|out[3]                            ; SYNTHESIZED_WIRE_26 ; yes                    ;
-; reg16bit:b2v_inst3|out[3]                            ; SYNTHESIZED_WIRE_25 ; yes                    ;
-; reg16bit:b2v_inst1|out[3]                            ; SYNTHESIZED_WIRE_0  ; yes                    ;
-; reg16bit:b2v_inst5|out[3]                            ; SYNTHESIZED_WIRE_27 ; yes                    ;
-; reg16bit:b2v_inst7|out[3]                            ; SYNTHESIZED_WIRE_29 ; yes                    ;
-; reg16bit:b2v_inst8|out[3]                            ; SYNTHESIZED_WIRE_30 ; yes                    ;
-; reg16bit:b2v_inst6|out[3]                            ; SYNTHESIZED_WIRE_28 ; yes                    ;
-; reg16bit:b2v_inst9|out[3]                            ; SYNTHESIZED_WIRE_31 ; yes                    ;
-; reg16bit:b2v_inst4|out[4]                            ; SYNTHESIZED_WIRE_26 ; yes                    ;
-; reg16bit:b2v_inst3|out[4]                            ; SYNTHESIZED_WIRE_25 ; yes                    ;
-; reg16bit:b2v_inst1|out[4]                            ; SYNTHESIZED_WIRE_0  ; yes                    ;
-; reg16bit:b2v_inst5|out[4]                            ; SYNTHESIZED_WIRE_27 ; yes                    ;
-; reg16bit:b2v_inst7|out[4]                            ; SYNTHESIZED_WIRE_29 ; yes                    ;
-; reg16bit:b2v_inst8|out[4]                            ; SYNTHESIZED_WIRE_30 ; yes                    ;
-; reg16bit:b2v_inst6|out[4]                            ; SYNTHESIZED_WIRE_28 ; yes                    ;
-; reg16bit:b2v_inst9|out[4]                            ; SYNTHESIZED_WIRE_31 ; yes                    ;
-; reg16bit:b2v_inst4|out[5]                            ; SYNTHESIZED_WIRE_26 ; yes                    ;
-; reg16bit:b2v_inst3|out[5]                            ; SYNTHESIZED_WIRE_25 ; yes                    ;
-; reg16bit:b2v_inst1|out[5]                            ; SYNTHESIZED_WIRE_0  ; yes                    ;
-; reg16bit:b2v_inst5|out[5]                            ; SYNTHESIZED_WIRE_27 ; yes                    ;
-; reg16bit:b2v_inst7|out[5]                            ; SYNTHESIZED_WIRE_29 ; yes                    ;
-; reg16bit:b2v_inst8|out[5]                            ; SYNTHESIZED_WIRE_30 ; yes                    ;
-; reg16bit:b2v_inst6|out[5]                            ; SYNTHESIZED_WIRE_28 ; yes                    ;
-; reg16bit:b2v_inst9|out[5]                            ; SYNTHESIZED_WIRE_31 ; yes                    ;
-; reg16bit:b2v_inst4|out[6]                            ; SYNTHESIZED_WIRE_26 ; yes                    ;
-; reg16bit:b2v_inst3|out[6]                            ; SYNTHESIZED_WIRE_25 ; yes                    ;
-; reg16bit:b2v_inst1|out[6]                            ; SYNTHESIZED_WIRE_0  ; yes                    ;
-; reg16bit:b2v_inst5|out[6]                            ; SYNTHESIZED_WIRE_27 ; yes                    ;
-; reg16bit:b2v_inst7|out[6]                            ; SYNTHESIZED_WIRE_29 ; yes                    ;
-; reg16bit:b2v_inst8|out[6]                            ; SYNTHESIZED_WIRE_30 ; yes                    ;
-; reg16bit:b2v_inst6|out[6]                            ; SYNTHESIZED_WIRE_28 ; yes                    ;
-; reg16bit:b2v_inst9|out[6]                            ; SYNTHESIZED_WIRE_31 ; yes                    ;
-; reg16bit:b2v_inst4|out[7]                            ; SYNTHESIZED_WIRE_26 ; yes                    ;
-; reg16bit:b2v_inst3|out[7]                            ; SYNTHESIZED_WIRE_25 ; yes                    ;
-; reg16bit:b2v_inst1|out[7]                            ; SYNTHESIZED_WIRE_0  ; yes                    ;
-; reg16bit:b2v_inst5|out[7]                            ; SYNTHESIZED_WIRE_27 ; yes                    ;
-; reg16bit:b2v_inst7|out[7]                            ; SYNTHESIZED_WIRE_29 ; yes                    ;
-; reg16bit:b2v_inst8|out[7]                            ; SYNTHESIZED_WIRE_30 ; yes                    ;
-; reg16bit:b2v_inst6|out[7]                            ; SYNTHESIZED_WIRE_28 ; yes                    ;
-; reg16bit:b2v_inst9|out[7]                            ; SYNTHESIZED_WIRE_31 ; yes                    ;
-; reg16bit:b2v_inst4|out[8]                            ; SYNTHESIZED_WIRE_26 ; yes                    ;
-; reg16bit:b2v_inst3|out[8]                            ; SYNTHESIZED_WIRE_25 ; yes                    ;
-; reg16bit:b2v_inst1|out[8]                            ; SYNTHESIZED_WIRE_0  ; yes                    ;
-; reg16bit:b2v_inst5|out[8]                            ; SYNTHESIZED_WIRE_27 ; yes                    ;
-; reg16bit:b2v_inst7|out[8]                            ; SYNTHESIZED_WIRE_29 ; yes                    ;
-; reg16bit:b2v_inst8|out[8]                            ; SYNTHESIZED_WIRE_30 ; yes                    ;
-; reg16bit:b2v_inst6|out[8]                            ; SYNTHESIZED_WIRE_28 ; yes                    ;
-; reg16bit:b2v_inst9|out[8]                            ; SYNTHESIZED_WIRE_31 ; yes                    ;
-; reg16bit:b2v_inst4|out[9]                            ; SYNTHESIZED_WIRE_26 ; yes                    ;
-; reg16bit:b2v_inst3|out[9]                            ; SYNTHESIZED_WIRE_25 ; yes                    ;
-; reg16bit:b2v_inst1|out[9]                            ; SYNTHESIZED_WIRE_0  ; yes                    ;
-; reg16bit:b2v_inst5|out[9]                            ; SYNTHESIZED_WIRE_27 ; yes                    ;
-; reg16bit:b2v_inst7|out[9]                            ; SYNTHESIZED_WIRE_29 ; yes                    ;
-; reg16bit:b2v_inst8|out[9]                            ; SYNTHESIZED_WIRE_30 ; yes                    ;
-; reg16bit:b2v_inst6|out[9]                            ; SYNTHESIZED_WIRE_28 ; yes                    ;
-; reg16bit:b2v_inst9|out[9]                            ; SYNTHESIZED_WIRE_31 ; yes                    ;
-; reg16bit:b2v_inst4|out[10]                           ; SYNTHESIZED_WIRE_26 ; yes                    ;
-; reg16bit:b2v_inst3|out[10]                           ; SYNTHESIZED_WIRE_25 ; yes                    ;
-; reg16bit:b2v_inst1|out[10]                           ; SYNTHESIZED_WIRE_0  ; yes                    ;
-; reg16bit:b2v_inst5|out[10]                           ; SYNTHESIZED_WIRE_27 ; yes                    ;
-; reg16bit:b2v_inst7|out[10]                           ; SYNTHESIZED_WIRE_29 ; yes                    ;
-; reg16bit:b2v_inst8|out[10]                           ; SYNTHESIZED_WIRE_30 ; yes                    ;
-; reg16bit:b2v_inst6|out[10]                           ; SYNTHESIZED_WIRE_28 ; yes                    ;
-; reg16bit:b2v_inst9|out[10]                           ; SYNTHESIZED_WIRE_31 ; yes                    ;
-; reg16bit:b2v_inst4|out[11]                           ; SYNTHESIZED_WIRE_26 ; yes                    ;
-; reg16bit:b2v_inst3|out[11]                           ; SYNTHESIZED_WIRE_25 ; yes                    ;
-; reg16bit:b2v_inst1|out[11]                           ; SYNTHESIZED_WIRE_0  ; yes                    ;
-; reg16bit:b2v_inst5|out[11]                           ; SYNTHESIZED_WIRE_27 ; yes                    ;
-; reg16bit:b2v_inst7|out[11]                           ; SYNTHESIZED_WIRE_29 ; yes                    ;
-; reg16bit:b2v_inst8|out[11]                           ; SYNTHESIZED_WIRE_30 ; yes                    ;
-; reg16bit:b2v_inst6|out[11]                           ; SYNTHESIZED_WIRE_28 ; yes                    ;
-; reg16bit:b2v_inst9|out[11]                           ; SYNTHESIZED_WIRE_31 ; yes                    ;
-; reg16bit:b2v_inst4|out[12]                           ; SYNTHESIZED_WIRE_26 ; yes                    ;
-; reg16bit:b2v_inst3|out[12]                           ; SYNTHESIZED_WIRE_25 ; yes                    ;
-; reg16bit:b2v_inst1|out[12]                           ; SYNTHESIZED_WIRE_0  ; yes                    ;
-; reg16bit:b2v_inst5|out[12]                           ; SYNTHESIZED_WIRE_27 ; yes                    ;
-; Number of user-specified and inferred latches = 128  ;                     ;                        ;
-+------------------------------------------------------+---------------------+------------------------+
-Table restricted to first 100 entries. Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output         ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
-; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |reg_file|mux3to8:b2v_inst2|Mux15  ;
-; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |reg_file|mux3to8:b2v_inst10|Mux15 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
-
-
-+-------------------------------+
-; Analysis & Synthesis Messages ;
-+-------------------------------+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit Analysis & Synthesis
-    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Wed Feb 08 23:21:37 2017
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CompArchProcessor -c CompArchProcessor
+Info: Running Quartus II 64-Bit Analysis & Elaboration
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Thu Feb 09 09:14:26 2017
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CompArchProcessor -c CompArchProcessor --analysis_and_elaboration
 Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file alu16bit_v.v
+    Info (12023): Found entity 1: ALU16bit_v
 Info (12021): Found 1 design units, including 1 entities, in source file reg_file.v
     Info (12023): Found entity 1: reg_file
 Info (12021): Found 1 design units, including 1 entities, in source file reg_file_tb.v
@@ -386,32 +191,34 @@ Info (12021): Found 1 design units, including 1 entities, in source file fulladd
     Info (12023): Found entity 1: FullAdder
 Info (12021): Found 1 design units, including 1 entities, in source file alu16bit.bdf
     Info (12023): Found entity 1: ALU16bit
-Info (12127): Elaborating entity "reg_file" for the top level hierarchy
-Info (12128): Elaborating entity "decoder" for hierarchy "decoder:b2v_inst"
-Info (12128): Elaborating entity "reg16bit" for hierarchy "reg16bit:b2v_inst1"
-Warning (10240): Verilog HDL Always Construct warning at reg16bit.v(8): inferring latch(es) for variable "out", which holds its previous value in one or more paths through the always construct
-Info (10041): Inferred latch for "out[0]" at reg16bit.v(15)
-Info (10041): Inferred latch for "out[1]" at reg16bit.v(15)
-Info (10041): Inferred latch for "out[2]" at reg16bit.v(15)
-Info (10041): Inferred latch for "out[3]" at reg16bit.v(15)
-Info (10041): Inferred latch for "out[4]" at reg16bit.v(15)
-Info (10041): Inferred latch for "out[5]" at reg16bit.v(15)
-Info (10041): Inferred latch for "out[6]" at reg16bit.v(15)
-Info (10041): Inferred latch for "out[7]" at reg16bit.v(15)
-Info (10041): Inferred latch for "out[8]" at reg16bit.v(15)
-Info (10041): Inferred latch for "out[9]" at reg16bit.v(15)
-Info (10041): Inferred latch for "out[10]" at reg16bit.v(15)
-Info (10041): Inferred latch for "out[11]" at reg16bit.v(15)
-Info (10041): Inferred latch for "out[12]" at reg16bit.v(15)
-Info (10041): Inferred latch for "out[13]" at reg16bit.v(15)
-Info (10041): Inferred latch for "out[14]" at reg16bit.v(15)
-Info (10041): Inferred latch for "out[15]" at reg16bit.v(15)
-Info (12128): Elaborating entity "mux3to8" for hierarchy "mux3to8:b2v_inst10"
-Info (286030): Timing-Driven Synthesis is running
+Info (12021): Found 1 design units, including 1 entities, in source file alu_16bit_tb.v
+    Info (12023): Found entity 1: ALU_16bit_tb
+Info (12127): Elaborating entity "ALU16bit_v" for the top level hierarchy
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:b2v_inst"
+Warning (275083): Bus "Logic1[0]" found using same base name as "Logic", which might lead to a name conflict.
+Warning (275083): Bus "Logic1[1]" found using same base name as "Logic", which might lead to a name conflict.
+Warning (275083): Bus "Logic1[1..0]" found using same base name as "Logic", which might lead to a name conflict.
+Warning (275083): Bus "Logic0[1]" found using same base name as "Logic", which might lead to a name conflict.
+Warning (275083): Bus "Logic0[0]" found using same base name as "Logic", which might lead to a name conflict.
+Warning (275083): Bus "Logic0[1..0]" found using same base name as "Logic", which might lead to a name conflict.
+Warning (275080): Converted elements in bus name "Logic" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "Logic[1]" to "Logic1"
+    Warning (275081): Converted element name(s) from "Logic[0]" to "Logic0"
+    Warning (275081): Converted element name(s) from "Logic[1..0]" to "Logic1..0"
+Warning (275080): Converted elements in bus name "Logic0" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "Logic0[1]" to "Logic01"
+    Warning (275081): Converted element name(s) from "Logic0[0]" to "Logic00"
+    Warning (275081): Converted element name(s) from "Logic0[1..0]" to "Logic01..0"
+Warning (275080): Converted elements in bus name "Logic1" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "Logic1[0]" to "Logic10"
+    Warning (275081): Converted element name(s) from "Logic1[1]" to "Logic11"
+    Warning (275081): Converted element name(s) from "Logic1[1..0]" to "Logic11..0"
+Info (12128): Elaborating entity "mux2to1" for hierarchy "ALU:b2v_inst|mux2to1:inst4423434"
+Info (12128): Elaborating entity "mux4to1" for hierarchy "ALU:b2v_inst|mux4to1:inst37"
+Info (12128): Elaborating entity "FullAdder" for hierarchy "ALU:b2v_inst|FullAdder:in0st6"
 Warning (20013): Ignored assignments for entity "DE0_Default" -- entity does not exist in design
     Warning (20014): Assignment for entity set_global_assignment -name LL_ROOT_REGION ON -entity DE0_Default -section_id "Root Region" was ignored
     Warning (20014): Assignment for entity set_global_assignment -name LL_MEMBER_STATE LOCKED -entity DE0_Default -section_id "Root Region" was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name LL_ROUTING_REGION OFF -entity DE0_Default -section_id "Root Region" was ignored
     Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity DE0_Default -section_id Top was ignored
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity DE0_Default -section_id Top was ignored
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_PRESERVE_HIGH_SPEED_TILES ON -entity DE0_Default -section_id Top was ignored
@@ -434,7 +241,6 @@ Warning (20013): Ignored assignments for entity "DE0_Default" -- entity does not
     Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_BIDIRS ON -entity DE0_Default -section_id Top was ignored
     Warning (20014): Assignment for entity set_global_assignment -name ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS ON -entity DE0_Default -section_id Top was ignored
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_EXTRACT_HARD_BLOCK_NODES ON -entity DE0_Default -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -entity DE0_Default -section_id Top was ignored
 Warning (20013): Ignored assignments for entity "Lab3a_s1" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity Lab3a_s1 -section_id Top was ignored
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity Lab3a_s1 -section_id Top was ignored
@@ -459,7 +265,6 @@ Warning (20013): Ignored assignments for entity "Lab3a_s1" -- entity does not ex
     Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_BIDIRS ON -entity Lab3a_s1 -section_id Top was ignored
     Warning (20014): Assignment for entity set_global_assignment -name ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS ON -entity Lab3a_s1 -section_id Top was ignored
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_EXTRACT_HARD_BLOCK_NODES ON -entity Lab3a_s1 -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -entity Lab3a_s1 -section_id Top was ignored
 Warning (20013): Ignored assignments for entity "Lab3b" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity Lab3b -section_id Top was ignored
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity Lab3b -section_id Top was ignored
@@ -484,19 +289,10 @@ Warning (20013): Ignored assignments for entity "Lab3b" -- entity does not exist
     Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_BIDIRS ON -entity Lab3b -section_id Top was ignored
     Warning (20014): Assignment for entity set_global_assignment -name ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS ON -entity Lab3b -section_id Top was ignored
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_EXTRACT_HARD_BLOCK_NODES ON -entity Lab3b -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -entity Lab3b -section_id Top was ignored
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "Clock_50"
-Info (21057): Implemented 484 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 28 input pins
-    Info (21059): Implemented 160 output pins
-    Info (21061): Implemented 296 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 81 warnings
-    Info: Peak virtual memory: 555 megabytes
-    Info: Processing ended: Wed Feb 08 23:21:39 2017
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+Info: Quartus II 64-Bit Analysis & Elaboration was successful. 0 errors, 92 warnings
+    Info: Peak virtual memory: 509 megabytes
+    Info: Processing ended: Thu Feb 09 09:14:42 2017
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:10
 
 

@@ -41,7 +41,7 @@ set_global_assignment -name DEVICE EP3C16F484C6
 set_global_assignment -name TOP_LEVEL_ENTITY ALU_16bit_v
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:09:36  JANUARY 24, 2017"
-set_global_assignment -name LAST_QUARTUS_VERSION 13.1
+set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
@@ -57,7 +57,6 @@ set_global_assignment -name VERILOG_FILE TWOtoONE_MUX.v
 set_global_assignment -name VERILOG_FILE FOURtoONE_MUX.v
 set_global_assignment -name BDF_FILE ALU.bdf
 set_global_assignment -name VERILOG_FILE CarryLookaheadAdder.v
-set_global_assignment -name BSF_FILE CarryLookaheadAdder_4bit.bsf
 set_global_assignment -name BDF_FILE ALU_4bit.bdf
 set_global_assignment -name BDF_FILE ALU_16bit.bdf
 set_global_assignment -name VERILOG_FILE Register_File_t.v
@@ -75,10 +74,10 @@ set_global_assignment -name VERILOG_FILE ALU_16bit_t.v
 set_global_assignment -name EDA_TEST_BENCH_NAME ALU_16bit_t -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id ALU_16bit_t
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME ALU_16bit_t -section_id ALU_16bit_t
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name VERILOG_FILE ALU_4bit_v.v
 set_global_assignment -name EDA_TEST_BENCH_FILE Register_File_t.v -section_id Register_File_t
 set_global_assignment -name EDA_TEST_BENCH_FILE ALU_16bit_t.v -section_id ALU_16bit_t
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

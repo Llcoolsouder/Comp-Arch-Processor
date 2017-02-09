@@ -1,61 +1,52 @@
-# Reading E:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
 # do CompArchProcessor_run_msim_rtl_verilog.do 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
 # }
 # vlib rtl_work
 # vmap work rtl_work
-# Copying E:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
-# ** Warning: Copied E:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vlog -vlog01compat -work work +incdir+E:/Users/Lonnie\ II/Desktop/Code/New-Comp-Arch-Processor/Seans\ Processor {E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/Seans Processor/reg_file.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/Seans\ Processor {C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/Seans Processor/ALU16bit_v.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module reg_file
+# -- Compiling module ALU16bit_v
 # 
 # Top level modules:
-# 	reg_file
-# vlog -vlog01compat -work work +incdir+E:/Users/Lonnie\ II/Desktop/Code/New-Comp-Arch-Processor/Seans\ Processor {E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/Seans Processor/reg16bit.v}
+# 	ALU16bit_v
+# vlog -vlog01compat -work work +incdir+C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/Seans\ Processor {C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/Seans Processor/mux2to1.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module reg16bit
+# -- Compiling module mux2to1
 # 
 # Top level modules:
-# 	reg16bit
-# vlog -vlog01compat -work work +incdir+E:/Users/Lonnie\ II/Desktop/Code/New-Comp-Arch-Processor/Seans\ Processor {E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/Seans Processor/mux3to8.v}
+# 	mux2to1
+# vlog -vlog01compat -work work +incdir+C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/Seans\ Processor {C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/Seans Processor/mux4to1.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module mux3to8
+# -- Compiling module mux4to1
 # 
 # Top level modules:
-# 	mux3to8
-# vlog -vlog01compat -work work +incdir+E:/Users/Lonnie\ II/Desktop/Code/New-Comp-Arch-Processor/Seans\ Processor {E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/Seans Processor/decoder.v}
+# 	mux4to1
+# vlog -vlog01compat -work work +incdir+C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/Seans\ Processor {C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/Seans Processor/FullAdder.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module decoder
+# -- Compiling module FullAdder
 # 
 # Top level modules:
-# 	decoder
+# 	FullAdder
 # 
-# vlog -vlog01compat -work work +incdir+E:/Users/Lonnie\ II/Desktop/Code/New-Comp-Arch-Processor/Seans\ Processor {E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/Seans Processor/reg_file_tb.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/Seans\ Processor {C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/Seans Processor/ALU_16bit_tb.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module reg_file_tb
+# -- Compiling module ALU_16bit_tb
 # 
 # Top level modules:
-# 	reg_file_tb
+# 	ALU_16bit_tb
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs="+acc"  reg_file_tb
-# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps reg_file_tb 
-# Loading work.reg_file_tb
-# Loading work.reg_file
-# Loading work.decoder
-# Loading work.reg16bit
-# Loading work.mux3to8
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs="+acc"  ALU16bit
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps ALU16bit 
+# ** Error: (vsim-3170) Could not find 'C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/Seans Processor/simulation/modelsim/rtl_work.ALU16bit'.
 # 
-# add wave *
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run -all
-# Break in Module reg_file_tb at E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/Seans Processor/reg_file_tb.v line 57
-# Simulation Breakpoint: Break in Module reg_file_tb at E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/Seans Processor/reg_file_tb.v line 57
-# MACRO ./CompArchProcessor_run_msim_rtl_verilog.do PAUSED at line 20
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./CompArchProcessor_run_msim_rtl_verilog.do PAUSED at line 15

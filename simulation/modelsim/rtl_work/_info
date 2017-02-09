@@ -2,35 +2,35 @@ m255
 K3
 13
 cModel Technology
-Z0 dE:\Users\Lonnie II\Desktop\Code\New-Comp-Arch-Processor\simulation\modelsim
+Z0 dC:\Users\baseb_000\Documents\New-Comp-Arch-Processor\simulation\modelsim
 vALU_16bit_t
 !i10b 1
-!s100 FEP8Zl5R^h^C[;kWeMKkD0
-I6cHkH1HH>UdhV?ze7OK2>1
+!s100 >X;T5W8U[TfGh:>NQn7BK2
+ImBTCRBJ=i<@QET<4V;eGm1
 VDz?537SVO>A[];>5]8cME2
-Z1 dE:\Users\Lonnie II\Desktop\Code\New-Comp-Arch-Processor\simulation\modelsim
-w1486621203
-8E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/ALU_16bit_t.v
-FE:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/ALU_16bit_t.v
+Z1 dC:\Users\baseb_000\Documents\New-Comp-Arch-Processor\simulation\modelsim
+w1486648138
+8C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/ALU_16bit_t.v
+FC:/Users/baseb_000/Documents/New-Comp-Arch-Processor/ALU_16bit_t.v
 L0 1
 Z2 OV;L;10.1d;51
 r1
 !s85 0
 31
-!s108 1486621233.812000
-!s107 E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/ALU_16bit_t.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor|E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/ALU_16bit_t.v|
+!s108 1486650359.981000
+!s107 C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/ALU_16bit_t.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/baseb_000/Documents/New-Comp-Arch-Processor|C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/ALU_16bit_t.v|
 !s101 -O0
 Z3 o-vlog01compat -work work -O0
-Z4 !s92 -vlog01compat -work work {+incdir+E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor} -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/Users/baseb_000/Documents/New-Comp-Arch-Processor -O0
 n@a@l@u_16bit_t
 vALU_16bit_v
-I4lS[>PDZm?d00POLL@zEm2
+IUQdOLNS<aPUlGzC==[Mln0
 VW_=:nD3]Xm0^_k:IU;AIR3
 R1
-Z5 w1486616271
-8E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/ALU_16bit_v.v
-FE:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/ALU_16bit_v.v
+w1486645414
+8C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/ALU_16bit_v.v
+FC:/Users/baseb_000/Documents/New-Comp-Arch-Processor/ALU_16bit_v.v
 L0 19
 R2
 r1
@@ -39,35 +39,35 @@ R3
 R4
 n@a@l@u_16bit_v
 !i10b 1
-!s100 i;gO@b?Laf2mb7l3nbJ_M3
+!s100 7j7KB=dJ:lkcY1TjKNaAe0
 !s85 0
-!s108 1486621233.311000
-!s107 E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/ALU_16bit_v.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor|E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/ALU_16bit_v.v|
+!s108 1486650357.554000
+!s107 C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/ALU_16bit_v.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/baseb_000/Documents/New-Comp-Arch-Processor|C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/ALU_16bit_v.v|
 !s101 -O0
 vALU_4bit_v
-I2J0:SNc2@jEQ;>0=`SB6a2
+IT2g@97nlFV7=k0Ti`FmCE1
 VgQQl3cEmZCAhF3WS88k@G3
 R1
-R5
-Z6 8E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/ALU_4bit_v.v
-Z7 FE:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/ALU_4bit_v.v
+Z5 w1486650232
+Z6 8C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/ALU_4bit_v.v
+Z7 FC:/Users/baseb_000/Documents/New-Comp-Arch-Processor/ALU_4bit_v.v
 L0 19
 R2
 r1
 31
-Z8 !s108 1486621233.413000
-Z9 !s107 E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/ALU_4bit_v.v|
-Z10 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor|E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/ALU_4bit_v.v|
+Z8 !s108 1486650358.363000
+Z9 !s107 C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/ALU_4bit_v.v|
+Z10 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/baseb_000/Documents/New-Comp-Arch-Processor|C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/ALU_4bit_v.v|
 R3
 R4
 n@a@l@u_4bit_v
 !i10b 1
-!s100 JM0dPnFbGo40;CQWn_D@D1
+!s100 Rg4@_CZB7976O8AE9`NeX2
 !s85 0
 !s101 -O0
 vand5_1
-IbN4ajN4O`jMZ^;6FnKeb`0
+I:n2zFW3]bE^jhJGi2Yfj@0
 V6<2Kl44a]ZFKKX2S?0ZQk1
 R1
 R5
@@ -83,16 +83,16 @@ R10
 R3
 R4
 !i10b 1
-!s100 9o=32aAPBb@C7fLEN^H`K2
+!s100 MaQcM4Ao9;EU?4`0<7gRW2
 !s85 0
 !s101 -O0
 vCarryLookaheadAdder
-I61L0U`iM_;EJD;dboB[iP1
+I?FEF1_IGC`CRER2?hdQKO1
 VJ;BIXlSWaC<TCk:7`N5gT3
 R1
-Z11 w1486607253
-8E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/CarryLookaheadAdder.v
-FE:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/CarryLookaheadAdder.v
+w1486600948
+8C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/CarryLookaheadAdder.v
+FC:/Users/baseb_000/Documents/New-Comp-Arch-Processor/CarryLookaheadAdder.v
 L0 1
 R2
 r1
@@ -101,19 +101,19 @@ R3
 R4
 n@carry@lookahead@adder
 !i10b 1
-!s100 ;0E;;G;UbJCYk8@f2Fz:`3
+!s100 <Vkl;Y3?5FDF0jXYXgPRo2
 !s85 0
-!s108 1486621233.156000
-!s107 E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/CarryLookaheadAdder.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor|E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/CarryLookaheadAdder.v|
+!s108 1486650356.950000
+!s107 C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/CarryLookaheadAdder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/baseb_000/Documents/New-Comp-Arch-Processor|C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/CarryLookaheadAdder.v|
 !s101 -O0
 vFOURtoONE_MUX
-I:ok=0I?fCn_k9A[5nI@BG2
+I0AkPd>?hkIgadOfK<Zdgk2
 VBI[SBC=ch^6YcB5N4Cl^l3
 R1
-R11
-8E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/FOURtoONE_MUX.v
-FE:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/FOURtoONE_MUX.v
+Z11 w1486600949
+8C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/FOURtoONE_MUX.v
+FC:/Users/baseb_000/Documents/New-Comp-Arch-Processor/FOURtoONE_MUX.v
 L0 1
 R2
 r1
@@ -122,20 +122,20 @@ R3
 R4
 n@f@o@u@rto@o@n@e_@m@u@x
 !i10b 1
-!s100 ^5]VFCiB:[blUE_H<;3RT2
+!s100 kS`?ojN@@SkBIKZo95dZL2
 !s85 0
-!s108 1486621233.033000
-!s107 E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/FOURtoONE_MUX.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor|E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/FOURtoONE_MUX.v|
+!s108 1486650356.303000
+!s107 C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/FOURtoONE_MUX.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/baseb_000/Documents/New-Comp-Arch-Processor|C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/FOURtoONE_MUX.v|
 !s101 -O0
 vor5_0
-Ikg=j@AZdMz_LR@eU:mGzj1
+I<WVgRiIUH<Ng^Tcgn17U23
 V[1oG3V]aW;Q5h7Uce7ja23
 R1
 R5
 R6
 R7
-L0 470
+L0 472
 R2
 r1
 31
@@ -145,16 +145,16 @@ R10
 R3
 R4
 !i10b 1
-!s100 ZbD3hJQj0BBm6N>aE2hMl2
+!s100 TQO0U;E:VWKD2:?;F]6Pf1
 !s85 0
 !s101 -O0
 vTWOtoONE_MUX
-Iiff;jQ<g>N=9l4WBeeKme3
+I<iKVC_eZkB[UAT=^>Mh5k0
 VEzCmZ:RSC7nm7QJKR;fdC2
 R1
 R11
-8E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/TWOtoONE_MUX.v
-FE:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/TWOtoONE_MUX.v
+8C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/TWOtoONE_MUX.v
+FC:/Users/baseb_000/Documents/New-Comp-Arch-Processor/TWOtoONE_MUX.v
 L0 1
 R2
 r1
@@ -163,9 +163,9 @@ R3
 n@t@w@oto@o@n@e_@m@u@x
 R4
 !i10b 1
-!s100 WDm_51YiE2]04kYd=XZ271
+!s100 I2LOZN4Gnl]>h;h:M;I7j3
 !s85 0
-!s108 1486621232.878000
-!s107 E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/TWOtoONE_MUX.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor|E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/TWOtoONE_MUX.v|
+!s108 1486650355.644000
+!s107 C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/TWOtoONE_MUX.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/baseb_000/Documents/New-Comp-Arch-Processor|C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/TWOtoONE_MUX.v|
 !s101 -O0

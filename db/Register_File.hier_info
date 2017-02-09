@@ -37,23 +37,23 @@ FS[1] => FS[1].IN4
 FS[2] => FS[2].IN4
 FS[3] => FS[3].IN4
 FS[4] => FS[4].IN4
-Cout << ALU_4bit_v:b2v_inst3.Cout
-F[0] << ALU_4bit_v:b2v_inst.F
-F[1] << ALU_4bit_v:b2v_inst.F
-F[2] << ALU_4bit_v:b2v_inst.F
-F[3] << ALU_4bit_v:b2v_inst.F
-F[4] << ALU_4bit_v:b2v_inst1.F
-F[5] << ALU_4bit_v:b2v_inst1.F
-F[6] << ALU_4bit_v:b2v_inst1.F
-F[7] << ALU_4bit_v:b2v_inst1.F
-F[8] << ALU_4bit_v:b2v_inst2.F
-F[9] << ALU_4bit_v:b2v_inst2.F
-F[10] << ALU_4bit_v:b2v_inst2.F
-F[11] << ALU_4bit_v:b2v_inst2.F
-F[12] << ALU_4bit_v:b2v_inst3.F
-F[13] << ALU_4bit_v:b2v_inst3.F
-F[14] << ALU_4bit_v:b2v_inst3.F
-F[15] << ALU_4bit_v:b2v_inst3.F
+Cout <= ALU_4bit_v:b2v_inst3.Cout
+F[0] <= ALU_4bit_v:b2v_inst.F
+F[1] <= ALU_4bit_v:b2v_inst.F
+F[2] <= ALU_4bit_v:b2v_inst.F
+F[3] <= ALU_4bit_v:b2v_inst.F
+F[4] <= ALU_4bit_v:b2v_inst1.F
+F[5] <= ALU_4bit_v:b2v_inst1.F
+F[6] <= ALU_4bit_v:b2v_inst1.F
+F[7] <= ALU_4bit_v:b2v_inst1.F
+F[8] <= ALU_4bit_v:b2v_inst2.F
+F[9] <= ALU_4bit_v:b2v_inst2.F
+F[10] <= ALU_4bit_v:b2v_inst2.F
+F[11] <= ALU_4bit_v:b2v_inst2.F
+F[12] <= ALU_4bit_v:b2v_inst3.F
+F[13] <= ALU_4bit_v:b2v_inst3.F
+F[14] <= ALU_4bit_v:b2v_inst3.F
+F[15] <= ALU_4bit_v:b2v_inst3.F
 
 
 |ALU_16bit_v|ALU_4bit_v:b2v_inst
@@ -324,12 +324,12 @@ Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ALU_16bit_v|ALU_4bit_v:b2v_inst|or5_0:b2v_inst68
-IN1 => ~NO_FANOUT~
-IN3 => ~NO_FANOUT~
-IN2 => ~NO_FANOUT~
-IN5 => ~NO_FANOUT~
-IN4 => ~NO_FANOUT~
-OUT <= <GND>
+IN1 => WideOr0.IN0
+IN3 => WideOr0.IN1
+IN2 => WideOr0.IN2
+IN5 => WideOr0.IN3
+IN4 => WideOr0.IN4
+OUT <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ALU_16bit_v|ALU_4bit_v:b2v_inst|TWOtoONE_MUX:b2v_inst7
@@ -340,12 +340,12 @@ Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ALU_16bit_v|ALU_4bit_v:b2v_inst|and5_1:b2v_inst72
-IN3 => ~NO_FANOUT~
-IN2 => ~NO_FANOUT~
-IN1 => ~NO_FANOUT~
-IN5 => ~NO_FANOUT~
-IN4 => ~NO_FANOUT~
-OUT <= <GND>
+IN3 => WideAnd0.IN0
+IN2 => WideAnd0.IN1
+IN1 => WideAnd0.IN2
+IN5 => WideAnd0.IN3
+IN4 => WideAnd0.IN4
+OUT <= WideAnd0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ALU_16bit_v|ALU_4bit_v:b2v_inst1
@@ -616,12 +616,12 @@ Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ALU_16bit_v|ALU_4bit_v:b2v_inst1|or5_0:b2v_inst68
-IN1 => ~NO_FANOUT~
-IN3 => ~NO_FANOUT~
-IN2 => ~NO_FANOUT~
-IN5 => ~NO_FANOUT~
-IN4 => ~NO_FANOUT~
-OUT <= <GND>
+IN1 => WideOr0.IN0
+IN3 => WideOr0.IN1
+IN2 => WideOr0.IN2
+IN5 => WideOr0.IN3
+IN4 => WideOr0.IN4
+OUT <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ALU_16bit_v|ALU_4bit_v:b2v_inst1|TWOtoONE_MUX:b2v_inst7
@@ -632,12 +632,12 @@ Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ALU_16bit_v|ALU_4bit_v:b2v_inst1|and5_1:b2v_inst72
-IN3 => ~NO_FANOUT~
-IN2 => ~NO_FANOUT~
-IN1 => ~NO_FANOUT~
-IN5 => ~NO_FANOUT~
-IN4 => ~NO_FANOUT~
-OUT <= <GND>
+IN3 => WideAnd0.IN0
+IN2 => WideAnd0.IN1
+IN1 => WideAnd0.IN2
+IN5 => WideAnd0.IN3
+IN4 => WideAnd0.IN4
+OUT <= WideAnd0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ALU_16bit_v|ALU_4bit_v:b2v_inst2
@@ -908,12 +908,12 @@ Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ALU_16bit_v|ALU_4bit_v:b2v_inst2|or5_0:b2v_inst68
-IN1 => ~NO_FANOUT~
-IN3 => ~NO_FANOUT~
-IN2 => ~NO_FANOUT~
-IN5 => ~NO_FANOUT~
-IN4 => ~NO_FANOUT~
-OUT <= <GND>
+IN1 => WideOr0.IN0
+IN3 => WideOr0.IN1
+IN2 => WideOr0.IN2
+IN5 => WideOr0.IN3
+IN4 => WideOr0.IN4
+OUT <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ALU_16bit_v|ALU_4bit_v:b2v_inst2|TWOtoONE_MUX:b2v_inst7
@@ -924,12 +924,12 @@ Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ALU_16bit_v|ALU_4bit_v:b2v_inst2|and5_1:b2v_inst72
-IN3 => ~NO_FANOUT~
-IN2 => ~NO_FANOUT~
-IN1 => ~NO_FANOUT~
-IN5 => ~NO_FANOUT~
-IN4 => ~NO_FANOUT~
-OUT <= <GND>
+IN3 => WideAnd0.IN0
+IN2 => WideAnd0.IN1
+IN1 => WideAnd0.IN2
+IN5 => WideAnd0.IN3
+IN4 => WideAnd0.IN4
+OUT <= WideAnd0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ALU_16bit_v|ALU_4bit_v:b2v_inst3
@@ -1200,12 +1200,12 @@ Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ALU_16bit_v|ALU_4bit_v:b2v_inst3|or5_0:b2v_inst68
-IN1 => ~NO_FANOUT~
-IN3 => ~NO_FANOUT~
-IN2 => ~NO_FANOUT~
-IN5 => ~NO_FANOUT~
-IN4 => ~NO_FANOUT~
-OUT <= <GND>
+IN1 => WideOr0.IN0
+IN3 => WideOr0.IN1
+IN2 => WideOr0.IN2
+IN5 => WideOr0.IN3
+IN4 => WideOr0.IN4
+OUT <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ALU_16bit_v|ALU_4bit_v:b2v_inst3|TWOtoONE_MUX:b2v_inst7
@@ -1216,11 +1216,11 @@ Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ALU_16bit_v|ALU_4bit_v:b2v_inst3|and5_1:b2v_inst72
-IN3 => ~NO_FANOUT~
-IN2 => ~NO_FANOUT~
-IN1 => ~NO_FANOUT~
-IN5 => ~NO_FANOUT~
-IN4 => ~NO_FANOUT~
-OUT <= <GND>
+IN3 => WideAnd0.IN0
+IN2 => WideAnd0.IN1
+IN1 => WideAnd0.IN2
+IN5 => WideAnd0.IN3
+IN4 => WideAnd0.IN4
+OUT <= WideAnd0.DB_MAX_OUTPUT_PORT_TYPE
 
 

@@ -2,104 +2,107 @@ m255
 K3
 13
 cModel Technology
-Z0 dE:\Users\Lonnie II\Desktop\Code\New-Comp-Arch-Processor\Seans Processor\simulation\modelsim
-vdecoder
-IMCRe3<1FDfA_J00lAF6N71
-V<o4L^@AVbOA54@zzLARjV3
-Z1 dE:\Users\Lonnie II\Desktop\Code\New-Comp-Arch-Processor\Seans Processor\simulation\modelsim
-Z2 w1486613584
-8E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/Seans Processor/decoder.v
-FE:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/Seans Processor/decoder.v
-L0 1
-Z3 OV;L;10.1d;51
-r1
-31
-Z4 o-vlog01compat -work work -O0
-Z5 !s92 -vlog01compat -work work {+incdir+E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/Seans Processor} -O0
-!i10b 1
-!s100 keH?zRSV0LDM^0RUD;oRG1
-!s85 0
-!s108 1486614159.254000
-!s107 E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/Seans Processor/decoder.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/Seans Processor|E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/Seans Processor/decoder.v|
-!s101 -O0
-vmux3to8
-Im9O`]WnCOQziM]Bj7j6_H3
-VI[7I0N969Z^M9e5l<iPTA1
-R1
-R2
-8E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/Seans Processor/mux3to8.v
-FE:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/Seans Processor/mux3to8.v
-L0 1
-R3
-r1
-31
-R4
-R5
-!i10b 1
-!s100 VgB=04h^;`e`iUP4MZQ9Z3
-!s85 0
-!s108 1486614159.154000
-!s107 E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/Seans Processor/mux3to8.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/Seans Processor|E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/Seans Processor/mux3to8.v|
-!s101 -O0
-vreg16bit
-I@F]k@jJ9dk6Y1n@F[TciS1
-VB]QYIfdcm9K@?5N]W0gC`0
-R1
-R2
-8E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/Seans Processor/reg16bit.v
-FE:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/Seans Processor/reg16bit.v
-L0 1
-R3
-r1
-31
-R4
-R5
-!i10b 1
-!s100 eg;Snh>ViS1b>LkWn>XQL1
-!s85 0
-!s108 1486614159.022000
-!s107 E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/Seans Processor/reg16bit.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/Seans Processor|E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/Seans Processor/reg16bit.v|
-!s101 -O0
-vreg_file
-Im`XR2>I]D_Zn`z66n:Mc>3
-V3hhb=ZTJmk`8:DnVa@<3]1
-R1
-R2
-8E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/Seans Processor/reg_file.v
-FE:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/Seans Processor/reg_file.v
+Z0 dC:\Users\baseb_000\Documents\New-Comp-Arch-Processor\Seans Processor\simulation\modelsim
+vALU16bit_v
+IOcZ9]dfdJ7f_ShdZFi=RP2
+V5Wb6DWF1G[=T3i_Q5O4G51
+Z1 dC:\Users\baseb_000\Documents\New-Comp-Arch-Processor\Seans Processor\simulation\modelsim
+w1486648812
+8C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/Seans Processor/ALU16bit_v.v
+FC:/Users/baseb_000/Documents/New-Comp-Arch-Processor/Seans Processor/ALU16bit_v.v
 L0 19
-R3
+Z2 OV;L;10.1d;51
 r1
 31
-R4
-R5
+Z3 o-vlog01compat -work work -O0
+n@a@l@u16bit_v
+Z4 !s92 -vlog01compat -work work {+incdir+C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/Seans Processor} -O0
 !i10b 1
-!s100 3BDnc^mCaenP@DI3^E<E32
+!s100 R6MW1H`0101KYU;bUjP[n2
 !s85 0
-!s108 1486614158.870000
-!s107 E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/Seans Processor/reg_file.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/Seans Processor|E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/Seans Processor/reg_file.v|
+!s108 1486649755.207000
+!s107 C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/Seans Processor/ALU16bit_v.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/Seans Processor|C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/Seans Processor/ALU16bit_v.v|
 !s101 -O0
-vreg_file_tb
+vALU_16bit_tb
 !i10b 1
-!s100 iXBVY^5O=PAb7ONeZc`d71
-I9d25UDDhj6aTM=L:g[UU<0
-V0F:UXnE]XI_CNA39[65311
+!s100 i`MP5Wzj2Xfg8[TT4UPOF3
+I>Tl6:mUoa?zB_0nf<e]ik2
+VSR;K64>4UAdWk2@hSc55L2
 R1
-R2
-8E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/Seans Processor/reg_file_tb.v
-FE:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/Seans Processor/reg_file_tb.v
+w1486649631
+8C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/Seans Processor/ALU_16bit_tb.v
+FC:/Users/baseb_000/Documents/New-Comp-Arch-Processor/Seans Processor/ALU_16bit_tb.v
 L0 1
-R3
+R2
 r1
 !s85 0
 31
-!s108 1486614159.359000
-!s107 E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/Seans Processor/reg_file_tb.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/Seans Processor|E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/Seans Processor/reg_file_tb.v|
+!s108 1486649758.253000
+!s107 C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/Seans Processor/ALU_16bit_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/Seans Processor|C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/Seans Processor/ALU_16bit_tb.v|
 !s101 -O0
+R3
 R4
-R5
+n@a@l@u_16bit_tb
+vFullAdder
+InmH9gUm2`eWm9eMJ0RCBF2
+V`b@WN5aUTW^WS:BYc>dhB3
+R1
+w1486011541
+8C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/Seans Processor/FullAdder.v
+FC:/Users/baseb_000/Documents/New-Comp-Arch-Processor/Seans Processor/FullAdder.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@full@adder
+!i10b 1
+!s100 9DlV;a9nN0JmTOk9I[3JF1
+!s85 0
+!s108 1486649757.452000
+!s107 C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/Seans Processor/FullAdder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/Seans Processor|C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/Seans Processor/FullAdder.v|
+!s101 -O0
+vmux2to1
+I9OMm3KzQWJgX3Y_HB0OVT0
+VmfSj2ihiRz<VAalReJ7b03
+R1
+w1485443453
+8C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/Seans Processor/mux2to1.v
+FC:/Users/baseb_000/Documents/New-Comp-Arch-Processor/Seans Processor/mux2to1.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 Jh_BRd?Qi19a7F@dIiHg91
+!s85 0
+!s108 1486649755.855000
+!s107 C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/Seans Processor/mux2to1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/Seans Processor|C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/Seans Processor/mux2to1.v|
+!s101 -O0
+vmux4to1
+IV:CMca;5fFH^Q8hb8;gFj2
+VYfP>7Z@;6_779E2>IfZ4S1
+R1
+w1485443993
+8C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/Seans Processor/mux4to1.v
+FC:/Users/baseb_000/Documents/New-Comp-Arch-Processor/Seans Processor/mux4to1.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 Q1TS3lBfZg9Pm03`e^AXT3
+!s85 0
+!s108 1486649756.547000
+!s107 C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/Seans Processor/mux4to1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/Seans Processor|C:/Users/baseb_000/Documents/New-Comp-Arch-Processor/Seans Processor/mux4to1.v|
+!s101 -O0

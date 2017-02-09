@@ -18,7 +18,7 @@ module ALU_16bit_t;
 	);	
 	
 	initial begin
-		repeat(2) begin
+		repeat(10) begin
 			Cin_t	<=	$random;
 			A_t	<=	$random;
 			B_t	<=	$random;
@@ -63,6 +63,6 @@ module ALU_16bit_t;
 		end
 	end 		
 	initial begin 
-		#1000 $stop;
+		#3300 $stop;
 	end
 endmodule 
