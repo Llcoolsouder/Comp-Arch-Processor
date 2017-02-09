@@ -16,7 +16,7 @@
 // VERSION		"Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
 // CREATED		"Wed Feb 08 19:28:45 2017"
 
-module ALU_16bit(
+module ALU_16bit_v(
 	Cin,
 	A,
 	B,

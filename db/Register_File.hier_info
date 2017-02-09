@@ -1,1159 +1,1410 @@
-|Register_File_v
-WR => SYNTHESIZED_WIRE_24.IN1
-WR => SYNTHESIZED_WIRE_25.IN1
-WR => SYNTHESIZED_WIRE_26.IN1
-WR => SYNTHESIZED_WIRE_27.IN1
-WR => SYNTHESIZED_WIRE_28.IN1
-WR => SYNTHESIZED_WIRE_29.IN1
-WR => SYNTHESIZED_WIRE_30.IN1
-WR => SYNTHESIZED_WIRE_0.IN1
-CLK => CLK.IN8
-RESET => RESET.IN8
-AA[0] => AA[0].IN1
-AA[1] => AA[1].IN1
-AA[2] => AA[2].IN1
-BA[0] => BA[0].IN1
-BA[1] => BA[1].IN1
-BA[2] => BA[2].IN1
-D[0] => D[0].IN8
-D[1] => D[1].IN8
-D[2] => D[2].IN8
-D[3] => D[3].IN8
-D[4] => D[4].IN8
-D[5] => D[5].IN8
-D[6] => D[6].IN8
-D[7] => D[7].IN8
-D[8] => D[8].IN8
-D[9] => D[9].IN8
-D[10] => D[10].IN8
-D[11] => D[11].IN8
-D[12] => D[12].IN8
-D[13] => D[13].IN8
-D[14] => D[14].IN8
-D[15] => D[15].IN8
-DA[0] => DA[0].IN1
-DA[1] => DA[1].IN1
-DA[2] => DA[2].IN1
-A[0] << EIGHTtoONE_MUX16bit:b2v_inst17.Q
-A[1] << EIGHTtoONE_MUX16bit:b2v_inst17.Q
-A[2] << EIGHTtoONE_MUX16bit:b2v_inst17.Q
-A[3] << EIGHTtoONE_MUX16bit:b2v_inst17.Q
-A[4] << EIGHTtoONE_MUX16bit:b2v_inst17.Q
-A[5] << EIGHTtoONE_MUX16bit:b2v_inst17.Q
-A[6] << EIGHTtoONE_MUX16bit:b2v_inst17.Q
-A[7] << EIGHTtoONE_MUX16bit:b2v_inst17.Q
-A[8] << EIGHTtoONE_MUX16bit:b2v_inst17.Q
-A[9] << EIGHTtoONE_MUX16bit:b2v_inst17.Q
-A[10] << EIGHTtoONE_MUX16bit:b2v_inst17.Q
-A[11] << EIGHTtoONE_MUX16bit:b2v_inst17.Q
-A[12] << EIGHTtoONE_MUX16bit:b2v_inst17.Q
-A[13] << EIGHTtoONE_MUX16bit:b2v_inst17.Q
-A[14] << EIGHTtoONE_MUX16bit:b2v_inst17.Q
-A[15] << EIGHTtoONE_MUX16bit:b2v_inst17.Q
-B[0] << EIGHTtoONE_MUX16bit:b2v_inst18.Q
-B[1] << EIGHTtoONE_MUX16bit:b2v_inst18.Q
-B[2] << EIGHTtoONE_MUX16bit:b2v_inst18.Q
-B[3] << EIGHTtoONE_MUX16bit:b2v_inst18.Q
-B[4] << EIGHTtoONE_MUX16bit:b2v_inst18.Q
-B[5] << EIGHTtoONE_MUX16bit:b2v_inst18.Q
-B[6] << EIGHTtoONE_MUX16bit:b2v_inst18.Q
-B[7] << EIGHTtoONE_MUX16bit:b2v_inst18.Q
-B[8] << EIGHTtoONE_MUX16bit:b2v_inst18.Q
-B[9] << EIGHTtoONE_MUX16bit:b2v_inst18.Q
-B[10] << EIGHTtoONE_MUX16bit:b2v_inst18.Q
-B[11] << EIGHTtoONE_MUX16bit:b2v_inst18.Q
-B[12] << EIGHTtoONE_MUX16bit:b2v_inst18.Q
-B[13] << EIGHTtoONE_MUX16bit:b2v_inst18.Q
-B[14] << EIGHTtoONE_MUX16bit:b2v_inst18.Q
-B[15] << EIGHTtoONE_MUX16bit:b2v_inst18.Q
-R0[0] << SYNTHESIZED_WIRE_32[0].DB_MAX_OUTPUT_PORT_TYPE
-R0[1] << SYNTHESIZED_WIRE_32[1].DB_MAX_OUTPUT_PORT_TYPE
-R0[2] << SYNTHESIZED_WIRE_32[2].DB_MAX_OUTPUT_PORT_TYPE
-R0[3] << SYNTHESIZED_WIRE_32[3].DB_MAX_OUTPUT_PORT_TYPE
-R0[4] << SYNTHESIZED_WIRE_32[4].DB_MAX_OUTPUT_PORT_TYPE
-R0[5] << SYNTHESIZED_WIRE_32[5].DB_MAX_OUTPUT_PORT_TYPE
-R0[6] << SYNTHESIZED_WIRE_32[6].DB_MAX_OUTPUT_PORT_TYPE
-R0[7] << SYNTHESIZED_WIRE_32[7].DB_MAX_OUTPUT_PORT_TYPE
-R0[8] << SYNTHESIZED_WIRE_32[8].DB_MAX_OUTPUT_PORT_TYPE
-R0[9] << SYNTHESIZED_WIRE_32[9].DB_MAX_OUTPUT_PORT_TYPE
-R0[10] << SYNTHESIZED_WIRE_32[10].DB_MAX_OUTPUT_PORT_TYPE
-R0[11] << SYNTHESIZED_WIRE_32[11].DB_MAX_OUTPUT_PORT_TYPE
-R0[12] << SYNTHESIZED_WIRE_32[12].DB_MAX_OUTPUT_PORT_TYPE
-R0[13] << SYNTHESIZED_WIRE_32[13].DB_MAX_OUTPUT_PORT_TYPE
-R0[14] << SYNTHESIZED_WIRE_32[14].DB_MAX_OUTPUT_PORT_TYPE
-R0[15] << SYNTHESIZED_WIRE_32[15].DB_MAX_OUTPUT_PORT_TYPE
-R1[0] << SYNTHESIZED_WIRE_33[0].DB_MAX_OUTPUT_PORT_TYPE
-R1[1] << SYNTHESIZED_WIRE_33[1].DB_MAX_OUTPUT_PORT_TYPE
-R1[2] << SYNTHESIZED_WIRE_33[2].DB_MAX_OUTPUT_PORT_TYPE
-R1[3] << SYNTHESIZED_WIRE_33[3].DB_MAX_OUTPUT_PORT_TYPE
-R1[4] << SYNTHESIZED_WIRE_33[4].DB_MAX_OUTPUT_PORT_TYPE
-R1[5] << SYNTHESIZED_WIRE_33[5].DB_MAX_OUTPUT_PORT_TYPE
-R1[6] << SYNTHESIZED_WIRE_33[6].DB_MAX_OUTPUT_PORT_TYPE
-R1[7] << SYNTHESIZED_WIRE_33[7].DB_MAX_OUTPUT_PORT_TYPE
-R1[8] << SYNTHESIZED_WIRE_33[8].DB_MAX_OUTPUT_PORT_TYPE
-R1[9] << SYNTHESIZED_WIRE_33[9].DB_MAX_OUTPUT_PORT_TYPE
-R1[10] << SYNTHESIZED_WIRE_33[10].DB_MAX_OUTPUT_PORT_TYPE
-R1[11] << SYNTHESIZED_WIRE_33[11].DB_MAX_OUTPUT_PORT_TYPE
-R1[12] << SYNTHESIZED_WIRE_33[12].DB_MAX_OUTPUT_PORT_TYPE
-R1[13] << SYNTHESIZED_WIRE_33[13].DB_MAX_OUTPUT_PORT_TYPE
-R1[14] << SYNTHESIZED_WIRE_33[14].DB_MAX_OUTPUT_PORT_TYPE
-R1[15] << SYNTHESIZED_WIRE_33[15].DB_MAX_OUTPUT_PORT_TYPE
-R2[0] << SYNTHESIZED_WIRE_34[0].DB_MAX_OUTPUT_PORT_TYPE
-R2[1] << SYNTHESIZED_WIRE_34[1].DB_MAX_OUTPUT_PORT_TYPE
-R2[2] << SYNTHESIZED_WIRE_34[2].DB_MAX_OUTPUT_PORT_TYPE
-R2[3] << SYNTHESIZED_WIRE_34[3].DB_MAX_OUTPUT_PORT_TYPE
-R2[4] << SYNTHESIZED_WIRE_34[4].DB_MAX_OUTPUT_PORT_TYPE
-R2[5] << SYNTHESIZED_WIRE_34[5].DB_MAX_OUTPUT_PORT_TYPE
-R2[6] << SYNTHESIZED_WIRE_34[6].DB_MAX_OUTPUT_PORT_TYPE
-R2[7] << SYNTHESIZED_WIRE_34[7].DB_MAX_OUTPUT_PORT_TYPE
-R2[8] << SYNTHESIZED_WIRE_34[8].DB_MAX_OUTPUT_PORT_TYPE
-R2[9] << SYNTHESIZED_WIRE_34[9].DB_MAX_OUTPUT_PORT_TYPE
-R2[10] << SYNTHESIZED_WIRE_34[10].DB_MAX_OUTPUT_PORT_TYPE
-R2[11] << SYNTHESIZED_WIRE_34[11].DB_MAX_OUTPUT_PORT_TYPE
-R2[12] << SYNTHESIZED_WIRE_34[12].DB_MAX_OUTPUT_PORT_TYPE
-R2[13] << SYNTHESIZED_WIRE_34[13].DB_MAX_OUTPUT_PORT_TYPE
-R2[14] << SYNTHESIZED_WIRE_34[14].DB_MAX_OUTPUT_PORT_TYPE
-R2[15] << SYNTHESIZED_WIRE_34[15].DB_MAX_OUTPUT_PORT_TYPE
-R3[0] << SYNTHESIZED_WIRE_35[0].DB_MAX_OUTPUT_PORT_TYPE
-R3[1] << SYNTHESIZED_WIRE_35[1].DB_MAX_OUTPUT_PORT_TYPE
-R3[2] << SYNTHESIZED_WIRE_35[2].DB_MAX_OUTPUT_PORT_TYPE
-R3[3] << SYNTHESIZED_WIRE_35[3].DB_MAX_OUTPUT_PORT_TYPE
-R3[4] << SYNTHESIZED_WIRE_35[4].DB_MAX_OUTPUT_PORT_TYPE
-R3[5] << SYNTHESIZED_WIRE_35[5].DB_MAX_OUTPUT_PORT_TYPE
-R3[6] << SYNTHESIZED_WIRE_35[6].DB_MAX_OUTPUT_PORT_TYPE
-R3[7] << SYNTHESIZED_WIRE_35[7].DB_MAX_OUTPUT_PORT_TYPE
-R3[8] << SYNTHESIZED_WIRE_35[8].DB_MAX_OUTPUT_PORT_TYPE
-R3[9] << SYNTHESIZED_WIRE_35[9].DB_MAX_OUTPUT_PORT_TYPE
-R3[10] << SYNTHESIZED_WIRE_35[10].DB_MAX_OUTPUT_PORT_TYPE
-R3[11] << SYNTHESIZED_WIRE_35[11].DB_MAX_OUTPUT_PORT_TYPE
-R3[12] << SYNTHESIZED_WIRE_35[12].DB_MAX_OUTPUT_PORT_TYPE
-R3[13] << SYNTHESIZED_WIRE_35[13].DB_MAX_OUTPUT_PORT_TYPE
-R3[14] << SYNTHESIZED_WIRE_35[14].DB_MAX_OUTPUT_PORT_TYPE
-R3[15] << SYNTHESIZED_WIRE_35[15].DB_MAX_OUTPUT_PORT_TYPE
-R4[0] << SYNTHESIZED_WIRE_36[0].DB_MAX_OUTPUT_PORT_TYPE
-R4[1] << SYNTHESIZED_WIRE_36[1].DB_MAX_OUTPUT_PORT_TYPE
-R4[2] << SYNTHESIZED_WIRE_36[2].DB_MAX_OUTPUT_PORT_TYPE
-R4[3] << SYNTHESIZED_WIRE_36[3].DB_MAX_OUTPUT_PORT_TYPE
-R4[4] << SYNTHESIZED_WIRE_36[4].DB_MAX_OUTPUT_PORT_TYPE
-R4[5] << SYNTHESIZED_WIRE_36[5].DB_MAX_OUTPUT_PORT_TYPE
-R4[6] << SYNTHESIZED_WIRE_36[6].DB_MAX_OUTPUT_PORT_TYPE
-R4[7] << SYNTHESIZED_WIRE_36[7].DB_MAX_OUTPUT_PORT_TYPE
-R4[8] << SYNTHESIZED_WIRE_36[8].DB_MAX_OUTPUT_PORT_TYPE
-R4[9] << SYNTHESIZED_WIRE_36[9].DB_MAX_OUTPUT_PORT_TYPE
-R4[10] << SYNTHESIZED_WIRE_36[10].DB_MAX_OUTPUT_PORT_TYPE
-R4[11] << SYNTHESIZED_WIRE_36[11].DB_MAX_OUTPUT_PORT_TYPE
-R4[12] << SYNTHESIZED_WIRE_36[12].DB_MAX_OUTPUT_PORT_TYPE
-R4[13] << SYNTHESIZED_WIRE_36[13].DB_MAX_OUTPUT_PORT_TYPE
-R4[14] << SYNTHESIZED_WIRE_36[14].DB_MAX_OUTPUT_PORT_TYPE
-R4[15] << SYNTHESIZED_WIRE_36[15].DB_MAX_OUTPUT_PORT_TYPE
-R5[0] << SYNTHESIZED_WIRE_37[0].DB_MAX_OUTPUT_PORT_TYPE
-R5[1] << SYNTHESIZED_WIRE_37[1].DB_MAX_OUTPUT_PORT_TYPE
-R5[2] << SYNTHESIZED_WIRE_37[2].DB_MAX_OUTPUT_PORT_TYPE
-R5[3] << SYNTHESIZED_WIRE_37[3].DB_MAX_OUTPUT_PORT_TYPE
-R5[4] << SYNTHESIZED_WIRE_37[4].DB_MAX_OUTPUT_PORT_TYPE
-R5[5] << SYNTHESIZED_WIRE_37[5].DB_MAX_OUTPUT_PORT_TYPE
-R5[6] << SYNTHESIZED_WIRE_37[6].DB_MAX_OUTPUT_PORT_TYPE
-R5[7] << SYNTHESIZED_WIRE_37[7].DB_MAX_OUTPUT_PORT_TYPE
-R5[8] << SYNTHESIZED_WIRE_37[8].DB_MAX_OUTPUT_PORT_TYPE
-R5[9] << SYNTHESIZED_WIRE_37[9].DB_MAX_OUTPUT_PORT_TYPE
-R5[10] << SYNTHESIZED_WIRE_37[10].DB_MAX_OUTPUT_PORT_TYPE
-R5[11] << SYNTHESIZED_WIRE_37[11].DB_MAX_OUTPUT_PORT_TYPE
-R5[12] << SYNTHESIZED_WIRE_37[12].DB_MAX_OUTPUT_PORT_TYPE
-R5[13] << SYNTHESIZED_WIRE_37[13].DB_MAX_OUTPUT_PORT_TYPE
-R5[14] << SYNTHESIZED_WIRE_37[14].DB_MAX_OUTPUT_PORT_TYPE
-R5[15] << SYNTHESIZED_WIRE_37[15].DB_MAX_OUTPUT_PORT_TYPE
-R6[0] << SYNTHESIZED_WIRE_38[0].DB_MAX_OUTPUT_PORT_TYPE
-R6[1] << SYNTHESIZED_WIRE_38[1].DB_MAX_OUTPUT_PORT_TYPE
-R6[2] << SYNTHESIZED_WIRE_38[2].DB_MAX_OUTPUT_PORT_TYPE
-R6[3] << SYNTHESIZED_WIRE_38[3].DB_MAX_OUTPUT_PORT_TYPE
-R6[4] << SYNTHESIZED_WIRE_38[4].DB_MAX_OUTPUT_PORT_TYPE
-R6[5] << SYNTHESIZED_WIRE_38[5].DB_MAX_OUTPUT_PORT_TYPE
-R6[6] << SYNTHESIZED_WIRE_38[6].DB_MAX_OUTPUT_PORT_TYPE
-R6[7] << SYNTHESIZED_WIRE_38[7].DB_MAX_OUTPUT_PORT_TYPE
-R6[8] << SYNTHESIZED_WIRE_38[8].DB_MAX_OUTPUT_PORT_TYPE
-R6[9] << SYNTHESIZED_WIRE_38[9].DB_MAX_OUTPUT_PORT_TYPE
-R6[10] << SYNTHESIZED_WIRE_38[10].DB_MAX_OUTPUT_PORT_TYPE
-R6[11] << SYNTHESIZED_WIRE_38[11].DB_MAX_OUTPUT_PORT_TYPE
-R6[12] << SYNTHESIZED_WIRE_38[12].DB_MAX_OUTPUT_PORT_TYPE
-R6[13] << SYNTHESIZED_WIRE_38[13].DB_MAX_OUTPUT_PORT_TYPE
-R6[14] << SYNTHESIZED_WIRE_38[14].DB_MAX_OUTPUT_PORT_TYPE
-R6[15] << SYNTHESIZED_WIRE_38[15].DB_MAX_OUTPUT_PORT_TYPE
-R7[0] << SYNTHESIZED_WIRE_39[0].DB_MAX_OUTPUT_PORT_TYPE
-R7[1] << SYNTHESIZED_WIRE_39[1].DB_MAX_OUTPUT_PORT_TYPE
-R7[2] << SYNTHESIZED_WIRE_39[2].DB_MAX_OUTPUT_PORT_TYPE
-R7[3] << SYNTHESIZED_WIRE_39[3].DB_MAX_OUTPUT_PORT_TYPE
-R7[4] << SYNTHESIZED_WIRE_39[4].DB_MAX_OUTPUT_PORT_TYPE
-R7[5] << SYNTHESIZED_WIRE_39[5].DB_MAX_OUTPUT_PORT_TYPE
-R7[6] << SYNTHESIZED_WIRE_39[6].DB_MAX_OUTPUT_PORT_TYPE
-R7[7] << SYNTHESIZED_WIRE_39[7].DB_MAX_OUTPUT_PORT_TYPE
-R7[8] << SYNTHESIZED_WIRE_39[8].DB_MAX_OUTPUT_PORT_TYPE
-R7[9] << SYNTHESIZED_WIRE_39[9].DB_MAX_OUTPUT_PORT_TYPE
-R7[10] << SYNTHESIZED_WIRE_39[10].DB_MAX_OUTPUT_PORT_TYPE
-R7[11] << SYNTHESIZED_WIRE_39[11].DB_MAX_OUTPUT_PORT_TYPE
-R7[12] << SYNTHESIZED_WIRE_39[12].DB_MAX_OUTPUT_PORT_TYPE
-R7[13] << SYNTHESIZED_WIRE_39[13].DB_MAX_OUTPUT_PORT_TYPE
-R7[14] << SYNTHESIZED_WIRE_39[14].DB_MAX_OUTPUT_PORT_TYPE
-R7[15] << SYNTHESIZED_WIRE_39[15].DB_MAX_OUTPUT_PORT_TYPE
+|ALU_16bit_v
+Cin => Cin.IN1
+A[0] => A[0].IN2
+A[1] => A[1].IN2
+A[2] => A[2].IN2
+A[3] => A[3].IN2
+A[4] => gdfx_temp0[0].IN2
+A[5] => gdfx_temp0[1].IN2
+A[6] => gdfx_temp0[2].IN2
+A[7] => gdfx_temp0[3].IN2
+A[8] => gdfx_temp2[0].IN2
+A[9] => gdfx_temp2[1].IN2
+A[10] => gdfx_temp2[2].IN2
+A[11] => gdfx_temp2[3].IN2
+A[12] => gdfx_temp4[0].IN2
+A[13] => gdfx_temp4[1].IN2
+A[14] => gdfx_temp4[2].IN2
+A[15] => gdfx_temp4[3].IN2
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+B[4] => gdfx_temp1[0].IN1
+B[5] => gdfx_temp1[1].IN1
+B[6] => gdfx_temp1[2].IN1
+B[7] => gdfx_temp1[3].IN1
+B[8] => gdfx_temp3[0].IN1
+B[9] => gdfx_temp3[1].IN1
+B[10] => gdfx_temp3[2].IN1
+B[11] => gdfx_temp3[3].IN1
+B[12] => gdfx_temp5[0].IN1
+B[13] => gdfx_temp5[1].IN1
+B[14] => gdfx_temp5[2].IN1
+B[15] => gdfx_temp5[3].IN1
+FS[0] => FS[0].IN4
+FS[1] => FS[1].IN4
+FS[2] => FS[2].IN4
+FS[3] => FS[3].IN4
+FS[4] => FS[4].IN4
+Cout << ALU_4bit:b2v_inst3.Cout
+F[0] << ALU_4bit:b2v_inst.F
+F[1] << ALU_4bit:b2v_inst.F
+F[2] << ALU_4bit:b2v_inst.F
+F[3] << ALU_4bit:b2v_inst.F
+F[4] << ALU_4bit:b2v_inst1.F
+F[5] << ALU_4bit:b2v_inst1.F
+F[6] << ALU_4bit:b2v_inst1.F
+F[7] << ALU_4bit:b2v_inst1.F
+F[8] << ALU_4bit:b2v_inst2.F
+F[9] << ALU_4bit:b2v_inst2.F
+F[10] << ALU_4bit:b2v_inst2.F
+F[11] << ALU_4bit:b2v_inst2.F
+F[12] << ALU_4bit:b2v_inst3.F
+F[13] << ALU_4bit:b2v_inst3.F
+F[14] << ALU_4bit:b2v_inst3.F
+F[15] << ALU_4bit:b2v_inst3.F
 
 
-|Register_File_v|THREEtoEIGHT_decoder:b2v_inst
-DA[0] => R1.IN1
-DA[0] => R3.IN1
-DA[0] => R5.IN1
-DA[0] => R7.IN1
-DA[0] => R0.IN1
-DA[0] => R2.IN1
-DA[0] => R4.IN1
-DA[0] => R6.IN1
-DA[1] => R2.IN0
-DA[1] => R6.IN0
-DA[1] => R0.IN0
-DA[1] => R4.IN0
-DA[2] => R4.IN1
-DA[2] => R6.IN1
-DA[2] => R0.IN1
-DA[2] => R2.IN1
-R0 <= R0.DB_MAX_OUTPUT_PORT_TYPE
-R1 <= R1.DB_MAX_OUTPUT_PORT_TYPE
-R2 <= R2.DB_MAX_OUTPUT_PORT_TYPE
-R3 <= R3.DB_MAX_OUTPUT_PORT_TYPE
-R4 <= R4.DB_MAX_OUTPUT_PORT_TYPE
-R5 <= R5.DB_MAX_OUTPUT_PORT_TYPE
-R6 <= R6.DB_MAX_OUTPUT_PORT_TYPE
-R7 <= R7.DB_MAX_OUTPUT_PORT_TYPE
+|ALU_16bit_v|ALU_4bit:b2v_inst
+Cout <= TWOtoONE_MUX:inst42.Q
+B[0] => FOURtoONE_MUX:inst1.C
+B[0] => inst9.IN0
+B[0] => FOURtoONE_MUX:inst.S[0]
+B[1] => FOURtoONE_MUX:inst11.C
+B[1] => inst20.IN0
+B[1] => FOURtoONE_MUX:inst37.S[0]
+B[2] => FOURtoONE_MUX:inst23.C
+B[2] => inst31.IN0
+B[2] => FOURtoONE_MUX:inst38.S[0]
+B[3] => FOURtoONE_MUX:inst34.C
+B[3] => inst45.IN0
+B[3] => FOURtoONE_MUX:inst39.S[0]
+FS[0] => TWOtoONE_MUX:inst35.S
+FS[0] => TWOtoONE_MUX:inst24.S
+FS[0] => TWOtoONE_MUX:inst13.S
+FS[0] => TWOtoONE_MUX:inst2.S
+FS[0] => FOURtoONE_MUX:inst.A
+FS[0] => TWOtoONE_MUX:inst3.S
+FS[0] => FOURtoONE_MUX:inst37.A
+FS[0] => TWOtoONE_MUX:inst14.S
+FS[0] => FOURtoONE_MUX:inst38.A
+FS[0] => TWOtoONE_MUX:inst25.S
+FS[0] => FOURtoONE_MUX:inst39.A
+FS[0] => TWOtoONE_MUX:inst36.S
+FS[1] => FOURtoONE_MUX:inst34.S[0]
+FS[1] => FOURtoONE_MUX:inst23.S[0]
+FS[1] => FOURtoONE_MUX:inst11.S[0]
+FS[1] => FOURtoONE_MUX:inst1.S[0]
+FS[1] => FOURtoONE_MUX:inst.B
+FS[1] => FOURtoONE_MUX:inst37.B
+FS[1] => FOURtoONE_MUX:inst38.B
+FS[1] => FOURtoONE_MUX:inst39.B
+FS[2] => FOURtoONE_MUX:inst34.S[1]
+FS[2] => FOURtoONE_MUX:inst23.S[1]
+FS[2] => FOURtoONE_MUX:inst11.S[1]
+FS[2] => FOURtoONE_MUX:inst1.S[1]
+FS[2] => FOURtoONE_MUX:inst.C
+FS[2] => FOURtoONE_MUX:inst37.C
+FS[2] => FOURtoONE_MUX:inst38.C
+FS[2] => FOURtoONE_MUX:inst39.C
+FS[3] => TWOtoONE_MUX:inst42.S
+FS[3] => FOURtoONE_MUX:inst.D
+FS[3] => TWOtoONE_MUX:inst7.S
+FS[3] => FOURtoONE_MUX:inst37.D
+FS[3] => TWOtoONE_MUX:inst6.S
+FS[3] => TWOtoONE_MUX:inst18.S
+FS[3] => FOURtoONE_MUX:inst38.D
+FS[3] => TWOtoONE_MUX:inst17.S
+FS[3] => TWOtoONE_MUX:inst29.S
+FS[3] => FOURtoONE_MUX:inst39.D
+FS[3] => TWOtoONE_MUX:inst28.S
+FS[3] => TWOtoONE_MUX:inst43.S
+FS[4] => TWOtoONE_MUX:inst5.S
+FS[4] => TWOtoONE_MUX:inst16.S
+FS[4] => TWOtoONE_MUX:inst27.S
+FS[4] => TWOtoONE_MUX:inst41.S
+A[0] => TWOtoONE_MUX:inst2.A
+A[0] => inst8.IN0
+A[0] => FOURtoONE_MUX:inst.S[1]
+A[0] => TWOtoONE_MUX:inst6.B
+A[1] => TWOtoONE_MUX:inst13.A
+A[1] => inst19.IN0
+A[1] => FOURtoONE_MUX:inst37.S[1]
+A[1] => TWOtoONE_MUX:inst17.B
+A[2] => TWOtoONE_MUX:inst24.A
+A[2] => inst30.IN0
+A[2] => FOURtoONE_MUX:inst38.S[1]
+A[2] => TWOtoONE_MUX:inst28.B
+A[3] => TWOtoONE_MUX:inst35.A
+A[3] => inst44.IN0
+A[3] => TWOtoONE_MUX:inst42.B
+A[3] => FOURtoONE_MUX:inst39.S[1]
+Cin => CarryLookaheadAdder:inst4.Cin
+Cin => TWOtoONE_MUX:inst3.A
+Cin => inst50.IN0
+Cin => inst56.IN2
+Cin => inst63.IN3
+Cin => inst72.IN3
+F[0] <= TWOtoONE_MUX:inst5.Q
+F[1] <= TWOtoONE_MUX:inst16.Q
+F[2] <= TWOtoONE_MUX:inst27.Q
+F[3] <= TWOtoONE_MUX:inst41.Q
+A_next_bit => TWOtoONE_MUX:inst3.B
+A_next_bit1 => TWOtoONE_MUX:inst14.B
+A_next_bit2 => TWOtoONE_MUX:inst25.B
+A_next_bit3 => TWOtoONE_MUX:inst36.B
 
 
-|Register_File_v|Register:b2v_inst1
-D[0] => Q[0]~reg0.DATAIN
-D[1] => Q[1]~reg0.DATAIN
-D[2] => Q[2]~reg0.DATAIN
-D[3] => Q[3]~reg0.DATAIN
-D[4] => Q[4]~reg0.DATAIN
-D[5] => Q[5]~reg0.DATAIN
-D[6] => Q[6]~reg0.DATAIN
-D[7] => Q[7]~reg0.DATAIN
-D[8] => Q[8]~reg0.DATAIN
-D[9] => Q[9]~reg0.DATAIN
-D[10] => Q[10]~reg0.DATAIN
-D[11] => Q[11]~reg0.DATAIN
-D[12] => Q[12]~reg0.DATAIN
-D[13] => Q[13]~reg0.DATAIN
-D[14] => Q[14]~reg0.DATAIN
-D[15] => Q[15]~reg0.DATAIN
-L => Decoder0.IN0
-CLK => Q[0]~reg0.CLK
-CLK => Q[1]~reg0.CLK
-CLK => Q[2]~reg0.CLK
-CLK => Q[3]~reg0.CLK
-CLK => Q[4]~reg0.CLK
-CLK => Q[5]~reg0.CLK
-CLK => Q[6]~reg0.CLK
-CLK => Q[7]~reg0.CLK
-CLK => Q[8]~reg0.CLK
-CLK => Q[9]~reg0.CLK
-CLK => Q[10]~reg0.CLK
-CLK => Q[11]~reg0.CLK
-CLK => Q[12]~reg0.CLK
-CLK => Q[13]~reg0.CLK
-CLK => Q[14]~reg0.CLK
-CLK => Q[15]~reg0.CLK
-reset => Q[0]~reg0.ACLR
-reset => Q[1]~reg0.ACLR
-reset => Q[2]~reg0.ACLR
-reset => Q[3]~reg0.ACLR
-reset => Q[4]~reg0.ACLR
-reset => Q[5]~reg0.ACLR
-reset => Q[6]~reg0.ACLR
-reset => Q[7]~reg0.ACLR
-reset => Q[8]~reg0.ACLR
-reset => Q[9]~reg0.ACLR
-reset => Q[10]~reg0.ACLR
-reset => Q[11]~reg0.ACLR
-reset => Q[12]~reg0.ACLR
-reset => Q[13]~reg0.ACLR
-reset => Q[14]~reg0.ACLR
-reset => Q[15]~reg0.ACLR
-Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[8] <= Q[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[9] <= Q[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[10] <= Q[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[11] <= Q[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[12] <= Q[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[13] <= Q[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[14] <= Q[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[15] <= Q[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+|ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst42
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Register_File_v|EIGHTtoONE_MUX16bit:b2v_inst17
-R0[0] => Mux15.IN0
-R0[1] => Mux14.IN0
-R0[2] => Mux13.IN0
-R0[3] => Mux12.IN0
-R0[4] => Mux11.IN0
-R0[5] => Mux10.IN0
-R0[6] => Mux9.IN0
-R0[7] => Mux8.IN0
-R0[8] => Mux7.IN0
-R0[9] => Mux6.IN0
-R0[10] => Mux5.IN0
-R0[11] => Mux4.IN0
-R0[12] => Mux3.IN0
-R0[13] => Mux2.IN0
-R0[14] => Mux1.IN0
-R0[15] => Mux0.IN0
-R1[0] => Mux15.IN1
-R1[1] => Mux14.IN1
-R1[2] => Mux13.IN1
-R1[3] => Mux12.IN1
-R1[4] => Mux11.IN1
-R1[5] => Mux10.IN1
-R1[6] => Mux9.IN1
-R1[7] => Mux8.IN1
-R1[8] => Mux7.IN1
-R1[9] => Mux6.IN1
-R1[10] => Mux5.IN1
-R1[11] => Mux4.IN1
-R1[12] => Mux3.IN1
-R1[13] => Mux2.IN1
-R1[14] => Mux1.IN1
-R1[15] => Mux0.IN1
-R2[0] => Mux15.IN2
-R2[1] => Mux14.IN2
-R2[2] => Mux13.IN2
-R2[3] => Mux12.IN2
-R2[4] => Mux11.IN2
-R2[5] => Mux10.IN2
-R2[6] => Mux9.IN2
-R2[7] => Mux8.IN2
-R2[8] => Mux7.IN2
-R2[9] => Mux6.IN2
-R2[10] => Mux5.IN2
-R2[11] => Mux4.IN2
-R2[12] => Mux3.IN2
-R2[13] => Mux2.IN2
-R2[14] => Mux1.IN2
-R2[15] => Mux0.IN2
-R3[0] => Mux15.IN3
-R3[1] => Mux14.IN3
-R3[2] => Mux13.IN3
-R3[3] => Mux12.IN3
-R3[4] => Mux11.IN3
-R3[5] => Mux10.IN3
-R3[6] => Mux9.IN3
-R3[7] => Mux8.IN3
-R3[8] => Mux7.IN3
-R3[9] => Mux6.IN3
-R3[10] => Mux5.IN3
-R3[11] => Mux4.IN3
-R3[12] => Mux3.IN3
-R3[13] => Mux2.IN3
-R3[14] => Mux1.IN3
-R3[15] => Mux0.IN3
-R4[0] => Mux15.IN4
-R4[1] => Mux14.IN4
-R4[2] => Mux13.IN4
-R4[3] => Mux12.IN4
-R4[4] => Mux11.IN4
-R4[5] => Mux10.IN4
-R4[6] => Mux9.IN4
-R4[7] => Mux8.IN4
-R4[8] => Mux7.IN4
-R4[9] => Mux6.IN4
-R4[10] => Mux5.IN4
-R4[11] => Mux4.IN4
-R4[12] => Mux3.IN4
-R4[13] => Mux2.IN4
-R4[14] => Mux1.IN4
-R4[15] => Mux0.IN4
-R5[0] => Mux15.IN5
-R5[1] => Mux14.IN5
-R5[2] => Mux13.IN5
-R5[3] => Mux12.IN5
-R5[4] => Mux11.IN5
-R5[5] => Mux10.IN5
-R5[6] => Mux9.IN5
-R5[7] => Mux8.IN5
-R5[8] => Mux7.IN5
-R5[9] => Mux6.IN5
-R5[10] => Mux5.IN5
-R5[11] => Mux4.IN5
-R5[12] => Mux3.IN5
-R5[13] => Mux2.IN5
-R5[14] => Mux1.IN5
-R5[15] => Mux0.IN5
-R6[0] => Mux15.IN6
-R6[1] => Mux14.IN6
-R6[2] => Mux13.IN6
-R6[3] => Mux12.IN6
-R6[4] => Mux11.IN6
-R6[5] => Mux10.IN6
-R6[6] => Mux9.IN6
-R6[7] => Mux8.IN6
-R6[8] => Mux7.IN6
-R6[9] => Mux6.IN6
-R6[10] => Mux5.IN6
-R6[11] => Mux4.IN6
-R6[12] => Mux3.IN6
-R6[13] => Mux2.IN6
-R6[14] => Mux1.IN6
-R6[15] => Mux0.IN6
-R7[0] => Mux15.IN7
-R7[1] => Mux14.IN7
-R7[2] => Mux13.IN7
-R7[3] => Mux12.IN7
-R7[4] => Mux11.IN7
-R7[5] => Mux10.IN7
-R7[6] => Mux9.IN7
-R7[7] => Mux8.IN7
-R7[8] => Mux7.IN7
-R7[9] => Mux6.IN7
-R7[10] => Mux5.IN7
-R7[11] => Mux4.IN7
-R7[12] => Mux3.IN7
-R7[13] => Mux2.IN7
-R7[14] => Mux1.IN7
-R7[15] => Mux0.IN7
-QA[0] => Mux0.IN10
-QA[0] => Mux1.IN10
-QA[0] => Mux2.IN10
-QA[0] => Mux3.IN10
-QA[0] => Mux4.IN10
-QA[0] => Mux5.IN10
-QA[0] => Mux6.IN10
-QA[0] => Mux7.IN10
-QA[0] => Mux8.IN10
-QA[0] => Mux9.IN10
-QA[0] => Mux10.IN10
-QA[0] => Mux11.IN10
-QA[0] => Mux12.IN10
-QA[0] => Mux13.IN10
-QA[0] => Mux14.IN10
-QA[0] => Mux15.IN10
-QA[1] => Mux0.IN9
-QA[1] => Mux1.IN9
-QA[1] => Mux2.IN9
-QA[1] => Mux3.IN9
-QA[1] => Mux4.IN9
-QA[1] => Mux5.IN9
-QA[1] => Mux6.IN9
-QA[1] => Mux7.IN9
-QA[1] => Mux8.IN9
-QA[1] => Mux9.IN9
-QA[1] => Mux10.IN9
-QA[1] => Mux11.IN9
-QA[1] => Mux12.IN9
-QA[1] => Mux13.IN9
-QA[1] => Mux14.IN9
-QA[1] => Mux15.IN9
-QA[2] => Mux0.IN8
-QA[2] => Mux1.IN8
-QA[2] => Mux2.IN8
-QA[2] => Mux3.IN8
-QA[2] => Mux4.IN8
-QA[2] => Mux5.IN8
-QA[2] => Mux6.IN8
-QA[2] => Mux7.IN8
-QA[2] => Mux8.IN8
-QA[2] => Mux9.IN8
-QA[2] => Mux10.IN8
-QA[2] => Mux11.IN8
-QA[2] => Mux12.IN8
-QA[2] => Mux13.IN8
-QA[2] => Mux14.IN8
-QA[2] => Mux15.IN8
-Q[0] <= Mux15.DB_MAX_OUTPUT_PORT_TYPE
-Q[1] <= Mux14.DB_MAX_OUTPUT_PORT_TYPE
-Q[2] <= Mux13.DB_MAX_OUTPUT_PORT_TYPE
-Q[3] <= Mux12.DB_MAX_OUTPUT_PORT_TYPE
-Q[4] <= Mux11.DB_MAX_OUTPUT_PORT_TYPE
-Q[5] <= Mux10.DB_MAX_OUTPUT_PORT_TYPE
-Q[6] <= Mux9.DB_MAX_OUTPUT_PORT_TYPE
-Q[7] <= Mux8.DB_MAX_OUTPUT_PORT_TYPE
-Q[8] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
-Q[9] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
-Q[10] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
-Q[11] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
-Q[12] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
-Q[13] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
-Q[14] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
-Q[15] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+|ALU_16bit_v|ALU_4bit:b2v_inst|FOURtoONE_MUX:inst34
+A => Mux0.IN0
+B => Mux0.IN1
+C => Mux0.IN2
+D => Mux0.IN3
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Register_File_v|EIGHTtoONE_MUX16bit:b2v_inst18
-R0[0] => Mux15.IN0
-R0[1] => Mux14.IN0
-R0[2] => Mux13.IN0
-R0[3] => Mux12.IN0
-R0[4] => Mux11.IN0
-R0[5] => Mux10.IN0
-R0[6] => Mux9.IN0
-R0[7] => Mux8.IN0
-R0[8] => Mux7.IN0
-R0[9] => Mux6.IN0
-R0[10] => Mux5.IN0
-R0[11] => Mux4.IN0
-R0[12] => Mux3.IN0
-R0[13] => Mux2.IN0
-R0[14] => Mux1.IN0
-R0[15] => Mux0.IN0
-R1[0] => Mux15.IN1
-R1[1] => Mux14.IN1
-R1[2] => Mux13.IN1
-R1[3] => Mux12.IN1
-R1[4] => Mux11.IN1
-R1[5] => Mux10.IN1
-R1[6] => Mux9.IN1
-R1[7] => Mux8.IN1
-R1[8] => Mux7.IN1
-R1[9] => Mux6.IN1
-R1[10] => Mux5.IN1
-R1[11] => Mux4.IN1
-R1[12] => Mux3.IN1
-R1[13] => Mux2.IN1
-R1[14] => Mux1.IN1
-R1[15] => Mux0.IN1
-R2[0] => Mux15.IN2
-R2[1] => Mux14.IN2
-R2[2] => Mux13.IN2
-R2[3] => Mux12.IN2
-R2[4] => Mux11.IN2
-R2[5] => Mux10.IN2
-R2[6] => Mux9.IN2
-R2[7] => Mux8.IN2
-R2[8] => Mux7.IN2
-R2[9] => Mux6.IN2
-R2[10] => Mux5.IN2
-R2[11] => Mux4.IN2
-R2[12] => Mux3.IN2
-R2[13] => Mux2.IN2
-R2[14] => Mux1.IN2
-R2[15] => Mux0.IN2
-R3[0] => Mux15.IN3
-R3[1] => Mux14.IN3
-R3[2] => Mux13.IN3
-R3[3] => Mux12.IN3
-R3[4] => Mux11.IN3
-R3[5] => Mux10.IN3
-R3[6] => Mux9.IN3
-R3[7] => Mux8.IN3
-R3[8] => Mux7.IN3
-R3[9] => Mux6.IN3
-R3[10] => Mux5.IN3
-R3[11] => Mux4.IN3
-R3[12] => Mux3.IN3
-R3[13] => Mux2.IN3
-R3[14] => Mux1.IN3
-R3[15] => Mux0.IN3
-R4[0] => Mux15.IN4
-R4[1] => Mux14.IN4
-R4[2] => Mux13.IN4
-R4[3] => Mux12.IN4
-R4[4] => Mux11.IN4
-R4[5] => Mux10.IN4
-R4[6] => Mux9.IN4
-R4[7] => Mux8.IN4
-R4[8] => Mux7.IN4
-R4[9] => Mux6.IN4
-R4[10] => Mux5.IN4
-R4[11] => Mux4.IN4
-R4[12] => Mux3.IN4
-R4[13] => Mux2.IN4
-R4[14] => Mux1.IN4
-R4[15] => Mux0.IN4
-R5[0] => Mux15.IN5
-R5[1] => Mux14.IN5
-R5[2] => Mux13.IN5
-R5[3] => Mux12.IN5
-R5[4] => Mux11.IN5
-R5[5] => Mux10.IN5
-R5[6] => Mux9.IN5
-R5[7] => Mux8.IN5
-R5[8] => Mux7.IN5
-R5[9] => Mux6.IN5
-R5[10] => Mux5.IN5
-R5[11] => Mux4.IN5
-R5[12] => Mux3.IN5
-R5[13] => Mux2.IN5
-R5[14] => Mux1.IN5
-R5[15] => Mux0.IN5
-R6[0] => Mux15.IN6
-R6[1] => Mux14.IN6
-R6[2] => Mux13.IN6
-R6[3] => Mux12.IN6
-R6[4] => Mux11.IN6
-R6[5] => Mux10.IN6
-R6[6] => Mux9.IN6
-R6[7] => Mux8.IN6
-R6[8] => Mux7.IN6
-R6[9] => Mux6.IN6
-R6[10] => Mux5.IN6
-R6[11] => Mux4.IN6
-R6[12] => Mux3.IN6
-R6[13] => Mux2.IN6
-R6[14] => Mux1.IN6
-R6[15] => Mux0.IN6
-R7[0] => Mux15.IN7
-R7[1] => Mux14.IN7
-R7[2] => Mux13.IN7
-R7[3] => Mux12.IN7
-R7[4] => Mux11.IN7
-R7[5] => Mux10.IN7
-R7[6] => Mux9.IN7
-R7[7] => Mux8.IN7
-R7[8] => Mux7.IN7
-R7[9] => Mux6.IN7
-R7[10] => Mux5.IN7
-R7[11] => Mux4.IN7
-R7[12] => Mux3.IN7
-R7[13] => Mux2.IN7
-R7[14] => Mux1.IN7
-R7[15] => Mux0.IN7
-QA[0] => Mux0.IN10
-QA[0] => Mux1.IN10
-QA[0] => Mux2.IN10
-QA[0] => Mux3.IN10
-QA[0] => Mux4.IN10
-QA[0] => Mux5.IN10
-QA[0] => Mux6.IN10
-QA[0] => Mux7.IN10
-QA[0] => Mux8.IN10
-QA[0] => Mux9.IN10
-QA[0] => Mux10.IN10
-QA[0] => Mux11.IN10
-QA[0] => Mux12.IN10
-QA[0] => Mux13.IN10
-QA[0] => Mux14.IN10
-QA[0] => Mux15.IN10
-QA[1] => Mux0.IN9
-QA[1] => Mux1.IN9
-QA[1] => Mux2.IN9
-QA[1] => Mux3.IN9
-QA[1] => Mux4.IN9
-QA[1] => Mux5.IN9
-QA[1] => Mux6.IN9
-QA[1] => Mux7.IN9
-QA[1] => Mux8.IN9
-QA[1] => Mux9.IN9
-QA[1] => Mux10.IN9
-QA[1] => Mux11.IN9
-QA[1] => Mux12.IN9
-QA[1] => Mux13.IN9
-QA[1] => Mux14.IN9
-QA[1] => Mux15.IN9
-QA[2] => Mux0.IN8
-QA[2] => Mux1.IN8
-QA[2] => Mux2.IN8
-QA[2] => Mux3.IN8
-QA[2] => Mux4.IN8
-QA[2] => Mux5.IN8
-QA[2] => Mux6.IN8
-QA[2] => Mux7.IN8
-QA[2] => Mux8.IN8
-QA[2] => Mux9.IN8
-QA[2] => Mux10.IN8
-QA[2] => Mux11.IN8
-QA[2] => Mux12.IN8
-QA[2] => Mux13.IN8
-QA[2] => Mux14.IN8
-QA[2] => Mux15.IN8
-Q[0] <= Mux15.DB_MAX_OUTPUT_PORT_TYPE
-Q[1] <= Mux14.DB_MAX_OUTPUT_PORT_TYPE
-Q[2] <= Mux13.DB_MAX_OUTPUT_PORT_TYPE
-Q[3] <= Mux12.DB_MAX_OUTPUT_PORT_TYPE
-Q[4] <= Mux11.DB_MAX_OUTPUT_PORT_TYPE
-Q[5] <= Mux10.DB_MAX_OUTPUT_PORT_TYPE
-Q[6] <= Mux9.DB_MAX_OUTPUT_PORT_TYPE
-Q[7] <= Mux8.DB_MAX_OUTPUT_PORT_TYPE
-Q[8] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
-Q[9] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
-Q[10] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
-Q[11] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
-Q[12] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
-Q[13] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
-Q[14] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
-Q[15] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+|ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst35
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Register_File_v|Register:b2v_inst2
-D[0] => Q[0]~reg0.DATAIN
-D[1] => Q[1]~reg0.DATAIN
-D[2] => Q[2]~reg0.DATAIN
-D[3] => Q[3]~reg0.DATAIN
-D[4] => Q[4]~reg0.DATAIN
-D[5] => Q[5]~reg0.DATAIN
-D[6] => Q[6]~reg0.DATAIN
-D[7] => Q[7]~reg0.DATAIN
-D[8] => Q[8]~reg0.DATAIN
-D[9] => Q[9]~reg0.DATAIN
-D[10] => Q[10]~reg0.DATAIN
-D[11] => Q[11]~reg0.DATAIN
-D[12] => Q[12]~reg0.DATAIN
-D[13] => Q[13]~reg0.DATAIN
-D[14] => Q[14]~reg0.DATAIN
-D[15] => Q[15]~reg0.DATAIN
-L => Decoder0.IN0
-CLK => Q[0]~reg0.CLK
-CLK => Q[1]~reg0.CLK
-CLK => Q[2]~reg0.CLK
-CLK => Q[3]~reg0.CLK
-CLK => Q[4]~reg0.CLK
-CLK => Q[5]~reg0.CLK
-CLK => Q[6]~reg0.CLK
-CLK => Q[7]~reg0.CLK
-CLK => Q[8]~reg0.CLK
-CLK => Q[9]~reg0.CLK
-CLK => Q[10]~reg0.CLK
-CLK => Q[11]~reg0.CLK
-CLK => Q[12]~reg0.CLK
-CLK => Q[13]~reg0.CLK
-CLK => Q[14]~reg0.CLK
-CLK => Q[15]~reg0.CLK
-reset => Q[0]~reg0.ACLR
-reset => Q[1]~reg0.ACLR
-reset => Q[2]~reg0.ACLR
-reset => Q[3]~reg0.ACLR
-reset => Q[4]~reg0.ACLR
-reset => Q[5]~reg0.ACLR
-reset => Q[6]~reg0.ACLR
-reset => Q[7]~reg0.ACLR
-reset => Q[8]~reg0.ACLR
-reset => Q[9]~reg0.ACLR
-reset => Q[10]~reg0.ACLR
-reset => Q[11]~reg0.ACLR
-reset => Q[12]~reg0.ACLR
-reset => Q[13]~reg0.ACLR
-reset => Q[14]~reg0.ACLR
-reset => Q[15]~reg0.ACLR
-Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[8] <= Q[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[9] <= Q[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[10] <= Q[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[11] <= Q[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[12] <= Q[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[13] <= Q[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[14] <= Q[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[15] <= Q[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+|ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst24
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Register_File_v|Register:b2v_inst3
-D[0] => Q[0]~reg0.DATAIN
-D[1] => Q[1]~reg0.DATAIN
-D[2] => Q[2]~reg0.DATAIN
-D[3] => Q[3]~reg0.DATAIN
-D[4] => Q[4]~reg0.DATAIN
-D[5] => Q[5]~reg0.DATAIN
-D[6] => Q[6]~reg0.DATAIN
-D[7] => Q[7]~reg0.DATAIN
-D[8] => Q[8]~reg0.DATAIN
-D[9] => Q[9]~reg0.DATAIN
-D[10] => Q[10]~reg0.DATAIN
-D[11] => Q[11]~reg0.DATAIN
-D[12] => Q[12]~reg0.DATAIN
-D[13] => Q[13]~reg0.DATAIN
-D[14] => Q[14]~reg0.DATAIN
-D[15] => Q[15]~reg0.DATAIN
-L => Decoder0.IN0
-CLK => Q[0]~reg0.CLK
-CLK => Q[1]~reg0.CLK
-CLK => Q[2]~reg0.CLK
-CLK => Q[3]~reg0.CLK
-CLK => Q[4]~reg0.CLK
-CLK => Q[5]~reg0.CLK
-CLK => Q[6]~reg0.CLK
-CLK => Q[7]~reg0.CLK
-CLK => Q[8]~reg0.CLK
-CLK => Q[9]~reg0.CLK
-CLK => Q[10]~reg0.CLK
-CLK => Q[11]~reg0.CLK
-CLK => Q[12]~reg0.CLK
-CLK => Q[13]~reg0.CLK
-CLK => Q[14]~reg0.CLK
-CLK => Q[15]~reg0.CLK
-reset => Q[0]~reg0.ACLR
-reset => Q[1]~reg0.ACLR
-reset => Q[2]~reg0.ACLR
-reset => Q[3]~reg0.ACLR
-reset => Q[4]~reg0.ACLR
-reset => Q[5]~reg0.ACLR
-reset => Q[6]~reg0.ACLR
-reset => Q[7]~reg0.ACLR
-reset => Q[8]~reg0.ACLR
-reset => Q[9]~reg0.ACLR
-reset => Q[10]~reg0.ACLR
-reset => Q[11]~reg0.ACLR
-reset => Q[12]~reg0.ACLR
-reset => Q[13]~reg0.ACLR
-reset => Q[14]~reg0.ACLR
-reset => Q[15]~reg0.ACLR
-Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[8] <= Q[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[9] <= Q[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[10] <= Q[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[11] <= Q[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[12] <= Q[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[13] <= Q[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[14] <= Q[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[15] <= Q[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+|ALU_16bit_v|ALU_4bit:b2v_inst|FOURtoONE_MUX:inst23
+A => Mux0.IN0
+B => Mux0.IN1
+C => Mux0.IN2
+D => Mux0.IN3
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Register_File_v|Register:b2v_inst4
-D[0] => Q[0]~reg0.DATAIN
-D[1] => Q[1]~reg0.DATAIN
-D[2] => Q[2]~reg0.DATAIN
-D[3] => Q[3]~reg0.DATAIN
-D[4] => Q[4]~reg0.DATAIN
-D[5] => Q[5]~reg0.DATAIN
-D[6] => Q[6]~reg0.DATAIN
-D[7] => Q[7]~reg0.DATAIN
-D[8] => Q[8]~reg0.DATAIN
-D[9] => Q[9]~reg0.DATAIN
-D[10] => Q[10]~reg0.DATAIN
-D[11] => Q[11]~reg0.DATAIN
-D[12] => Q[12]~reg0.DATAIN
-D[13] => Q[13]~reg0.DATAIN
-D[14] => Q[14]~reg0.DATAIN
-D[15] => Q[15]~reg0.DATAIN
-L => Decoder0.IN0
-CLK => Q[0]~reg0.CLK
-CLK => Q[1]~reg0.CLK
-CLK => Q[2]~reg0.CLK
-CLK => Q[3]~reg0.CLK
-CLK => Q[4]~reg0.CLK
-CLK => Q[5]~reg0.CLK
-CLK => Q[6]~reg0.CLK
-CLK => Q[7]~reg0.CLK
-CLK => Q[8]~reg0.CLK
-CLK => Q[9]~reg0.CLK
-CLK => Q[10]~reg0.CLK
-CLK => Q[11]~reg0.CLK
-CLK => Q[12]~reg0.CLK
-CLK => Q[13]~reg0.CLK
-CLK => Q[14]~reg0.CLK
-CLK => Q[15]~reg0.CLK
-reset => Q[0]~reg0.ACLR
-reset => Q[1]~reg0.ACLR
-reset => Q[2]~reg0.ACLR
-reset => Q[3]~reg0.ACLR
-reset => Q[4]~reg0.ACLR
-reset => Q[5]~reg0.ACLR
-reset => Q[6]~reg0.ACLR
-reset => Q[7]~reg0.ACLR
-reset => Q[8]~reg0.ACLR
-reset => Q[9]~reg0.ACLR
-reset => Q[10]~reg0.ACLR
-reset => Q[11]~reg0.ACLR
-reset => Q[12]~reg0.ACLR
-reset => Q[13]~reg0.ACLR
-reset => Q[14]~reg0.ACLR
-reset => Q[15]~reg0.ACLR
-Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[8] <= Q[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[9] <= Q[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[10] <= Q[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[11] <= Q[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[12] <= Q[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[13] <= Q[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[14] <= Q[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[15] <= Q[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+|ALU_16bit_v|ALU_4bit:b2v_inst|FOURtoONE_MUX:inst11
+A => Mux0.IN0
+B => Mux0.IN1
+C => Mux0.IN2
+D => Mux0.IN3
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Register_File_v|Register:b2v_inst5
-D[0] => Q[0]~reg0.DATAIN
-D[1] => Q[1]~reg0.DATAIN
-D[2] => Q[2]~reg0.DATAIN
-D[3] => Q[3]~reg0.DATAIN
-D[4] => Q[4]~reg0.DATAIN
-D[5] => Q[5]~reg0.DATAIN
-D[6] => Q[6]~reg0.DATAIN
-D[7] => Q[7]~reg0.DATAIN
-D[8] => Q[8]~reg0.DATAIN
-D[9] => Q[9]~reg0.DATAIN
-D[10] => Q[10]~reg0.DATAIN
-D[11] => Q[11]~reg0.DATAIN
-D[12] => Q[12]~reg0.DATAIN
-D[13] => Q[13]~reg0.DATAIN
-D[14] => Q[14]~reg0.DATAIN
-D[15] => Q[15]~reg0.DATAIN
-L => Decoder0.IN0
-CLK => Q[0]~reg0.CLK
-CLK => Q[1]~reg0.CLK
-CLK => Q[2]~reg0.CLK
-CLK => Q[3]~reg0.CLK
-CLK => Q[4]~reg0.CLK
-CLK => Q[5]~reg0.CLK
-CLK => Q[6]~reg0.CLK
-CLK => Q[7]~reg0.CLK
-CLK => Q[8]~reg0.CLK
-CLK => Q[9]~reg0.CLK
-CLK => Q[10]~reg0.CLK
-CLK => Q[11]~reg0.CLK
-CLK => Q[12]~reg0.CLK
-CLK => Q[13]~reg0.CLK
-CLK => Q[14]~reg0.CLK
-CLK => Q[15]~reg0.CLK
-reset => Q[0]~reg0.ACLR
-reset => Q[1]~reg0.ACLR
-reset => Q[2]~reg0.ACLR
-reset => Q[3]~reg0.ACLR
-reset => Q[4]~reg0.ACLR
-reset => Q[5]~reg0.ACLR
-reset => Q[6]~reg0.ACLR
-reset => Q[7]~reg0.ACLR
-reset => Q[8]~reg0.ACLR
-reset => Q[9]~reg0.ACLR
-reset => Q[10]~reg0.ACLR
-reset => Q[11]~reg0.ACLR
-reset => Q[12]~reg0.ACLR
-reset => Q[13]~reg0.ACLR
-reset => Q[14]~reg0.ACLR
-reset => Q[15]~reg0.ACLR
-Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[8] <= Q[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[9] <= Q[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[10] <= Q[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[11] <= Q[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[12] <= Q[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[13] <= Q[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[14] <= Q[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[15] <= Q[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+|ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst13
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Register_File_v|Register:b2v_inst6
-D[0] => Q[0]~reg0.DATAIN
-D[1] => Q[1]~reg0.DATAIN
-D[2] => Q[2]~reg0.DATAIN
-D[3] => Q[3]~reg0.DATAIN
-D[4] => Q[4]~reg0.DATAIN
-D[5] => Q[5]~reg0.DATAIN
-D[6] => Q[6]~reg0.DATAIN
-D[7] => Q[7]~reg0.DATAIN
-D[8] => Q[8]~reg0.DATAIN
-D[9] => Q[9]~reg0.DATAIN
-D[10] => Q[10]~reg0.DATAIN
-D[11] => Q[11]~reg0.DATAIN
-D[12] => Q[12]~reg0.DATAIN
-D[13] => Q[13]~reg0.DATAIN
-D[14] => Q[14]~reg0.DATAIN
-D[15] => Q[15]~reg0.DATAIN
-L => Decoder0.IN0
-CLK => Q[0]~reg0.CLK
-CLK => Q[1]~reg0.CLK
-CLK => Q[2]~reg0.CLK
-CLK => Q[3]~reg0.CLK
-CLK => Q[4]~reg0.CLK
-CLK => Q[5]~reg0.CLK
-CLK => Q[6]~reg0.CLK
-CLK => Q[7]~reg0.CLK
-CLK => Q[8]~reg0.CLK
-CLK => Q[9]~reg0.CLK
-CLK => Q[10]~reg0.CLK
-CLK => Q[11]~reg0.CLK
-CLK => Q[12]~reg0.CLK
-CLK => Q[13]~reg0.CLK
-CLK => Q[14]~reg0.CLK
-CLK => Q[15]~reg0.CLK
-reset => Q[0]~reg0.ACLR
-reset => Q[1]~reg0.ACLR
-reset => Q[2]~reg0.ACLR
-reset => Q[3]~reg0.ACLR
-reset => Q[4]~reg0.ACLR
-reset => Q[5]~reg0.ACLR
-reset => Q[6]~reg0.ACLR
-reset => Q[7]~reg0.ACLR
-reset => Q[8]~reg0.ACLR
-reset => Q[9]~reg0.ACLR
-reset => Q[10]~reg0.ACLR
-reset => Q[11]~reg0.ACLR
-reset => Q[12]~reg0.ACLR
-reset => Q[13]~reg0.ACLR
-reset => Q[14]~reg0.ACLR
-reset => Q[15]~reg0.ACLR
-Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[8] <= Q[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[9] <= Q[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[10] <= Q[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[11] <= Q[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[12] <= Q[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[13] <= Q[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[14] <= Q[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[15] <= Q[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+|ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst2
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Register_File_v|Register:b2v_inst7
-D[0] => Q[0]~reg0.DATAIN
-D[1] => Q[1]~reg0.DATAIN
-D[2] => Q[2]~reg0.DATAIN
-D[3] => Q[3]~reg0.DATAIN
-D[4] => Q[4]~reg0.DATAIN
-D[5] => Q[5]~reg0.DATAIN
-D[6] => Q[6]~reg0.DATAIN
-D[7] => Q[7]~reg0.DATAIN
-D[8] => Q[8]~reg0.DATAIN
-D[9] => Q[9]~reg0.DATAIN
-D[10] => Q[10]~reg0.DATAIN
-D[11] => Q[11]~reg0.DATAIN
-D[12] => Q[12]~reg0.DATAIN
-D[13] => Q[13]~reg0.DATAIN
-D[14] => Q[14]~reg0.DATAIN
-D[15] => Q[15]~reg0.DATAIN
-L => Decoder0.IN0
-CLK => Q[0]~reg0.CLK
-CLK => Q[1]~reg0.CLK
-CLK => Q[2]~reg0.CLK
-CLK => Q[3]~reg0.CLK
-CLK => Q[4]~reg0.CLK
-CLK => Q[5]~reg0.CLK
-CLK => Q[6]~reg0.CLK
-CLK => Q[7]~reg0.CLK
-CLK => Q[8]~reg0.CLK
-CLK => Q[9]~reg0.CLK
-CLK => Q[10]~reg0.CLK
-CLK => Q[11]~reg0.CLK
-CLK => Q[12]~reg0.CLK
-CLK => Q[13]~reg0.CLK
-CLK => Q[14]~reg0.CLK
-CLK => Q[15]~reg0.CLK
-reset => Q[0]~reg0.ACLR
-reset => Q[1]~reg0.ACLR
-reset => Q[2]~reg0.ACLR
-reset => Q[3]~reg0.ACLR
-reset => Q[4]~reg0.ACLR
-reset => Q[5]~reg0.ACLR
-reset => Q[6]~reg0.ACLR
-reset => Q[7]~reg0.ACLR
-reset => Q[8]~reg0.ACLR
-reset => Q[9]~reg0.ACLR
-reset => Q[10]~reg0.ACLR
-reset => Q[11]~reg0.ACLR
-reset => Q[12]~reg0.ACLR
-reset => Q[13]~reg0.ACLR
-reset => Q[14]~reg0.ACLR
-reset => Q[15]~reg0.ACLR
-Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[8] <= Q[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[9] <= Q[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[10] <= Q[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[11] <= Q[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[12] <= Q[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[13] <= Q[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[14] <= Q[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[15] <= Q[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+|ALU_16bit_v|ALU_4bit:b2v_inst|FOURtoONE_MUX:inst1
+A => Mux0.IN0
+B => Mux0.IN1
+C => Mux0.IN2
+D => Mux0.IN3
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Register_File_v|Register:b2v_inst8
-D[0] => Q[0]~reg0.DATAIN
-D[1] => Q[1]~reg0.DATAIN
-D[2] => Q[2]~reg0.DATAIN
-D[3] => Q[3]~reg0.DATAIN
-D[4] => Q[4]~reg0.DATAIN
-D[5] => Q[5]~reg0.DATAIN
-D[6] => Q[6]~reg0.DATAIN
-D[7] => Q[7]~reg0.DATAIN
-D[8] => Q[8]~reg0.DATAIN
-D[9] => Q[9]~reg0.DATAIN
-D[10] => Q[10]~reg0.DATAIN
-D[11] => Q[11]~reg0.DATAIN
-D[12] => Q[12]~reg0.DATAIN
-D[13] => Q[13]~reg0.DATAIN
-D[14] => Q[14]~reg0.DATAIN
-D[15] => Q[15]~reg0.DATAIN
-L => Decoder0.IN0
-CLK => Q[0]~reg0.CLK
-CLK => Q[1]~reg0.CLK
-CLK => Q[2]~reg0.CLK
-CLK => Q[3]~reg0.CLK
-CLK => Q[4]~reg0.CLK
-CLK => Q[5]~reg0.CLK
-CLK => Q[6]~reg0.CLK
-CLK => Q[7]~reg0.CLK
-CLK => Q[8]~reg0.CLK
-CLK => Q[9]~reg0.CLK
-CLK => Q[10]~reg0.CLK
-CLK => Q[11]~reg0.CLK
-CLK => Q[12]~reg0.CLK
-CLK => Q[13]~reg0.CLK
-CLK => Q[14]~reg0.CLK
-CLK => Q[15]~reg0.CLK
-reset => Q[0]~reg0.ACLR
-reset => Q[1]~reg0.ACLR
-reset => Q[2]~reg0.ACLR
-reset => Q[3]~reg0.ACLR
-reset => Q[4]~reg0.ACLR
-reset => Q[5]~reg0.ACLR
-reset => Q[6]~reg0.ACLR
-reset => Q[7]~reg0.ACLR
-reset => Q[8]~reg0.ACLR
-reset => Q[9]~reg0.ACLR
-reset => Q[10]~reg0.ACLR
-reset => Q[11]~reg0.ACLR
-reset => Q[12]~reg0.ACLR
-reset => Q[13]~reg0.ACLR
-reset => Q[14]~reg0.ACLR
-reset => Q[15]~reg0.ACLR
-Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[8] <= Q[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[9] <= Q[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[10] <= Q[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[11] <= Q[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[12] <= Q[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[13] <= Q[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[14] <= Q[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[15] <= Q[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+|ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst5
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst|FOURtoONE_MUX:inst
+A => Mux0.IN0
+B => Mux0.IN1
+C => Mux0.IN2
+D => Mux0.IN3
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst7
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst|CarryLookaheadAdder:inst4
+A => S.IN0
+B => S.IN1
+Cin => S.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst3
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst16
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst|FOURtoONE_MUX:inst37
+A => Mux0.IN0
+B => Mux0.IN1
+C => Mux0.IN2
+D => Mux0.IN3
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst18
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst|CarryLookaheadAdder:inst15
+A => S.IN0
+B => S.IN1
+Cin => S.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst6
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst14
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst27
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst|FOURtoONE_MUX:inst38
+A => Mux0.IN0
+B => Mux0.IN1
+C => Mux0.IN2
+D => Mux0.IN3
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst29
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst|CarryLookaheadAdder:inst26
+A => S.IN0
+B => S.IN1
+Cin => S.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst17
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst25
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst41
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst|FOURtoONE_MUX:inst39
+A => Mux0.IN0
+B => Mux0.IN1
+C => Mux0.IN2
+D => Mux0.IN3
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst43
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst|CarryLookaheadAdder:inst40
+A => S.IN0
+B => S.IN1
+Cin => S.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst28
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst36
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst1
+Cout <= TWOtoONE_MUX:inst42.Q
+B[0] => FOURtoONE_MUX:inst1.C
+B[0] => inst9.IN0
+B[0] => FOURtoONE_MUX:inst.S[0]
+B[1] => FOURtoONE_MUX:inst11.C
+B[1] => inst20.IN0
+B[1] => FOURtoONE_MUX:inst37.S[0]
+B[2] => FOURtoONE_MUX:inst23.C
+B[2] => inst31.IN0
+B[2] => FOURtoONE_MUX:inst38.S[0]
+B[3] => FOURtoONE_MUX:inst34.C
+B[3] => inst45.IN0
+B[3] => FOURtoONE_MUX:inst39.S[0]
+FS[0] => TWOtoONE_MUX:inst35.S
+FS[0] => TWOtoONE_MUX:inst24.S
+FS[0] => TWOtoONE_MUX:inst13.S
+FS[0] => TWOtoONE_MUX:inst2.S
+FS[0] => FOURtoONE_MUX:inst.A
+FS[0] => TWOtoONE_MUX:inst3.S
+FS[0] => FOURtoONE_MUX:inst37.A
+FS[0] => TWOtoONE_MUX:inst14.S
+FS[0] => FOURtoONE_MUX:inst38.A
+FS[0] => TWOtoONE_MUX:inst25.S
+FS[0] => FOURtoONE_MUX:inst39.A
+FS[0] => TWOtoONE_MUX:inst36.S
+FS[1] => FOURtoONE_MUX:inst34.S[0]
+FS[1] => FOURtoONE_MUX:inst23.S[0]
+FS[1] => FOURtoONE_MUX:inst11.S[0]
+FS[1] => FOURtoONE_MUX:inst1.S[0]
+FS[1] => FOURtoONE_MUX:inst.B
+FS[1] => FOURtoONE_MUX:inst37.B
+FS[1] => FOURtoONE_MUX:inst38.B
+FS[1] => FOURtoONE_MUX:inst39.B
+FS[2] => FOURtoONE_MUX:inst34.S[1]
+FS[2] => FOURtoONE_MUX:inst23.S[1]
+FS[2] => FOURtoONE_MUX:inst11.S[1]
+FS[2] => FOURtoONE_MUX:inst1.S[1]
+FS[2] => FOURtoONE_MUX:inst.C
+FS[2] => FOURtoONE_MUX:inst37.C
+FS[2] => FOURtoONE_MUX:inst38.C
+FS[2] => FOURtoONE_MUX:inst39.C
+FS[3] => TWOtoONE_MUX:inst42.S
+FS[3] => FOURtoONE_MUX:inst.D
+FS[3] => TWOtoONE_MUX:inst7.S
+FS[3] => FOURtoONE_MUX:inst37.D
+FS[3] => TWOtoONE_MUX:inst6.S
+FS[3] => TWOtoONE_MUX:inst18.S
+FS[3] => FOURtoONE_MUX:inst38.D
+FS[3] => TWOtoONE_MUX:inst17.S
+FS[3] => TWOtoONE_MUX:inst29.S
+FS[3] => FOURtoONE_MUX:inst39.D
+FS[3] => TWOtoONE_MUX:inst28.S
+FS[3] => TWOtoONE_MUX:inst43.S
+FS[4] => TWOtoONE_MUX:inst5.S
+FS[4] => TWOtoONE_MUX:inst16.S
+FS[4] => TWOtoONE_MUX:inst27.S
+FS[4] => TWOtoONE_MUX:inst41.S
+A[0] => TWOtoONE_MUX:inst2.A
+A[0] => inst8.IN0
+A[0] => FOURtoONE_MUX:inst.S[1]
+A[0] => TWOtoONE_MUX:inst6.B
+A[1] => TWOtoONE_MUX:inst13.A
+A[1] => inst19.IN0
+A[1] => FOURtoONE_MUX:inst37.S[1]
+A[1] => TWOtoONE_MUX:inst17.B
+A[2] => TWOtoONE_MUX:inst24.A
+A[2] => inst30.IN0
+A[2] => FOURtoONE_MUX:inst38.S[1]
+A[2] => TWOtoONE_MUX:inst28.B
+A[3] => TWOtoONE_MUX:inst35.A
+A[3] => inst44.IN0
+A[3] => TWOtoONE_MUX:inst42.B
+A[3] => FOURtoONE_MUX:inst39.S[1]
+Cin => CarryLookaheadAdder:inst4.Cin
+Cin => TWOtoONE_MUX:inst3.A
+Cin => inst50.IN0
+Cin => inst56.IN2
+Cin => inst63.IN3
+Cin => inst72.IN3
+F[0] <= TWOtoONE_MUX:inst5.Q
+F[1] <= TWOtoONE_MUX:inst16.Q
+F[2] <= TWOtoONE_MUX:inst27.Q
+F[3] <= TWOtoONE_MUX:inst41.Q
+A_next_bit => TWOtoONE_MUX:inst3.B
+A_next_bit1 => TWOtoONE_MUX:inst14.B
+A_next_bit2 => TWOtoONE_MUX:inst25.B
+A_next_bit3 => TWOtoONE_MUX:inst36.B
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst42
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst1|FOURtoONE_MUX:inst34
+A => Mux0.IN0
+B => Mux0.IN1
+C => Mux0.IN2
+D => Mux0.IN3
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst35
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst24
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst1|FOURtoONE_MUX:inst23
+A => Mux0.IN0
+B => Mux0.IN1
+C => Mux0.IN2
+D => Mux0.IN3
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst1|FOURtoONE_MUX:inst11
+A => Mux0.IN0
+B => Mux0.IN1
+C => Mux0.IN2
+D => Mux0.IN3
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst13
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst2
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst1|FOURtoONE_MUX:inst1
+A => Mux0.IN0
+B => Mux0.IN1
+C => Mux0.IN2
+D => Mux0.IN3
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst5
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst1|FOURtoONE_MUX:inst
+A => Mux0.IN0
+B => Mux0.IN1
+C => Mux0.IN2
+D => Mux0.IN3
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst7
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst1|CarryLookaheadAdder:inst4
+A => S.IN0
+B => S.IN1
+Cin => S.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst3
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst16
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst1|FOURtoONE_MUX:inst37
+A => Mux0.IN0
+B => Mux0.IN1
+C => Mux0.IN2
+D => Mux0.IN3
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst18
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst1|CarryLookaheadAdder:inst15
+A => S.IN0
+B => S.IN1
+Cin => S.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst6
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst14
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst27
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst1|FOURtoONE_MUX:inst38
+A => Mux0.IN0
+B => Mux0.IN1
+C => Mux0.IN2
+D => Mux0.IN3
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst29
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst1|CarryLookaheadAdder:inst26
+A => S.IN0
+B => S.IN1
+Cin => S.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst17
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst25
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst41
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst1|FOURtoONE_MUX:inst39
+A => Mux0.IN0
+B => Mux0.IN1
+C => Mux0.IN2
+D => Mux0.IN3
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst43
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst1|CarryLookaheadAdder:inst40
+A => S.IN0
+B => S.IN1
+Cin => S.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst28
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst36
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst2
+Cout <= TWOtoONE_MUX:inst42.Q
+B[0] => FOURtoONE_MUX:inst1.C
+B[0] => inst9.IN0
+B[0] => FOURtoONE_MUX:inst.S[0]
+B[1] => FOURtoONE_MUX:inst11.C
+B[1] => inst20.IN0
+B[1] => FOURtoONE_MUX:inst37.S[0]
+B[2] => FOURtoONE_MUX:inst23.C
+B[2] => inst31.IN0
+B[2] => FOURtoONE_MUX:inst38.S[0]
+B[3] => FOURtoONE_MUX:inst34.C
+B[3] => inst45.IN0
+B[3] => FOURtoONE_MUX:inst39.S[0]
+FS[0] => TWOtoONE_MUX:inst35.S
+FS[0] => TWOtoONE_MUX:inst24.S
+FS[0] => TWOtoONE_MUX:inst13.S
+FS[0] => TWOtoONE_MUX:inst2.S
+FS[0] => FOURtoONE_MUX:inst.A
+FS[0] => TWOtoONE_MUX:inst3.S
+FS[0] => FOURtoONE_MUX:inst37.A
+FS[0] => TWOtoONE_MUX:inst14.S
+FS[0] => FOURtoONE_MUX:inst38.A
+FS[0] => TWOtoONE_MUX:inst25.S
+FS[0] => FOURtoONE_MUX:inst39.A
+FS[0] => TWOtoONE_MUX:inst36.S
+FS[1] => FOURtoONE_MUX:inst34.S[0]
+FS[1] => FOURtoONE_MUX:inst23.S[0]
+FS[1] => FOURtoONE_MUX:inst11.S[0]
+FS[1] => FOURtoONE_MUX:inst1.S[0]
+FS[1] => FOURtoONE_MUX:inst.B
+FS[1] => FOURtoONE_MUX:inst37.B
+FS[1] => FOURtoONE_MUX:inst38.B
+FS[1] => FOURtoONE_MUX:inst39.B
+FS[2] => FOURtoONE_MUX:inst34.S[1]
+FS[2] => FOURtoONE_MUX:inst23.S[1]
+FS[2] => FOURtoONE_MUX:inst11.S[1]
+FS[2] => FOURtoONE_MUX:inst1.S[1]
+FS[2] => FOURtoONE_MUX:inst.C
+FS[2] => FOURtoONE_MUX:inst37.C
+FS[2] => FOURtoONE_MUX:inst38.C
+FS[2] => FOURtoONE_MUX:inst39.C
+FS[3] => TWOtoONE_MUX:inst42.S
+FS[3] => FOURtoONE_MUX:inst.D
+FS[3] => TWOtoONE_MUX:inst7.S
+FS[3] => FOURtoONE_MUX:inst37.D
+FS[3] => TWOtoONE_MUX:inst6.S
+FS[3] => TWOtoONE_MUX:inst18.S
+FS[3] => FOURtoONE_MUX:inst38.D
+FS[3] => TWOtoONE_MUX:inst17.S
+FS[3] => TWOtoONE_MUX:inst29.S
+FS[3] => FOURtoONE_MUX:inst39.D
+FS[3] => TWOtoONE_MUX:inst28.S
+FS[3] => TWOtoONE_MUX:inst43.S
+FS[4] => TWOtoONE_MUX:inst5.S
+FS[4] => TWOtoONE_MUX:inst16.S
+FS[4] => TWOtoONE_MUX:inst27.S
+FS[4] => TWOtoONE_MUX:inst41.S
+A[0] => TWOtoONE_MUX:inst2.A
+A[0] => inst8.IN0
+A[0] => FOURtoONE_MUX:inst.S[1]
+A[0] => TWOtoONE_MUX:inst6.B
+A[1] => TWOtoONE_MUX:inst13.A
+A[1] => inst19.IN0
+A[1] => FOURtoONE_MUX:inst37.S[1]
+A[1] => TWOtoONE_MUX:inst17.B
+A[2] => TWOtoONE_MUX:inst24.A
+A[2] => inst30.IN0
+A[2] => FOURtoONE_MUX:inst38.S[1]
+A[2] => TWOtoONE_MUX:inst28.B
+A[3] => TWOtoONE_MUX:inst35.A
+A[3] => inst44.IN0
+A[3] => TWOtoONE_MUX:inst42.B
+A[3] => FOURtoONE_MUX:inst39.S[1]
+Cin => CarryLookaheadAdder:inst4.Cin
+Cin => TWOtoONE_MUX:inst3.A
+Cin => inst50.IN0
+Cin => inst56.IN2
+Cin => inst63.IN3
+Cin => inst72.IN3
+F[0] <= TWOtoONE_MUX:inst5.Q
+F[1] <= TWOtoONE_MUX:inst16.Q
+F[2] <= TWOtoONE_MUX:inst27.Q
+F[3] <= TWOtoONE_MUX:inst41.Q
+A_next_bit => TWOtoONE_MUX:inst3.B
+A_next_bit1 => TWOtoONE_MUX:inst14.B
+A_next_bit2 => TWOtoONE_MUX:inst25.B
+A_next_bit3 => TWOtoONE_MUX:inst36.B
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst42
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst2|FOURtoONE_MUX:inst34
+A => Mux0.IN0
+B => Mux0.IN1
+C => Mux0.IN2
+D => Mux0.IN3
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst35
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst24
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst2|FOURtoONE_MUX:inst23
+A => Mux0.IN0
+B => Mux0.IN1
+C => Mux0.IN2
+D => Mux0.IN3
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst2|FOURtoONE_MUX:inst11
+A => Mux0.IN0
+B => Mux0.IN1
+C => Mux0.IN2
+D => Mux0.IN3
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst13
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst2
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst2|FOURtoONE_MUX:inst1
+A => Mux0.IN0
+B => Mux0.IN1
+C => Mux0.IN2
+D => Mux0.IN3
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst5
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst2|FOURtoONE_MUX:inst
+A => Mux0.IN0
+B => Mux0.IN1
+C => Mux0.IN2
+D => Mux0.IN3
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst7
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst2|CarryLookaheadAdder:inst4
+A => S.IN0
+B => S.IN1
+Cin => S.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst3
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst16
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst2|FOURtoONE_MUX:inst37
+A => Mux0.IN0
+B => Mux0.IN1
+C => Mux0.IN2
+D => Mux0.IN3
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst18
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst2|CarryLookaheadAdder:inst15
+A => S.IN0
+B => S.IN1
+Cin => S.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst6
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst14
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst27
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst2|FOURtoONE_MUX:inst38
+A => Mux0.IN0
+B => Mux0.IN1
+C => Mux0.IN2
+D => Mux0.IN3
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst29
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst2|CarryLookaheadAdder:inst26
+A => S.IN0
+B => S.IN1
+Cin => S.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst17
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst25
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst41
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst2|FOURtoONE_MUX:inst39
+A => Mux0.IN0
+B => Mux0.IN1
+C => Mux0.IN2
+D => Mux0.IN3
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst43
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst2|CarryLookaheadAdder:inst40
+A => S.IN0
+B => S.IN1
+Cin => S.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst28
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst36
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst3
+Cout <= TWOtoONE_MUX:inst42.Q
+B[0] => FOURtoONE_MUX:inst1.C
+B[0] => inst9.IN0
+B[0] => FOURtoONE_MUX:inst.S[0]
+B[1] => FOURtoONE_MUX:inst11.C
+B[1] => inst20.IN0
+B[1] => FOURtoONE_MUX:inst37.S[0]
+B[2] => FOURtoONE_MUX:inst23.C
+B[2] => inst31.IN0
+B[2] => FOURtoONE_MUX:inst38.S[0]
+B[3] => FOURtoONE_MUX:inst34.C
+B[3] => inst45.IN0
+B[3] => FOURtoONE_MUX:inst39.S[0]
+FS[0] => TWOtoONE_MUX:inst35.S
+FS[0] => TWOtoONE_MUX:inst24.S
+FS[0] => TWOtoONE_MUX:inst13.S
+FS[0] => TWOtoONE_MUX:inst2.S
+FS[0] => FOURtoONE_MUX:inst.A
+FS[0] => TWOtoONE_MUX:inst3.S
+FS[0] => FOURtoONE_MUX:inst37.A
+FS[0] => TWOtoONE_MUX:inst14.S
+FS[0] => FOURtoONE_MUX:inst38.A
+FS[0] => TWOtoONE_MUX:inst25.S
+FS[0] => FOURtoONE_MUX:inst39.A
+FS[0] => TWOtoONE_MUX:inst36.S
+FS[1] => FOURtoONE_MUX:inst34.S[0]
+FS[1] => FOURtoONE_MUX:inst23.S[0]
+FS[1] => FOURtoONE_MUX:inst11.S[0]
+FS[1] => FOURtoONE_MUX:inst1.S[0]
+FS[1] => FOURtoONE_MUX:inst.B
+FS[1] => FOURtoONE_MUX:inst37.B
+FS[1] => FOURtoONE_MUX:inst38.B
+FS[1] => FOURtoONE_MUX:inst39.B
+FS[2] => FOURtoONE_MUX:inst34.S[1]
+FS[2] => FOURtoONE_MUX:inst23.S[1]
+FS[2] => FOURtoONE_MUX:inst11.S[1]
+FS[2] => FOURtoONE_MUX:inst1.S[1]
+FS[2] => FOURtoONE_MUX:inst.C
+FS[2] => FOURtoONE_MUX:inst37.C
+FS[2] => FOURtoONE_MUX:inst38.C
+FS[2] => FOURtoONE_MUX:inst39.C
+FS[3] => TWOtoONE_MUX:inst42.S
+FS[3] => FOURtoONE_MUX:inst.D
+FS[3] => TWOtoONE_MUX:inst7.S
+FS[3] => FOURtoONE_MUX:inst37.D
+FS[3] => TWOtoONE_MUX:inst6.S
+FS[3] => TWOtoONE_MUX:inst18.S
+FS[3] => FOURtoONE_MUX:inst38.D
+FS[3] => TWOtoONE_MUX:inst17.S
+FS[3] => TWOtoONE_MUX:inst29.S
+FS[3] => FOURtoONE_MUX:inst39.D
+FS[3] => TWOtoONE_MUX:inst28.S
+FS[3] => TWOtoONE_MUX:inst43.S
+FS[4] => TWOtoONE_MUX:inst5.S
+FS[4] => TWOtoONE_MUX:inst16.S
+FS[4] => TWOtoONE_MUX:inst27.S
+FS[4] => TWOtoONE_MUX:inst41.S
+A[0] => TWOtoONE_MUX:inst2.A
+A[0] => inst8.IN0
+A[0] => FOURtoONE_MUX:inst.S[1]
+A[0] => TWOtoONE_MUX:inst6.B
+A[1] => TWOtoONE_MUX:inst13.A
+A[1] => inst19.IN0
+A[1] => FOURtoONE_MUX:inst37.S[1]
+A[1] => TWOtoONE_MUX:inst17.B
+A[2] => TWOtoONE_MUX:inst24.A
+A[2] => inst30.IN0
+A[2] => FOURtoONE_MUX:inst38.S[1]
+A[2] => TWOtoONE_MUX:inst28.B
+A[3] => TWOtoONE_MUX:inst35.A
+A[3] => inst44.IN0
+A[3] => TWOtoONE_MUX:inst42.B
+A[3] => FOURtoONE_MUX:inst39.S[1]
+Cin => CarryLookaheadAdder:inst4.Cin
+Cin => TWOtoONE_MUX:inst3.A
+Cin => inst50.IN0
+Cin => inst56.IN2
+Cin => inst63.IN3
+Cin => inst72.IN3
+F[0] <= TWOtoONE_MUX:inst5.Q
+F[1] <= TWOtoONE_MUX:inst16.Q
+F[2] <= TWOtoONE_MUX:inst27.Q
+F[3] <= TWOtoONE_MUX:inst41.Q
+A_next_bit => TWOtoONE_MUX:inst3.B
+A_next_bit1 => TWOtoONE_MUX:inst14.B
+A_next_bit2 => TWOtoONE_MUX:inst25.B
+A_next_bit3 => TWOtoONE_MUX:inst36.B
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst42
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst3|FOURtoONE_MUX:inst34
+A => Mux0.IN0
+B => Mux0.IN1
+C => Mux0.IN2
+D => Mux0.IN3
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst35
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst24
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst3|FOURtoONE_MUX:inst23
+A => Mux0.IN0
+B => Mux0.IN1
+C => Mux0.IN2
+D => Mux0.IN3
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst3|FOURtoONE_MUX:inst11
+A => Mux0.IN0
+B => Mux0.IN1
+C => Mux0.IN2
+D => Mux0.IN3
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst13
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst2
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst3|FOURtoONE_MUX:inst1
+A => Mux0.IN0
+B => Mux0.IN1
+C => Mux0.IN2
+D => Mux0.IN3
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst5
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst3|FOURtoONE_MUX:inst
+A => Mux0.IN0
+B => Mux0.IN1
+C => Mux0.IN2
+D => Mux0.IN3
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst7
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst3|CarryLookaheadAdder:inst4
+A => S.IN0
+B => S.IN1
+Cin => S.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst3
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst16
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst3|FOURtoONE_MUX:inst37
+A => Mux0.IN0
+B => Mux0.IN1
+C => Mux0.IN2
+D => Mux0.IN3
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst18
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst3|CarryLookaheadAdder:inst15
+A => S.IN0
+B => S.IN1
+Cin => S.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst6
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst14
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst27
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst3|FOURtoONE_MUX:inst38
+A => Mux0.IN0
+B => Mux0.IN1
+C => Mux0.IN2
+D => Mux0.IN3
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst29
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst3|CarryLookaheadAdder:inst26
+A => S.IN0
+B => S.IN1
+Cin => S.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst17
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst25
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst41
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst3|FOURtoONE_MUX:inst39
+A => Mux0.IN0
+B => Mux0.IN1
+C => Mux0.IN2
+D => Mux0.IN3
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst43
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst3|CarryLookaheadAdder:inst40
+A => S.IN0
+B => S.IN1
+Cin => S.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst28
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst36
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 

@@ -2,109 +2,109 @@ m255
 K3
 13
 cModel Technology
-Z0 dC:\Users\lonni\OneDrive\Documents\Comp Arch Processor\Lonnies Processor\simulation\modelsim
-vEIGHTtoONE_MUX16bit
-IP5P[0dCmjI2QS>3C<1;<<0
-VSHh87e2^8P0Mk289Cde2A1
-Z1 dC:\Users\lonni\OneDrive\Documents\Comp Arch Processor\Lonnies Processor\simulation\modelsim
-w1485376124
-8C:/Users/lonni/OneDrive/Documents/Comp Arch Processor/Lonnies Processor/EIGHTtoONE_MUX16bit.v
-FC:/Users/lonni/OneDrive/Documents/Comp Arch Processor/Lonnies Processor/EIGHTtoONE_MUX16bit.v
+Z0 dE:\Users\Lonnie II\Desktop\Code\New-Comp-Arch-Processor\simulation\modelsim
+vALU_16bit_t
+!i10b 1
+!s100 FkjDRhWbjocK3=PI5=3W13
+I:@PIGBjE6HYhPBBH7:loV0
+VDz?537SVO>A[];>5]8cME2
+Z1 dE:\Users\Lonnie II\Desktop\Code\New-Comp-Arch-Processor\simulation\modelsim
+w1486610321
+8E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/ALU_16bit_t.v
+FE:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/ALU_16bit_t.v
 L0 1
 Z2 OV;L;10.1d;51
 r1
+!s85 0
 31
+!s108 1486612186.123000
+!s107 E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/ALU_16bit_t.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor|E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/ALU_16bit_t.v|
+!s101 -O0
 Z3 o-vlog01compat -work work -O0
-Z4 !s92 -vlog01compat -work work {+incdir+C:/Users/lonni/OneDrive/Documents/Comp Arch Processor/Lonnies Processor} -O0
-n@e@i@g@h@tto@o@n@e_@m@u@x16bit
-!i10b 1
-!s100 i5MR>EiV]8cAz`A5_ZWN03
-!s85 0
-!s108 1486599456.686000
-!s107 C:/Users/lonni/OneDrive/Documents/Comp Arch Processor/Lonnies Processor/EIGHTtoONE_MUX16bit.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lonni/OneDrive/Documents/Comp Arch Processor/Lonnies Processor|C:/Users/lonni/OneDrive/Documents/Comp Arch Processor/Lonnies Processor/EIGHTtoONE_MUX16bit.v|
-!s101 -O0
-vRegister
-I^W32fec8<LVAECASW=Phb3
-V;iHiEH;M4F9UIIlDf9UXU3
+Z4 !s92 -vlog01compat -work work {+incdir+E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor} -O0
+n@a@l@u_16bit_t
+vALU_16bit_v
+I<49EZC?<jbbUz<0HVj;>z3
+VW_=:nD3]Xm0^_k:IU;AIR3
 R1
-Z5 w1485762674
-8C:/Users/lonni/OneDrive/Documents/Comp Arch Processor/Lonnies Processor/Register.v
-FC:/Users/lonni/OneDrive/Documents/Comp Arch Processor/Lonnies Processor/Register.v
-L0 1
-R2
-r1
-31
-R3
-R4
-n@register
-!i10b 1
-!s100 cl^^40N^1WVkZT8P?PkRQ3
-!s85 0
-!s108 1486599456.545000
-!s107 C:/Users/lonni/OneDrive/Documents/Comp Arch Processor/Lonnies Processor/Register.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lonni/OneDrive/Documents/Comp Arch Processor/Lonnies Processor|C:/Users/lonni/OneDrive/Documents/Comp Arch Processor/Lonnies Processor/Register.v|
-!s101 -O0
-vRegister_File_t
-!i10b 1
-!s100 M``i4a2jGMFRbQAX4hSk]3
-IhLQzW>TlBj7WFiJa^Nd]01
-VGY_1[f5UJ;8cfY1A?YViE2
-R1
-w1486599436
-8C:/Users/lonni/OneDrive/Documents/Comp Arch Processor/Lonnies Processor/Register_File_t.v
-FC:/Users/lonni/OneDrive/Documents/Comp Arch Processor/Lonnies Processor/Register_File_t.v
-L0 1
-R2
-r1
-!s85 0
-31
-!s108 1486599457.186000
-!s107 C:/Users/lonni/OneDrive/Documents/Comp Arch Processor/Lonnies Processor/Register_File_t.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lonni/OneDrive/Documents/Comp Arch Processor/Lonnies Processor|C:/Users/lonni/OneDrive/Documents/Comp Arch Processor/Lonnies Processor/Register_File_t.v|
-!s101 -O0
-R3
-R4
-n@register_@file_t
-vRegister_File_v
-I=SdNI:]V9eidi5@QgllRW1
-VFN2CKIlWn8R9ZLSaaM2_B1
-R1
-w1486591035
-8C:/Users/lonni/OneDrive/Documents/Comp Arch Processor/Lonnies Processor/Register_File_v.v
-FC:/Users/lonni/OneDrive/Documents/Comp Arch Processor/Lonnies Processor/Register_File_v.v
+w1486609191
+8E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/ALU_16bit_v.v
+FE:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/ALU_16bit_v.v
 L0 19
 R2
 r1
 31
 R3
 R4
-n@register_@file_v
+n@a@l@u_16bit_v
 !i10b 1
-!s100 nnDL_>D40dmENL^YINSE31
+!s100 ffWhk>2IcdW@1mE8QV4Rh3
 !s85 0
-!s108 1486599456.920000
-!s107 C:/Users/lonni/OneDrive/Documents/Comp Arch Processor/Lonnies Processor/Register_File_v.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lonni/OneDrive/Documents/Comp Arch Processor/Lonnies Processor|C:/Users/lonni/OneDrive/Documents/Comp Arch Processor/Lonnies Processor/Register_File_v.v|
+!s108 1486612185.994000
+!s107 E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/ALU_16bit_v.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor|E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/ALU_16bit_v.v|
 !s101 -O0
-vTHREEtoEIGHT_decoder
-I]YAG[F<:feSl^C5BXPKhJ3
-VfPj;gi74`I?3KlQ?B0aG`3
+vCarryLookaheadAdder
+I61L0U`iM_;EJD;dboB[iP1
+VJ;BIXlSWaC<TCk:7`N5gT3
 R1
-R5
-8C:/Users/lonni/OneDrive/Documents/Comp Arch Processor/Lonnies Processor/THREEtoEIGHT_decoder.v
-FC:/Users/lonni/OneDrive/Documents/Comp Arch Processor/Lonnies Processor/THREEtoEIGHT_decoder.v
+Z5 w1486607253
+8E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/CarryLookaheadAdder.v
+FE:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/CarryLookaheadAdder.v
 L0 1
 R2
 r1
 31
 R3
-n@t@h@r@e@eto@e@i@g@h@t_decoder
+R4
+n@carry@lookahead@adder
+!i10b 1
+!s100 ;0E;;G;UbJCYk8@f2Fz:`3
+!s85 0
+!s108 1486612185.842000
+!s107 E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/CarryLookaheadAdder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor|E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/CarryLookaheadAdder.v|
+!s101 -O0
+vFOURtoONE_MUX
+I:ok=0I?fCn_k9A[5nI@BG2
+VBI[SBC=ch^6YcB5N4Cl^l3
+R1
+R5
+8E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/FOURtoONE_MUX.v
+FE:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/FOURtoONE_MUX.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@f@o@u@rto@o@n@e_@m@u@x
+!i10b 1
+!s100 ^5]VFCiB:[blUE_H<;3RT2
+!s85 0
+!s108 1486612185.712000
+!s107 E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/FOURtoONE_MUX.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor|E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/FOURtoONE_MUX.v|
+!s101 -O0
+vTWOtoONE_MUX
+Iiff;jQ<g>N=9l4WBeeKme3
+VEzCmZ:RSC7nm7QJKR;fdC2
+R1
+R5
+8E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/TWOtoONE_MUX.v
+FE:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/TWOtoONE_MUX.v
+L0 1
+R2
+r1
+31
+R3
+n@t@w@oto@o@n@e_@m@u@x
 R4
 !i10b 1
-!s100 fNGOVg7b4l>Z6aHX:8?NR1
+!s100 WDm_51YiE2]04kYd=XZ271
 !s85 0
-!s108 1486599456.358000
-!s107 C:/Users/lonni/OneDrive/Documents/Comp Arch Processor/Lonnies Processor/THREEtoEIGHT_decoder.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lonni/OneDrive/Documents/Comp Arch Processor/Lonnies Processor|C:/Users/lonni/OneDrive/Documents/Comp Arch Processor/Lonnies Processor/THREEtoEIGHT_decoder.v|
+!s108 1486612185.544000
+!s107 E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/TWOtoONE_MUX.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor|E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/TWOtoONE_MUX.v|
 !s101 -O0
