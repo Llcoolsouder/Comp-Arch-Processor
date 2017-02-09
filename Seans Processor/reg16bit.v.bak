@@ -1,0 +1,15 @@
+module reg16bit(data,load,out,clock);
+	input [15:0]data;
+	input clock;
+	input load;
+	output reg [15:0]out;
+	
+	always@(posedge clock)
+	begin
+		case(load)
+			0:out = out;
+			1:out = data;
+		endcase
+	end
+
+endmodule 

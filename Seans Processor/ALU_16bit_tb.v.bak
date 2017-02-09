@@ -1,0 +1,11 @@
+module ALU_16bit_tb;
+
+	reg [4:0]FS;
+	reg [15:0] A,B;
+	
+	wire [15:0] F;
+	wire [3:0] status;
+	
+	reg [15:0] F_exp;
+	
+	
