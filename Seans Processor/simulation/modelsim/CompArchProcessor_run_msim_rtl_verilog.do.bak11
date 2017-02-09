@@ -6,7 +6,6 @@ vlib rtl_work
 vmap work rtl_work
 
 vlog -vlog01compat -work work +incdir+C:/Users/baseb_000/Documents/Computer-Architecture-Processor/Seans\ Processor {C:/Users/baseb_000/Documents/Computer-Architecture-Processor/Seans Processor/reg_file.v}
-vlog -vlog01compat -work work +incdir+C:/Users/baseb_000/Documents/Computer-Architecture-Processor/Seans\ Processor {C:/Users/baseb_000/Documents/Computer-Architecture-Processor/Seans Processor/ClockDiv.v}
 vlog -vlog01compat -work work +incdir+C:/Users/baseb_000/Documents/Computer-Architecture-Processor/Seans\ Processor {C:/Users/baseb_000/Documents/Computer-Architecture-Processor/Seans Processor/reg16bit.v}
 vlog -vlog01compat -work work +incdir+C:/Users/baseb_000/Documents/Computer-Architecture-Processor/Seans\ Processor {C:/Users/baseb_000/Documents/Computer-Architecture-Processor/Seans Processor/mux3to8.v}
 vlog -vlog01compat -work work +incdir+C:/Users/baseb_000/Documents/Computer-Architecture-Processor/Seans\ Processor {C:/Users/baseb_000/Documents/Computer-Architecture-Processor/Seans Processor/decoder.v}

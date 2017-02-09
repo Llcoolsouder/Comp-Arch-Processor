@@ -1,42 +1,41 @@
-# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
-# ERROR: No extended dataflow license exists
+# Reading E:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
 # do CompArchProcessor_run_msim_rtl_verilog.do 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
 # }
 # vlib rtl_work
 # vmap work rtl_work
-# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Copying E:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
-# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+# ** Warning: Copied E:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/baseb_000/Documents/Computer-Architecture-Processor/Seans\ Processor {C:/Users/baseb_000/Documents/Computer-Architecture-Processor/Seans Processor/reg_file.v}
+# vlog -vlog01compat -work work +incdir+E:/Users/Lonnie\ II/Desktop/Code/New-Comp-Arch-Processor/Seans\ Processor {E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/Seans Processor/reg_file.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module reg_file
 # 
 # Top level modules:
 # 	reg_file
-# vlog -vlog01compat -work work +incdir+C:/Users/baseb_000/Documents/Computer-Architecture-Processor/Seans\ Processor {C:/Users/baseb_000/Documents/Computer-Architecture-Processor/Seans Processor/reg16bit.v}
+# vlog -vlog01compat -work work +incdir+E:/Users/Lonnie\ II/Desktop/Code/New-Comp-Arch-Processor/Seans\ Processor {E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/Seans Processor/reg16bit.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module reg16bit
 # 
 # Top level modules:
 # 	reg16bit
-# vlog -vlog01compat -work work +incdir+C:/Users/baseb_000/Documents/Computer-Architecture-Processor/Seans\ Processor {C:/Users/baseb_000/Documents/Computer-Architecture-Processor/Seans Processor/mux3to8.v}
+# vlog -vlog01compat -work work +incdir+E:/Users/Lonnie\ II/Desktop/Code/New-Comp-Arch-Processor/Seans\ Processor {E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/Seans Processor/mux3to8.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module mux3to8
 # 
 # Top level modules:
 # 	mux3to8
-# vlog -vlog01compat -work work +incdir+C:/Users/baseb_000/Documents/Computer-Architecture-Processor/Seans\ Processor {C:/Users/baseb_000/Documents/Computer-Architecture-Processor/Seans Processor/decoder.v}
+# vlog -vlog01compat -work work +incdir+E:/Users/Lonnie\ II/Desktop/Code/New-Comp-Arch-Processor/Seans\ Processor {E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/Seans Processor/decoder.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module decoder
 # 
 # Top level modules:
 # 	decoder
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/baseb_000/Documents/Computer-Architecture-Processor/Seans\ Processor {C:/Users/baseb_000/Documents/Computer-Architecture-Processor/Seans Processor/reg_file_tb.v}
+# vlog -vlog01compat -work work +incdir+E:/Users/Lonnie\ II/Desktop/Code/New-Comp-Arch-Processor/Seans\ Processor {E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/Seans Processor/reg_file_tb.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module reg_file_tb
 # 
@@ -57,6 +56,6 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# Break in Module reg_file_tb at C:/Users/baseb_000/Documents/Computer-Architecture-Processor/Seans Processor/reg_file_tb.v line 57
-# Simulation Breakpoint: Break in Module reg_file_tb at C:/Users/baseb_000/Documents/Computer-Architecture-Processor/Seans Processor/reg_file_tb.v line 57
+# Break in Module reg_file_tb at E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/Seans Processor/reg_file_tb.v line 57
+# Simulation Breakpoint: Break in Module reg_file_tb at E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/Seans Processor/reg_file_tb.v line 57
 # MACRO ./CompArchProcessor_run_msim_rtl_verilog.do PAUSED at line 20
