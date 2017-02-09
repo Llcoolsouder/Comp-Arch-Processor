@@ -9,6 +9,7 @@ vlog -vlog01compat -work work +incdir+E:/Users/Lonnie\ II/Desktop/Code/New-Comp-
 vlog -vlog01compat -work work +incdir+E:/Users/Lonnie\ II/Desktop/Code/New-Comp-Arch-Processor {E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/FOURtoONE_MUX.v}
 vlog -vlog01compat -work work +incdir+E:/Users/Lonnie\ II/Desktop/Code/New-Comp-Arch-Processor {E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/CarryLookaheadAdder.v}
 vlog -vlog01compat -work work +incdir+E:/Users/Lonnie\ II/Desktop/Code/New-Comp-Arch-Processor {E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/ALU_16bit_v.v}
+vlog -vlog01compat -work work +incdir+E:/Users/Lonnie\ II/Desktop/Code/New-Comp-Arch-Processor {E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/ALU_4bit_v.v}
 
 vlog -vlog01compat -work work +incdir+E:/Users/Lonnie\ II/Desktop/Code/New-Comp-Arch-Processor {E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/ALU_16bit_t.v}
 

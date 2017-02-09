@@ -75,9 +75,10 @@ set_global_assignment -name VERILOG_FILE ALU_16bit_t.v
 set_global_assignment -name EDA_TEST_BENCH_NAME ALU_16bit_t -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id ALU_16bit_t
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME ALU_16bit_t -section_id ALU_16bit_t
-set_global_assignment -name EDA_TEST_BENCH_FILE Register_File_t.v -section_id Register_File_t
-set_global_assignment -name EDA_TEST_BENCH_FILE ALU_16bit_t.v -section_id ALU_16bit_t
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VERILOG_FILE ALU_4bit_v.v
+set_global_assignment -name EDA_TEST_BENCH_FILE Register_File_t.v -section_id Register_File_t
+set_global_assignment -name EDA_TEST_BENCH_FILE ALU_16bit_t.v -section_id ALU_16bit_t
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

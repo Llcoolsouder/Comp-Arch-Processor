@@ -48,7 +48,7 @@ wire	SYNTHESIZED_WIRE_2;
 
 
 
-ALU_4bit	b2v_inst(
+ALU_4bit_v	b2v_inst(
 	.Cin(Cin),
 	.A_next_bit(A[1]),
 	.A_next_bit1(A[2]),
@@ -61,7 +61,7 @@ ALU_4bit	b2v_inst(
 	.F({F_ALTERA_SYNTHESIZED[3],F_ALTERA_SYNTHESIZED[2],F_ALTERA_SYNTHESIZED[1],F_ALTERA_SYNTHESIZED[0]}));
 
 
-ALU_4bit	b2v_inst1(
+ALU_4bit_v	b2v_inst1(
 	.Cin(SYNTHESIZED_WIRE_0),
 	.A_next_bit(A[5]),
 	.A_next_bit1(A[6]),
@@ -74,7 +74,7 @@ ALU_4bit	b2v_inst1(
 	.F({F_ALTERA_SYNTHESIZED[7],F_ALTERA_SYNTHESIZED[6],F_ALTERA_SYNTHESIZED[5],F_ALTERA_SYNTHESIZED[4]}));
 
 
-ALU_4bit	b2v_inst2(
+ALU_4bit_v	b2v_inst2(
 	.Cin(SYNTHESIZED_WIRE_1),
 	.A_next_bit(A[9]),
 	.A_next_bit1(A[10]),
@@ -87,7 +87,7 @@ ALU_4bit	b2v_inst2(
 	.F({F_ALTERA_SYNTHESIZED[11],F_ALTERA_SYNTHESIZED[10],F_ALTERA_SYNTHESIZED[9],F_ALTERA_SYNTHESIZED[8]}));
 
 
-ALU_4bit	b2v_inst3(
+ALU_4bit_v	b2v_inst3(
 	.Cin(SYNTHESIZED_WIRE_2),
 	.A_next_bit(A[13]),
 	.A_next_bit1(A[14]),

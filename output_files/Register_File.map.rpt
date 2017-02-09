@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Register_File
-Wed Feb 08 23:25:28 2017
+Thu Feb 09 01:20:05 2017
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -15,8 +15,12 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
   9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+ 10. Port Connectivity Checks: "ALU_4bit_v:b2v_inst|FOURtoONE_MUX:b2v_inst34"
+ 11. Port Connectivity Checks: "ALU_4bit_v:b2v_inst|FOURtoONE_MUX:b2v_inst23"
+ 12. Port Connectivity Checks: "ALU_4bit_v:b2v_inst|FOURtoONE_MUX:b2v_inst11"
+ 13. Port Connectivity Checks: "ALU_4bit_v:b2v_inst|FOURtoONE_MUX:b2v_inst1"
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
 
 
 
@@ -42,13 +46,13 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Feb 08 23:25:28 2017      ;
+; Analysis & Synthesis Status        ; Successful - Thu Feb 09 01:20:05 2017      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; Register_File                              ;
 ; Top-level Entity Name              ; ALU_16bit_v                                ;
 ; Family                             ; Cyclone III                                ;
-; Total logic elements               ; 170                                        ;
-;     Total combinational functions  ; 170                                        ;
+; Total logic elements               ; 135                                        ;
+;     Total combinational functions  ; 135                                        ;
 ;     Dedicated logic registers      ; 0                                          ;
 ; Total registers                    ; 0                                          ;
 ; Total pins                         ; 55                                         ;
@@ -157,17 +161,17 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                            ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                  ; Library ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------+---------+
-; TWOtoONE_MUX.v                   ; yes             ; User Verilog HDL File              ; E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/TWOtoONE_MUX.v        ;         ;
-; FOURtoONE_MUX.v                  ; yes             ; User Verilog HDL File              ; E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/FOURtoONE_MUX.v       ;         ;
-; CarryLookaheadAdder.v            ; yes             ; User Verilog HDL File              ; E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/CarryLookaheadAdder.v ;         ;
-; ALU_4bit.bdf                     ; yes             ; User Block Diagram/Schematic File  ; E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/ALU_4bit.bdf          ;         ;
-; ALU_16bit_v.v                    ; yes             ; User Verilog HDL File              ; E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/ALU_16bit_v.v         ;         ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                  ; Library ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------+---------+
+; TWOtoONE_MUX.v                   ; yes             ; User Verilog HDL File  ; E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/TWOtoONE_MUX.v        ;         ;
+; FOURtoONE_MUX.v                  ; yes             ; User Verilog HDL File  ; E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/FOURtoONE_MUX.v       ;         ;
+; CarryLookaheadAdder.v            ; yes             ; User Verilog HDL File  ; E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/CarryLookaheadAdder.v ;         ;
+; ALU_16bit_v.v                    ; yes             ; User Verilog HDL File  ; E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/ALU_16bit_v.v         ;         ;
+; ALU_4bit_v.v                     ; yes             ; User Verilog HDL File  ; E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/ALU_4bit_v.v          ;         ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -175,16 +179,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 170         ;
+; Estimated Total logic elements              ; 135         ;
 ;                                             ;             ;
-; Total combinational functions               ; 170         ;
+; Total combinational functions               ; 135         ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 126         ;
-;     -- 3 input functions                    ; 25          ;
-;     -- <=2 input functions                  ; 19          ;
+;     -- 4 input functions                    ; 100         ;
+;     -- 3 input functions                    ; 17          ;
+;     -- <=2 input functions                  ; 18          ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 170         ;
+;     -- normal mode                          ; 135         ;
 ;     -- arithmetic mode                      ; 0           ;
 ;                                             ;             ;
 ; Total registers                             ; 0           ;
@@ -194,95 +198,92 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; I/O pins                                    ; 55          ;
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ; Maximum fan-out node                        ; FS[0]~input ;
-; Maximum fan-out                             ; 68          ;
-; Total fan-out                               ; 689         ;
-; Average fan-out                             ; 2.46        ;
+; Maximum fan-out                             ; 57          ;
+; Total fan-out                               ; 559         ;
+; Average fan-out                             ; 2.28        ;
 +---------------------------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                            ;
-+------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------+--------------+
-; Compilation Hierarchy Node   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                  ; Library Name ;
-+------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------+--------------+
-; |ALU_16bit_v                 ; 170 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 55   ; 0            ; |ALU_16bit_v                                         ; work         ;
-;    |ALU_4bit:b2v_inst1|      ; 40 (5)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst1                      ; work         ;
-;       |FOURtoONE_MUX:inst11| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst1|FOURtoONE_MUX:inst11 ; work         ;
-;       |FOURtoONE_MUX:inst1|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst1|FOURtoONE_MUX:inst1  ; work         ;
-;       |FOURtoONE_MUX:inst23| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst1|FOURtoONE_MUX:inst23 ; work         ;
-;       |FOURtoONE_MUX:inst34| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst1|FOURtoONE_MUX:inst34 ; work         ;
-;       |FOURtoONE_MUX:inst37| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst1|FOURtoONE_MUX:inst37 ; work         ;
-;       |FOURtoONE_MUX:inst38| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst1|FOURtoONE_MUX:inst38 ; work         ;
-;       |FOURtoONE_MUX:inst39| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst1|FOURtoONE_MUX:inst39 ; work         ;
-;       |FOURtoONE_MUX:inst|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst1|FOURtoONE_MUX:inst   ; work         ;
-;       |TWOtoONE_MUX:inst13|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst13  ; work         ;
-;       |TWOtoONE_MUX:inst16|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst16  ; work         ;
-;       |TWOtoONE_MUX:inst24|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst24  ; work         ;
-;       |TWOtoONE_MUX:inst27|  ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst27  ; work         ;
-;       |TWOtoONE_MUX:inst28|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst28  ; work         ;
-;       |TWOtoONE_MUX:inst2|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst2   ; work         ;
-;       |TWOtoONE_MUX:inst35|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst35  ; work         ;
-;       |TWOtoONE_MUX:inst41|  ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst41  ; work         ;
-;       |TWOtoONE_MUX:inst42|  ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst42  ; work         ;
-;       |TWOtoONE_MUX:inst5|   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst5   ; work         ;
-;    |ALU_4bit:b2v_inst2|      ; 47 (5)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst2                      ; work         ;
-;       |FOURtoONE_MUX:inst11| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst2|FOURtoONE_MUX:inst11 ; work         ;
-;       |FOURtoONE_MUX:inst1|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst2|FOURtoONE_MUX:inst1  ; work         ;
-;       |FOURtoONE_MUX:inst23| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst2|FOURtoONE_MUX:inst23 ; work         ;
-;       |FOURtoONE_MUX:inst34| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst2|FOURtoONE_MUX:inst34 ; work         ;
-;       |FOURtoONE_MUX:inst37| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst2|FOURtoONE_MUX:inst37 ; work         ;
-;       |FOURtoONE_MUX:inst38| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst2|FOURtoONE_MUX:inst38 ; work         ;
-;       |FOURtoONE_MUX:inst39| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst2|FOURtoONE_MUX:inst39 ; work         ;
-;       |FOURtoONE_MUX:inst|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst2|FOURtoONE_MUX:inst   ; work         ;
-;       |TWOtoONE_MUX:inst13|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst13  ; work         ;
-;       |TWOtoONE_MUX:inst16|  ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst16  ; work         ;
-;       |TWOtoONE_MUX:inst17|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst17  ; work         ;
-;       |TWOtoONE_MUX:inst24|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst24  ; work         ;
-;       |TWOtoONE_MUX:inst27|  ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst27  ; work         ;
-;       |TWOtoONE_MUX:inst28|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst28  ; work         ;
-;       |TWOtoONE_MUX:inst2|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst2   ; work         ;
-;       |TWOtoONE_MUX:inst35|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst35  ; work         ;
-;       |TWOtoONE_MUX:inst41|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst41  ; work         ;
-;       |TWOtoONE_MUX:inst42|  ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst42  ; work         ;
-;       |TWOtoONE_MUX:inst5|   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst5   ; work         ;
-;    |ALU_4bit:b2v_inst3|      ; 47 (4)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst3                      ; work         ;
-;       |FOURtoONE_MUX:inst11| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst3|FOURtoONE_MUX:inst11 ; work         ;
-;       |FOURtoONE_MUX:inst1|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst3|FOURtoONE_MUX:inst1  ; work         ;
-;       |FOURtoONE_MUX:inst23| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst3|FOURtoONE_MUX:inst23 ; work         ;
-;       |FOURtoONE_MUX:inst34| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst3|FOURtoONE_MUX:inst34 ; work         ;
-;       |FOURtoONE_MUX:inst37| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst3|FOURtoONE_MUX:inst37 ; work         ;
-;       |FOURtoONE_MUX:inst38| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst3|FOURtoONE_MUX:inst38 ; work         ;
-;       |FOURtoONE_MUX:inst39| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst3|FOURtoONE_MUX:inst39 ; work         ;
-;       |FOURtoONE_MUX:inst|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst3|FOURtoONE_MUX:inst   ; work         ;
-;       |TWOtoONE_MUX:inst13|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst13  ; work         ;
-;       |TWOtoONE_MUX:inst16|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst16  ; work         ;
-;       |TWOtoONE_MUX:inst17|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst17  ; work         ;
-;       |TWOtoONE_MUX:inst24|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst24  ; work         ;
-;       |TWOtoONE_MUX:inst27|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst27  ; work         ;
-;       |TWOtoONE_MUX:inst2|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst2   ; work         ;
-;       |TWOtoONE_MUX:inst35|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst35  ; work         ;
-;       |TWOtoONE_MUX:inst41|  ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst41  ; work         ;
-;       |TWOtoONE_MUX:inst42|  ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst42  ; work         ;
-;       |TWOtoONE_MUX:inst5|   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst5   ; work         ;
-;    |ALU_4bit:b2v_inst|       ; 36 (2)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst                       ; work         ;
-;       |FOURtoONE_MUX:inst11| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst|FOURtoONE_MUX:inst11  ; work         ;
-;       |FOURtoONE_MUX:inst1|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst|FOURtoONE_MUX:inst1   ; work         ;
-;       |FOURtoONE_MUX:inst23| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst|FOURtoONE_MUX:inst23  ; work         ;
-;       |FOURtoONE_MUX:inst34| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst|FOURtoONE_MUX:inst34  ; work         ;
-;       |FOURtoONE_MUX:inst37| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst|FOURtoONE_MUX:inst37  ; work         ;
-;       |FOURtoONE_MUX:inst38| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst|FOURtoONE_MUX:inst38  ; work         ;
-;       |FOURtoONE_MUX:inst39| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst|FOURtoONE_MUX:inst39  ; work         ;
-;       |FOURtoONE_MUX:inst|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst|FOURtoONE_MUX:inst    ; work         ;
-;       |TWOtoONE_MUX:inst16|  ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst16   ; work         ;
-;       |TWOtoONE_MUX:inst24|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst24   ; work         ;
-;       |TWOtoONE_MUX:inst27|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst27   ; work         ;
-;       |TWOtoONE_MUX:inst28|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst28   ; work         ;
-;       |TWOtoONE_MUX:inst2|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst2    ; work         ;
-;       |TWOtoONE_MUX:inst35|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst35   ; work         ;
-;       |TWOtoONE_MUX:inst41|  ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst41   ; work         ;
-;       |TWOtoONE_MUX:inst42|  ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst42   ; work         ;
-;       |TWOtoONE_MUX:inst5|   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst5    ; work         ;
-+------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                  ;
++----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node             ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                              ; Library Name ;
++----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------+--------------+
+; |ALU_16bit_v                           ; 135 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 55   ; 0            ; |ALU_16bit_v                                                     ; work         ;
+;    |ALU_4bit_v:b2v_inst1|              ; 32 (2)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst1                                ; work         ;
+;       |CarryLookaheadAdder:b2v_inst40| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst1|CarryLookaheadAdder:b2v_inst40 ; work         ;
+;       |FOURtoONE_MUX:b2v_inst11|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst1|FOURtoONE_MUX:b2v_inst11       ; work         ;
+;       |FOURtoONE_MUX:b2v_inst1|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst1|FOURtoONE_MUX:b2v_inst1        ; work         ;
+;       |FOURtoONE_MUX:b2v_inst23|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst1|FOURtoONE_MUX:b2v_inst23       ; work         ;
+;       |FOURtoONE_MUX:b2v_inst37|       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst1|FOURtoONE_MUX:b2v_inst37       ; work         ;
+;       |FOURtoONE_MUX:b2v_inst38|       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst1|FOURtoONE_MUX:b2v_inst38       ; work         ;
+;       |FOURtoONE_MUX:b2v_inst39|       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst1|FOURtoONE_MUX:b2v_inst39       ; work         ;
+;       |FOURtoONE_MUX:b2v_inst|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst1|FOURtoONE_MUX:b2v_inst         ; work         ;
+;       |TWOtoONE_MUX:b2v_inst13|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst1|TWOtoONE_MUX:b2v_inst13        ; work         ;
+;       |TWOtoONE_MUX:b2v_inst16|        ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst1|TWOtoONE_MUX:b2v_inst16        ; work         ;
+;       |TWOtoONE_MUX:b2v_inst24|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst1|TWOtoONE_MUX:b2v_inst24        ; work         ;
+;       |TWOtoONE_MUX:b2v_inst27|        ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst1|TWOtoONE_MUX:b2v_inst27        ; work         ;
+;       |TWOtoONE_MUX:b2v_inst28|        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst1|TWOtoONE_MUX:b2v_inst28        ; work         ;
+;       |TWOtoONE_MUX:b2v_inst2|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst1|TWOtoONE_MUX:b2v_inst2         ; work         ;
+;       |TWOtoONE_MUX:b2v_inst41|        ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst1|TWOtoONE_MUX:b2v_inst41        ; work         ;
+;       |TWOtoONE_MUX:b2v_inst42|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst1|TWOtoONE_MUX:b2v_inst42        ; work         ;
+;       |TWOtoONE_MUX:b2v_inst5|         ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst1|TWOtoONE_MUX:b2v_inst5         ; work         ;
+;    |ALU_4bit_v:b2v_inst2|              ; 32 (2)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst2                                ; work         ;
+;       |CarryLookaheadAdder:b2v_inst40| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst2|CarryLookaheadAdder:b2v_inst40 ; work         ;
+;       |FOURtoONE_MUX:b2v_inst11|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst2|FOURtoONE_MUX:b2v_inst11       ; work         ;
+;       |FOURtoONE_MUX:b2v_inst1|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst2|FOURtoONE_MUX:b2v_inst1        ; work         ;
+;       |FOURtoONE_MUX:b2v_inst23|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst2|FOURtoONE_MUX:b2v_inst23       ; work         ;
+;       |FOURtoONE_MUX:b2v_inst37|       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst2|FOURtoONE_MUX:b2v_inst37       ; work         ;
+;       |FOURtoONE_MUX:b2v_inst38|       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst2|FOURtoONE_MUX:b2v_inst38       ; work         ;
+;       |FOURtoONE_MUX:b2v_inst39|       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst2|FOURtoONE_MUX:b2v_inst39       ; work         ;
+;       |FOURtoONE_MUX:b2v_inst|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst2|FOURtoONE_MUX:b2v_inst         ; work         ;
+;       |TWOtoONE_MUX:b2v_inst13|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst2|TWOtoONE_MUX:b2v_inst13        ; work         ;
+;       |TWOtoONE_MUX:b2v_inst16|        ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst2|TWOtoONE_MUX:b2v_inst16        ; work         ;
+;       |TWOtoONE_MUX:b2v_inst24|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst2|TWOtoONE_MUX:b2v_inst24        ; work         ;
+;       |TWOtoONE_MUX:b2v_inst27|        ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst2|TWOtoONE_MUX:b2v_inst27        ; work         ;
+;       |TWOtoONE_MUX:b2v_inst28|        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst2|TWOtoONE_MUX:b2v_inst28        ; work         ;
+;       |TWOtoONE_MUX:b2v_inst2|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst2|TWOtoONE_MUX:b2v_inst2         ; work         ;
+;       |TWOtoONE_MUX:b2v_inst41|        ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst2|TWOtoONE_MUX:b2v_inst41        ; work         ;
+;       |TWOtoONE_MUX:b2v_inst42|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst2|TWOtoONE_MUX:b2v_inst42        ; work         ;
+;       |TWOtoONE_MUX:b2v_inst5|         ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst2|TWOtoONE_MUX:b2v_inst5         ; work         ;
+;    |ALU_4bit_v:b2v_inst3|              ; 32 (2)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst3                                ; work         ;
+;       |CarryLookaheadAdder:b2v_inst40| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst3|CarryLookaheadAdder:b2v_inst40 ; work         ;
+;       |FOURtoONE_MUX:b2v_inst11|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst3|FOURtoONE_MUX:b2v_inst11       ; work         ;
+;       |FOURtoONE_MUX:b2v_inst1|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst3|FOURtoONE_MUX:b2v_inst1        ; work         ;
+;       |FOURtoONE_MUX:b2v_inst23|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst3|FOURtoONE_MUX:b2v_inst23       ; work         ;
+;       |FOURtoONE_MUX:b2v_inst37|       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst3|FOURtoONE_MUX:b2v_inst37       ; work         ;
+;       |FOURtoONE_MUX:b2v_inst38|       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst3|FOURtoONE_MUX:b2v_inst38       ; work         ;
+;       |FOURtoONE_MUX:b2v_inst39|       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst3|FOURtoONE_MUX:b2v_inst39       ; work         ;
+;       |FOURtoONE_MUX:b2v_inst|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst3|FOURtoONE_MUX:b2v_inst         ; work         ;
+;       |TWOtoONE_MUX:b2v_inst13|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst3|TWOtoONE_MUX:b2v_inst13        ; work         ;
+;       |TWOtoONE_MUX:b2v_inst16|        ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst3|TWOtoONE_MUX:b2v_inst16        ; work         ;
+;       |TWOtoONE_MUX:b2v_inst24|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst3|TWOtoONE_MUX:b2v_inst24        ; work         ;
+;       |TWOtoONE_MUX:b2v_inst27|        ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst3|TWOtoONE_MUX:b2v_inst27        ; work         ;
+;       |TWOtoONE_MUX:b2v_inst28|        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst3|TWOtoONE_MUX:b2v_inst28        ; work         ;
+;       |TWOtoONE_MUX:b2v_inst2|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst3|TWOtoONE_MUX:b2v_inst2         ; work         ;
+;       |TWOtoONE_MUX:b2v_inst41|        ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst3|TWOtoONE_MUX:b2v_inst41        ; work         ;
+;       |TWOtoONE_MUX:b2v_inst42|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst3|TWOtoONE_MUX:b2v_inst42        ; work         ;
+;       |TWOtoONE_MUX:b2v_inst5|         ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst3|TWOtoONE_MUX:b2v_inst5         ; work         ;
+;    |ALU_4bit_v:b2v_inst|               ; 39 (1)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst                                 ; work         ;
+;       |CarryLookaheadAdder:b2v_inst40| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst|CarryLookaheadAdder:b2v_inst40  ; work         ;
+;       |FOURtoONE_MUX:b2v_inst11|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst|FOURtoONE_MUX:b2v_inst11        ; work         ;
+;       |FOURtoONE_MUX:b2v_inst1|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst|FOURtoONE_MUX:b2v_inst1         ; work         ;
+;       |FOURtoONE_MUX:b2v_inst23|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst|FOURtoONE_MUX:b2v_inst23        ; work         ;
+;       |FOURtoONE_MUX:b2v_inst37|       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst|FOURtoONE_MUX:b2v_inst37        ; work         ;
+;       |FOURtoONE_MUX:b2v_inst38|       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst|FOURtoONE_MUX:b2v_inst38        ; work         ;
+;       |FOURtoONE_MUX:b2v_inst39|       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst|FOURtoONE_MUX:b2v_inst39        ; work         ;
+;       |FOURtoONE_MUX:b2v_inst|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst|FOURtoONE_MUX:b2v_inst          ; work         ;
+;       |TWOtoONE_MUX:b2v_inst13|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst|TWOtoONE_MUX:b2v_inst13         ; work         ;
+;       |TWOtoONE_MUX:b2v_inst16|        ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst|TWOtoONE_MUX:b2v_inst16         ; work         ;
+;       |TWOtoONE_MUX:b2v_inst17|        ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst|TWOtoONE_MUX:b2v_inst17         ; work         ;
+;       |TWOtoONE_MUX:b2v_inst24|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst|TWOtoONE_MUX:b2v_inst24         ; work         ;
+;       |TWOtoONE_MUX:b2v_inst27|        ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst|TWOtoONE_MUX:b2v_inst27         ; work         ;
+;       |TWOtoONE_MUX:b2v_inst28|        ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst|TWOtoONE_MUX:b2v_inst28         ; work         ;
+;       |TWOtoONE_MUX:b2v_inst2|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst|TWOtoONE_MUX:b2v_inst2          ; work         ;
+;       |TWOtoONE_MUX:b2v_inst41|        ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst|TWOtoONE_MUX:b2v_inst41         ; work         ;
+;       |TWOtoONE_MUX:b2v_inst42|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst|TWOtoONE_MUX:b2v_inst42         ; work         ;
+;       |TWOtoONE_MUX:b2v_inst5|         ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_16bit_v|ALU_4bit_v:b2v_inst|TWOtoONE_MUX:b2v_inst5          ; work         ;
++----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -301,13 +302,53 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                          ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |ALU_16bit_v|ALU_4bit:b2v_inst2|FOURtoONE_MUX:inst34|Mux0 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |ALU_16bit_v|ALU_4bit_v:b2v_inst|FOURtoONE_MUX:b2v_inst1|Mux0 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU_4bit_v:b2v_inst|FOURtoONE_MUX:b2v_inst34" ;
++------+-------+----------+------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                        ;
++------+-------+----------+------------------------------------------------+
+; A    ; Input ; Info     ; Stuck at GND                                   ;
+; B    ; Input ; Info     ; Stuck at VCC                                   ;
++------+-------+----------+------------------------------------------------+
+
+
++--------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU_4bit_v:b2v_inst|FOURtoONE_MUX:b2v_inst23" ;
++------+-------+----------+------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                        ;
++------+-------+----------+------------------------------------------------+
+; A    ; Input ; Info     ; Stuck at GND                                   ;
+; B    ; Input ; Info     ; Stuck at VCC                                   ;
++------+-------+----------+------------------------------------------------+
+
+
++--------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU_4bit_v:b2v_inst|FOURtoONE_MUX:b2v_inst11" ;
++------+-------+----------+------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                        ;
++------+-------+----------+------------------------------------------------+
+; A    ; Input ; Info     ; Stuck at GND                                   ;
+; B    ; Input ; Info     ; Stuck at VCC                                   ;
++------+-------+----------+------------------------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU_4bit_v:b2v_inst|FOURtoONE_MUX:b2v_inst1" ;
++------+-------+----------+-----------------------------------------------+
+; Port ; Type  ; Severity ; Details                                       ;
++------+-------+----------+-----------------------------------------------+
+; A    ; Input ; Info     ; Stuck at GND                                  ;
+; B    ; Input ; Info     ; Stuck at VCC                                  ;
++------+-------+----------+-----------------------------------------------+
 
 
 +-------------------------------+
@@ -325,7 +366,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Wed Feb 08 23:25:26 2017
+    Info: Processing started: Thu Feb 09 01:20:04 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Processor -c Register_File
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file threetoeight_decoder.v
@@ -355,22 +396,30 @@ Info (12021): Found 1 design units, including 1 entities, in source file alu_16b
     Info (12023): Found entity 1: ALU_16bit_v
 Info (12021): Found 1 design units, including 1 entities, in source file alu_16bit_t.v
     Info (12023): Found entity 1: ALU_16bit_t
+Info (12021): Found 3 design units, including 3 entities, in source file alu_4bit_v.v
+    Info (12023): Found entity 1: ALU_4bit_v
+    Info (12023): Found entity 2: and5_1
+    Info (12023): Found entity 3: or5_0
 Info (12127): Elaborating entity "ALU_16bit_v" for the top level hierarchy
-Info (12128): Elaborating entity "ALU_4bit" for hierarchy "ALU_4bit:b2v_inst"
-Info (12128): Elaborating entity "TWOtoONE_MUX" for hierarchy "ALU_4bit:b2v_inst|TWOtoONE_MUX:inst42"
-Info (12128): Elaborating entity "FOURtoONE_MUX" for hierarchy "ALU_4bit:b2v_inst|FOURtoONE_MUX:inst34"
-Info (12128): Elaborating entity "CarryLookaheadAdder" for hierarchy "ALU_4bit:b2v_inst|CarryLookaheadAdder:inst4"
+Info (12128): Elaborating entity "ALU_4bit_v" for hierarchy "ALU_4bit_v:b2v_inst"
+Info (12128): Elaborating entity "FOURtoONE_MUX" for hierarchy "ALU_4bit_v:b2v_inst|FOURtoONE_MUX:b2v_inst"
+Info (12128): Elaborating entity "TWOtoONE_MUX" for hierarchy "ALU_4bit_v:b2v_inst|TWOtoONE_MUX:b2v_inst13"
+Info (12128): Elaborating entity "CarryLookaheadAdder" for hierarchy "ALU_4bit_v:b2v_inst|CarryLookaheadAdder:b2v_inst15"
+Info (12128): Elaborating entity "or5_0" for hierarchy "ALU_4bit_v:b2v_inst|or5_0:b2v_inst68"
+Warning (10034): Output port "OUT" at ALU_4bit_v.v(478) has no driver
+Info (12128): Elaborating entity "and5_1" for hierarchy "ALU_4bit_v:b2v_inst|and5_1:b2v_inst72"
+Warning (10034): Output port "OUT" at ALU_4bit_v.v(466) has no driver
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 225 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 190 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 38 input pins
     Info (21059): Implemented 17 output pins
-    Info (21061): Implemented 170 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 506 megabytes
-    Info: Processing ended: Wed Feb 08 23:25:28 2017
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info (21061): Implemented 135 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 508 megabytes
+    Info: Processing ended: Thu Feb 09 01:20:05 2017
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 

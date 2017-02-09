@@ -37,123 +37,52 @@ FS[1] => FS[1].IN4
 FS[2] => FS[2].IN4
 FS[3] => FS[3].IN4
 FS[4] => FS[4].IN4
-Cout << ALU_4bit:b2v_inst3.Cout
-F[0] << ALU_4bit:b2v_inst.F
-F[1] << ALU_4bit:b2v_inst.F
-F[2] << ALU_4bit:b2v_inst.F
-F[3] << ALU_4bit:b2v_inst.F
-F[4] << ALU_4bit:b2v_inst1.F
-F[5] << ALU_4bit:b2v_inst1.F
-F[6] << ALU_4bit:b2v_inst1.F
-F[7] << ALU_4bit:b2v_inst1.F
-F[8] << ALU_4bit:b2v_inst2.F
-F[9] << ALU_4bit:b2v_inst2.F
-F[10] << ALU_4bit:b2v_inst2.F
-F[11] << ALU_4bit:b2v_inst2.F
-F[12] << ALU_4bit:b2v_inst3.F
-F[13] << ALU_4bit:b2v_inst3.F
-F[14] << ALU_4bit:b2v_inst3.F
-F[15] << ALU_4bit:b2v_inst3.F
+Cout << ALU_4bit_v:b2v_inst3.Cout
+F[0] << ALU_4bit_v:b2v_inst.F
+F[1] << ALU_4bit_v:b2v_inst.F
+F[2] << ALU_4bit_v:b2v_inst.F
+F[3] << ALU_4bit_v:b2v_inst.F
+F[4] << ALU_4bit_v:b2v_inst1.F
+F[5] << ALU_4bit_v:b2v_inst1.F
+F[6] << ALU_4bit_v:b2v_inst1.F
+F[7] << ALU_4bit_v:b2v_inst1.F
+F[8] << ALU_4bit_v:b2v_inst2.F
+F[9] << ALU_4bit_v:b2v_inst2.F
+F[10] << ALU_4bit_v:b2v_inst2.F
+F[11] << ALU_4bit_v:b2v_inst2.F
+F[12] << ALU_4bit_v:b2v_inst3.F
+F[13] << ALU_4bit_v:b2v_inst3.F
+F[14] << ALU_4bit_v:b2v_inst3.F
+F[15] << ALU_4bit_v:b2v_inst3.F
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst
-Cout <= TWOtoONE_MUX:inst42.Q
-B[0] => FOURtoONE_MUX:inst1.C
-B[0] => inst9.IN0
-B[0] => FOURtoONE_MUX:inst.S[0]
-B[1] => FOURtoONE_MUX:inst11.C
-B[1] => inst20.IN0
-B[1] => FOURtoONE_MUX:inst37.S[0]
-B[2] => FOURtoONE_MUX:inst23.C
-B[2] => inst31.IN0
-B[2] => FOURtoONE_MUX:inst38.S[0]
-B[3] => FOURtoONE_MUX:inst34.C
-B[3] => inst45.IN0
-B[3] => FOURtoONE_MUX:inst39.S[0]
-FS[0] => TWOtoONE_MUX:inst35.S
-FS[0] => TWOtoONE_MUX:inst24.S
-FS[0] => TWOtoONE_MUX:inst13.S
-FS[0] => TWOtoONE_MUX:inst2.S
-FS[0] => FOURtoONE_MUX:inst.A
-FS[0] => TWOtoONE_MUX:inst3.S
-FS[0] => FOURtoONE_MUX:inst37.A
-FS[0] => TWOtoONE_MUX:inst14.S
-FS[0] => FOURtoONE_MUX:inst38.A
-FS[0] => TWOtoONE_MUX:inst25.S
-FS[0] => FOURtoONE_MUX:inst39.A
-FS[0] => TWOtoONE_MUX:inst36.S
-FS[1] => FOURtoONE_MUX:inst34.S[0]
-FS[1] => FOURtoONE_MUX:inst23.S[0]
-FS[1] => FOURtoONE_MUX:inst11.S[0]
-FS[1] => FOURtoONE_MUX:inst1.S[0]
-FS[1] => FOURtoONE_MUX:inst.B
-FS[1] => FOURtoONE_MUX:inst37.B
-FS[1] => FOURtoONE_MUX:inst38.B
-FS[1] => FOURtoONE_MUX:inst39.B
-FS[2] => FOURtoONE_MUX:inst34.S[1]
-FS[2] => FOURtoONE_MUX:inst23.S[1]
-FS[2] => FOURtoONE_MUX:inst11.S[1]
-FS[2] => FOURtoONE_MUX:inst1.S[1]
-FS[2] => FOURtoONE_MUX:inst.C
-FS[2] => FOURtoONE_MUX:inst37.C
-FS[2] => FOURtoONE_MUX:inst38.C
-FS[2] => FOURtoONE_MUX:inst39.C
-FS[3] => TWOtoONE_MUX:inst42.S
-FS[3] => FOURtoONE_MUX:inst.D
-FS[3] => TWOtoONE_MUX:inst7.S
-FS[3] => FOURtoONE_MUX:inst37.D
-FS[3] => TWOtoONE_MUX:inst6.S
-FS[3] => TWOtoONE_MUX:inst18.S
-FS[3] => FOURtoONE_MUX:inst38.D
-FS[3] => TWOtoONE_MUX:inst17.S
-FS[3] => TWOtoONE_MUX:inst29.S
-FS[3] => FOURtoONE_MUX:inst39.D
-FS[3] => TWOtoONE_MUX:inst28.S
-FS[3] => TWOtoONE_MUX:inst43.S
-FS[4] => TWOtoONE_MUX:inst5.S
-FS[4] => TWOtoONE_MUX:inst16.S
-FS[4] => TWOtoONE_MUX:inst27.S
-FS[4] => TWOtoONE_MUX:inst41.S
-A[0] => TWOtoONE_MUX:inst2.A
-A[0] => inst8.IN0
-A[0] => FOURtoONE_MUX:inst.S[1]
-A[0] => TWOtoONE_MUX:inst6.B
-A[1] => TWOtoONE_MUX:inst13.A
-A[1] => inst19.IN0
-A[1] => FOURtoONE_MUX:inst37.S[1]
-A[1] => TWOtoONE_MUX:inst17.B
-A[2] => TWOtoONE_MUX:inst24.A
-A[2] => inst30.IN0
-A[2] => FOURtoONE_MUX:inst38.S[1]
-A[2] => TWOtoONE_MUX:inst28.B
-A[3] => TWOtoONE_MUX:inst35.A
-A[3] => inst44.IN0
-A[3] => TWOtoONE_MUX:inst42.B
-A[3] => FOURtoONE_MUX:inst39.S[1]
-Cin => CarryLookaheadAdder:inst4.Cin
-Cin => TWOtoONE_MUX:inst3.A
-Cin => inst50.IN0
-Cin => inst56.IN2
-Cin => inst63.IN3
-Cin => inst72.IN3
-F[0] <= TWOtoONE_MUX:inst5.Q
-F[1] <= TWOtoONE_MUX:inst16.Q
-F[2] <= TWOtoONE_MUX:inst27.Q
-F[3] <= TWOtoONE_MUX:inst41.Q
-A_next_bit => TWOtoONE_MUX:inst3.B
-A_next_bit1 => TWOtoONE_MUX:inst14.B
-A_next_bit2 => TWOtoONE_MUX:inst25.B
-A_next_bit3 => TWOtoONE_MUX:inst36.B
+|ALU_16bit_v|ALU_4bit_v:b2v_inst
+Cin => Cin.IN3
+A_next_bit => A_next_bit.IN1
+A_next_bit1 => A_next_bit1.IN1
+A_next_bit2 => A_next_bit2.IN1
+A_next_bit3 => A_next_bit3.IN1
+A[0] => logic_S[1].IN3
+A[1] => logic1_S[1].IN3
+A[2] => logic2_S[1].IN3
+A[3] => logic3_S[1].IN3
+B[0] => logic_S[0].IN2
+B[1] => logic1_S[0].IN2
+B[2] => logic2_S[0].IN2
+B[3] => logic3_S[0].IN2
+FS[0] => FS[0].IN12
+FS[1] => FS[1].IN8
+FS[2] => FS[2].IN8
+FS[3] => FS[3].IN12
+FS[4] => FS[4].IN4
+Cout <= TWOtoONE_MUX:b2v_inst42.Q
+F[0] <= TWOtoONE_MUX:b2v_inst5.Q
+F[1] <= TWOtoONE_MUX:b2v_inst16.Q
+F[2] <= TWOtoONE_MUX:b2v_inst27.Q
+F[3] <= TWOtoONE_MUX:b2v_inst41.Q
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst42
-A => Q.DATAA
-B => Q.DATAB
-S => Decoder0.IN0
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU_16bit_v|ALU_4bit:b2v_inst|FOURtoONE_MUX:inst34
+|ALU_16bit_v|ALU_4bit_v:b2v_inst|FOURtoONE_MUX:b2v_inst
 A => Mux0.IN0
 B => Mux0.IN1
 C => Mux0.IN2
@@ -163,21 +92,7 @@ S[1] => Mux0.IN4
 Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst35
-A => Q.DATAA
-B => Q.DATAB
-S => Decoder0.IN0
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst24
-A => Q.DATAA
-B => Q.DATAB
-S => Decoder0.IN0
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU_16bit_v|ALU_4bit:b2v_inst|FOURtoONE_MUX:inst23
+|ALU_16bit_v|ALU_4bit_v:b2v_inst|FOURtoONE_MUX:b2v_inst1
 A => Mux0.IN0
 B => Mux0.IN1
 C => Mux0.IN2
@@ -187,7 +102,7 @@ S[1] => Mux0.IN4
 Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst|FOURtoONE_MUX:inst11
+|ALU_16bit_v|ALU_4bit_v:b2v_inst|FOURtoONE_MUX:b2v_inst11
 A => Mux0.IN0
 B => Mux0.IN1
 C => Mux0.IN2
@@ -197,76 +112,56 @@ S[1] => Mux0.IN4
 Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst13
+|ALU_16bit_v|ALU_4bit_v:b2v_inst|TWOtoONE_MUX:b2v_inst13
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst2
+|ALU_16bit_v|ALU_4bit_v:b2v_inst|TWOtoONE_MUX:b2v_inst14
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst|FOURtoONE_MUX:inst1
-A => Mux0.IN0
-B => Mux0.IN1
-C => Mux0.IN2
-D => Mux0.IN3
-S[0] => Mux0.IN5
-S[1] => Mux0.IN4
-Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst5
-A => Q.DATAA
-B => Q.DATAB
-S => Decoder0.IN0
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU_16bit_v|ALU_4bit:b2v_inst|FOURtoONE_MUX:inst
-A => Mux0.IN0
-B => Mux0.IN1
-C => Mux0.IN2
-D => Mux0.IN3
-S[0] => Mux0.IN5
-S[1] => Mux0.IN4
-Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst7
-A => Q.DATAA
-B => Q.DATAB
-S => Decoder0.IN0
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU_16bit_v|ALU_4bit:b2v_inst|CarryLookaheadAdder:inst4
+|ALU_16bit_v|ALU_4bit_v:b2v_inst|CarryLookaheadAdder:b2v_inst15
 A => S.IN0
 B => S.IN1
 Cin => S.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst3
+|ALU_16bit_v|ALU_4bit_v:b2v_inst|TWOtoONE_MUX:b2v_inst16
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst16
+|ALU_16bit_v|ALU_4bit_v:b2v_inst|TWOtoONE_MUX:b2v_inst17
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst|FOURtoONE_MUX:inst37
+|ALU_16bit_v|ALU_4bit_v:b2v_inst|TWOtoONE_MUX:b2v_inst18
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst|TWOtoONE_MUX:b2v_inst2
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst|FOURtoONE_MUX:b2v_inst23
 A => Mux0.IN0
 B => Mux0.IN1
 C => Mux0.IN2
@@ -276,42 +171,56 @@ S[1] => Mux0.IN4
 Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst18
+|ALU_16bit_v|ALU_4bit_v:b2v_inst|TWOtoONE_MUX:b2v_inst24
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst|CarryLookaheadAdder:inst15
+|ALU_16bit_v|ALU_4bit_v:b2v_inst|TWOtoONE_MUX:b2v_inst25
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst|CarryLookaheadAdder:b2v_inst26
 A => S.IN0
 B => S.IN1
 Cin => S.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst6
+|ALU_16bit_v|ALU_4bit_v:b2v_inst|TWOtoONE_MUX:b2v_inst27
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst14
+|ALU_16bit_v|ALU_4bit_v:b2v_inst|TWOtoONE_MUX:b2v_inst28
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst27
+|ALU_16bit_v|ALU_4bit_v:b2v_inst|TWOtoONE_MUX:b2v_inst29
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst|FOURtoONE_MUX:inst38
+|ALU_16bit_v|ALU_4bit_v:b2v_inst|TWOtoONE_MUX:b2v_inst3
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst|FOURtoONE_MUX:b2v_inst34
 A => Mux0.IN0
 B => Mux0.IN1
 C => Mux0.IN2
@@ -321,177 +230,151 @@ S[1] => Mux0.IN4
 Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst29
+|ALU_16bit_v|ALU_4bit_v:b2v_inst|TWOtoONE_MUX:b2v_inst35
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst|CarryLookaheadAdder:inst26
+|ALU_16bit_v|ALU_4bit_v:b2v_inst|TWOtoONE_MUX:b2v_inst36
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst|FOURtoONE_MUX:b2v_inst37
+A => Mux0.IN0
+B => Mux0.IN1
+C => Mux0.IN2
+D => Mux0.IN3
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst|FOURtoONE_MUX:b2v_inst38
+A => Mux0.IN0
+B => Mux0.IN1
+C => Mux0.IN2
+D => Mux0.IN3
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst|FOURtoONE_MUX:b2v_inst39
+A => Mux0.IN0
+B => Mux0.IN1
+C => Mux0.IN2
+D => Mux0.IN3
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst|CarryLookaheadAdder:b2v_inst4
 A => S.IN0
 B => S.IN1
 Cin => S.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst17
-A => Q.DATAA
-B => Q.DATAB
-S => Decoder0.IN0
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst25
-A => Q.DATAA
-B => Q.DATAB
-S => Decoder0.IN0
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst41
-A => Q.DATAA
-B => Q.DATAB
-S => Decoder0.IN0
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU_16bit_v|ALU_4bit:b2v_inst|FOURtoONE_MUX:inst39
-A => Mux0.IN0
-B => Mux0.IN1
-C => Mux0.IN2
-D => Mux0.IN3
-S[0] => Mux0.IN5
-S[1] => Mux0.IN4
-Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst43
-A => Q.DATAA
-B => Q.DATAB
-S => Decoder0.IN0
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU_16bit_v|ALU_4bit:b2v_inst|CarryLookaheadAdder:inst40
+|ALU_16bit_v|ALU_4bit_v:b2v_inst|CarryLookaheadAdder:b2v_inst40
 A => S.IN0
 B => S.IN1
 Cin => S.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst28
+|ALU_16bit_v|ALU_4bit_v:b2v_inst|TWOtoONE_MUX:b2v_inst41
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst|TWOtoONE_MUX:inst36
+|ALU_16bit_v|ALU_4bit_v:b2v_inst|TWOtoONE_MUX:b2v_inst42
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst1
-Cout <= TWOtoONE_MUX:inst42.Q
-B[0] => FOURtoONE_MUX:inst1.C
-B[0] => inst9.IN0
-B[0] => FOURtoONE_MUX:inst.S[0]
-B[1] => FOURtoONE_MUX:inst11.C
-B[1] => inst20.IN0
-B[1] => FOURtoONE_MUX:inst37.S[0]
-B[2] => FOURtoONE_MUX:inst23.C
-B[2] => inst31.IN0
-B[2] => FOURtoONE_MUX:inst38.S[0]
-B[3] => FOURtoONE_MUX:inst34.C
-B[3] => inst45.IN0
-B[3] => FOURtoONE_MUX:inst39.S[0]
-FS[0] => TWOtoONE_MUX:inst35.S
-FS[0] => TWOtoONE_MUX:inst24.S
-FS[0] => TWOtoONE_MUX:inst13.S
-FS[0] => TWOtoONE_MUX:inst2.S
-FS[0] => FOURtoONE_MUX:inst.A
-FS[0] => TWOtoONE_MUX:inst3.S
-FS[0] => FOURtoONE_MUX:inst37.A
-FS[0] => TWOtoONE_MUX:inst14.S
-FS[0] => FOURtoONE_MUX:inst38.A
-FS[0] => TWOtoONE_MUX:inst25.S
-FS[0] => FOURtoONE_MUX:inst39.A
-FS[0] => TWOtoONE_MUX:inst36.S
-FS[1] => FOURtoONE_MUX:inst34.S[0]
-FS[1] => FOURtoONE_MUX:inst23.S[0]
-FS[1] => FOURtoONE_MUX:inst11.S[0]
-FS[1] => FOURtoONE_MUX:inst1.S[0]
-FS[1] => FOURtoONE_MUX:inst.B
-FS[1] => FOURtoONE_MUX:inst37.B
-FS[1] => FOURtoONE_MUX:inst38.B
-FS[1] => FOURtoONE_MUX:inst39.B
-FS[2] => FOURtoONE_MUX:inst34.S[1]
-FS[2] => FOURtoONE_MUX:inst23.S[1]
-FS[2] => FOURtoONE_MUX:inst11.S[1]
-FS[2] => FOURtoONE_MUX:inst1.S[1]
-FS[2] => FOURtoONE_MUX:inst.C
-FS[2] => FOURtoONE_MUX:inst37.C
-FS[2] => FOURtoONE_MUX:inst38.C
-FS[2] => FOURtoONE_MUX:inst39.C
-FS[3] => TWOtoONE_MUX:inst42.S
-FS[3] => FOURtoONE_MUX:inst.D
-FS[3] => TWOtoONE_MUX:inst7.S
-FS[3] => FOURtoONE_MUX:inst37.D
-FS[3] => TWOtoONE_MUX:inst6.S
-FS[3] => TWOtoONE_MUX:inst18.S
-FS[3] => FOURtoONE_MUX:inst38.D
-FS[3] => TWOtoONE_MUX:inst17.S
-FS[3] => TWOtoONE_MUX:inst29.S
-FS[3] => FOURtoONE_MUX:inst39.D
-FS[3] => TWOtoONE_MUX:inst28.S
-FS[3] => TWOtoONE_MUX:inst43.S
-FS[4] => TWOtoONE_MUX:inst5.S
-FS[4] => TWOtoONE_MUX:inst16.S
-FS[4] => TWOtoONE_MUX:inst27.S
-FS[4] => TWOtoONE_MUX:inst41.S
-A[0] => TWOtoONE_MUX:inst2.A
-A[0] => inst8.IN0
-A[0] => FOURtoONE_MUX:inst.S[1]
-A[0] => TWOtoONE_MUX:inst6.B
-A[1] => TWOtoONE_MUX:inst13.A
-A[1] => inst19.IN0
-A[1] => FOURtoONE_MUX:inst37.S[1]
-A[1] => TWOtoONE_MUX:inst17.B
-A[2] => TWOtoONE_MUX:inst24.A
-A[2] => inst30.IN0
-A[2] => FOURtoONE_MUX:inst38.S[1]
-A[2] => TWOtoONE_MUX:inst28.B
-A[3] => TWOtoONE_MUX:inst35.A
-A[3] => inst44.IN0
-A[3] => TWOtoONE_MUX:inst42.B
-A[3] => FOURtoONE_MUX:inst39.S[1]
-Cin => CarryLookaheadAdder:inst4.Cin
-Cin => TWOtoONE_MUX:inst3.A
-Cin => inst50.IN0
-Cin => inst56.IN2
-Cin => inst63.IN3
-Cin => inst72.IN3
-F[0] <= TWOtoONE_MUX:inst5.Q
-F[1] <= TWOtoONE_MUX:inst16.Q
-F[2] <= TWOtoONE_MUX:inst27.Q
-F[3] <= TWOtoONE_MUX:inst41.Q
-A_next_bit => TWOtoONE_MUX:inst3.B
-A_next_bit1 => TWOtoONE_MUX:inst14.B
-A_next_bit2 => TWOtoONE_MUX:inst25.B
-A_next_bit3 => TWOtoONE_MUX:inst36.B
-
-
-|ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst42
+|ALU_16bit_v|ALU_4bit_v:b2v_inst|TWOtoONE_MUX:b2v_inst43
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst1|FOURtoONE_MUX:inst34
+|ALU_16bit_v|ALU_4bit_v:b2v_inst|TWOtoONE_MUX:b2v_inst5
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst|TWOtoONE_MUX:b2v_inst6
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst|or5_0:b2v_inst68
+IN1 => ~NO_FANOUT~
+IN3 => ~NO_FANOUT~
+IN2 => ~NO_FANOUT~
+IN5 => ~NO_FANOUT~
+IN4 => ~NO_FANOUT~
+OUT <= <GND>
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst|TWOtoONE_MUX:b2v_inst7
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst|and5_1:b2v_inst72
+IN3 => ~NO_FANOUT~
+IN2 => ~NO_FANOUT~
+IN1 => ~NO_FANOUT~
+IN5 => ~NO_FANOUT~
+IN4 => ~NO_FANOUT~
+OUT <= <GND>
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst1
+Cin => Cin.IN3
+A_next_bit => A_next_bit.IN1
+A_next_bit1 => A_next_bit1.IN1
+A_next_bit2 => A_next_bit2.IN1
+A_next_bit3 => A_next_bit3.IN1
+A[0] => logic_S[1].IN3
+A[1] => logic1_S[1].IN3
+A[2] => logic2_S[1].IN3
+A[3] => logic3_S[1].IN3
+B[0] => logic_S[0].IN2
+B[1] => logic1_S[0].IN2
+B[2] => logic2_S[0].IN2
+B[3] => logic3_S[0].IN2
+FS[0] => FS[0].IN12
+FS[1] => FS[1].IN8
+FS[2] => FS[2].IN8
+FS[3] => FS[3].IN12
+FS[4] => FS[4].IN4
+Cout <= TWOtoONE_MUX:b2v_inst42.Q
+F[0] <= TWOtoONE_MUX:b2v_inst5.Q
+F[1] <= TWOtoONE_MUX:b2v_inst16.Q
+F[2] <= TWOtoONE_MUX:b2v_inst27.Q
+F[3] <= TWOtoONE_MUX:b2v_inst41.Q
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst1|FOURtoONE_MUX:b2v_inst
 A => Mux0.IN0
 B => Mux0.IN1
 C => Mux0.IN2
@@ -501,21 +384,7 @@ S[1] => Mux0.IN4
 Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst35
-A => Q.DATAA
-B => Q.DATAB
-S => Decoder0.IN0
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst24
-A => Q.DATAA
-B => Q.DATAB
-S => Decoder0.IN0
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU_16bit_v|ALU_4bit:b2v_inst1|FOURtoONE_MUX:inst23
+|ALU_16bit_v|ALU_4bit_v:b2v_inst1|FOURtoONE_MUX:b2v_inst1
 A => Mux0.IN0
 B => Mux0.IN1
 C => Mux0.IN2
@@ -525,7 +394,7 @@ S[1] => Mux0.IN4
 Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst1|FOURtoONE_MUX:inst11
+|ALU_16bit_v|ALU_4bit_v:b2v_inst1|FOURtoONE_MUX:b2v_inst11
 A => Mux0.IN0
 B => Mux0.IN1
 C => Mux0.IN2
@@ -535,76 +404,56 @@ S[1] => Mux0.IN4
 Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst13
+|ALU_16bit_v|ALU_4bit_v:b2v_inst1|TWOtoONE_MUX:b2v_inst13
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst2
+|ALU_16bit_v|ALU_4bit_v:b2v_inst1|TWOtoONE_MUX:b2v_inst14
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst1|FOURtoONE_MUX:inst1
-A => Mux0.IN0
-B => Mux0.IN1
-C => Mux0.IN2
-D => Mux0.IN3
-S[0] => Mux0.IN5
-S[1] => Mux0.IN4
-Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst5
-A => Q.DATAA
-B => Q.DATAB
-S => Decoder0.IN0
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU_16bit_v|ALU_4bit:b2v_inst1|FOURtoONE_MUX:inst
-A => Mux0.IN0
-B => Mux0.IN1
-C => Mux0.IN2
-D => Mux0.IN3
-S[0] => Mux0.IN5
-S[1] => Mux0.IN4
-Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst7
-A => Q.DATAA
-B => Q.DATAB
-S => Decoder0.IN0
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU_16bit_v|ALU_4bit:b2v_inst1|CarryLookaheadAdder:inst4
+|ALU_16bit_v|ALU_4bit_v:b2v_inst1|CarryLookaheadAdder:b2v_inst15
 A => S.IN0
 B => S.IN1
 Cin => S.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst3
+|ALU_16bit_v|ALU_4bit_v:b2v_inst1|TWOtoONE_MUX:b2v_inst16
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst16
+|ALU_16bit_v|ALU_4bit_v:b2v_inst1|TWOtoONE_MUX:b2v_inst17
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst1|FOURtoONE_MUX:inst37
+|ALU_16bit_v|ALU_4bit_v:b2v_inst1|TWOtoONE_MUX:b2v_inst18
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst1|TWOtoONE_MUX:b2v_inst2
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst1|FOURtoONE_MUX:b2v_inst23
 A => Mux0.IN0
 B => Mux0.IN1
 C => Mux0.IN2
@@ -614,42 +463,56 @@ S[1] => Mux0.IN4
 Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst18
+|ALU_16bit_v|ALU_4bit_v:b2v_inst1|TWOtoONE_MUX:b2v_inst24
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst1|CarryLookaheadAdder:inst15
+|ALU_16bit_v|ALU_4bit_v:b2v_inst1|TWOtoONE_MUX:b2v_inst25
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst1|CarryLookaheadAdder:b2v_inst26
 A => S.IN0
 B => S.IN1
 Cin => S.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst6
+|ALU_16bit_v|ALU_4bit_v:b2v_inst1|TWOtoONE_MUX:b2v_inst27
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst14
+|ALU_16bit_v|ALU_4bit_v:b2v_inst1|TWOtoONE_MUX:b2v_inst28
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst27
+|ALU_16bit_v|ALU_4bit_v:b2v_inst1|TWOtoONE_MUX:b2v_inst29
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst1|FOURtoONE_MUX:inst38
+|ALU_16bit_v|ALU_4bit_v:b2v_inst1|TWOtoONE_MUX:b2v_inst3
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst1|FOURtoONE_MUX:b2v_inst34
 A => Mux0.IN0
 B => Mux0.IN1
 C => Mux0.IN2
@@ -659,177 +522,151 @@ S[1] => Mux0.IN4
 Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst29
+|ALU_16bit_v|ALU_4bit_v:b2v_inst1|TWOtoONE_MUX:b2v_inst35
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst1|CarryLookaheadAdder:inst26
+|ALU_16bit_v|ALU_4bit_v:b2v_inst1|TWOtoONE_MUX:b2v_inst36
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst1|FOURtoONE_MUX:b2v_inst37
+A => Mux0.IN0
+B => Mux0.IN1
+C => Mux0.IN2
+D => Mux0.IN3
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst1|FOURtoONE_MUX:b2v_inst38
+A => Mux0.IN0
+B => Mux0.IN1
+C => Mux0.IN2
+D => Mux0.IN3
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst1|FOURtoONE_MUX:b2v_inst39
+A => Mux0.IN0
+B => Mux0.IN1
+C => Mux0.IN2
+D => Mux0.IN3
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst1|CarryLookaheadAdder:b2v_inst4
 A => S.IN0
 B => S.IN1
 Cin => S.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst17
-A => Q.DATAA
-B => Q.DATAB
-S => Decoder0.IN0
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst25
-A => Q.DATAA
-B => Q.DATAB
-S => Decoder0.IN0
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst41
-A => Q.DATAA
-B => Q.DATAB
-S => Decoder0.IN0
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU_16bit_v|ALU_4bit:b2v_inst1|FOURtoONE_MUX:inst39
-A => Mux0.IN0
-B => Mux0.IN1
-C => Mux0.IN2
-D => Mux0.IN3
-S[0] => Mux0.IN5
-S[1] => Mux0.IN4
-Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst43
-A => Q.DATAA
-B => Q.DATAB
-S => Decoder0.IN0
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU_16bit_v|ALU_4bit:b2v_inst1|CarryLookaheadAdder:inst40
+|ALU_16bit_v|ALU_4bit_v:b2v_inst1|CarryLookaheadAdder:b2v_inst40
 A => S.IN0
 B => S.IN1
 Cin => S.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst28
+|ALU_16bit_v|ALU_4bit_v:b2v_inst1|TWOtoONE_MUX:b2v_inst41
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst1|TWOtoONE_MUX:inst36
+|ALU_16bit_v|ALU_4bit_v:b2v_inst1|TWOtoONE_MUX:b2v_inst42
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst2
-Cout <= TWOtoONE_MUX:inst42.Q
-B[0] => FOURtoONE_MUX:inst1.C
-B[0] => inst9.IN0
-B[0] => FOURtoONE_MUX:inst.S[0]
-B[1] => FOURtoONE_MUX:inst11.C
-B[1] => inst20.IN0
-B[1] => FOURtoONE_MUX:inst37.S[0]
-B[2] => FOURtoONE_MUX:inst23.C
-B[2] => inst31.IN0
-B[2] => FOURtoONE_MUX:inst38.S[0]
-B[3] => FOURtoONE_MUX:inst34.C
-B[3] => inst45.IN0
-B[3] => FOURtoONE_MUX:inst39.S[0]
-FS[0] => TWOtoONE_MUX:inst35.S
-FS[0] => TWOtoONE_MUX:inst24.S
-FS[0] => TWOtoONE_MUX:inst13.S
-FS[0] => TWOtoONE_MUX:inst2.S
-FS[0] => FOURtoONE_MUX:inst.A
-FS[0] => TWOtoONE_MUX:inst3.S
-FS[0] => FOURtoONE_MUX:inst37.A
-FS[0] => TWOtoONE_MUX:inst14.S
-FS[0] => FOURtoONE_MUX:inst38.A
-FS[0] => TWOtoONE_MUX:inst25.S
-FS[0] => FOURtoONE_MUX:inst39.A
-FS[0] => TWOtoONE_MUX:inst36.S
-FS[1] => FOURtoONE_MUX:inst34.S[0]
-FS[1] => FOURtoONE_MUX:inst23.S[0]
-FS[1] => FOURtoONE_MUX:inst11.S[0]
-FS[1] => FOURtoONE_MUX:inst1.S[0]
-FS[1] => FOURtoONE_MUX:inst.B
-FS[1] => FOURtoONE_MUX:inst37.B
-FS[1] => FOURtoONE_MUX:inst38.B
-FS[1] => FOURtoONE_MUX:inst39.B
-FS[2] => FOURtoONE_MUX:inst34.S[1]
-FS[2] => FOURtoONE_MUX:inst23.S[1]
-FS[2] => FOURtoONE_MUX:inst11.S[1]
-FS[2] => FOURtoONE_MUX:inst1.S[1]
-FS[2] => FOURtoONE_MUX:inst.C
-FS[2] => FOURtoONE_MUX:inst37.C
-FS[2] => FOURtoONE_MUX:inst38.C
-FS[2] => FOURtoONE_MUX:inst39.C
-FS[3] => TWOtoONE_MUX:inst42.S
-FS[3] => FOURtoONE_MUX:inst.D
-FS[3] => TWOtoONE_MUX:inst7.S
-FS[3] => FOURtoONE_MUX:inst37.D
-FS[3] => TWOtoONE_MUX:inst6.S
-FS[3] => TWOtoONE_MUX:inst18.S
-FS[3] => FOURtoONE_MUX:inst38.D
-FS[3] => TWOtoONE_MUX:inst17.S
-FS[3] => TWOtoONE_MUX:inst29.S
-FS[3] => FOURtoONE_MUX:inst39.D
-FS[3] => TWOtoONE_MUX:inst28.S
-FS[3] => TWOtoONE_MUX:inst43.S
-FS[4] => TWOtoONE_MUX:inst5.S
-FS[4] => TWOtoONE_MUX:inst16.S
-FS[4] => TWOtoONE_MUX:inst27.S
-FS[4] => TWOtoONE_MUX:inst41.S
-A[0] => TWOtoONE_MUX:inst2.A
-A[0] => inst8.IN0
-A[0] => FOURtoONE_MUX:inst.S[1]
-A[0] => TWOtoONE_MUX:inst6.B
-A[1] => TWOtoONE_MUX:inst13.A
-A[1] => inst19.IN0
-A[1] => FOURtoONE_MUX:inst37.S[1]
-A[1] => TWOtoONE_MUX:inst17.B
-A[2] => TWOtoONE_MUX:inst24.A
-A[2] => inst30.IN0
-A[2] => FOURtoONE_MUX:inst38.S[1]
-A[2] => TWOtoONE_MUX:inst28.B
-A[3] => TWOtoONE_MUX:inst35.A
-A[3] => inst44.IN0
-A[3] => TWOtoONE_MUX:inst42.B
-A[3] => FOURtoONE_MUX:inst39.S[1]
-Cin => CarryLookaheadAdder:inst4.Cin
-Cin => TWOtoONE_MUX:inst3.A
-Cin => inst50.IN0
-Cin => inst56.IN2
-Cin => inst63.IN3
-Cin => inst72.IN3
-F[0] <= TWOtoONE_MUX:inst5.Q
-F[1] <= TWOtoONE_MUX:inst16.Q
-F[2] <= TWOtoONE_MUX:inst27.Q
-F[3] <= TWOtoONE_MUX:inst41.Q
-A_next_bit => TWOtoONE_MUX:inst3.B
-A_next_bit1 => TWOtoONE_MUX:inst14.B
-A_next_bit2 => TWOtoONE_MUX:inst25.B
-A_next_bit3 => TWOtoONE_MUX:inst36.B
-
-
-|ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst42
+|ALU_16bit_v|ALU_4bit_v:b2v_inst1|TWOtoONE_MUX:b2v_inst43
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst2|FOURtoONE_MUX:inst34
+|ALU_16bit_v|ALU_4bit_v:b2v_inst1|TWOtoONE_MUX:b2v_inst5
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst1|TWOtoONE_MUX:b2v_inst6
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst1|or5_0:b2v_inst68
+IN1 => ~NO_FANOUT~
+IN3 => ~NO_FANOUT~
+IN2 => ~NO_FANOUT~
+IN5 => ~NO_FANOUT~
+IN4 => ~NO_FANOUT~
+OUT <= <GND>
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst1|TWOtoONE_MUX:b2v_inst7
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst1|and5_1:b2v_inst72
+IN3 => ~NO_FANOUT~
+IN2 => ~NO_FANOUT~
+IN1 => ~NO_FANOUT~
+IN5 => ~NO_FANOUT~
+IN4 => ~NO_FANOUT~
+OUT <= <GND>
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst2
+Cin => Cin.IN3
+A_next_bit => A_next_bit.IN1
+A_next_bit1 => A_next_bit1.IN1
+A_next_bit2 => A_next_bit2.IN1
+A_next_bit3 => A_next_bit3.IN1
+A[0] => logic_S[1].IN3
+A[1] => logic1_S[1].IN3
+A[2] => logic2_S[1].IN3
+A[3] => logic3_S[1].IN3
+B[0] => logic_S[0].IN2
+B[1] => logic1_S[0].IN2
+B[2] => logic2_S[0].IN2
+B[3] => logic3_S[0].IN2
+FS[0] => FS[0].IN12
+FS[1] => FS[1].IN8
+FS[2] => FS[2].IN8
+FS[3] => FS[3].IN12
+FS[4] => FS[4].IN4
+Cout <= TWOtoONE_MUX:b2v_inst42.Q
+F[0] <= TWOtoONE_MUX:b2v_inst5.Q
+F[1] <= TWOtoONE_MUX:b2v_inst16.Q
+F[2] <= TWOtoONE_MUX:b2v_inst27.Q
+F[3] <= TWOtoONE_MUX:b2v_inst41.Q
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst2|FOURtoONE_MUX:b2v_inst
 A => Mux0.IN0
 B => Mux0.IN1
 C => Mux0.IN2
@@ -839,21 +676,7 @@ S[1] => Mux0.IN4
 Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst35
-A => Q.DATAA
-B => Q.DATAB
-S => Decoder0.IN0
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst24
-A => Q.DATAA
-B => Q.DATAB
-S => Decoder0.IN0
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU_16bit_v|ALU_4bit:b2v_inst2|FOURtoONE_MUX:inst23
+|ALU_16bit_v|ALU_4bit_v:b2v_inst2|FOURtoONE_MUX:b2v_inst1
 A => Mux0.IN0
 B => Mux0.IN1
 C => Mux0.IN2
@@ -863,7 +686,7 @@ S[1] => Mux0.IN4
 Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst2|FOURtoONE_MUX:inst11
+|ALU_16bit_v|ALU_4bit_v:b2v_inst2|FOURtoONE_MUX:b2v_inst11
 A => Mux0.IN0
 B => Mux0.IN1
 C => Mux0.IN2
@@ -873,76 +696,56 @@ S[1] => Mux0.IN4
 Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst13
+|ALU_16bit_v|ALU_4bit_v:b2v_inst2|TWOtoONE_MUX:b2v_inst13
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst2
+|ALU_16bit_v|ALU_4bit_v:b2v_inst2|TWOtoONE_MUX:b2v_inst14
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst2|FOURtoONE_MUX:inst1
-A => Mux0.IN0
-B => Mux0.IN1
-C => Mux0.IN2
-D => Mux0.IN3
-S[0] => Mux0.IN5
-S[1] => Mux0.IN4
-Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst5
-A => Q.DATAA
-B => Q.DATAB
-S => Decoder0.IN0
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU_16bit_v|ALU_4bit:b2v_inst2|FOURtoONE_MUX:inst
-A => Mux0.IN0
-B => Mux0.IN1
-C => Mux0.IN2
-D => Mux0.IN3
-S[0] => Mux0.IN5
-S[1] => Mux0.IN4
-Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst7
-A => Q.DATAA
-B => Q.DATAB
-S => Decoder0.IN0
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU_16bit_v|ALU_4bit:b2v_inst2|CarryLookaheadAdder:inst4
+|ALU_16bit_v|ALU_4bit_v:b2v_inst2|CarryLookaheadAdder:b2v_inst15
 A => S.IN0
 B => S.IN1
 Cin => S.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst3
+|ALU_16bit_v|ALU_4bit_v:b2v_inst2|TWOtoONE_MUX:b2v_inst16
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst16
+|ALU_16bit_v|ALU_4bit_v:b2v_inst2|TWOtoONE_MUX:b2v_inst17
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst2|FOURtoONE_MUX:inst37
+|ALU_16bit_v|ALU_4bit_v:b2v_inst2|TWOtoONE_MUX:b2v_inst18
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst2|TWOtoONE_MUX:b2v_inst2
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst2|FOURtoONE_MUX:b2v_inst23
 A => Mux0.IN0
 B => Mux0.IN1
 C => Mux0.IN2
@@ -952,42 +755,56 @@ S[1] => Mux0.IN4
 Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst18
+|ALU_16bit_v|ALU_4bit_v:b2v_inst2|TWOtoONE_MUX:b2v_inst24
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst2|CarryLookaheadAdder:inst15
+|ALU_16bit_v|ALU_4bit_v:b2v_inst2|TWOtoONE_MUX:b2v_inst25
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst2|CarryLookaheadAdder:b2v_inst26
 A => S.IN0
 B => S.IN1
 Cin => S.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst6
+|ALU_16bit_v|ALU_4bit_v:b2v_inst2|TWOtoONE_MUX:b2v_inst27
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst14
+|ALU_16bit_v|ALU_4bit_v:b2v_inst2|TWOtoONE_MUX:b2v_inst28
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst27
+|ALU_16bit_v|ALU_4bit_v:b2v_inst2|TWOtoONE_MUX:b2v_inst29
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst2|FOURtoONE_MUX:inst38
+|ALU_16bit_v|ALU_4bit_v:b2v_inst2|TWOtoONE_MUX:b2v_inst3
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst2|FOURtoONE_MUX:b2v_inst34
 A => Mux0.IN0
 B => Mux0.IN1
 C => Mux0.IN2
@@ -997,177 +814,151 @@ S[1] => Mux0.IN4
 Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst29
+|ALU_16bit_v|ALU_4bit_v:b2v_inst2|TWOtoONE_MUX:b2v_inst35
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst2|CarryLookaheadAdder:inst26
+|ALU_16bit_v|ALU_4bit_v:b2v_inst2|TWOtoONE_MUX:b2v_inst36
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst2|FOURtoONE_MUX:b2v_inst37
+A => Mux0.IN0
+B => Mux0.IN1
+C => Mux0.IN2
+D => Mux0.IN3
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst2|FOURtoONE_MUX:b2v_inst38
+A => Mux0.IN0
+B => Mux0.IN1
+C => Mux0.IN2
+D => Mux0.IN3
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst2|FOURtoONE_MUX:b2v_inst39
+A => Mux0.IN0
+B => Mux0.IN1
+C => Mux0.IN2
+D => Mux0.IN3
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst2|CarryLookaheadAdder:b2v_inst4
 A => S.IN0
 B => S.IN1
 Cin => S.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst17
-A => Q.DATAA
-B => Q.DATAB
-S => Decoder0.IN0
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst25
-A => Q.DATAA
-B => Q.DATAB
-S => Decoder0.IN0
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst41
-A => Q.DATAA
-B => Q.DATAB
-S => Decoder0.IN0
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU_16bit_v|ALU_4bit:b2v_inst2|FOURtoONE_MUX:inst39
-A => Mux0.IN0
-B => Mux0.IN1
-C => Mux0.IN2
-D => Mux0.IN3
-S[0] => Mux0.IN5
-S[1] => Mux0.IN4
-Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst43
-A => Q.DATAA
-B => Q.DATAB
-S => Decoder0.IN0
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU_16bit_v|ALU_4bit:b2v_inst2|CarryLookaheadAdder:inst40
+|ALU_16bit_v|ALU_4bit_v:b2v_inst2|CarryLookaheadAdder:b2v_inst40
 A => S.IN0
 B => S.IN1
 Cin => S.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst28
+|ALU_16bit_v|ALU_4bit_v:b2v_inst2|TWOtoONE_MUX:b2v_inst41
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst2|TWOtoONE_MUX:inst36
+|ALU_16bit_v|ALU_4bit_v:b2v_inst2|TWOtoONE_MUX:b2v_inst42
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst3
-Cout <= TWOtoONE_MUX:inst42.Q
-B[0] => FOURtoONE_MUX:inst1.C
-B[0] => inst9.IN0
-B[0] => FOURtoONE_MUX:inst.S[0]
-B[1] => FOURtoONE_MUX:inst11.C
-B[1] => inst20.IN0
-B[1] => FOURtoONE_MUX:inst37.S[0]
-B[2] => FOURtoONE_MUX:inst23.C
-B[2] => inst31.IN0
-B[2] => FOURtoONE_MUX:inst38.S[0]
-B[3] => FOURtoONE_MUX:inst34.C
-B[3] => inst45.IN0
-B[3] => FOURtoONE_MUX:inst39.S[0]
-FS[0] => TWOtoONE_MUX:inst35.S
-FS[0] => TWOtoONE_MUX:inst24.S
-FS[0] => TWOtoONE_MUX:inst13.S
-FS[0] => TWOtoONE_MUX:inst2.S
-FS[0] => FOURtoONE_MUX:inst.A
-FS[0] => TWOtoONE_MUX:inst3.S
-FS[0] => FOURtoONE_MUX:inst37.A
-FS[0] => TWOtoONE_MUX:inst14.S
-FS[0] => FOURtoONE_MUX:inst38.A
-FS[0] => TWOtoONE_MUX:inst25.S
-FS[0] => FOURtoONE_MUX:inst39.A
-FS[0] => TWOtoONE_MUX:inst36.S
-FS[1] => FOURtoONE_MUX:inst34.S[0]
-FS[1] => FOURtoONE_MUX:inst23.S[0]
-FS[1] => FOURtoONE_MUX:inst11.S[0]
-FS[1] => FOURtoONE_MUX:inst1.S[0]
-FS[1] => FOURtoONE_MUX:inst.B
-FS[1] => FOURtoONE_MUX:inst37.B
-FS[1] => FOURtoONE_MUX:inst38.B
-FS[1] => FOURtoONE_MUX:inst39.B
-FS[2] => FOURtoONE_MUX:inst34.S[1]
-FS[2] => FOURtoONE_MUX:inst23.S[1]
-FS[2] => FOURtoONE_MUX:inst11.S[1]
-FS[2] => FOURtoONE_MUX:inst1.S[1]
-FS[2] => FOURtoONE_MUX:inst.C
-FS[2] => FOURtoONE_MUX:inst37.C
-FS[2] => FOURtoONE_MUX:inst38.C
-FS[2] => FOURtoONE_MUX:inst39.C
-FS[3] => TWOtoONE_MUX:inst42.S
-FS[3] => FOURtoONE_MUX:inst.D
-FS[3] => TWOtoONE_MUX:inst7.S
-FS[3] => FOURtoONE_MUX:inst37.D
-FS[3] => TWOtoONE_MUX:inst6.S
-FS[3] => TWOtoONE_MUX:inst18.S
-FS[3] => FOURtoONE_MUX:inst38.D
-FS[3] => TWOtoONE_MUX:inst17.S
-FS[3] => TWOtoONE_MUX:inst29.S
-FS[3] => FOURtoONE_MUX:inst39.D
-FS[3] => TWOtoONE_MUX:inst28.S
-FS[3] => TWOtoONE_MUX:inst43.S
-FS[4] => TWOtoONE_MUX:inst5.S
-FS[4] => TWOtoONE_MUX:inst16.S
-FS[4] => TWOtoONE_MUX:inst27.S
-FS[4] => TWOtoONE_MUX:inst41.S
-A[0] => TWOtoONE_MUX:inst2.A
-A[0] => inst8.IN0
-A[0] => FOURtoONE_MUX:inst.S[1]
-A[0] => TWOtoONE_MUX:inst6.B
-A[1] => TWOtoONE_MUX:inst13.A
-A[1] => inst19.IN0
-A[1] => FOURtoONE_MUX:inst37.S[1]
-A[1] => TWOtoONE_MUX:inst17.B
-A[2] => TWOtoONE_MUX:inst24.A
-A[2] => inst30.IN0
-A[2] => FOURtoONE_MUX:inst38.S[1]
-A[2] => TWOtoONE_MUX:inst28.B
-A[3] => TWOtoONE_MUX:inst35.A
-A[3] => inst44.IN0
-A[3] => TWOtoONE_MUX:inst42.B
-A[3] => FOURtoONE_MUX:inst39.S[1]
-Cin => CarryLookaheadAdder:inst4.Cin
-Cin => TWOtoONE_MUX:inst3.A
-Cin => inst50.IN0
-Cin => inst56.IN2
-Cin => inst63.IN3
-Cin => inst72.IN3
-F[0] <= TWOtoONE_MUX:inst5.Q
-F[1] <= TWOtoONE_MUX:inst16.Q
-F[2] <= TWOtoONE_MUX:inst27.Q
-F[3] <= TWOtoONE_MUX:inst41.Q
-A_next_bit => TWOtoONE_MUX:inst3.B
-A_next_bit1 => TWOtoONE_MUX:inst14.B
-A_next_bit2 => TWOtoONE_MUX:inst25.B
-A_next_bit3 => TWOtoONE_MUX:inst36.B
-
-
-|ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst42
+|ALU_16bit_v|ALU_4bit_v:b2v_inst2|TWOtoONE_MUX:b2v_inst43
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst3|FOURtoONE_MUX:inst34
+|ALU_16bit_v|ALU_4bit_v:b2v_inst2|TWOtoONE_MUX:b2v_inst5
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst2|TWOtoONE_MUX:b2v_inst6
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst2|or5_0:b2v_inst68
+IN1 => ~NO_FANOUT~
+IN3 => ~NO_FANOUT~
+IN2 => ~NO_FANOUT~
+IN5 => ~NO_FANOUT~
+IN4 => ~NO_FANOUT~
+OUT <= <GND>
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst2|TWOtoONE_MUX:b2v_inst7
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst2|and5_1:b2v_inst72
+IN3 => ~NO_FANOUT~
+IN2 => ~NO_FANOUT~
+IN1 => ~NO_FANOUT~
+IN5 => ~NO_FANOUT~
+IN4 => ~NO_FANOUT~
+OUT <= <GND>
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst3
+Cin => Cin.IN3
+A_next_bit => A_next_bit.IN1
+A_next_bit1 => A_next_bit1.IN1
+A_next_bit2 => A_next_bit2.IN1
+A_next_bit3 => A_next_bit3.IN1
+A[0] => logic_S[1].IN3
+A[1] => logic1_S[1].IN3
+A[2] => logic2_S[1].IN3
+A[3] => logic3_S[1].IN3
+B[0] => logic_S[0].IN2
+B[1] => logic1_S[0].IN2
+B[2] => logic2_S[0].IN2
+B[3] => logic3_S[0].IN2
+FS[0] => FS[0].IN12
+FS[1] => FS[1].IN8
+FS[2] => FS[2].IN8
+FS[3] => FS[3].IN12
+FS[4] => FS[4].IN4
+Cout <= TWOtoONE_MUX:b2v_inst42.Q
+F[0] <= TWOtoONE_MUX:b2v_inst5.Q
+F[1] <= TWOtoONE_MUX:b2v_inst16.Q
+F[2] <= TWOtoONE_MUX:b2v_inst27.Q
+F[3] <= TWOtoONE_MUX:b2v_inst41.Q
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst3|FOURtoONE_MUX:b2v_inst
 A => Mux0.IN0
 B => Mux0.IN1
 C => Mux0.IN2
@@ -1177,21 +968,7 @@ S[1] => Mux0.IN4
 Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst35
-A => Q.DATAA
-B => Q.DATAB
-S => Decoder0.IN0
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst24
-A => Q.DATAA
-B => Q.DATAB
-S => Decoder0.IN0
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU_16bit_v|ALU_4bit:b2v_inst3|FOURtoONE_MUX:inst23
+|ALU_16bit_v|ALU_4bit_v:b2v_inst3|FOURtoONE_MUX:b2v_inst1
 A => Mux0.IN0
 B => Mux0.IN1
 C => Mux0.IN2
@@ -1201,7 +978,7 @@ S[1] => Mux0.IN4
 Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst3|FOURtoONE_MUX:inst11
+|ALU_16bit_v|ALU_4bit_v:b2v_inst3|FOURtoONE_MUX:b2v_inst11
 A => Mux0.IN0
 B => Mux0.IN1
 C => Mux0.IN2
@@ -1211,76 +988,56 @@ S[1] => Mux0.IN4
 Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst13
+|ALU_16bit_v|ALU_4bit_v:b2v_inst3|TWOtoONE_MUX:b2v_inst13
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst2
+|ALU_16bit_v|ALU_4bit_v:b2v_inst3|TWOtoONE_MUX:b2v_inst14
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst3|FOURtoONE_MUX:inst1
-A => Mux0.IN0
-B => Mux0.IN1
-C => Mux0.IN2
-D => Mux0.IN3
-S[0] => Mux0.IN5
-S[1] => Mux0.IN4
-Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst5
-A => Q.DATAA
-B => Q.DATAB
-S => Decoder0.IN0
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU_16bit_v|ALU_4bit:b2v_inst3|FOURtoONE_MUX:inst
-A => Mux0.IN0
-B => Mux0.IN1
-C => Mux0.IN2
-D => Mux0.IN3
-S[0] => Mux0.IN5
-S[1] => Mux0.IN4
-Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst7
-A => Q.DATAA
-B => Q.DATAB
-S => Decoder0.IN0
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU_16bit_v|ALU_4bit:b2v_inst3|CarryLookaheadAdder:inst4
+|ALU_16bit_v|ALU_4bit_v:b2v_inst3|CarryLookaheadAdder:b2v_inst15
 A => S.IN0
 B => S.IN1
 Cin => S.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst3
+|ALU_16bit_v|ALU_4bit_v:b2v_inst3|TWOtoONE_MUX:b2v_inst16
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst16
+|ALU_16bit_v|ALU_4bit_v:b2v_inst3|TWOtoONE_MUX:b2v_inst17
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst3|FOURtoONE_MUX:inst37
+|ALU_16bit_v|ALU_4bit_v:b2v_inst3|TWOtoONE_MUX:b2v_inst18
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst3|TWOtoONE_MUX:b2v_inst2
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst3|FOURtoONE_MUX:b2v_inst23
 A => Mux0.IN0
 B => Mux0.IN1
 C => Mux0.IN2
@@ -1290,42 +1047,56 @@ S[1] => Mux0.IN4
 Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst18
+|ALU_16bit_v|ALU_4bit_v:b2v_inst3|TWOtoONE_MUX:b2v_inst24
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst3|CarryLookaheadAdder:inst15
+|ALU_16bit_v|ALU_4bit_v:b2v_inst3|TWOtoONE_MUX:b2v_inst25
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst3|CarryLookaheadAdder:b2v_inst26
 A => S.IN0
 B => S.IN1
 Cin => S.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst6
+|ALU_16bit_v|ALU_4bit_v:b2v_inst3|TWOtoONE_MUX:b2v_inst27
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst14
+|ALU_16bit_v|ALU_4bit_v:b2v_inst3|TWOtoONE_MUX:b2v_inst28
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst27
+|ALU_16bit_v|ALU_4bit_v:b2v_inst3|TWOtoONE_MUX:b2v_inst29
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst3|FOURtoONE_MUX:inst38
+|ALU_16bit_v|ALU_4bit_v:b2v_inst3|TWOtoONE_MUX:b2v_inst3
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst3|FOURtoONE_MUX:b2v_inst34
 A => Mux0.IN0
 B => Mux0.IN1
 C => Mux0.IN2
@@ -1335,42 +1106,21 @@ S[1] => Mux0.IN4
 Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst29
+|ALU_16bit_v|ALU_4bit_v:b2v_inst3|TWOtoONE_MUX:b2v_inst35
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst3|CarryLookaheadAdder:inst26
-A => S.IN0
-B => S.IN1
-Cin => S.IN1
-S <= S.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst17
+|ALU_16bit_v|ALU_4bit_v:b2v_inst3|TWOtoONE_MUX:b2v_inst36
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst25
-A => Q.DATAA
-B => Q.DATAB
-S => Decoder0.IN0
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst41
-A => Q.DATAA
-B => Q.DATAB
-S => Decoder0.IN0
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU_16bit_v|ALU_4bit:b2v_inst3|FOURtoONE_MUX:inst39
+|ALU_16bit_v|ALU_4bit_v:b2v_inst3|FOURtoONE_MUX:b2v_inst37
 A => Mux0.IN0
 B => Mux0.IN1
 C => Mux0.IN2
@@ -1380,31 +1130,97 @@ S[1] => Mux0.IN4
 Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst43
-A => Q.DATAA
-B => Q.DATAB
-S => Decoder0.IN0
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+|ALU_16bit_v|ALU_4bit_v:b2v_inst3|FOURtoONE_MUX:b2v_inst38
+A => Mux0.IN0
+B => Mux0.IN1
+C => Mux0.IN2
+D => Mux0.IN3
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst3|CarryLookaheadAdder:inst40
+|ALU_16bit_v|ALU_4bit_v:b2v_inst3|FOURtoONE_MUX:b2v_inst39
+A => Mux0.IN0
+B => Mux0.IN1
+C => Mux0.IN2
+D => Mux0.IN3
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+Q <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst3|CarryLookaheadAdder:b2v_inst4
 A => S.IN0
 B => S.IN1
 Cin => S.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst28
+|ALU_16bit_v|ALU_4bit_v:b2v_inst3|CarryLookaheadAdder:b2v_inst40
+A => S.IN0
+B => S.IN1
+Cin => S.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst3|TWOtoONE_MUX:b2v_inst41
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_16bit_v|ALU_4bit:b2v_inst3|TWOtoONE_MUX:inst36
+|ALU_16bit_v|ALU_4bit_v:b2v_inst3|TWOtoONE_MUX:b2v_inst42
 A => Q.DATAA
 B => Q.DATAB
 S => Decoder0.IN0
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst3|TWOtoONE_MUX:b2v_inst43
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst3|TWOtoONE_MUX:b2v_inst5
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst3|TWOtoONE_MUX:b2v_inst6
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst3|or5_0:b2v_inst68
+IN1 => ~NO_FANOUT~
+IN3 => ~NO_FANOUT~
+IN2 => ~NO_FANOUT~
+IN5 => ~NO_FANOUT~
+IN4 => ~NO_FANOUT~
+OUT <= <GND>
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst3|TWOtoONE_MUX:b2v_inst7
+A => Q.DATAA
+B => Q.DATAB
+S => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_16bit_v|ALU_4bit_v:b2v_inst3|and5_1:b2v_inst72
+IN3 => ~NO_FANOUT~
+IN2 => ~NO_FANOUT~
+IN1 => ~NO_FANOUT~
+IN5 => ~NO_FANOUT~
+IN4 => ~NO_FANOUT~
+OUT <= <GND>
 
 

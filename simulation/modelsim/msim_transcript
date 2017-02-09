@@ -34,6 +34,14 @@
 # 
 # Top level modules:
 # 	ALU_16bit_v
+# vlog -vlog01compat -work work +incdir+E:/Users/Lonnie\ II/Desktop/Code/New-Comp-Arch-Processor {E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/ALU_4bit_v.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU_4bit_v
+# -- Compiling module and5_1
+# -- Compiling module or5_0
+# 
+# Top level modules:
+# 	ALU_4bit_v
 # 
 # vlog -vlog01compat -work work +incdir+E:/Users/Lonnie\ II/Desktop/Code/New-Comp-Arch-Processor {E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/ALU_16bit_t.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
@@ -46,59 +54,28 @@
 # vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps ALU_16bit_t 
 # Loading work.ALU_16bit_t
 # Loading work.ALU_16bit_v
-# ** Error: (vsim-3033) E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/ALU_16bit_v.v(61): Instantiation of 'ALU_4bit' failed. The design unit was not found.
+# Loading work.ALU_4bit_v
+# Loading work.FOURtoONE_MUX
+# Loading work.TWOtoONE_MUX
+# Loading work.CarryLookaheadAdder
+# Loading work.or5_0
+# Loading work.and5_1
 # 
-#         Region: /ALU_16bit_t/dut
-#         Searched libraries:
-#             E:/altera/13.1/modelsim_ase/altera/verilog/altera
-#             E:/altera/13.1/modelsim_ase/altera/verilog/220model
-#             E:/altera/13.1/modelsim_ase/altera/verilog/sgate
-#             E:/altera/13.1/modelsim_ase/altera/verilog/altera_mf
-#             E:/altera/13.1/modelsim_ase/altera/verilog/altera_lnsim
-#             E:/altera/13.1/modelsim_ase/altera/verilog/cycloneiii
-#             E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/simulation/modelsim/rtl_work
-#             E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/simulation/modelsim/rtl_work
-#             E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/simulation/modelsim/rtl_work
-# ** Error: (vsim-3033) E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/ALU_16bit_v.v(74): Instantiation of 'ALU_4bit' failed. The design unit was not found.
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 # 
-#         Region: /ALU_16bit_t/dut
-#         Searched libraries:
-#             E:/altera/13.1/modelsim_ase/altera/verilog/altera
-#             E:/altera/13.1/modelsim_ase/altera/verilog/220model
-#             E:/altera/13.1/modelsim_ase/altera/verilog/sgate
-#             E:/altera/13.1/modelsim_ase/altera/verilog/altera_mf
-#             E:/altera/13.1/modelsim_ase/altera/verilog/altera_lnsim
-#             E:/altera/13.1/modelsim_ase/altera/verilog/cycloneiii
-#             E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/simulation/modelsim/rtl_work
-#             E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/simulation/modelsim/rtl_work
-#             E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/simulation/modelsim/rtl_work
-# ** Error: (vsim-3033) E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/ALU_16bit_v.v(87): Instantiation of 'ALU_4bit' failed. The design unit was not found.
+#           File in use by: lonni  Hostname: LAPTOP-VI741MNF  ProcessID: 8424
 # 
-#         Region: /ALU_16bit_t/dut
-#         Searched libraries:
-#             E:/altera/13.1/modelsim_ase/altera/verilog/altera
-#             E:/altera/13.1/modelsim_ase/altera/verilog/220model
-#             E:/altera/13.1/modelsim_ase/altera/verilog/sgate
-#             E:/altera/13.1/modelsim_ase/altera/verilog/altera_mf
-#             E:/altera/13.1/modelsim_ase/altera/verilog/altera_lnsim
-#             E:/altera/13.1/modelsim_ase/altera/verilog/cycloneiii
-#             E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/simulation/modelsim/rtl_work
-#             E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/simulation/modelsim/rtl_work
-#             E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/simulation/modelsim/rtl_work
-# ** Error: (vsim-3033) E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/ALU_16bit_v.v(100): Instantiation of 'ALU_4bit' failed. The design unit was not found.
+#           Attempting to use alternate WLF file "./wlftj7cxzz".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#         Region: /ALU_16bit_t/dut
-#         Searched libraries:
-#             E:/altera/13.1/modelsim_ase/altera/verilog/altera
-#             E:/altera/13.1/modelsim_ase/altera/verilog/220model
-#             E:/altera/13.1/modelsim_ase/altera/verilog/sgate
-#             E:/altera/13.1/modelsim_ase/altera/verilog/altera_mf
-#             E:/altera/13.1/modelsim_ase/altera/verilog/altera_lnsim
-#             E:/altera/13.1/modelsim_ase/altera/verilog/cycloneiii
-#             E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/simulation/modelsim/rtl_work
-#             E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/simulation/modelsim/rtl_work
-#             E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/simulation/modelsim/rtl_work
-# Error loading design
-# Error: Error loading design 
-#        Pausing macro execution 
-# MACRO ./Register_File_run_msim_rtl_verilog.do PAUSED at line 15
+#           Using alternate file: ./wlftj7cxzz
+# 
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Break in Module ALU_16bit_t at E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/ALU_16bit_t.v line 66
+# Simulation Breakpoint: Break in Module ALU_16bit_t at E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/ALU_16bit_t.v line 66
+# MACRO ./Register_File_run_msim_rtl_verilog.do PAUSED at line 21
