@@ -9,7 +9,7 @@ module clock_div(clk_in,reset,clk_out);
 			clk_out <= 1'b0;
 		end
 		else begin
-			if(count == 12500000) begin
+			if(count == 50000000) begin
 				count <= 0;
 				clk_out <= ~clk_out;
 			end
