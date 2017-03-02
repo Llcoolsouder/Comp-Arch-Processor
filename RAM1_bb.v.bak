@@ -4,7 +4,7 @@
 // MODULE: altsyncram 
 
 // ============================================================
-// File Name: RAM2.v
+// File Name: RAM1.v
 // Megafunction Name(s):
 // 			altsyncram
 //
@@ -31,7 +31,7 @@
 //Altera or its authorized distributors.  Please refer to the 
 //applicable agreement for further details.
 
-module RAM2_bb (
+module RAM1 (
 	address,
 	clock,
 	data,
@@ -115,10 +115,10 @@ endmodule
 // Retrieval info: CONNECT: @data_a 0 0 16 0 data 0 0 16 0
 // Retrieval info: CONNECT: @wren_a 0 0 0 0 wren 0 0 0 0
 // Retrieval info: CONNECT: q 0 0 16 0 @q_a 0 0 16 0
-// Retrieval info: GEN_FILE: TYPE_NORMAL RAM2.v TRUE
-// Retrieval info: GEN_FILE: TYPE_NORMAL RAM2.inc FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL RAM2.cmp FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL RAM2.bsf FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL RAM2_inst.v FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL RAM2_bb.v TRUE
+// Retrieval info: GEN_FILE: TYPE_NORMAL RAM1.v TRUE
+// Retrieval info: GEN_FILE: TYPE_NORMAL RAM1.inc FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL RAM1.cmp FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL RAM1.bsf FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL RAM1_inst.v FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL RAM1_bb.v TRUE
 // Retrieval info: LIB_FILE: altera_mf

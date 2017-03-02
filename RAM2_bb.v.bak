@@ -31,7 +31,7 @@
 //Altera or its authorized distributors.  Please refer to the 
 //applicable agreement for further details.
 
-module RAM2_bb (
+module RAM2 (
 	address,
 	clock,
 	data,
