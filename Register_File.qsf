@@ -358,6 +358,11 @@ set_global_assignment -name VERILOG_FILE ALU_16bit_t.v
 set_global_assignment -name VERILOG_FILE ALU_4bit_v.v
 set_global_assignment -name BDF_FILE Top_Level.bdf
 set_global_assignment -name VERILOG_FILE output_files/hex_to_7seg_behavioral.v
+<<<<<<< HEAD
 set_global_assignment -name BDF_FILE Top_Level_ModelSim.bdf
 set_global_assignment -name VERILOG_FILE decoder2to4.v
+=======
+set_global_assignment -name VERILOG_FILE PC.v
+set_global_assignment -name VERILOG_FILE IR.v
+>>>>>>> 9559ef921cea121da4b2b3d8177a4050c6910cae
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
