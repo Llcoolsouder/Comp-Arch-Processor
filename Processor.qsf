@@ -1,0 +1,83 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Date created = 09:49:49  March 02, 2017
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		Processor_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV GX"
+set_global_assignment -name DEVICE AUTO
+set_global_assignment -name TOP_LEVEL_ENTITY Top_Level_ModelSim
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "09:49:49  MARCH 02, 2017"
+set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name QIP_FILE RAM2.qip
+set_global_assignment -name QIP_FILE RAM1.qip
+set_global_assignment -name VERILOG_FILE TWOtoONE_MUX.v
+set_global_assignment -name BDF_FILE Top_Level_ModelSim.bdf
+set_global_assignment -name BDF_FILE Top_Level.bdf
+set_global_assignment -name VERILOG_FILE THREEtoEIGHT_decoder.v
+set_global_assignment -name VERILOG_FILE rom_case.v
+set_global_assignment -name BDF_FILE RegisterFile.bdf
+set_global_assignment -name VERILOG_FILE reg16bit.v
+set_global_assignment -name VERILOG_FILE reg_file_tb.v
+set_global_assignment -name VERILOG_FILE reg_file.v
+set_global_assignment -name VERILOG_FILE RAM2_bb.v
+set_global_assignment -name VERILOG_FILE RAM2.v
+set_global_assignment -name VERILOG_FILE RAM1_bb.v
+set_global_assignment -name VERILOG_FILE RAM1.v
+set_global_assignment -name VERILOG_FILE PC.v
+set_global_assignment -name VHDL_FILE or5_0.vhd
+set_global_assignment -name VERILOG_FILE or5_0.v
+set_global_assignment -name VERILOG_FILE mux4to1.v
+set_global_assignment -name VERILOG_FILE mux3to8.v
+set_global_assignment -name VERILOG_FILE mux2to1.v
+set_global_assignment -name VERILOG_FILE IR.v
+set_global_assignment -name VERILOG_FILE hex_to_7seg_behavioral.v
+set_global_assignment -name VERILOG_FILE GPIO_Board_test.v
+set_global_assignment -name VERILOG_FILE GPIO_Board.v
+set_global_assignment -name VERILOG_FILE FOURtoONE_MUX.v
+set_global_assignment -name VERILOG_FILE EIGHTtoONE_MUX16bit.v
+set_global_assignment -name VERILOG_FILE decoder2to4.v
+set_global_assignment -name VERILOG_FILE decoder.v
+set_global_assignment -name VERILOG_FILE clock_div.v
+set_global_assignment -name VERILOG_FILE CarryLookaheadAdder.v
+set_global_assignment -name VHDL_FILE and5_1.vhd
+set_global_assignment -name VERILOG_FILE and5_1.v
+set_global_assignment -name VERILOG_FILE ALU_16bit_v.v
+set_global_assignment -name VERILOG_FILE ALU_16bit_t.v
+set_global_assignment -name BDF_FILE ALU_16bit.bdf
+set_global_assignment -name VERILOG_FILE ALU_4bit_v.v
+set_global_assignment -name VHDL_FILE ALU_4bit.vhd
+set_global_assignment -name BDF_FILE ALU_4bit.bdf
