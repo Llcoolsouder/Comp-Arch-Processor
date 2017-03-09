@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Processor
-Thu Mar 09 02:25:32 2017
+Thu Mar 09 12:03:46 2017
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -20,15 +20,19 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
  12. General Register Statistics
  13. Registers Packed Into Inferred Megafunctions
  14. Multiplexer Restructuring Statistics (Restructuring Performed)
- 15. Source assignments for RAM1:inst3|altsyncram:altsyncram_component|altsyncram_96i1:auto_generated
- 16. Source assignments for rom_case:inst15|altsyncram:WideOr8_rtl_0|altsyncram_gu11:auto_generated
- 17. Parameter Settings for User Entity Instance: stack:inst
- 18. Parameter Settings for User Entity Instance: RAM1:inst3|altsyncram:altsyncram_component
- 19. Parameter Settings for Inferred Entity Instance: rom_case:inst15|altsyncram:WideOr8_rtl_0
+ 15. Source assignments for RAM1:b2v_inst3|altsyncram:altsyncram_component|altsyncram_96i1:auto_generated
+ 16. Source assignments for rom_case:b2v_inst15|altsyncram:WideOr8_rtl_0|altsyncram_5521:auto_generated
+ 17. Parameter Settings for User Entity Instance: stack:b2v_inst
+ 18. Parameter Settings for User Entity Instance: RAM1:b2v_inst3|altsyncram:altsyncram_component
+ 19. Parameter Settings for Inferred Entity Instance: rom_case:b2v_inst15|altsyncram:WideOr8_rtl_0
  20. altsyncram Parameter Settings by Entity Instance
- 21. Elapsed Time Per Partition
- 22. Analysis & Synthesis Messages
- 23. Analysis & Synthesis Suppressed Messages
+ 21. Port Connectivity Checks: "ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst|FOURtoONE_MUX:b2v_inst34"
+ 22. Port Connectivity Checks: "ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst|FOURtoONE_MUX:b2v_inst23"
+ 23. Port Connectivity Checks: "ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst|FOURtoONE_MUX:b2v_inst11"
+ 24. Port Connectivity Checks: "ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst|FOURtoONE_MUX:b2v_inst1"
+ 25. Elapsed Time Per Partition
+ 26. Analysis & Synthesis Messages
+ 27. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -54,10 +58,10 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Mar 09 02:25:32 2017      ;
+; Analysis & Synthesis Status        ; Successful - Thu Mar 09 12:03:46 2017      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; Processor                                  ;
-; Top-level Entity Name              ; Top_Level_ModelSim                         ;
+; Top-level Entity Name              ; Top_Level_ModelSim_v                       ;
 ; Family                             ; Cyclone IV GX                              ;
 ; Total logic elements               ; 7,705                                      ;
 ;     Total combinational functions  ; 3,625                                      ;
@@ -75,90 +79,90 @@ applicable agreement for further details.
 +------------------------------------+--------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                        ;
-+----------------------------------------------------------------------------+--------------------+--------------------+
-; Option                                                                     ; Setting            ; Default Value      ;
-+----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; Top_Level_ModelSim ; Processor          ;
-; Family name                                                                ; Cyclone IV GX      ; Cyclone IV GX      ;
-; Use smart compilation                                                      ; Off                ; Off                ;
-; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
-; Enable compact report table                                                ; Off                ; Off                ;
-; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
-; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
-; Preserve fewer node names                                                  ; On                 ; On                 ;
-; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
-; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
-; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
-; State Machine Processing                                                   ; Auto               ; Auto               ;
-; Safe State Machine                                                         ; Off                ; Off                ;
-; Extract Verilog State Machines                                             ; On                 ; On                 ;
-; Extract VHDL State Machines                                                ; On                 ; On                 ;
-; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
-; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
-; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
-; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
-; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
-; Parallel Synthesis                                                         ; On                 ; On                 ;
-; DSP Block Balancing                                                        ; Auto               ; Auto               ;
-; NOT Gate Push-Back                                                         ; On                 ; On                 ;
-; Power-Up Don't Care                                                        ; On                 ; On                 ;
-; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
-; Remove Duplicate Registers                                                 ; On                 ; On                 ;
-; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
-; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
-; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
-; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
-; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
-; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
-; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
-; Optimization Technique                                                     ; Balanced           ; Balanced           ;
-; Carry Chain Length                                                         ; 70                 ; 70                 ;
-; Auto Carry Chains                                                          ; On                 ; On                 ;
-; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
-; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
-; Auto ROM Replacement                                                       ; On                 ; On                 ;
-; Auto RAM Replacement                                                       ; On                 ; On                 ;
-; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
-; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
-; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
-; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
-; Strict RAM Replacement                                                     ; Off                ; Off                ;
-; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
-; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
-; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
-; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
-; Auto Resource Sharing                                                      ; Off                ; Off                ;
-; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
-; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
-; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
-; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
-; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
-; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
-; Report Parameter Settings                                                  ; On                 ; On                 ;
-; Report Source Assignments                                                  ; On                 ; On                 ;
-; Report Connectivity Checks                                                 ; On                 ; On                 ;
-; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
-; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
-; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
-; HDL message level                                                          ; Level2             ; Level2             ;
-; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
-; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
-; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
-; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
-; Clock MUX Protection                                                       ; On                 ; On                 ;
-; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
-; Block Design Naming                                                        ; Auto               ; Auto               ;
-; SDC constraint protection                                                  ; Off                ; Off                ;
-; Synthesis Effort                                                           ; Auto               ; Auto               ;
-; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
-; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
-; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
-; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
-; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
-; Synthesis Seed                                                             ; 1                  ; 1                  ;
-+----------------------------------------------------------------------------+--------------------+--------------------+
++------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                          ;
++----------------------------------------------------------------------------+----------------------+--------------------+
+; Option                                                                     ; Setting              ; Default Value      ;
++----------------------------------------------------------------------------+----------------------+--------------------+
+; Top-level entity name                                                      ; Top_Level_ModelSim_v ; Processor          ;
+; Family name                                                                ; Cyclone IV GX        ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                  ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                   ; On                 ;
+; Enable compact report table                                                ; Off                  ; Off                ;
+; Restructure Multiplexers                                                   ; Auto                 ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                  ; Off                ;
+; Preserve fewer node names                                                  ; On                   ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                  ; Off                ;
+; Verilog Version                                                            ; Verilog_2001         ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993            ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto                 ; Auto               ;
+; Safe State Machine                                                         ; Off                  ; Off                ;
+; Extract Verilog State Machines                                             ; On                   ; On                 ;
+; Extract VHDL State Machines                                                ; On                   ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                  ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000                 ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                  ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                   ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                   ; On                 ;
+; Parallel Synthesis                                                         ; On                   ; On                 ;
+; DSP Block Balancing                                                        ; Auto                 ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                   ; On                 ;
+; Power-Up Don't Care                                                        ; On                   ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                  ; Off                ;
+; Remove Duplicate Registers                                                 ; On                   ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                  ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                  ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                  ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                  ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                  ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                   ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                  ; Off                ;
+; Optimization Technique                                                     ; Balanced             ; Balanced           ;
+; Carry Chain Length                                                         ; 70                   ; 70                 ;
+; Auto Carry Chains                                                          ; On                   ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                   ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                  ; Off                ;
+; Auto ROM Replacement                                                       ; On                   ; On                 ;
+; Auto RAM Replacement                                                       ; On                   ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                   ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto                 ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto                 ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                   ; On                 ;
+; Strict RAM Replacement                                                     ; Off                  ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                   ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                  ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                   ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                  ; Off                ;
+; Auto Resource Sharing                                                      ; Off                  ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                  ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                  ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                  ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                   ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                  ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                   ; On                 ;
+; Report Parameter Settings                                                  ; On                   ; On                 ;
+; Report Source Assignments                                                  ; On                   ; On                 ;
+; Report Connectivity Checks                                                 ; On                   ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                  ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                    ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation   ; Normal compilation ;
+; HDL message level                                                          ; Level2               ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                  ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000                 ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000                 ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                  ; 100                ;
+; Clock MUX Protection                                                       ; On                   ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                  ; Off                ;
+; Block Design Naming                                                        ; Auto                 ; Auto               ;
+; SDC constraint protection                                                  ; Off                  ; Off                ;
+; Synthesis Effort                                                           ; Auto                 ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                   ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                  ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium               ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto                 ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                   ; On                 ;
+; Synthesis Seed                                                             ; 1                    ; 1                  ;
++----------------------------------------------------------------------------+----------------------+--------------------+
 
 
 Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
@@ -172,41 +176,41 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                       ;
-+---------------------------------------+-----------------+-------------------------------------------------------+--------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path      ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                                     ; Library ;
-+---------------------------------------+-----------------+-------------------------------------------------------+--------------------------------------------------------------------------------------------------+---------+
-; RAM1.v                                ; yes             ; User Wizard-Generated File                            ; E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/RAM1.v                                   ;         ;
-; TWOtoONE_MUX.v                        ; yes             ; User Verilog HDL File                                 ; E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/TWOtoONE_MUX.v                           ;         ;
-; Top_Level_ModelSim.bdf                ; yes             ; User Block Diagram/Schematic File                     ; E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/Top_Level_ModelSim.bdf                   ;         ;
-; rom_case.v                            ; yes             ; User Verilog HDL File                                 ; E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/rom_case.v                               ;         ;
-; RegisterFile.bdf                      ; yes             ; User Block Diagram/Schematic File                     ; E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/RegisterFile.bdf                         ;         ;
-; reg16bit.v                            ; yes             ; User Verilog HDL File                                 ; E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/reg16bit.v                               ;         ;
-; PC.v                                  ; yes             ; User Verilog HDL File                                 ; E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/PC.v                                     ;         ;
-; mux3to8.v                             ; yes             ; User Verilog HDL File                                 ; E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/mux3to8.v                                ;         ;
-; IR.v                                  ; yes             ; User Verilog HDL File                                 ; E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/IR.v                                     ;         ;
-; FOURtoONE_MUX.v                       ; yes             ; User Verilog HDL File                                 ; E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/FOURtoONE_MUX.v                          ;         ;
-; decoder.v                             ; yes             ; User Verilog HDL File                                 ; E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/decoder.v                                ;         ;
-; CarryLookaheadAdder.v                 ; yes             ; User Verilog HDL File                                 ; E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/CarryLookaheadAdder.v                    ;         ;
-; ALU_16bit.bdf                         ; yes             ; User Block Diagram/Schematic File                     ; E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/ALU_16bit.bdf                            ;         ;
-; ALU_4bit.bdf                          ; yes             ; User Block Diagram/Schematic File                     ; E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/ALU_4bit.bdf                             ;         ;
-; stack_mux.v                           ; yes             ; User Verilog HDL File                                 ; E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/stack_mux.v                              ;         ;
-; stack.v                               ; yes             ; User Verilog HDL File                                 ; E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/stack.v                                  ;         ;
-; status.v                              ; yes             ; User Verilog HDL File                                 ; E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/status.v                                 ;         ;
-; altsyncram.tdf                        ; yes             ; Megafunction                                          ; e:/altera/13.1/quartus/libraries/megafunctions/altsyncram.tdf                                    ;         ;
-; stratix_ram_block.inc                 ; yes             ; Megafunction                                          ; e:/altera/13.1/quartus/libraries/megafunctions/stratix_ram_block.inc                             ;         ;
-; lpm_mux.inc                           ; yes             ; Megafunction                                          ; e:/altera/13.1/quartus/libraries/megafunctions/lpm_mux.inc                                       ;         ;
-; lpm_decode.inc                        ; yes             ; Megafunction                                          ; e:/altera/13.1/quartus/libraries/megafunctions/lpm_decode.inc                                    ;         ;
-; aglobal131.inc                        ; yes             ; Megafunction                                          ; e:/altera/13.1/quartus/libraries/megafunctions/aglobal131.inc                                    ;         ;
-; a_rdenreg.inc                         ; yes             ; Megafunction                                          ; e:/altera/13.1/quartus/libraries/megafunctions/a_rdenreg.inc                                     ;         ;
-; altrom.inc                            ; yes             ; Megafunction                                          ; e:/altera/13.1/quartus/libraries/megafunctions/altrom.inc                                        ;         ;
-; altram.inc                            ; yes             ; Megafunction                                          ; e:/altera/13.1/quartus/libraries/megafunctions/altram.inc                                        ;         ;
-; altdpram.inc                          ; yes             ; Megafunction                                          ; e:/altera/13.1/quartus/libraries/megafunctions/altdpram.inc                                      ;         ;
-; db/altsyncram_96i1.tdf                ; yes             ; Auto-Generated Megafunction                           ; E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/db/altsyncram_96i1.tdf                   ;         ;
-; db/altsyncram_gu11.tdf                ; yes             ; Auto-Generated Megafunction                           ; E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/db/altsyncram_gu11.tdf                   ;         ;
-; Processor.Top_Level_ModelSim0.rtl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/db/Processor.Top_Level_ModelSim0.rtl.mif ;         ;
-+---------------------------------------+-----------------+-------------------------------------------------------+--------------------------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                             ;
++-----------------------------------------+-----------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path        ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                                         ; Library ;
++-----------------------------------------+-----------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------+---------+
+; Top_Level_ModelSim_v.v                  ; yes             ; User Verilog HDL File                                 ; C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/Top_Level_ModelSim_v.v                     ;         ;
+; RAM1.v                                  ; yes             ; User Wizard-Generated File                            ; C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/RAM1.v                                     ;         ;
+; TWOtoONE_MUX.v                          ; yes             ; User Verilog HDL File                                 ; C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/TWOtoONE_MUX.v                             ;         ;
+; rom_case.v                              ; yes             ; User Verilog HDL File                                 ; C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/rom_case.v                                 ;         ;
+; reg16bit.v                              ; yes             ; User Verilog HDL File                                 ; C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/reg16bit.v                                 ;         ;
+; PC.v                                    ; yes             ; User Verilog HDL File                                 ; C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/PC.v                                       ;         ;
+; mux3to8.v                               ; yes             ; User Verilog HDL File                                 ; C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/mux3to8.v                                  ;         ;
+; IR.v                                    ; yes             ; User Verilog HDL File                                 ; C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/IR.v                                       ;         ;
+; FOURtoONE_MUX.v                         ; yes             ; User Verilog HDL File                                 ; C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/FOURtoONE_MUX.v                            ;         ;
+; decoder.v                               ; yes             ; User Verilog HDL File                                 ; C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/decoder.v                                  ;         ;
+; CarryLookaheadAdder.v                   ; yes             ; User Verilog HDL File                                 ; C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/CarryLookaheadAdder.v                      ;         ;
+; ALU_16bit_v.v                           ; yes             ; User Verilog HDL File                                 ; C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/ALU_16bit_v.v                              ;         ;
+; ALU_4bit_v.v                            ; yes             ; User Verilog HDL File                                 ; C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/ALU_4bit_v.v                               ;         ;
+; stack_mux.v                             ; yes             ; User Verilog HDL File                                 ; C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/stack_mux.v                                ;         ;
+; stack.v                                 ; yes             ; User Verilog HDL File                                 ; C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/stack.v                                    ;         ;
+; status.v                                ; yes             ; User Verilog HDL File                                 ; C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/status.v                                   ;         ;
+; altsyncram.tdf                          ; yes             ; Megafunction                                          ; c:/altera/13.1/quartus/libraries/megafunctions/altsyncram.tdf                                        ;         ;
+; stratix_ram_block.inc                   ; yes             ; Megafunction                                          ; c:/altera/13.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                 ;         ;
+; lpm_mux.inc                             ; yes             ; Megafunction                                          ; c:/altera/13.1/quartus/libraries/megafunctions/lpm_mux.inc                                           ;         ;
+; lpm_decode.inc                          ; yes             ; Megafunction                                          ; c:/altera/13.1/quartus/libraries/megafunctions/lpm_decode.inc                                        ;         ;
+; aglobal131.inc                          ; yes             ; Megafunction                                          ; c:/altera/13.1/quartus/libraries/megafunctions/aglobal131.inc                                        ;         ;
+; a_rdenreg.inc                           ; yes             ; Megafunction                                          ; c:/altera/13.1/quartus/libraries/megafunctions/a_rdenreg.inc                                         ;         ;
+; altrom.inc                              ; yes             ; Megafunction                                          ; c:/altera/13.1/quartus/libraries/megafunctions/altrom.inc                                            ;         ;
+; altram.inc                              ; yes             ; Megafunction                                          ; c:/altera/13.1/quartus/libraries/megafunctions/altram.inc                                            ;         ;
+; altdpram.inc                            ; yes             ; Megafunction                                          ; c:/altera/13.1/quartus/libraries/megafunctions/altdpram.inc                                          ;         ;
+; db/altsyncram_96i1.tdf                  ; yes             ; Auto-Generated Megafunction                           ; C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/db/altsyncram_96i1.tdf                     ;         ;
+; registerfile_v.v                        ; yes             ; Auto-Found Verilog HDL File                           ; C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/registerfile_v.v                           ;         ;
+; db/altsyncram_5521.tdf                  ; yes             ; Auto-Generated Megafunction                           ; C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/db/altsyncram_5521.tdf                     ;         ;
+; Processor.Top_Level_ModelSim_v0.rtl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/db/Processor.Top_Level_ModelSim_v0.rtl.mif ;         ;
++-----------------------------------------+-----------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------+
@@ -219,225 +223,226 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; DSP block 9-bit elements ; 0                ;
 ; Maximum fan-out node     ; clock_50~input   ;
 ; Maximum fan-out          ; 4167             ;
-; Total fan-out            ; 27408            ;
+; Total fan-out            ; 27398            ;
 ; Average fan-out          ; 3.36             ;
 +--------------------------+------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                              ;
-+-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                           ; Library Name ;
-+-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------------------------------------------------------------+--------------+
-; |Top_Level_ModelSim                       ; 3625 (225)        ; 4137 (0)     ; 11776       ; 0            ; 0       ; 0         ; 0         ; 177  ; 0            ; |Top_Level_ModelSim                                                                           ; work         ;
-;    |ALU_16bit:inst2|                      ; 101 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2                                                           ; work         ;
-;       |ALU_4bit:inst1|                    ; 27 (5)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst1                                            ; work         ;
-;          |FOURtoONE_MUX:inst11|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst1|FOURtoONE_MUX:inst11                       ; work         ;
-;          |FOURtoONE_MUX:inst1|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst1|FOURtoONE_MUX:inst1                        ; work         ;
-;          |FOURtoONE_MUX:inst23|           ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst1|FOURtoONE_MUX:inst23                       ; work         ;
-;          |FOURtoONE_MUX:inst34|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst1|FOURtoONE_MUX:inst34                       ; work         ;
-;          |FOURtoONE_MUX:inst37|           ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst1|FOURtoONE_MUX:inst37                       ; work         ;
-;          |FOURtoONE_MUX:inst38|           ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst1|FOURtoONE_MUX:inst38                       ; work         ;
-;          |FOURtoONE_MUX:inst39|           ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst1|FOURtoONE_MUX:inst39                       ; work         ;
-;          |FOURtoONE_MUX:inst|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst1|FOURtoONE_MUX:inst                         ; work         ;
-;          |TWOtoONE_MUX:inst13|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst1|TWOtoONE_MUX:inst13                        ; work         ;
-;          |TWOtoONE_MUX:inst24|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst1|TWOtoONE_MUX:inst24                        ; work         ;
-;          |TWOtoONE_MUX:inst28|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst1|TWOtoONE_MUX:inst28                        ; work         ;
-;          |TWOtoONE_MUX:inst2|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst1|TWOtoONE_MUX:inst2                         ; work         ;
-;          |TWOtoONE_MUX:inst35|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst1|TWOtoONE_MUX:inst35                        ; work         ;
-;          |TWOtoONE_MUX:inst42|            ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst1|TWOtoONE_MUX:inst42                        ; work         ;
-;       |ALU_4bit:inst2|                    ; 25 (6)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst2                                            ; work         ;
-;          |FOURtoONE_MUX:inst11|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst2|FOURtoONE_MUX:inst11                       ; work         ;
-;          |FOURtoONE_MUX:inst1|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst2|FOURtoONE_MUX:inst1                        ; work         ;
-;          |FOURtoONE_MUX:inst23|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst2|FOURtoONE_MUX:inst23                       ; work         ;
-;          |FOURtoONE_MUX:inst34|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst2|FOURtoONE_MUX:inst34                       ; work         ;
-;          |FOURtoONE_MUX:inst37|           ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst2|FOURtoONE_MUX:inst37                       ; work         ;
-;          |FOURtoONE_MUX:inst38|           ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst2|FOURtoONE_MUX:inst38                       ; work         ;
-;          |FOURtoONE_MUX:inst39|           ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst2|FOURtoONE_MUX:inst39                       ; work         ;
-;          |FOURtoONE_MUX:inst|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst2|FOURtoONE_MUX:inst                         ; work         ;
-;          |TWOtoONE_MUX:inst13|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst2|TWOtoONE_MUX:inst13                        ; work         ;
-;          |TWOtoONE_MUX:inst24|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst2|TWOtoONE_MUX:inst24                        ; work         ;
-;          |TWOtoONE_MUX:inst2|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst2|TWOtoONE_MUX:inst2                         ; work         ;
-;          |TWOtoONE_MUX:inst42|            ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst2|TWOtoONE_MUX:inst42                        ; work         ;
-;       |ALU_4bit:inst3|                    ; 26 (7)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst3                                            ; work         ;
-;          |CarryLookaheadAdder:inst26|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst3|CarryLookaheadAdder:inst26                 ; work         ;
-;          |CarryLookaheadAdder:inst40|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst3|CarryLookaheadAdder:inst40                 ; work         ;
-;          |FOURtoONE_MUX:inst11|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst3|FOURtoONE_MUX:inst11                       ; work         ;
-;          |FOURtoONE_MUX:inst1|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst3|FOURtoONE_MUX:inst1                        ; work         ;
-;          |FOURtoONE_MUX:inst23|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst3|FOURtoONE_MUX:inst23                       ; work         ;
-;          |FOURtoONE_MUX:inst34|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst3|FOURtoONE_MUX:inst34                       ; work         ;
-;          |FOURtoONE_MUX:inst37|           ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst3|FOURtoONE_MUX:inst37                       ; work         ;
-;          |FOURtoONE_MUX:inst|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst3|FOURtoONE_MUX:inst                         ; work         ;
-;          |TWOtoONE_MUX:inst13|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst3|TWOtoONE_MUX:inst13                        ; work         ;
-;          |TWOtoONE_MUX:inst24|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst3|TWOtoONE_MUX:inst24                        ; work         ;
-;          |TWOtoONE_MUX:inst28|            ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst3|TWOtoONE_MUX:inst28                        ; work         ;
-;          |TWOtoONE_MUX:inst2|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst3|TWOtoONE_MUX:inst2                         ; work         ;
-;          |TWOtoONE_MUX:inst35|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst3|TWOtoONE_MUX:inst35                        ; work         ;
-;          |TWOtoONE_MUX:inst42|            ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst3|TWOtoONE_MUX:inst42                        ; work         ;
-;       |ALU_4bit:inst|                     ; 23 (3)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst                                             ; work         ;
-;          |FOURtoONE_MUX:inst11|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst|FOURtoONE_MUX:inst11                        ; work         ;
-;          |FOURtoONE_MUX:inst1|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst|FOURtoONE_MUX:inst1                         ; work         ;
-;          |FOURtoONE_MUX:inst23|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst|FOURtoONE_MUX:inst23                        ; work         ;
-;          |FOURtoONE_MUX:inst34|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst|FOURtoONE_MUX:inst34                        ; work         ;
-;          |FOURtoONE_MUX:inst37|           ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst|FOURtoONE_MUX:inst37                        ; work         ;
-;          |FOURtoONE_MUX:inst38|           ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst|FOURtoONE_MUX:inst38                        ; work         ;
-;          |FOURtoONE_MUX:inst39|           ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst|FOURtoONE_MUX:inst39                        ; work         ;
-;          |FOURtoONE_MUX:inst|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst|FOURtoONE_MUX:inst                          ; work         ;
-;          |TWOtoONE_MUX:inst13|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst|TWOtoONE_MUX:inst13                         ; work         ;
-;          |TWOtoONE_MUX:inst24|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst|TWOtoONE_MUX:inst24                         ; work         ;
-;          |TWOtoONE_MUX:inst28|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst|TWOtoONE_MUX:inst28                         ; work         ;
-;          |TWOtoONE_MUX:inst42|            ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst|TWOtoONE_MUX:inst42                         ; work         ;
-;    |IR:inst14|                            ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|IR:inst14                                                                 ; work         ;
-;    |PC:inst5|                             ; 40 (40)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|PC:inst5                                                                  ; work         ;
-;    |RAM1:inst3|                           ; 0 (0)             ; 0 (0)        ; 8192        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|RAM1:inst3                                                                ; work         ;
-;       |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 8192        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|RAM1:inst3|altsyncram:altsyncram_component                                ; work         ;
-;          |altsyncram_96i1:auto_generated| ; 0 (0)             ; 0 (0)        ; 8192        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|RAM1:inst3|altsyncram:altsyncram_component|altsyncram_96i1:auto_generated ; work         ;
-;    |RegisterFile:inst4|                   ; 216 (8)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|RegisterFile:inst4                                                        ; work         ;
-;       |mux3to8:inst2|                     ; 80 (80)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|RegisterFile:inst4|mux3to8:inst2                                          ; work         ;
-;       |reg16bit:inst1|                    ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|RegisterFile:inst4|reg16bit:inst1                                         ; work         ;
-;       |reg16bit:inst3|                    ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|RegisterFile:inst4|reg16bit:inst3                                         ; work         ;
-;       |reg16bit:inst4|                    ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|RegisterFile:inst4|reg16bit:inst4                                         ; work         ;
-;       |reg16bit:inst5|                    ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|RegisterFile:inst4|reg16bit:inst5                                         ; work         ;
-;       |reg16bit:inst6|                    ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|RegisterFile:inst4|reg16bit:inst6                                         ; work         ;
-;       |reg16bit:inst7|                    ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|RegisterFile:inst4|reg16bit:inst7                                         ; work         ;
-;       |reg16bit:inst8|                    ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|RegisterFile:inst4|reg16bit:inst8                                         ; work         ;
-;       |reg16bit:inst9|                    ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|RegisterFile:inst4|reg16bit:inst9                                         ; work         ;
-;    |rom_case:inst15|                      ; 0 (0)             ; 0 (0)        ; 3584        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|rom_case:inst15                                                           ; work         ;
-;       |altsyncram:WideOr8_rtl_0|          ; 0 (0)             ; 0 (0)        ; 3584        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|rom_case:inst15|altsyncram:WideOr8_rtl_0                                  ; work         ;
-;          |altsyncram_gu11:auto_generated| ; 0 (0)             ; 0 (0)        ; 3584        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|rom_case:inst15|altsyncram:WideOr8_rtl_0|altsyncram_gu11:auto_generated   ; work         ;
-;    |stack:inst|                           ; 3033 (3033)       ; 4120 (4120)  ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|stack:inst                                                                ; work         ;
-;    |stack_mux:inst1|                      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|stack_mux:inst1                                                           ; work         ;
-;    |status:inst10|                        ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim|status:inst10                                                             ; work         ;
-+-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------------------------------------------------------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                    ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                 ; Library Name ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------+--------------+
+; |Top_Level_ModelSim_v                     ; 3625 (234)        ; 4137 (0)     ; 11776       ; 0            ; 0       ; 0         ; 0         ; 177  ; 0            ; |Top_Level_ModelSim_v                                                                               ; work         ;
+;    |ALU_16bit_v:b2v_inst2|                ; 91 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2                                                         ; work         ;
+;       |ALU_4bit_v:b2v_inst1|              ; 20 (1)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst1                                    ; work         ;
+;          |FOURtoONE_MUX:b2v_inst11|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst1|FOURtoONE_MUX:b2v_inst11           ; work         ;
+;          |FOURtoONE_MUX:b2v_inst1|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst1|FOURtoONE_MUX:b2v_inst1            ; work         ;
+;          |FOURtoONE_MUX:b2v_inst23|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst1|FOURtoONE_MUX:b2v_inst23           ; work         ;
+;          |FOURtoONE_MUX:b2v_inst34|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst1|FOURtoONE_MUX:b2v_inst34           ; work         ;
+;          |FOURtoONE_MUX:b2v_inst37|       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst1|FOURtoONE_MUX:b2v_inst37           ; work         ;
+;          |FOURtoONE_MUX:b2v_inst39|       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst1|FOURtoONE_MUX:b2v_inst39           ; work         ;
+;          |TWOtoONE_MUX:b2v_inst13|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst1|TWOtoONE_MUX:b2v_inst13            ; work         ;
+;          |TWOtoONE_MUX:b2v_inst24|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst1|TWOtoONE_MUX:b2v_inst24            ; work         ;
+;          |TWOtoONE_MUX:b2v_inst2|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst1|TWOtoONE_MUX:b2v_inst2             ; work         ;
+;          |TWOtoONE_MUX:b2v_inst35|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst1|TWOtoONE_MUX:b2v_inst35            ; work         ;
+;          |TWOtoONE_MUX:b2v_inst42|        ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst1|TWOtoONE_MUX:b2v_inst42            ; work         ;
+;          |or5_0:b2v_inst68|               ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst1|or5_0:b2v_inst68                   ; work         ;
+;       |ALU_4bit_v:b2v_inst2|              ; 22 (1)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst2                                    ; work         ;
+;          |FOURtoONE_MUX:b2v_inst11|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst2|FOURtoONE_MUX:b2v_inst11           ; work         ;
+;          |FOURtoONE_MUX:b2v_inst1|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst2|FOURtoONE_MUX:b2v_inst1            ; work         ;
+;          |FOURtoONE_MUX:b2v_inst23|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst2|FOURtoONE_MUX:b2v_inst23           ; work         ;
+;          |FOURtoONE_MUX:b2v_inst34|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst2|FOURtoONE_MUX:b2v_inst34           ; work         ;
+;          |FOURtoONE_MUX:b2v_inst37|       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst2|FOURtoONE_MUX:b2v_inst37           ; work         ;
+;          |FOURtoONE_MUX:b2v_inst38|       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst2|FOURtoONE_MUX:b2v_inst38           ; work         ;
+;          |FOURtoONE_MUX:b2v_inst39|       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst2|FOURtoONE_MUX:b2v_inst39           ; work         ;
+;          |TWOtoONE_MUX:b2v_inst13|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst2|TWOtoONE_MUX:b2v_inst13            ; work         ;
+;          |TWOtoONE_MUX:b2v_inst17|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst2|TWOtoONE_MUX:b2v_inst17            ; work         ;
+;          |TWOtoONE_MUX:b2v_inst24|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst2|TWOtoONE_MUX:b2v_inst24            ; work         ;
+;          |TWOtoONE_MUX:b2v_inst42|        ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst2|TWOtoONE_MUX:b2v_inst42            ; work         ;
+;          |or5_0:b2v_inst68|               ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst2|or5_0:b2v_inst68                   ; work         ;
+;       |ALU_4bit_v:b2v_inst3|              ; 24 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst3                                    ; work         ;
+;          |FOURtoONE_MUX:b2v_inst11|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst3|FOURtoONE_MUX:b2v_inst11           ; work         ;
+;          |FOURtoONE_MUX:b2v_inst1|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst3|FOURtoONE_MUX:b2v_inst1            ; work         ;
+;          |FOURtoONE_MUX:b2v_inst23|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst3|FOURtoONE_MUX:b2v_inst23           ; work         ;
+;          |FOURtoONE_MUX:b2v_inst34|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst3|FOURtoONE_MUX:b2v_inst34           ; work         ;
+;          |FOURtoONE_MUX:b2v_inst37|       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst3|FOURtoONE_MUX:b2v_inst37           ; work         ;
+;          |FOURtoONE_MUX:b2v_inst38|       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst3|FOURtoONE_MUX:b2v_inst38           ; work         ;
+;          |FOURtoONE_MUX:b2v_inst39|       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst3|FOURtoONE_MUX:b2v_inst39           ; work         ;
+;          |FOURtoONE_MUX:b2v_inst|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst3|FOURtoONE_MUX:b2v_inst             ; work         ;
+;          |TWOtoONE_MUX:b2v_inst13|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst3|TWOtoONE_MUX:b2v_inst13            ; work         ;
+;          |TWOtoONE_MUX:b2v_inst17|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst3|TWOtoONE_MUX:b2v_inst17            ; work         ;
+;          |TWOtoONE_MUX:b2v_inst24|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst3|TWOtoONE_MUX:b2v_inst24            ; work         ;
+;          |TWOtoONE_MUX:b2v_inst2|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst3|TWOtoONE_MUX:b2v_inst2             ; work         ;
+;          |TWOtoONE_MUX:b2v_inst35|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst3|TWOtoONE_MUX:b2v_inst35            ; work         ;
+;          |TWOtoONE_MUX:b2v_inst42|        ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst3|TWOtoONE_MUX:b2v_inst42            ; work         ;
+;          |or5_0:b2v_inst68|               ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst3|or5_0:b2v_inst68                   ; work         ;
+;       |ALU_4bit_v:b2v_inst|               ; 25 (1)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst                                     ; work         ;
+;          |FOURtoONE_MUX:b2v_inst11|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst|FOURtoONE_MUX:b2v_inst11            ; work         ;
+;          |FOURtoONE_MUX:b2v_inst1|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst|FOURtoONE_MUX:b2v_inst1             ; work         ;
+;          |FOURtoONE_MUX:b2v_inst23|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst|FOURtoONE_MUX:b2v_inst23            ; work         ;
+;          |FOURtoONE_MUX:b2v_inst34|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst|FOURtoONE_MUX:b2v_inst34            ; work         ;
+;          |FOURtoONE_MUX:b2v_inst37|       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst|FOURtoONE_MUX:b2v_inst37            ; work         ;
+;          |FOURtoONE_MUX:b2v_inst39|       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst|FOURtoONE_MUX:b2v_inst39            ; work         ;
+;          |FOURtoONE_MUX:b2v_inst|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst|FOURtoONE_MUX:b2v_inst              ; work         ;
+;          |TWOtoONE_MUX:b2v_inst13|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst|TWOtoONE_MUX:b2v_inst13             ; work         ;
+;          |TWOtoONE_MUX:b2v_inst17|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst|TWOtoONE_MUX:b2v_inst17             ; work         ;
+;          |TWOtoONE_MUX:b2v_inst24|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst|TWOtoONE_MUX:b2v_inst24             ; work         ;
+;          |TWOtoONE_MUX:b2v_inst28|        ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst|TWOtoONE_MUX:b2v_inst28             ; work         ;
+;          |TWOtoONE_MUX:b2v_inst2|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst|TWOtoONE_MUX:b2v_inst2              ; work         ;
+;          |TWOtoONE_MUX:b2v_inst35|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst|TWOtoONE_MUX:b2v_inst35             ; work         ;
+;          |TWOtoONE_MUX:b2v_inst42|        ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst|TWOtoONE_MUX:b2v_inst42             ; work         ;
+;    |IR:b2v_inst14|                        ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|IR:b2v_inst14                                                                 ; work         ;
+;    |PC:b2v_inst5|                         ; 39 (39)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|PC:b2v_inst5                                                                  ; work         ;
+;    |RAM1:b2v_inst3|                       ; 0 (0)             ; 0 (0)        ; 8192        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|RAM1:b2v_inst3                                                                ; work         ;
+;       |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 8192        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|RAM1:b2v_inst3|altsyncram:altsyncram_component                                ; work         ;
+;          |altsyncram_96i1:auto_generated| ; 0 (0)             ; 0 (0)        ; 8192        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|RAM1:b2v_inst3|altsyncram:altsyncram_component|altsyncram_96i1:auto_generated ; work         ;
+;    |RegisterFile_v:b2v_inst4|             ; 216 (8)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|RegisterFile_v:b2v_inst4                                                      ; work         ;
+;       |mux3to8:b2v_inst2|                 ; 80 (80)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|RegisterFile_v:b2v_inst4|mux3to8:b2v_inst2                                    ; work         ;
+;       |reg16bit:b2v_inst1|                ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|RegisterFile_v:b2v_inst4|reg16bit:b2v_inst1                                   ; work         ;
+;       |reg16bit:b2v_inst3|                ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|RegisterFile_v:b2v_inst4|reg16bit:b2v_inst3                                   ; work         ;
+;       |reg16bit:b2v_inst4|                ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|RegisterFile_v:b2v_inst4|reg16bit:b2v_inst4                                   ; work         ;
+;       |reg16bit:b2v_inst5|                ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|RegisterFile_v:b2v_inst4|reg16bit:b2v_inst5                                   ; work         ;
+;       |reg16bit:b2v_inst6|                ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|RegisterFile_v:b2v_inst4|reg16bit:b2v_inst6                                   ; work         ;
+;       |reg16bit:b2v_inst7|                ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|RegisterFile_v:b2v_inst4|reg16bit:b2v_inst7                                   ; work         ;
+;       |reg16bit:b2v_inst8|                ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|RegisterFile_v:b2v_inst4|reg16bit:b2v_inst8                                   ; work         ;
+;       |reg16bit:b2v_inst9|                ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|RegisterFile_v:b2v_inst4|reg16bit:b2v_inst9                                   ; work         ;
+;    |rom_case:b2v_inst15|                  ; 0 (0)             ; 0 (0)        ; 3584        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|rom_case:b2v_inst15                                                           ; work         ;
+;       |altsyncram:WideOr8_rtl_0|          ; 0 (0)             ; 0 (0)        ; 3584        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|rom_case:b2v_inst15|altsyncram:WideOr8_rtl_0                                  ; work         ;
+;          |altsyncram_5521:auto_generated| ; 0 (0)             ; 0 (0)        ; 3584        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|rom_case:b2v_inst15|altsyncram:WideOr8_rtl_0|altsyncram_5521:auto_generated   ; work         ;
+;    |stack:b2v_inst|                       ; 3034 (3034)       ; 4120 (4120)  ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|stack:b2v_inst                                                                ; work         ;
+;    |stack_mux:b2v_inst1|                  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|stack_mux:b2v_inst1                                                           ; work         ;
+;    |status:b2v_inst10|                    ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Top_Level_ModelSim_v|status:b2v_inst10                                                             ; work         ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                                                     ;
-+--------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+---------------------------------------+
-; Name                                                                                 ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF                                   ;
-+--------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+---------------------------------------+
-; RAM1:inst3|altsyncram:altsyncram_component|altsyncram_96i1:auto_generated|ALTSYNCRAM ; M9K  ; Single Port ; 512          ; 16           ; --           ; --           ; 8192 ; None                                  ;
-; rom_case:inst15|altsyncram:WideOr8_rtl_0|altsyncram_gu11:auto_generated|ALTSYNCRAM   ; AUTO ; ROM         ; 256          ; 14           ; --           ; --           ; 3584 ; Processor.Top_Level_ModelSim0.rtl.mif ;
-+--------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+---------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                           ;
++------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+-----------------------------------------+
+; Name                                                                                     ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF                                     ;
++------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+-----------------------------------------+
+; RAM1:b2v_inst3|altsyncram:altsyncram_component|altsyncram_96i1:auto_generated|ALTSYNCRAM ; M9K  ; Single Port ; 512          ; 16           ; --           ; --           ; 8192 ; None                                    ;
+; rom_case:b2v_inst15|altsyncram:WideOr8_rtl_0|altsyncram_5521:auto_generated|ALTSYNCRAM   ; AUTO ; ROM         ; 256          ; 14           ; --           ; --           ; 3584 ; Processor.Top_Level_ModelSim_v0.rtl.mif ;
++------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+-----------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis IP Cores Summary                                                                                                                           ;
-+--------+--------------+---------+--------------+--------------+--------------------------------+----------------------------------------------------------------+
-; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                ; IP Include File                                                ;
-+--------+--------------+---------+--------------+--------------+--------------------------------+----------------------------------------------------------------+
-; Altera ; RAM: 1-PORT  ; N/A     ; N/A          ; N/A          ; |Top_Level_ModelSim|RAM1:inst3 ; E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/RAM1.v ;
-+--------+--------------+---------+--------------+--------------+--------------------------------+----------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                                   ;
++--------+--------------+---------+--------------+--------------+--------------------------------------+------------------------------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                      ; IP Include File                                                  ;
++--------+--------------+---------+--------------+--------------+--------------------------------------+------------------------------------------------------------------+
+; Altera ; RAM: 1-PORT  ; N/A     ; N/A          ; N/A          ; |Top_Level_ModelSim_v|RAM1:b2v_inst3 ; C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/RAM1.v ;
++--------+--------------+---------+--------------+--------------+--------------------------------------+------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                       ;
-+------------------------------------------------------+---------------------------+------------------------+
-; Latch Name                                           ; Latch Enable Signal       ; Free of Timing Hazards ;
-+------------------------------------------------------+---------------------------+------------------------+
-; RegisterFile:inst4|reg16bit:inst4|out[15]            ; RegisterFile:inst4|inst13 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst3|out[15]            ; RegisterFile:inst4|inst12 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst1|out[15]            ; RegisterFile:inst4|inst11 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst5|out[15]            ; RegisterFile:inst4|inst14 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst7|out[15]            ; RegisterFile:inst4|inst16 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst8|out[15]            ; RegisterFile:inst4|inst17 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst6|out[15]            ; RegisterFile:inst4|inst15 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst9|out[15]            ; RegisterFile:inst4|inst18 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst4|out[14]            ; RegisterFile:inst4|inst13 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst3|out[14]            ; RegisterFile:inst4|inst12 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst1|out[14]            ; RegisterFile:inst4|inst11 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst5|out[14]            ; RegisterFile:inst4|inst14 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst7|out[14]            ; RegisterFile:inst4|inst16 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst8|out[14]            ; RegisterFile:inst4|inst17 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst6|out[14]            ; RegisterFile:inst4|inst15 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst9|out[14]            ; RegisterFile:inst4|inst18 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst4|out[13]            ; RegisterFile:inst4|inst13 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst3|out[13]            ; RegisterFile:inst4|inst12 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst1|out[13]            ; RegisterFile:inst4|inst11 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst5|out[13]            ; RegisterFile:inst4|inst14 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst7|out[13]            ; RegisterFile:inst4|inst16 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst8|out[13]            ; RegisterFile:inst4|inst17 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst6|out[13]            ; RegisterFile:inst4|inst15 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst9|out[13]            ; RegisterFile:inst4|inst18 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst4|out[12]            ; RegisterFile:inst4|inst13 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst3|out[12]            ; RegisterFile:inst4|inst12 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst1|out[12]            ; RegisterFile:inst4|inst11 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst5|out[12]            ; RegisterFile:inst4|inst14 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst7|out[12]            ; RegisterFile:inst4|inst16 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst8|out[12]            ; RegisterFile:inst4|inst17 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst6|out[12]            ; RegisterFile:inst4|inst15 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst9|out[12]            ; RegisterFile:inst4|inst18 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst4|out[11]            ; RegisterFile:inst4|inst13 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst3|out[11]            ; RegisterFile:inst4|inst12 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst1|out[11]            ; RegisterFile:inst4|inst11 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst5|out[11]            ; RegisterFile:inst4|inst14 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst7|out[11]            ; RegisterFile:inst4|inst16 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst8|out[11]            ; RegisterFile:inst4|inst17 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst6|out[11]            ; RegisterFile:inst4|inst15 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst9|out[11]            ; RegisterFile:inst4|inst18 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst4|out[10]            ; RegisterFile:inst4|inst13 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst3|out[10]            ; RegisterFile:inst4|inst12 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst1|out[10]            ; RegisterFile:inst4|inst11 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst5|out[10]            ; RegisterFile:inst4|inst14 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst7|out[10]            ; RegisterFile:inst4|inst16 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst8|out[10]            ; RegisterFile:inst4|inst17 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst6|out[10]            ; RegisterFile:inst4|inst15 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst9|out[10]            ; RegisterFile:inst4|inst18 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst4|out[9]             ; RegisterFile:inst4|inst13 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst3|out[9]             ; RegisterFile:inst4|inst12 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst1|out[9]             ; RegisterFile:inst4|inst11 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst5|out[9]             ; RegisterFile:inst4|inst14 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst7|out[9]             ; RegisterFile:inst4|inst16 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst8|out[9]             ; RegisterFile:inst4|inst17 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst6|out[9]             ; RegisterFile:inst4|inst15 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst9|out[9]             ; RegisterFile:inst4|inst18 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst4|out[8]             ; RegisterFile:inst4|inst13 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst3|out[8]             ; RegisterFile:inst4|inst12 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst1|out[8]             ; RegisterFile:inst4|inst11 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst5|out[8]             ; RegisterFile:inst4|inst14 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst7|out[8]             ; RegisterFile:inst4|inst16 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst8|out[8]             ; RegisterFile:inst4|inst17 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst6|out[8]             ; RegisterFile:inst4|inst15 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst9|out[8]             ; RegisterFile:inst4|inst18 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst4|out[7]             ; RegisterFile:inst4|inst13 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst3|out[7]             ; RegisterFile:inst4|inst12 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst1|out[7]             ; RegisterFile:inst4|inst11 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst5|out[7]             ; RegisterFile:inst4|inst14 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst7|out[7]             ; RegisterFile:inst4|inst16 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst8|out[7]             ; RegisterFile:inst4|inst17 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst6|out[7]             ; RegisterFile:inst4|inst15 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst9|out[7]             ; RegisterFile:inst4|inst18 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst4|out[6]             ; RegisterFile:inst4|inst13 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst3|out[6]             ; RegisterFile:inst4|inst12 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst1|out[6]             ; RegisterFile:inst4|inst11 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst5|out[6]             ; RegisterFile:inst4|inst14 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst7|out[6]             ; RegisterFile:inst4|inst16 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst8|out[6]             ; RegisterFile:inst4|inst17 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst6|out[6]             ; RegisterFile:inst4|inst15 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst9|out[6]             ; RegisterFile:inst4|inst18 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst4|out[5]             ; RegisterFile:inst4|inst13 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst3|out[5]             ; RegisterFile:inst4|inst12 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst1|out[5]             ; RegisterFile:inst4|inst11 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst5|out[5]             ; RegisterFile:inst4|inst14 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst7|out[5]             ; RegisterFile:inst4|inst16 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst8|out[5]             ; RegisterFile:inst4|inst17 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst6|out[5]             ; RegisterFile:inst4|inst15 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst9|out[5]             ; RegisterFile:inst4|inst18 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst4|out[4]             ; RegisterFile:inst4|inst13 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst3|out[4]             ; RegisterFile:inst4|inst12 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst1|out[4]             ; RegisterFile:inst4|inst11 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst5|out[4]             ; RegisterFile:inst4|inst14 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst7|out[4]             ; RegisterFile:inst4|inst16 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst8|out[4]             ; RegisterFile:inst4|inst17 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst6|out[4]             ; RegisterFile:inst4|inst15 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst9|out[4]             ; RegisterFile:inst4|inst18 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst4|out[3]             ; RegisterFile:inst4|inst13 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst3|out[3]             ; RegisterFile:inst4|inst12 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst1|out[3]             ; RegisterFile:inst4|inst11 ; yes                    ;
-; RegisterFile:inst4|reg16bit:inst5|out[3]             ; RegisterFile:inst4|inst14 ; yes                    ;
-; Number of user-specified and inferred latches = 128  ;                           ;                        ;
-+------------------------------------------------------+---------------------------+------------------------+
++------------------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                          ;
++------------------------------------------------------+----------------------------------------------+------------------------+
+; Latch Name                                           ; Latch Enable Signal                          ; Free of Timing Hazards ;
++------------------------------------------------------+----------------------------------------------+------------------------+
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst4|out[15]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_26 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst3|out[15]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_25 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst1|out[15]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_0  ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst5|out[15]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_27 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst7|out[15]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_29 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst8|out[15]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_30 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst6|out[15]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_28 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst9|out[15]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_31 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst4|out[14]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_26 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst3|out[14]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_25 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst1|out[14]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_0  ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst5|out[14]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_27 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst7|out[14]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_29 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst8|out[14]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_30 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst6|out[14]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_28 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst9|out[14]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_31 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst4|out[13]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_26 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst3|out[13]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_25 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst1|out[13]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_0  ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst5|out[13]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_27 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst7|out[13]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_29 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst8|out[13]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_30 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst6|out[13]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_28 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst9|out[13]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_31 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst4|out[12]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_26 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst3|out[12]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_25 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst1|out[12]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_0  ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst5|out[12]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_27 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst7|out[12]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_29 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst8|out[12]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_30 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst6|out[12]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_28 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst9|out[12]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_31 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst4|out[11]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_26 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst3|out[11]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_25 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst1|out[11]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_0  ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst5|out[11]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_27 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst7|out[11]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_29 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst8|out[11]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_30 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst6|out[11]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_28 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst9|out[11]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_31 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst4|out[10]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_26 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst3|out[10]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_25 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst1|out[10]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_0  ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst5|out[10]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_27 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst7|out[10]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_29 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst8|out[10]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_30 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst6|out[10]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_28 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst9|out[10]  ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_31 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst4|out[9]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_26 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst3|out[9]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_25 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst1|out[9]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_0  ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst5|out[9]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_27 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst7|out[9]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_29 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst8|out[9]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_30 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst6|out[9]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_28 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst9|out[9]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_31 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst4|out[8]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_26 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst3|out[8]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_25 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst1|out[8]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_0  ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst5|out[8]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_27 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst7|out[8]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_29 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst8|out[8]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_30 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst6|out[8]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_28 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst9|out[8]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_31 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst4|out[7]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_26 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst3|out[7]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_25 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst1|out[7]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_0  ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst5|out[7]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_27 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst7|out[7]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_29 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst8|out[7]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_30 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst6|out[7]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_28 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst9|out[7]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_31 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst4|out[6]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_26 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst3|out[6]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_25 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst1|out[6]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_0  ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst5|out[6]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_27 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst7|out[6]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_29 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst8|out[6]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_30 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst6|out[6]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_28 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst9|out[6]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_31 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst4|out[5]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_26 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst3|out[5]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_25 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst1|out[5]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_0  ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst5|out[5]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_27 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst7|out[5]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_29 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst8|out[5]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_30 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst6|out[5]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_28 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst9|out[5]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_31 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst4|out[4]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_26 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst3|out[4]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_25 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst1|out[4]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_0  ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst5|out[4]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_27 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst7|out[4]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_29 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst8|out[4]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_30 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst6|out[4]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_28 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst9|out[4]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_31 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst4|out[3]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_26 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst3|out[3]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_25 ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst1|out[3]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_0  ; yes                    ;
+; RegisterFile_v:b2v_inst4|reg16bit:b2v_inst5|out[3]   ; RegisterFile_v:b2v_inst4|SYNTHESIZED_WIRE_27 ; yes                    ;
+; Number of user-specified and inferred latches = 128  ;                                              ;                        ;
++------------------------------------------------------+----------------------------------------------+------------------------+
 Table restricted to first 100 entries. Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
@@ -446,8 +451,8 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 +-----------------------------------------+----------------------------------------+
 ; Register name                           ; Reason for Removal                     ;
 +-----------------------------------------+----------------------------------------+
-; IR:inst14|out[9]                        ; Stuck at GND due to stuck port data_in ;
-; stack:inst|ptr[8..255]                  ; Lost fanout                            ;
+; IR:b2v_inst14|out[9]                    ; Stuck at GND due to stuck port data_in ;
+; stack:b2v_inst|ptr[8..255]              ; Lost fanout                            ;
 ; Total Number of Removed Registers = 249 ;                                        ;
 +-----------------------------------------+----------------------------------------+
 
@@ -467,208 +472,248 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------+
-; Registers Packed Into Inferred Megafunctions                           ;
-+---------------------------------+-------------------------------+------+
-; Register Name                   ; Megafunction                  ; Type ;
-+---------------------------------+-------------------------------+------+
-; IR:inst14|out[0..4,6..8,10..15] ; rom_case:inst15|WideOr8_rtl_0 ; ROM  ;
-+---------------------------------+-------------------------------+------+
++--------------------------------------------------------------------------------+
+; Registers Packed Into Inferred Megafunctions                                   ;
++-------------------------------------+-----------------------------------+------+
+; Register Name                       ; Megafunction                      ; Type ;
++-------------------------------------+-----------------------------------+------+
+; IR:b2v_inst14|out[0..4,6..8,10..15] ; rom_case:b2v_inst15|WideOr8_rtl_0 ; ROM  ;
++-------------------------------------+-----------------------------------+------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                             ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------+
-; 4:1                ; 256 bits  ; 512 LEs       ; 512 LEs              ; 0 LEs                  ; Yes        ; |Top_Level_ModelSim|stack:inst|ptr[4]                                        ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |Top_Level_ModelSim|PC:inst5|out[13]                                         ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |Top_Level_ModelSim|ALU_16bit:inst2|ALU_4bit:inst3|FOURtoONE_MUX:inst23|Mux0 ;
-; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |Top_Level_ModelSim|RegisterFile:inst4|mux3to8:inst2|Mux14                   ;
-; 9:1                ; 16 bits   ; 96 LEs        ; 96 LEs               ; 0 LEs                  ; No         ; |Top_Level_ModelSim|B[11]                                                    ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------+
+; 4:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |Top_Level_ModelSim_v|PC:b2v_inst5|out[4]                                                      ;
+; 4:1                ; 256 bits  ; 512 LEs       ; 512 LEs              ; 0 LEs                  ; Yes        ; |Top_Level_ModelSim_v|stack:b2v_inst|ptr[239]                                                  ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |Top_Level_ModelSim_v|ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst1|FOURtoONE_MUX:b2v_inst34|Mux0 ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |Top_Level_ModelSim_v|RegisterFile_v:b2v_inst4|mux3to8:b2v_inst2|Mux9                          ;
+; 9:1                ; 16 bits   ; 96 LEs        ; 96 LEs               ; 0 LEs                  ; No         ; |Top_Level_ModelSim_v|B[13]                                                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------+
-; Source assignments for RAM1:inst3|altsyncram:altsyncram_component|altsyncram_96i1:auto_generated ;
-+---------------------------------+--------------------+------+------------------------------------+
-; Assignment                      ; Value              ; From ; To                                 ;
-+---------------------------------+--------------------+------+------------------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                  ;
-+---------------------------------+--------------------+------+------------------------------------+
++------------------------------------------------------------------------------------------------------+
+; Source assignments for RAM1:b2v_inst3|altsyncram:altsyncram_component|altsyncram_96i1:auto_generated ;
++---------------------------------+--------------------+------+----------------------------------------+
+; Assignment                      ; Value              ; From ; To                                     ;
++---------------------------------+--------------------+------+----------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                      ;
++---------------------------------+--------------------+------+----------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------+
-; Source assignments for rom_case:inst15|altsyncram:WideOr8_rtl_0|altsyncram_gu11:auto_generated ;
-+---------------------------------+--------------------+------+----------------------------------+
-; Assignment                      ; Value              ; From ; To                               ;
-+---------------------------------+--------------------+------+----------------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                ;
-+---------------------------------+--------------------+------+----------------------------------+
++----------------------------------------------------------------------------------------------------+
+; Source assignments for rom_case:b2v_inst15|altsyncram:WideOr8_rtl_0|altsyncram_5521:auto_generated ;
++---------------------------------+--------------------+------+--------------------------------------+
+; Assignment                      ; Value              ; From ; To                                   ;
++---------------------------------+--------------------+------+--------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                    ;
++---------------------------------+--------------------+------+--------------------------------------+
 
 
-+---------------------------------------------------------+
-; Parameter Settings for User Entity Instance: stack:inst ;
-+----------------+-------+--------------------------------+
-; Parameter Name ; Value ; Type                           ;
-+----------------+-------+--------------------------------+
-; width          ; 16    ; Signed Integer                 ;
-; depth          ; 256   ; Signed Integer                 ;
-+----------------+-------+--------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: RAM1:inst3|altsyncram:altsyncram_component ;
-+------------------------------------+----------------------+-----------------------------+
-; Parameter Name                     ; Value                ; Type                        ;
-+------------------------------------+----------------------+-----------------------------+
-; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                     ;
-; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                  ;
-; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                ;
-; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE              ;
-; WIDTH_BYTEENA                      ; 1                    ; Untyped                     ;
-; OPERATION_MODE                     ; SINGLE_PORT          ; Untyped                     ;
-; WIDTH_A                            ; 16                   ; Signed Integer              ;
-; WIDTHAD_A                          ; 9                    ; Signed Integer              ;
-; NUMWORDS_A                         ; 512                  ; Signed Integer              ;
-; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                     ;
-; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                     ;
-; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                     ;
-; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                     ;
-; INDATA_ACLR_A                      ; NONE                 ; Untyped                     ;
-; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                     ;
-; WIDTH_B                            ; 1                    ; Untyped                     ;
-; WIDTHAD_B                          ; 1                    ; Untyped                     ;
-; NUMWORDS_B                         ; 1                    ; Untyped                     ;
-; INDATA_REG_B                       ; CLOCK1               ; Untyped                     ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                     ;
-; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                     ;
-; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                     ;
-; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                     ;
-; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                     ;
-; INDATA_ACLR_B                      ; NONE                 ; Untyped                     ;
-; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                     ;
-; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                     ;
-; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                     ;
-; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                     ;
-; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                     ;
-; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer              ;
-; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                     ;
-; RAM_BLOCK_TYPE                     ; M9K                  ; Untyped                     ;
-; BYTE_SIZE                          ; 8                    ; Untyped                     ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                     ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                     ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                     ;
-; INIT_FILE                          ; UNUSED               ; Untyped                     ;
-; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                     ;
-; MAXIMUM_DEPTH                      ; 0                    ; Untyped                     ;
-; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                     ;
-; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                     ;
-; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                     ;
-; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                     ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                     ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                     ;
-; ENABLE_ECC                         ; FALSE                ; Untyped                     ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                     ;
-; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                     ;
-; DEVICE_FAMILY                      ; Cyclone IV GX        ; Untyped                     ;
-; CBXI_PARAMETER                     ; altsyncram_96i1      ; Untyped                     ;
-+------------------------------------+----------------------+-----------------------------+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: stack:b2v_inst ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; width          ; 16    ; Signed Integer                     ;
+; depth          ; 256   ; Signed Integer                     ;
++----------------+-------+------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +---------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: rom_case:inst15|altsyncram:WideOr8_rtl_0   ;
-+------------------------------------+---------------------------------------+----------------+
-; Parameter Name                     ; Value                                 ; Type           ;
-+------------------------------------+---------------------------------------+----------------+
-; BYTE_SIZE_BLOCK                    ; 8                                     ; Untyped        ;
-; AUTO_CARRY_CHAINS                  ; ON                                    ; AUTO_CARRY     ;
-; IGNORE_CARRY_BUFFERS               ; OFF                                   ; IGNORE_CARRY   ;
-; AUTO_CASCADE_CHAINS                ; ON                                    ; AUTO_CASCADE   ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                                   ; IGNORE_CASCADE ;
-; WIDTH_BYTEENA                      ; 1                                     ; Untyped        ;
-; OPERATION_MODE                     ; ROM                                   ; Untyped        ;
-; WIDTH_A                            ; 14                                    ; Untyped        ;
-; WIDTHAD_A                          ; 8                                     ; Untyped        ;
-; NUMWORDS_A                         ; 256                                   ; Untyped        ;
-; OUTDATA_REG_A                      ; UNREGISTERED                          ; Untyped        ;
-; ADDRESS_ACLR_A                     ; NONE                                  ; Untyped        ;
-; OUTDATA_ACLR_A                     ; NONE                                  ; Untyped        ;
-; WRCONTROL_ACLR_A                   ; NONE                                  ; Untyped        ;
-; INDATA_ACLR_A                      ; NONE                                  ; Untyped        ;
-; BYTEENA_ACLR_A                     ; NONE                                  ; Untyped        ;
-; WIDTH_B                            ; 1                                     ; Untyped        ;
-; WIDTHAD_B                          ; 1                                     ; Untyped        ;
-; NUMWORDS_B                         ; 1                                     ; Untyped        ;
-; INDATA_REG_B                       ; CLOCK1                                ; Untyped        ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                ; Untyped        ;
-; RDCONTROL_REG_B                    ; CLOCK1                                ; Untyped        ;
-; ADDRESS_REG_B                      ; CLOCK1                                ; Untyped        ;
-; OUTDATA_REG_B                      ; UNREGISTERED                          ; Untyped        ;
-; BYTEENA_REG_B                      ; CLOCK1                                ; Untyped        ;
-; INDATA_ACLR_B                      ; NONE                                  ; Untyped        ;
-; WRCONTROL_ACLR_B                   ; NONE                                  ; Untyped        ;
-; ADDRESS_ACLR_B                     ; NONE                                  ; Untyped        ;
-; OUTDATA_ACLR_B                     ; NONE                                  ; Untyped        ;
-; RDCONTROL_ACLR_B                   ; NONE                                  ; Untyped        ;
-; BYTEENA_ACLR_B                     ; NONE                                  ; Untyped        ;
-; WIDTH_BYTEENA_A                    ; 1                                     ; Untyped        ;
-; WIDTH_BYTEENA_B                    ; 1                                     ; Untyped        ;
-; RAM_BLOCK_TYPE                     ; AUTO                                  ; Untyped        ;
-; BYTE_SIZE                          ; 8                                     ; Untyped        ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                             ; Untyped        ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                  ; Untyped        ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                  ; Untyped        ;
-; INIT_FILE                          ; Processor.Top_Level_ModelSim0.rtl.mif ; Untyped        ;
-; INIT_FILE_LAYOUT                   ; PORT_A                                ; Untyped        ;
-; MAXIMUM_DEPTH                      ; 0                                     ; Untyped        ;
-; CLOCK_ENABLE_INPUT_A               ; NORMAL                                ; Untyped        ;
-; CLOCK_ENABLE_INPUT_B               ; NORMAL                                ; Untyped        ;
-; CLOCK_ENABLE_OUTPUT_A              ; NORMAL                                ; Untyped        ;
-; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                                ; Untyped        ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                       ; Untyped        ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                       ; Untyped        ;
-; ENABLE_ECC                         ; FALSE                                 ; Untyped        ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                 ; Untyped        ;
-; WIDTH_ECCSTATUS                    ; 3                                     ; Untyped        ;
-; DEVICE_FAMILY                      ; Cyclone IV GX                         ; Untyped        ;
-; CBXI_PARAMETER                     ; altsyncram_gu11                       ; Untyped        ;
-+------------------------------------+---------------------------------------+----------------+
+; Parameter Settings for User Entity Instance: RAM1:b2v_inst3|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+---------------------------------+
+; Parameter Name                     ; Value                ; Type                            ;
++------------------------------------+----------------------+---------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                         ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                      ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                    ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                    ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                  ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                         ;
+; OPERATION_MODE                     ; SINGLE_PORT          ; Untyped                         ;
+; WIDTH_A                            ; 16                   ; Signed Integer                  ;
+; WIDTHAD_A                          ; 9                    ; Signed Integer                  ;
+; NUMWORDS_A                         ; 512                  ; Signed Integer                  ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                         ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                         ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                         ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                         ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                         ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                         ;
+; WIDTH_B                            ; 1                    ; Untyped                         ;
+; WIDTHAD_B                          ; 1                    ; Untyped                         ;
+; NUMWORDS_B                         ; 1                    ; Untyped                         ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                         ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                         ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                         ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                         ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                         ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                         ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                         ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                         ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                         ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                         ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                         ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                         ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                  ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                         ;
+; RAM_BLOCK_TYPE                     ; M9K                  ; Untyped                         ;
+; BYTE_SIZE                          ; 8                    ; Untyped                         ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                         ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                         ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                         ;
+; INIT_FILE                          ; UNUSED               ; Untyped                         ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                         ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                         ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                         ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                         ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                         ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                         ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                         ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                         ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                         ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                         ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                         ;
+; DEVICE_FAMILY                      ; Cyclone IV GX        ; Untyped                         ;
+; CBXI_PARAMETER                     ; altsyncram_96i1      ; Untyped                         ;
++------------------------------------+----------------------+---------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------------------+
-; altsyncram Parameter Settings by Entity Instance                                       ;
-+-------------------------------------------+--------------------------------------------+
-; Name                                      ; Value                                      ;
-+-------------------------------------------+--------------------------------------------+
-; Number of entity instances                ; 2                                          ;
-; Entity Instance                           ; RAM1:inst3|altsyncram:altsyncram_component ;
-;     -- OPERATION_MODE                     ; SINGLE_PORT                                ;
-;     -- WIDTH_A                            ; 16                                         ;
-;     -- NUMWORDS_A                         ; 512                                        ;
-;     -- OUTDATA_REG_A                      ; UNREGISTERED                               ;
-;     -- WIDTH_B                            ; 1                                          ;
-;     -- NUMWORDS_B                         ; 1                                          ;
-;     -- ADDRESS_REG_B                      ; CLOCK1                                     ;
-;     -- OUTDATA_REG_B                      ; UNREGISTERED                               ;
-;     -- RAM_BLOCK_TYPE                     ; M9K                                        ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                  ;
-; Entity Instance                           ; rom_case:inst15|altsyncram:WideOr8_rtl_0   ;
-;     -- OPERATION_MODE                     ; ROM                                        ;
-;     -- WIDTH_A                            ; 14                                         ;
-;     -- NUMWORDS_A                         ; 256                                        ;
-;     -- OUTDATA_REG_A                      ; UNREGISTERED                               ;
-;     -- WIDTH_B                            ; 1                                          ;
-;     -- NUMWORDS_B                         ; 1                                          ;
-;     -- ADDRESS_REG_B                      ; CLOCK1                                     ;
-;     -- OUTDATA_REG_B                      ; UNREGISTERED                               ;
-;     -- RAM_BLOCK_TYPE                     ; AUTO                                       ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                  ;
-+-------------------------------------------+--------------------------------------------+
++-----------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: rom_case:b2v_inst15|altsyncram:WideOr8_rtl_0 ;
++------------------------------------+-----------------------------------------+----------------+
+; Parameter Name                     ; Value                                   ; Type           ;
++------------------------------------+-----------------------------------------+----------------+
+; BYTE_SIZE_BLOCK                    ; 8                                       ; Untyped        ;
+; AUTO_CARRY_CHAINS                  ; ON                                      ; AUTO_CARRY     ;
+; IGNORE_CARRY_BUFFERS               ; OFF                                     ; IGNORE_CARRY   ;
+; AUTO_CASCADE_CHAINS                ; ON                                      ; AUTO_CASCADE   ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                                     ; IGNORE_CASCADE ;
+; WIDTH_BYTEENA                      ; 1                                       ; Untyped        ;
+; OPERATION_MODE                     ; ROM                                     ; Untyped        ;
+; WIDTH_A                            ; 14                                      ; Untyped        ;
+; WIDTHAD_A                          ; 8                                       ; Untyped        ;
+; NUMWORDS_A                         ; 256                                     ; Untyped        ;
+; OUTDATA_REG_A                      ; UNREGISTERED                            ; Untyped        ;
+; ADDRESS_ACLR_A                     ; NONE                                    ; Untyped        ;
+; OUTDATA_ACLR_A                     ; NONE                                    ; Untyped        ;
+; WRCONTROL_ACLR_A                   ; NONE                                    ; Untyped        ;
+; INDATA_ACLR_A                      ; NONE                                    ; Untyped        ;
+; BYTEENA_ACLR_A                     ; NONE                                    ; Untyped        ;
+; WIDTH_B                            ; 1                                       ; Untyped        ;
+; WIDTHAD_B                          ; 1                                       ; Untyped        ;
+; NUMWORDS_B                         ; 1                                       ; Untyped        ;
+; INDATA_REG_B                       ; CLOCK1                                  ; Untyped        ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                  ; Untyped        ;
+; RDCONTROL_REG_B                    ; CLOCK1                                  ; Untyped        ;
+; ADDRESS_REG_B                      ; CLOCK1                                  ; Untyped        ;
+; OUTDATA_REG_B                      ; UNREGISTERED                            ; Untyped        ;
+; BYTEENA_REG_B                      ; CLOCK1                                  ; Untyped        ;
+; INDATA_ACLR_B                      ; NONE                                    ; Untyped        ;
+; WRCONTROL_ACLR_B                   ; NONE                                    ; Untyped        ;
+; ADDRESS_ACLR_B                     ; NONE                                    ; Untyped        ;
+; OUTDATA_ACLR_B                     ; NONE                                    ; Untyped        ;
+; RDCONTROL_ACLR_B                   ; NONE                                    ; Untyped        ;
+; BYTEENA_ACLR_B                     ; NONE                                    ; Untyped        ;
+; WIDTH_BYTEENA_A                    ; 1                                       ; Untyped        ;
+; WIDTH_BYTEENA_B                    ; 1                                       ; Untyped        ;
+; RAM_BLOCK_TYPE                     ; AUTO                                    ; Untyped        ;
+; BYTE_SIZE                          ; 8                                       ; Untyped        ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                               ; Untyped        ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                    ; Untyped        ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                    ; Untyped        ;
+; INIT_FILE                          ; Processor.Top_Level_ModelSim_v0.rtl.mif ; Untyped        ;
+; INIT_FILE_LAYOUT                   ; PORT_A                                  ; Untyped        ;
+; MAXIMUM_DEPTH                      ; 0                                       ; Untyped        ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL                                  ; Untyped        ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL                                  ; Untyped        ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL                                  ; Untyped        ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                                  ; Untyped        ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                         ; Untyped        ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                         ; Untyped        ;
+; ENABLE_ECC                         ; FALSE                                   ; Untyped        ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                   ; Untyped        ;
+; WIDTH_ECCSTATUS                    ; 3                                       ; Untyped        ;
+; DEVICE_FAMILY                      ; Cyclone IV GX                           ; Untyped        ;
+; CBXI_PARAMETER                     ; altsyncram_5521                         ; Untyped        ;
++------------------------------------+-----------------------------------------+----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                           ;
++-------------------------------------------+------------------------------------------------+
+; Name                                      ; Value                                          ;
++-------------------------------------------+------------------------------------------------+
+; Number of entity instances                ; 2                                              ;
+; Entity Instance                           ; RAM1:b2v_inst3|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; SINGLE_PORT                                    ;
+;     -- WIDTH_A                            ; 16                                             ;
+;     -- NUMWORDS_A                         ; 512                                            ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                   ;
+;     -- WIDTH_B                            ; 1                                              ;
+;     -- NUMWORDS_B                         ; 1                                              ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                         ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                   ;
+;     -- RAM_BLOCK_TYPE                     ; M9K                                            ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                      ;
+; Entity Instance                           ; rom_case:b2v_inst15|altsyncram:WideOr8_rtl_0   ;
+;     -- OPERATION_MODE                     ; ROM                                            ;
+;     -- WIDTH_A                            ; 14                                             ;
+;     -- NUMWORDS_A                         ; 256                                            ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                   ;
+;     -- WIDTH_B                            ; 1                                              ;
+;     -- NUMWORDS_B                         ; 1                                              ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                         ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                   ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                           ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                      ;
++-------------------------------------------+------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst|FOURtoONE_MUX:b2v_inst34" ;
++------+-------+----------+----------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                              ;
++------+-------+----------+----------------------------------------------------------------------+
+; A    ; Input ; Info     ; Stuck at GND                                                         ;
+; B    ; Input ; Info     ; Stuck at VCC                                                         ;
++------+-------+----------+----------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst|FOURtoONE_MUX:b2v_inst23" ;
++------+-------+----------+----------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                              ;
++------+-------+----------+----------------------------------------------------------------------+
+; A    ; Input ; Info     ; Stuck at GND                                                         ;
+; B    ; Input ; Info     ; Stuck at VCC                                                         ;
++------+-------+----------+----------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst|FOURtoONE_MUX:b2v_inst11" ;
++------+-------+----------+----------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                              ;
++------+-------+----------+----------------------------------------------------------------------+
+; A    ; Input ; Info     ; Stuck at GND                                                         ;
+; B    ; Input ; Info     ; Stuck at VCC                                                         ;
++------+-------+----------+----------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst|FOURtoONE_MUX:b2v_inst1" ;
++------+-------+----------+---------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                             ;
++------+-------+----------+---------------------------------------------------------------------+
+; A    ; Input ; Info     ; Stuck at GND                                                        ;
+; B    ; Input ; Info     ; Stuck at VCC                                                        ;
++------+-------+----------+---------------------------------------------------------------------+
 
 
 +-------------------------------+
@@ -676,7 +721,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:07     ;
+; Top            ; 00:00:15     ;
 +----------------+--------------+
 
 
@@ -686,7 +731,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Thu Mar 09 02:25:21 2017
+    Info: Processing started: Thu Mar 09 12:03:27 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Processor -c Processor
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file top_level_modelsim_v.v
@@ -760,51 +805,37 @@ Info (12021): Found 3 design units, including 3 entities, in source file alu_4bi
     Info (12023): Found entity 3: or5_0
 Info (12021): Found 1 design units, including 1 entities, in source file alu_4bit.bdf
     Info (12023): Found entity 1: ALU_4bit
-Info (12021): Found 1 design units, including 1 entities, in source file datapath_tb.v
-    Info (12023): Found entity 1: datapath_tb
+Warning (12019): Can't analyze file -- file datapath_tb.v is missing
 Info (12021): Found 1 design units, including 1 entities, in source file stack_mux.v
     Info (12023): Found entity 1: stack_mux
 Info (12021): Found 1 design units, including 1 entities, in source file stack.v
     Info (12023): Found entity 1: stack
 Info (12021): Found 1 design units, including 1 entities, in source file status.v
     Info (12023): Found entity 1: status
-Info (12127): Elaborating entity "Top_Level_ModelSim" for the top level hierarchy
-Info (12128): Elaborating entity "ALU_16bit" for hierarchy "ALU_16bit:inst2"
-Info (12128): Elaborating entity "ALU_4bit" for hierarchy "ALU_16bit:inst2|ALU_4bit:inst3"
-Info (12128): Elaborating entity "TWOtoONE_MUX" for hierarchy "ALU_16bit:inst2|ALU_4bit:inst3|TWOtoONE_MUX:inst42"
-Info (12128): Elaborating entity "FOURtoONE_MUX" for hierarchy "ALU_16bit:inst2|ALU_4bit:inst3|FOURtoONE_MUX:inst34"
-Info (12128): Elaborating entity "CarryLookaheadAdder" for hierarchy "ALU_16bit:inst2|ALU_4bit:inst3|CarryLookaheadAdder:inst4"
-Info (12128): Elaborating entity "RegisterFile" for hierarchy "RegisterFile:inst4"
-Info (12128): Elaborating entity "mux3to8" for hierarchy "RegisterFile:inst4|mux3to8:inst2"
-Info (12128): Elaborating entity "reg16bit" for hierarchy "RegisterFile:inst4|reg16bit:inst1"
-Warning (10240): Verilog HDL Always Construct warning at reg16bit.v(8): inferring latch(es) for variable "out", which holds its previous value in one or more paths through the always construct
-Info (10041): Inferred latch for "out[0]" at reg16bit.v(15)
-Info (10041): Inferred latch for "out[1]" at reg16bit.v(15)
-Info (10041): Inferred latch for "out[2]" at reg16bit.v(15)
-Info (10041): Inferred latch for "out[3]" at reg16bit.v(15)
-Info (10041): Inferred latch for "out[4]" at reg16bit.v(15)
-Info (10041): Inferred latch for "out[5]" at reg16bit.v(15)
-Info (10041): Inferred latch for "out[6]" at reg16bit.v(15)
-Info (10041): Inferred latch for "out[7]" at reg16bit.v(15)
-Info (10041): Inferred latch for "out[8]" at reg16bit.v(15)
-Info (10041): Inferred latch for "out[9]" at reg16bit.v(15)
-Info (10041): Inferred latch for "out[10]" at reg16bit.v(15)
-Info (10041): Inferred latch for "out[11]" at reg16bit.v(15)
-Info (10041): Inferred latch for "out[12]" at reg16bit.v(15)
-Info (10041): Inferred latch for "out[13]" at reg16bit.v(15)
-Info (10041): Inferred latch for "out[14]" at reg16bit.v(15)
-Info (10041): Inferred latch for "out[15]" at reg16bit.v(15)
-Info (12128): Elaborating entity "decoder" for hierarchy "RegisterFile:inst4|decoder:inst"
-Info (12128): Elaborating entity "stack" for hierarchy "stack:inst"
-Info (12128): Elaborating entity "stack_mux" for hierarchy "stack_mux:inst1"
-Info (12128): Elaborating entity "PC" for hierarchy "PC:inst5"
-Warning (10230): Verilog HDL assignment warning at PC.v(10): truncated value with size 32 to match size of target (16)
-Info (12128): Elaborating entity "IR" for hierarchy "IR:inst14"
-Info (12128): Elaborating entity "rom_case" for hierarchy "rom_case:inst15"
-Info (12128): Elaborating entity "RAM1" for hierarchy "RAM1:inst3"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "RAM1:inst3|altsyncram:altsyncram_component"
-Info (12130): Elaborated megafunction instantiation "RAM1:inst3|altsyncram:altsyncram_component"
-Info (12133): Instantiated megafunction "RAM1:inst3|altsyncram:altsyncram_component" with the following parameter:
+Warning (10229): Verilog HDL Expression warning at Top_Level_ModelSim_v_t.v(329): truncated literal to match 4 bits
+Warning (10229): Verilog HDL Expression warning at Top_Level_ModelSim_v_t.v(345): truncated literal to match 4 bits
+Warning (10229): Verilog HDL Expression warning at Top_Level_ModelSim_v_t.v(360): truncated literal to match 4 bits
+Warning (10229): Verilog HDL Expression warning at Top_Level_ModelSim_v_t.v(375): truncated literal to match 4 bits
+Warning (10229): Verilog HDL Expression warning at Top_Level_ModelSim_v_t.v(390): truncated literal to match 4 bits
+Info (12021): Found 1 design units, including 1 entities, in source file top_level_modelsim_v_t.v
+    Info (12023): Found entity 1: Top_Level_ModelSim_v_t
+Info (12127): Elaborating entity "Top_Level_ModelSim_v" for the top level hierarchy
+Info (12128): Elaborating entity "stack" for hierarchy "stack:b2v_inst"
+Info (12128): Elaborating entity "stack_mux" for hierarchy "stack_mux:b2v_inst1"
+Info (12128): Elaborating entity "status" for hierarchy "status:b2v_inst10"
+Info (12128): Elaborating entity "IR" for hierarchy "IR:b2v_inst14"
+Info (12128): Elaborating entity "rom_case" for hierarchy "rom_case:b2v_inst15"
+Info (12128): Elaborating entity "ALU_16bit_v" for hierarchy "ALU_16bit_v:b2v_inst2"
+Info (12128): Elaborating entity "ALU_4bit_v" for hierarchy "ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst"
+Info (12128): Elaborating entity "FOURtoONE_MUX" for hierarchy "ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst|FOURtoONE_MUX:b2v_inst"
+Info (12128): Elaborating entity "TWOtoONE_MUX" for hierarchy "ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst|TWOtoONE_MUX:b2v_inst13"
+Info (12128): Elaborating entity "CarryLookaheadAdder" for hierarchy "ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst|CarryLookaheadAdder:b2v_inst15"
+Info (12128): Elaborating entity "or5_0" for hierarchy "ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst|or5_0:b2v_inst68"
+Info (12128): Elaborating entity "and5_1" for hierarchy "ALU_16bit_v:b2v_inst2|ALU_4bit_v:b2v_inst|and5_1:b2v_inst72"
+Info (12128): Elaborating entity "RAM1" for hierarchy "RAM1:b2v_inst3"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "RAM1:b2v_inst3|altsyncram:altsyncram_component"
+Info (12130): Elaborated megafunction instantiation "RAM1:b2v_inst3|altsyncram:altsyncram_component"
+Info (12133): Instantiated megafunction "RAM1:b2v_inst3|altsyncram:altsyncram_component" with the following parameter:
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "intended_device_family" = "Cyclone III"
@@ -822,25 +853,33 @@ Info (12133): Instantiated megafunction "RAM1:inst3|altsyncram:altsyncram_compon
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_96i1.tdf
     Info (12023): Found entity 1: altsyncram_96i1
-Info (12128): Elaborating entity "altsyncram_96i1" for hierarchy "RAM1:inst3|altsyncram:altsyncram_component|altsyncram_96i1:auto_generated"
-Info (12128): Elaborating entity "status" for hierarchy "status:inst10"
+Info (12128): Elaborating entity "altsyncram_96i1" for hierarchy "RAM1:b2v_inst3|altsyncram:altsyncram_component|altsyncram_96i1:auto_generated"
+Warning (12125): Using design file registerfile_v.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: RegisterFile_v
+Info (12128): Elaborating entity "RegisterFile_v" for hierarchy "RegisterFile_v:b2v_inst4"
+Info (12128): Elaborating entity "decoder" for hierarchy "RegisterFile_v:b2v_inst4|decoder:b2v_inst"
+Info (12128): Elaborating entity "reg16bit" for hierarchy "RegisterFile_v:b2v_inst4|reg16bit:b2v_inst1"
+Warning (10240): Verilog HDL Always Construct warning at reg16bit.v(8): inferring latch(es) for variable "out", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "out[0]" at reg16bit.v(15)
+Info (10041): Inferred latch for "out[1]" at reg16bit.v(15)
+Info (10041): Inferred latch for "out[2]" at reg16bit.v(15)
+Info (10041): Inferred latch for "out[3]" at reg16bit.v(15)
+Info (10041): Inferred latch for "out[4]" at reg16bit.v(15)
+Info (10041): Inferred latch for "out[5]" at reg16bit.v(15)
+Info (10041): Inferred latch for "out[6]" at reg16bit.v(15)
+Info (10041): Inferred latch for "out[7]" at reg16bit.v(15)
+Info (10041): Inferred latch for "out[8]" at reg16bit.v(15)
+Info (10041): Inferred latch for "out[9]" at reg16bit.v(15)
+Info (10041): Inferred latch for "out[10]" at reg16bit.v(15)
+Info (10041): Inferred latch for "out[11]" at reg16bit.v(15)
+Info (10041): Inferred latch for "out[12]" at reg16bit.v(15)
+Info (10041): Inferred latch for "out[13]" at reg16bit.v(15)
+Info (10041): Inferred latch for "out[14]" at reg16bit.v(15)
+Info (10041): Inferred latch for "out[15]" at reg16bit.v(15)
+Info (12128): Elaborating entity "mux3to8" for hierarchy "RegisterFile_v:b2v_inst4|mux3to8:b2v_inst10"
+Info (12128): Elaborating entity "PC" for hierarchy "PC:b2v_inst5"
+Warning (10230): Verilog HDL assignment warning at PC.v(10): truncated value with size 32 to match size of target (16)
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13048): Converted tri-state node "gdfx_temp0[15]" into a selector
-    Warning (13048): Converted tri-state node "gdfx_temp0[14]" into a selector
-    Warning (13048): Converted tri-state node "gdfx_temp0[13]" into a selector
-    Warning (13048): Converted tri-state node "gdfx_temp0[12]" into a selector
-    Warning (13048): Converted tri-state node "gdfx_temp0[11]" into a selector
-    Warning (13048): Converted tri-state node "gdfx_temp0[10]" into a selector
-    Warning (13048): Converted tri-state node "gdfx_temp0[9]" into a selector
-    Warning (13048): Converted tri-state node "gdfx_temp0[8]" into a selector
-    Warning (13048): Converted tri-state node "gdfx_temp0[7]" into a selector
-    Warning (13048): Converted tri-state node "gdfx_temp0[6]" into a selector
-    Warning (13048): Converted tri-state node "gdfx_temp0[5]" into a selector
-    Warning (13048): Converted tri-state node "gdfx_temp0[4]" into a selector
-    Warning (13048): Converted tri-state node "gdfx_temp0[3]" into a selector
-    Warning (13048): Converted tri-state node "gdfx_temp0[2]" into a selector
-    Warning (13048): Converted tri-state node "gdfx_temp0[1]" into a selector
-    Warning (13048): Converted tri-state node "gdfx_temp0[0]" into a selector
     Warning (13048): Converted tri-state node "B[15]" into a selector
     Warning (13048): Converted tri-state node "B[14]" into a selector
     Warning (13048): Converted tri-state node "B[13]" into a selector
@@ -857,33 +896,49 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13048): Converted tri-state node "B[2]" into a selector
     Warning (13048): Converted tri-state node "B[1]" into a selector
     Warning (13048): Converted tri-state node "B[0]" into a selector
+    Warning (13048): Converted tri-state node "gdfx_temp0[15]" into a selector
+    Warning (13048): Converted tri-state node "gdfx_temp0[14]" into a selector
+    Warning (13048): Converted tri-state node "gdfx_temp0[13]" into a selector
+    Warning (13048): Converted tri-state node "gdfx_temp0[12]" into a selector
+    Warning (13048): Converted tri-state node "gdfx_temp0[11]" into a selector
+    Warning (13048): Converted tri-state node "gdfx_temp0[10]" into a selector
+    Warning (13048): Converted tri-state node "gdfx_temp0[9]" into a selector
+    Warning (13048): Converted tri-state node "gdfx_temp0[8]" into a selector
+    Warning (13048): Converted tri-state node "gdfx_temp0[7]" into a selector
+    Warning (13048): Converted tri-state node "gdfx_temp0[6]" into a selector
+    Warning (13048): Converted tri-state node "gdfx_temp0[5]" into a selector
+    Warning (13048): Converted tri-state node "gdfx_temp0[4]" into a selector
+    Warning (13048): Converted tri-state node "gdfx_temp0[3]" into a selector
+    Warning (13048): Converted tri-state node "gdfx_temp0[2]" into a selector
+    Warning (13048): Converted tri-state node "gdfx_temp0[1]" into a selector
+    Warning (13048): Converted tri-state node "gdfx_temp0[0]" into a selector
 Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276007): RAM logic "stack:inst|stack" is uninferred due to asynchronous read logic
+    Info (276007): RAM logic "stack:b2v_inst|stack" is uninferred due to asynchronous read logic
 Info (19000): Inferred 1 megafunctions from design logic
-    Info (276031): Inferred altsyncram megafunction from the following design logic: "rom_case:inst15|WideOr8_rtl_0"
+    Info (276031): Inferred altsyncram megafunction from the following design logic: "rom_case:b2v_inst15|WideOr8_rtl_0"
         Info (286033): Parameter OPERATION_MODE set to ROM
         Info (286033): Parameter WIDTH_A set to 14
         Info (286033): Parameter WIDTHAD_A set to 8
         Info (286033): Parameter NUMWORDS_A set to 256
         Info (286033): Parameter OUTDATA_REG_A set to UNREGISTERED
         Info (286033): Parameter RAM_BLOCK_TYPE set to AUTO
-        Info (286033): Parameter INIT_FILE set to Processor.Top_Level_ModelSim0.rtl.mif
-Info (12130): Elaborated megafunction instantiation "rom_case:inst15|altsyncram:WideOr8_rtl_0"
-Info (12133): Instantiated megafunction "rom_case:inst15|altsyncram:WideOr8_rtl_0" with the following parameter:
+        Info (286033): Parameter INIT_FILE set to Processor.Top_Level_ModelSim_v0.rtl.mif
+Info (12130): Elaborated megafunction instantiation "rom_case:b2v_inst15|altsyncram:WideOr8_rtl_0"
+Info (12133): Instantiated megafunction "rom_case:b2v_inst15|altsyncram:WideOr8_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "ROM"
     Info (12134): Parameter "WIDTH_A" = "14"
     Info (12134): Parameter "WIDTHAD_A" = "8"
     Info (12134): Parameter "NUMWORDS_A" = "256"
     Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
     Info (12134): Parameter "RAM_BLOCK_TYPE" = "AUTO"
-    Info (12134): Parameter "INIT_FILE" = "Processor.Top_Level_ModelSim0.rtl.mif"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_gu11.tdf
-    Info (12023): Found entity 1: altsyncram_gu11
+    Info (12134): Parameter "INIT_FILE" = "Processor.Top_Level_ModelSim_v0.rtl.mif"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_5521.tdf
+    Info (12023): Found entity 1: altsyncram_5521
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "N" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 248 registers lost all their fanouts during netlist optimizations.
-Info (144001): Generated suppressed messages file E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/Processor.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/Processor.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Info (21057): Implemented 7928 device resources after synthesis - the final resource count might be different
@@ -891,16 +946,16 @@ Info (21057): Implemented 7928 device resources after synthesis - the final reso
     Info (21059): Implemented 131 output pins
     Info (21061): Implemented 7721 logic cells
     Info (21064): Implemented 30 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 38 warnings
-    Info: Peak virtual memory: 609 megabytes
-    Info: Processing ended: Thu Mar 09 02:25:32 2017
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:09
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 45 warnings
+    Info: Peak virtual memory: 612 megabytes
+    Info: Processing ended: Thu Mar 09 12:03:46 2017
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:19
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/Processor.map.smsg.
+The suppressed messages can be found in C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/Processor.map.smsg.
 
 

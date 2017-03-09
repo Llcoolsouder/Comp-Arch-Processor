@@ -11,7 +11,7 @@ module Top_Level_ModelSim_v_t;
 	reg [2:0] DA_t;
 	reg [4:0] FS_t;
 	reg [15:0] k_t;
-	reg [4:0 MD_t;
+	reg [4:0] MD_t;
 	reg [1:0]PS_t;
 	reg [1:0] SS_t;
 	wire Cout_t;
@@ -59,12 +59,12 @@ module Top_Level_ModelSim_v_t;
 		clock_50_t <= 1'b0;
 		clear_t <= 1'b1;
 		forever
-		#10 clock_t = ~clock_t;
+		#10 clock_50_t = ~clock_50_t;
 	end 
 	
 	//**********Begin test**************
 	initial begin
-	#1	
+	#20	
 	//NOP
 	PS_t		<=	2'b00;
 	IR_L_t	<=	0;
@@ -81,7 +81,7 @@ module Top_Level_ModelSim_v_t;
 	MW_t		<=	0;
 	SS_t		<=	2'b00;
 	
-	#1
+	#20
 	//LRI
 	PS_t		<=	2'b01;
 	IR_L_t	<=	1;
@@ -92,7 +92,7 @@ module Top_Level_ModelSim_v_t;
 	MA_t		<=	1;
 	k_t		<=	4'h000f;
 	
-	#1
+	#20
 	//INC
 	PS_t		<=	2'b01;
 	IR_L_t	<=	1;
@@ -106,7 +106,7 @@ module Top_Level_ModelSim_v_t;
 	MW_t		<=	0;
 	SS_t		<=	2'b00;
 	
-	#1
+	#20
 	//ADD
 	PS_t		<=	2'b01;
 	IR_L_t	<=	1;
@@ -122,7 +122,7 @@ module Top_Level_ModelSim_v_t;
 	MW_t		<=	0;
 	SS_t		<=	2'b00;
 	
-	#1
+	#20
 	//SUB
 	PS_t		<=	2'b01;
 	IR_L_t	<=	1;
@@ -138,7 +138,7 @@ module Top_Level_ModelSim_v_t;
 	MW_t		<=	0;
 	SS_t		<=	2'b00;
 	
-	#1
+	#20
 	//DEC
 	PS_t		<=	2'b01;
 	IR_L_t	<=	1;
@@ -153,7 +153,7 @@ module Top_Level_ModelSim_v_t;
 	MW_t		<=	0;
 	SS_t		<=	2'b00;
 	
-	#1
+	#20
 	//NEG
 	PS_t		<=	2'b01;
 	IR_L_t	<=	1;
@@ -167,7 +167,7 @@ module Top_Level_ModelSim_v_t;
 	MW_t		<=	0;
 	SS_t		<=	2'b00;
 	
-	#1
+	#20
 	//SHR and PUSH
 	PS_t		<=	2'b01;
 	IR_L_t	<=	1;
@@ -180,7 +180,7 @@ module Top_Level_ModelSim_v_t;
 	MW_t		<=	0;
 	SS_t		<=	2'b01;
 	
-	#1
+	#20
 	//SHL and PUSH
 	PS_t		<=	2'b01;
 	IR_L_t	<=	1;
@@ -193,7 +193,7 @@ module Top_Level_ModelSim_v_t;
 	MW_t		<=	0;
 	SS_t		<=	2'b01;
 	
-	#1
+	#20
 	//CLR
 	PS_t		<=	2'b01;
 	IR_L_t	<=	1;
@@ -205,7 +205,7 @@ module Top_Level_ModelSim_v_t;
 	MW_t		<=	0;
 	SS_t		<=	2'b00;
 	
-	#1
+	#20
 	//POP
 	PS_t		<=	2'b01;
 	IR_L_t	<=	1;
@@ -216,7 +216,7 @@ module Top_Level_ModelSim_v_t;
 	MW_t		<=	0;
 	SS_t		<=	2'b10;
 	
-	#1
+	#20
 	//SET
 	PS_t		<=	2'b01;
 	IR_L_t	<=	1;
@@ -229,7 +229,7 @@ module Top_Level_ModelSim_v_t;
 	MW_t		<=	0;
 	SS_t		<=	2'b00;
 	
-	#1
+	#20
 	//NOT
 	PS_t		<=	2'b01;
 	IR_L_t	<=	1;
@@ -242,7 +242,7 @@ module Top_Level_ModelSim_v_t;
 	MW_t		<=	0;
 	SS_t		<=	2'b00;
 	
-	#1
+	#20
 	//AND
 	PS_t		<=	2'b01;
 	IR_L_t	<=	1;
@@ -257,7 +257,7 @@ module Top_Level_ModelSim_v_t;
 	MW_t		<=	0;
 	SS_t		<=	2'b00;
 	
-	#1
+	#20
 	//OR
 	PS_t		<=	2'b01;
 	IR_L_t	<=	1;
@@ -272,7 +272,7 @@ module Top_Level_ModelSim_v_t;
 	MW_t		<=	0;
 	SS_t		<=	2'b00;
 	
-	#1
+	#20
 	//OR
 	PS_t		<=	2'b01;
 	IR_L_t	<=	1;
@@ -287,7 +287,7 @@ module Top_Level_ModelSim_v_t;
 	MW_t		<=	0;
 	SS_t		<=	2'b00;
 	
-	#1
+	#20
 	//MOVA
 	PS_t		<=	2'b01;
 	IR_L_t	<=	1;
@@ -300,7 +300,7 @@ module Top_Level_ModelSim_v_t;
 	MW_t		<=	0;
 	SS_t		<=	2'b00;
 	
-	#1
+	#20
 	//MOVB
 	PS_t		<=	2'b01;
 	IR_L_t	<=	1;
@@ -314,7 +314,7 @@ module Top_Level_ModelSim_v_t;
 	MW_t		<=	0;
 	SS_t		<=	2'b00;
 	
-	#1
+	#20
 	//ADDI
 	PS_t		<=	2'b01;
 	IR_L_t	<=	1;
@@ -330,7 +330,7 @@ module Top_Level_ModelSim_v_t;
 	MW_t		<=	0;
 	SS_t		<=	2'b00;
 	
-	#1
+	#20
 	//SUBI
 	PS_t		<=	2'b01;
 	IR_L_t	<=	1;
@@ -346,7 +346,7 @@ module Top_Level_ModelSim_v_t;
 	MW_t		<=	0;
 	SS_t		<=	2'b00;
 	
-	#1
+	#20
 	//ANDI
 	PS_t		<=	2'b01;
 	IR_L_t	<=	1;
@@ -361,7 +361,7 @@ module Top_Level_ModelSim_v_t;
 	MW_t		<=	0;
 	SS_t		<=	2'b00;
 	
-	#1
+	#20
 	//ORI
 	PS_t		<=	2'b01;
 	IR_L_t	<=	1;
@@ -376,7 +376,7 @@ module Top_Level_ModelSim_v_t;
 	MW_t		<=	0;
 	SS_t		<=	2'b00;
 	
-	#1
+	#20
 	//XORI
 	PS_t		<=	2'b01;
 	IR_L_t	<=	1;
@@ -391,20 +391,22 @@ module Top_Level_ModelSim_v_t;
 	MW_t		<=	0;
 	SS_t		<=	2'b00;
 	
-	#1
+	#20
 	//STI
 	PS_t		<=	2'b01;
 	IR_L_t	<=	1;
-	BA_t		<=	3'b000;
+	AA_t		<=	3'b000;
 	WR_t		<=	0;
 	clear_t	<=	0;
-	MD_t		<=	5'b01000;
-	MA_t		<=	1;
+	FS_t		<=	5'b01100;
+	Cin_t		<=	0;
+	MD_t		<=	5'b00100;
+	MA_t		<=	0;
 	k_t		<=	4'h0000;
 	MW_t		<=	1;
 	SS_t		<=	2'b00;
 	
-	#1
+	#20
 	//LDI
 	PS_t		<=	2'b01;
 	IR_L_t	<=	1;
@@ -417,7 +419,8 @@ module Top_Level_ModelSim_v_t;
 	MW_t		<=	0;
 	SS_t		<=	2'b00;
 	
-	$stop 
+	#20
+	$stop; 
 	end 
 endmodule
 		

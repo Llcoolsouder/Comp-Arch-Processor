@@ -1,5 +1,5 @@
 Flow report for Processor
-Thu Mar 09 02:27:06 2017
+Thu Mar 09 12:07:31 2017
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,12 +40,12 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Thu Mar 09 02:27:06 2017      ;
+; Flow Status                        ; Successful - Thu Mar 09 12:07:31 2017      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; Processor                                  ;
-; Top-level Entity Name              ; Top_Level_ModelSim                         ;
+; Top-level Entity Name              ; Top_Level_ModelSim_v                       ;
 ; Family                             ; Cyclone IV GX                              ;
-; Total logic elements               ; 5,685 / 29,440 ( 19 % )                    ;
+; Total logic elements               ; 5,701 / 29,440 ( 19 % )                    ;
 ;     Total combinational functions  ; 3,625 / 29,440 ( 12 % )                    ;
 ;     Dedicated logic registers      ; 4,137 / 29,440 ( 14 % )                    ;
 ; Total registers                    ; 4137                                       ;
@@ -68,38 +68,38 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/09/2017 02:25:22 ;
+; Start date & time ; 03/09/2017 12:03:27 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Processor           ;
 +-------------------+---------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                             ;
-+--------------------------------------+---------------------------------+---------------+--------------------+----------------+
-; Assignment Name                      ; Value                           ; Default Value ; Entity Name        ; Section Id     ;
-+--------------------------------------+---------------------------------+---------------+--------------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 180546894908892.148904432212988 ; --            ; --                 ; --             ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                              ; --            ; --                 ; datapath_tb    ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; datapath_tb                     ; --            ; --                 ; eda_simulation ;
-; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                     ; --            ; --                 ; eda_simulation ;
-; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)       ; <None>        ; --                 ; --             ;
-; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                 ; --            ; --                 ; eda_simulation ;
-; EDA_TEST_BENCH_FILE                  ; datapath_tb.v                   ; --            ; --                 ; datapath_tb    ;
-; EDA_TEST_BENCH_MODULE_NAME           ; datapath_tb                     ; --            ; --                 ; datapath_tb    ;
-; EDA_TEST_BENCH_NAME                  ; datapath_tb                     ; --            ; --                 ; eda_simulation ;
-; EDA_TIME_SCALE                       ; 1 ps                            ; --            ; --                 ; eda_simulation ;
-; IP_TOOL_NAME                         ; RAM: 1-PORT                     ; --            ; --                 ; --             ;
-; IP_TOOL_NAME                         ; RAM: 1-PORT                     ; --            ; --                 ; --             ;
-; IP_TOOL_VERSION                      ; 13.0                            ; --            ; --                 ; --             ;
-; IP_TOOL_VERSION                      ; 13.0                            ; --            ; --                 ; --             ;
-; MISC_FILE                            ; RAM2_bb.v                       ; --            ; --                 ; --             ;
-; MISC_FILE                            ; RAM1_bb.v                       ; --            ; --                 ; --             ;
-; PARTITION_COLOR                      ; 16764057                        ; --            ; Top_Level_ModelSim ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING           ; --            ; Top_Level_ModelSim ; Top            ;
-; PARTITION_NETLIST_TYPE               ; SOURCE                          ; --            ; Top_Level_ModelSim ; Top            ;
-; TOP_LEVEL_ENTITY                     ; Top_Level_ModelSim              ; Processor     ; --                 ; --             ;
-+--------------------------------------+---------------------------------+---------------+--------------------+----------------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                      ;
++--------------------------------------+--------------------------------+---------------+----------------------+------------------------+
+; Assignment Name                      ; Value                          ; Default Value ; Entity Name          ; Section Id             ;
++--------------------------------------+--------------------------------+---------------+----------------------+------------------------+
+; COMPILER_SIGNATURE_ID                ; 53214319930689.148907900700200 ; --            ; --                   ; --                     ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                             ; --            ; --                   ; Top_Level_ModelSim_v_t ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; Top_Level_ModelSim_v_t         ; --            ; --                   ; eda_simulation         ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                    ; --            ; --                   ; eda_simulation         ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)      ; <None>        ; --                   ; --                     ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                ; --            ; --                   ; eda_simulation         ;
+; EDA_TEST_BENCH_FILE                  ; Top_Level_ModelSim_v_t.v       ; --            ; --                   ; Top_Level_ModelSim_v_t ;
+; EDA_TEST_BENCH_MODULE_NAME           ; Top_Level_ModelSim_v_t         ; --            ; --                   ; Top_Level_ModelSim_v_t ;
+; EDA_TEST_BENCH_NAME                  ; Top_Level_ModelSim_v_t         ; --            ; --                   ; eda_simulation         ;
+; EDA_TIME_SCALE                       ; 1 ps                           ; --            ; --                   ; eda_simulation         ;
+; IP_TOOL_NAME                         ; RAM: 1-PORT                    ; --            ; --                   ; --                     ;
+; IP_TOOL_NAME                         ; RAM: 1-PORT                    ; --            ; --                   ; --                     ;
+; IP_TOOL_VERSION                      ; 13.0                           ; --            ; --                   ; --                     ;
+; IP_TOOL_VERSION                      ; 13.0                           ; --            ; --                   ; --                     ;
+; MISC_FILE                            ; RAM2_bb.v                      ; --            ; --                   ; --                     ;
+; MISC_FILE                            ; RAM1_bb.v                      ; --            ; --                   ; --                     ;
+; PARTITION_COLOR                      ; 16764057                       ; --            ; Top_Level_ModelSim_v ; Top                    ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING          ; --            ; Top_Level_ModelSim_v ; Top                    ;
+; PARTITION_NETLIST_TYPE               ; SOURCE                         ; --            ; Top_Level_ModelSim_v ; Top                    ;
+; TOP_LEVEL_ENTITY                     ; Top_Level_ModelSim_v           ; Processor     ; --                   ; --                     ;
++--------------------------------------+--------------------------------+---------------+----------------------+------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -107,12 +107,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:10     ; 1.0                     ; 598 MB              ; 00:00:08                           ;
-; Fitter                    ; 00:01:08     ; 1.0                     ; 1108 MB             ; 00:01:07                           ;
-; Assembler                 ; 00:00:04     ; 1.0                     ; 552 MB              ; 00:00:04                           ;
-; TimeQuest Timing Analyzer ; 00:00:09     ; 1.0                     ; 633 MB              ; 00:00:09                           ;
-; EDA Netlist Writer        ; 00:00:07     ; 1.0                     ; 558 MB              ; 00:00:05                           ;
-; Total                     ; 00:01:38     ; --                      ; --                  ; 00:01:33                           ;
+; Analysis & Synthesis      ; 00:00:17     ; 1.0                     ; 601 MB              ; 00:00:17                           ;
+; Fitter                    ; 00:02:42     ; 1.0                     ; 1041 MB             ; 00:02:29                           ;
+; Assembler                 ; 00:00:08     ; 1.0                     ; 552 MB              ; 00:00:07                           ;
+; TimeQuest Timing Analyzer ; 00:00:20     ; 1.0                     ; 638 MB              ; 00:00:17                           ;
+; EDA Netlist Writer        ; 00:00:15     ; 1.0                     ; 550 MB              ; 00:00:13                           ;
+; Total                     ; 00:03:42     ; --                      ; --                  ; 00:03:23                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -121,11 +121,11 @@ applicable agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; DESKTOP-QBRQMS5  ; Windows 7 ; 6.2        ; x86_64         ;
-; Fitter                    ; DESKTOP-QBRQMS5  ; Windows 7 ; 6.2        ; x86_64         ;
-; Assembler                 ; DESKTOP-QBRQMS5  ; Windows 7 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; DESKTOP-QBRQMS5  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-QBRQMS5  ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; LAPTOP-VI741MNF  ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; LAPTOP-VI741MNF  ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; LAPTOP-VI741MNF  ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; LAPTOP-VI741MNF  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; LAPTOP-VI741MNF  ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 

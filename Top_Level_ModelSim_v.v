@@ -175,7 +175,7 @@ rom_case	b2v_inst15(
 	.out(SYNTHESIZED_WIRE_2));
 
 
-ALU_16bit	b2v_inst2(
+ALU_16bit_v	b2v_inst2(
 	.Cin(Cin),
 	.A(SYNTHESIZED_WIRE_3),
 	.B(B),
@@ -209,7 +209,7 @@ RAM1	b2v_inst3(
 	.q(SYNTHESIZED_WIRE_1));
 
 
-RegisterFile	b2v_inst4(
+RegisterFile_v	b2v_inst4(
 	.WR(WR),
 	.Clear(clear),
 	.Clock_50(clock_50),
