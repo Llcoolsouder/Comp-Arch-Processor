@@ -1,86 +1,56 @@
 module datapath_tb;
 	reg Cin_t;
-	reg [15:0]A_t, B_t;
+	reg WR_t;
+	reg clear_t;
+	reg MW_t;
+	reg MA_t;
+	reg MD_t;
+	reg [15:0]AA_t, BA_t,DA_t,k_t;
 	reg [4:0]FS_t;
+	wire clock_50_t;
 	wire Cout_t;
 	wire [15:0]F_t;
+	wire IR_L_t;
+	wire PS_t;
+	wire [15:0] R0_t,R1_t,R2_t,R3_t,R4_t,R5_t,R6_t,R7_t;
 	
 	integer i;
-	integer FE; //F expected
 	
-	Top_Level_ModelSim(
-	clock_50,
-	WR,
-	clear,
-	MW,
-	MA,
-	IR_L,
-	Cin,
-	AA,
-	BA,
-	DA,
-	FS,
-	k,
-	MD,
-	PS,
-	Cout,
-	R0,
-	R1,
-	R2,
-	R3,
-	R4,
-	R5,
-	R6,
-	R7
-);
+	dut Top_Level_ModelSim_v(
+		clock_50(clock_50_t),
+		WR(WR_t),
+		clear(clear_t),
+		MW(MW_t),
+		MA(MA_t),
+		IR_L(IR_L_t),
+		Cin(Cin_t),
+		AA(AA_t),
+		BA(BA_t),
+		DA(DA_t),
+		FS(FS_t),
+		k(k_t),
+		MD(MD_t),
+		PS(PS_t),
+		Cout(Cout_t),
+		R0(R0_t),
+		R1(R1_t),
+		R2(R2_t),
+		R3(R3_t),
+		R4(R4_t),
+		R5(R5_t),
+		R6(R6_t),
+		R7(R7_t)
+	);
 	
-	initial begin
-		repeat(10) begin
-			Cin_t	<=	$random;
-			A_t	<=	$random;
-			B_t	<=	$random;
-			for (i=0; i<32; i=i+1) begin 
-				FS_t<=i;
-				#10;
-			end
-		end 
-	end
-	
-	initial begin
-		casex (FS_t)
-			5'b00000: FE	=	0;
-			5'b00001: FE	= 	~(A_t|B_t);
-			5'b00010: FE	= 	~A_t&B_t;
-			5'b00011: FE	=	~A_t;
-			5'b00100: FE	=	A_t&~B_t;
-			5'b00101: FE	=	~B_t;
-			5'b00110: FE	=	A_t^B_t;
-			5'b00111: FE	=	~(A_t&B_t);
-			5'b01000: FE	=	A_t&B_t;
-			5'b01001: FE	=	~(A_t^B_t);
-			5'b01010: FE	=	B_t;
-			5'b01011: FE	=	~A_t|B_t;
-			5'b01100: FE	=	A_t;
-			5'b01101: FE	=	A_t|~B_t;
-			5'b01110: FE	=	A_t|B_t;
-			5'b01111: FE	=	131071;
-			5'b10000: FE	=	A_t+Cin_t;
-			5'b10001: FE	=	~A_t+1;
-			5'b10010: FE	=	A_t+1+Cin_t;
-			5'b10011: FE	=	Cin_t-A_t;
-			5'b10100: FE	=	A_t+B_t+Cin_t;
-			5'b10101: FE	=	~A_t+B_t+Cin_t;
-			5'b10110: FE	=	A_t+~B_t+Cin_t;
-			5'b10111: FE	=	~A_t+~B_t+Cin_t;
-			5'b11xx0: FE	=	(A_t<<1)+Cin_t;
-			5'b11xx1: FE	=	A_t>>1;				//Change this to (A>>1)+Cin by looping back to cin in the block file
-		endcase 
-		if (F_t!=FE) begin	
-			$display("FAILED %b", FS_t);
-		end
-	end 		
 	initial begin 
+		clock_50_t=0;
 		#3300 $stop;
 	end
+	
+	always @* begin
+		#5
+		clock_50_t=~clock_50_t;
+	end
+		
 
 endmodule

@@ -16,30 +16,30 @@
 // VERSION		"Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 // CREATED		"Wed Mar 08 19:33:05 2017"
 
-module Top_Level_ModelSim(
-	clock_50(clock_50_t),
-	WR(WR_t),
-	clear(clear_t),
-	MW(MW_t),
-	MA(MA_t),
-	IR_L(IR_t),
-	Cin(Cin_t),
-	AA(AA_t),
-	BA(BA_t),
-	DA(DA_t),
-	FS(FS_t),
-	k(k_t),
-	MD(MD_t),
-	PS(PS_t),
-	Cout(Cout_t),
-	R0(R0_t),
-	R1(R1_t),
-	R2(R2_t),
-	R3(R3_t),
-	R4(R4_t),
-	R5(R5_t),
-	R6(R6_t),
-	R7(R7_t)
+module Top_Level_ModelSim_v(
+	clock_50,
+	WR,
+	clear,
+	MW,
+	MA,
+	IR_L,
+	Cin,
+	AA,
+	BA,
+	DA,
+	FS,
+	k,
+	MD,
+	PS,
+	Cout,
+	R0,
+	R1,
+	R2,
+	R3,
+	R4,
+	R5,
+	R6,
+	R7
 );
 
 
