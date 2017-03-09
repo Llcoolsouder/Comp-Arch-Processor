@@ -9,6 +9,7 @@ module PC (CLK, PS, D, out);
 			2'b00: out = out;
 			2'b01: out = out+1;
 			2'b10: out = D;
+			2'b11: out = out+D;
 		endcase
 	end 
 endmodule

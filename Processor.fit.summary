@@ -1,0 +1,20 @@
+Fitter Status : Successful - Wed Mar 08 19:16:36 2017
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : Processor
+Top-level Entity Name : Top_Level_ModelSim
+Family : Cyclone IV GX
+Device : EP4CGX30CF23C6
+Timing Models : Final
+Total logic elements : 578 / 29,440 ( 2 % )
+    Total combinational functions : 572 / 29,440 ( 2 % )
+    Dedicated logic registers : 23 / 29,440 ( < 1 % )
+Total registers : 23
+Total pins : 170 / 307 ( 55 % )
+Total virtual pins : 0
+Total memory bits : 8,192 / 1,105,920 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 160 ( 0 % )
+Total GXB Receiver Channel PCS : 0 / 4 ( 0 % )
+Total GXB Receiver Channel PMA : 0 / 4 ( 0 % )
+Total GXB Transmitter Channel PCS : 0 / 4 ( 0 % )
+Total GXB Transmitter Channel PMA : 0 / 4 ( 0 % )
+Total PLLs : 0 / 6 ( 0 % )

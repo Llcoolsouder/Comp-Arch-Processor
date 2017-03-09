@@ -13,8 +13,8 @@
 // applicable agreement for further details.
 
 // PROGRAM		"Quartus II 64-Bit"
-// VERSION		"Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
-// CREATED		"Wed Feb 08 23:54:26 2017"
+// VERSION		"Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
+// CREATED		"Wed Mar 08 15:04:41 2017"
 
 
 module and5_1(IN3,IN2,IN1,IN5,IN4,OUT);

@@ -32,7 +32,7 @@ PORT
 	IN1	:	IN	 STD_LOGIC;
 	IN5	:	IN	 STD_LOGIC;
 	IN4	:	IN	 STD_LOGIC;
-	OUT1	:	OUT	 STD_LOGIC
+	OUT	:	OUT	 STD_LOGIC
 ); 
 END and5_1;
 
@@ -47,6 +47,6 @@ PORT MAP(IN3 => IN3,
 		 IN1 => IN1,
 		 IN5 => IN5,
 		 IN4 => IN4,
-		 OUT1 => OUT1);
+		 OUT => OUT);
 
 END bdf_type; 
