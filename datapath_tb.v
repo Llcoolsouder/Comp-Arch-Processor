@@ -7,7 +7,7 @@ module datapath_tb;
 	reg MD_t;
 	reg [15:0]AA_t, BA_t,DA_t,k_t;
 	reg [4:0]FS_t;
-	wire clock_50_t;
+	reg clock_50_t;
 	wire Cout_t;
 	wire [15:0]F_t;
 	wire IR_L_t;

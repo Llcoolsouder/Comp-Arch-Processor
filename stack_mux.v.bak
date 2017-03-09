@@ -1,0 +1,12 @@
+module stack_mux(SS, out);
+	input [1:0]SS;
+	output [2:0]out;
+	
+	always @* begin
+		case (SS)
+			2'b00: out<=3'b100; 	//reset
+			2'b01: out<=3'b010;	//push
+			2'b10: out<=3'b001;	//pop
+		endcase 
+	end 
+endmodule 
