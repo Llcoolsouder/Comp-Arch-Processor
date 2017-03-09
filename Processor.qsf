@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV GX"
 set_global_assignment -name DEVICE AUTO
-set_global_assignment -name TOP_LEVEL_ENTITY stack_mux
+set_global_assignment -name TOP_LEVEL_ENTITY Top_Level_ModelSim
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "09:49:49  MARCH 02, 2017"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
@@ -89,8 +89,9 @@ set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME datapath_tb -section_id d
 set_global_assignment -name EDA_TEST_BENCH_FILE datapath_tb.v -section_id datapath_tb
 set_global_assignment -name VERILOG_FILE stack_mux.v
 set_global_assignment -name VERILOG_FILE stack.v
+set_global_assignment -name VERILOG_FILE status.v
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name VERILOG_FILE status.v
+set_global_assignment -name VERILOG_FILE Top_Level_ModelSim_v_t.v
