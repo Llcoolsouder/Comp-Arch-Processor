@@ -1,6 +1,6 @@
 Flow report for Processor
-Mon Mar 27 20:40:48 2017
-Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+Mon Mar 27 21:17:37 2017
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -37,30 +37,30 @@ applicable agreement for further details.
 
 
 
-+---------------------------------------------------------------------------------+
-; Flow Summary                                                                    ;
-+------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Mon Mar 27 20:40:47 2017      ;
-; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
-; Revision Name                      ; Processor                                  ;
-; Top-level Entity Name              ; Top_Level_ModelSim_v                       ;
-; Family                             ; Cyclone IV GX                              ;
-; Total logic elements               ; 5,701 / 29,440 ( 19 % )                    ;
-;     Total combinational functions  ; 3,625 / 29,440 ( 12 % )                    ;
-;     Dedicated logic registers      ; 4,137 / 29,440 ( 14 % )                    ;
-; Total registers                    ; 4137                                       ;
-; Total pins                         ; 177 / 307 ( 58 % )                         ;
-; Total virtual pins                 ; 0                                          ;
-; Total memory bits                  ; 11,776 / 1,105,920 ( 1 % )                 ;
-; Embedded Multiplier 9-bit elements ; 0 / 160 ( 0 % )                            ;
-; Total GXB Receiver Channel PCS     ; 0 / 4 ( 0 % )                              ;
-; Total GXB Receiver Channel PMA     ; 0 / 4 ( 0 % )                              ;
-; Total GXB Transmitter Channel PCS  ; 0 / 4 ( 0 % )                              ;
-; Total GXB Transmitter Channel PMA  ; 0 / 4 ( 0 % )                              ;
-; Total PLLs                         ; 0 / 6 ( 0 % )                              ;
-; Device                             ; EP4CGX30CF23C6                             ;
-; Timing Models                      ; Final                                      ;
-+------------------------------------+--------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Flow Summary                                                                         ;
++------------------------------------+-------------------------------------------------+
+; Flow Status                        ; Successful - Mon Mar 27 21:17:37 2017           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; Processor                                       ;
+; Top-level Entity Name              ; Top_Level_ModelSim_v                            ;
+; Family                             ; Cyclone IV GX                                   ;
+; Total logic elements               ; 5,744 / 29,440 ( 20 % )                         ;
+;     Total combinational functions  ; 3,624 / 29,440 ( 12 % )                         ;
+;     Dedicated logic registers      ; 4,137 / 29,440 ( 14 % )                         ;
+; Total registers                    ; 4137                                            ;
+; Total pins                         ; 177 / 307 ( 58 % )                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 11,776 / 1,105,920 ( 1 % )                      ;
+; Embedded Multiplier 9-bit elements ; 0 / 160 ( 0 % )                                 ;
+; Total GXB Receiver Channel PCS     ; 0 / 4 ( 0 % )                                   ;
+; Total GXB Receiver Channel PMA     ; 0 / 4 ( 0 % )                                   ;
+; Total GXB Transmitter Channel PCS  ; 0 / 4 ( 0 % )                                   ;
+; Total GXB Transmitter Channel PMA  ; 0 / 4 ( 0 % )                                   ;
+; Total PLLs                         ; 0 / 6 ( 0 % )                                   ;
+; Device                             ; EP4CGX30CF23C6                                  ;
+; Timing Models                      ; Final                                           ;
++------------------------------------+-------------------------------------------------+
 
 
 +-----------------------------------------+
@@ -68,38 +68,38 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/27/2017 20:36:27 ;
+; Start date & time ; 03/27/2017 21:14:01 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Processor           ;
 +-------------------+---------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                      ;
-+--------------------------------------+--------------------------------+---------------+----------------------+------------------------+
-; Assignment Name                      ; Value                          ; Default Value ; Entity Name          ; Section Id             ;
-+--------------------------------------+--------------------------------+---------------+----------------------+------------------------+
-; COMPILER_SIGNATURE_ID                ; 53214319930689.149066138702932 ; --            ; --                   ; --                     ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                             ; --            ; --                   ; Top_Level_ModelSim_v_t ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; Top_Level_ModelSim_v_t         ; --            ; --                   ; eda_simulation         ;
-; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                    ; --            ; --                   ; eda_simulation         ;
-; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)      ; <None>        ; --                   ; --                     ;
-; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                ; --            ; --                   ; eda_simulation         ;
-; EDA_TEST_BENCH_FILE                  ; Top_Level_ModelSim_v_t.v       ; --            ; --                   ; Top_Level_ModelSim_v_t ;
-; EDA_TEST_BENCH_MODULE_NAME           ; Top_Level_ModelSim_v_t         ; --            ; --                   ; Top_Level_ModelSim_v_t ;
-; EDA_TEST_BENCH_NAME                  ; Top_Level_ModelSim_v_t         ; --            ; --                   ; eda_simulation         ;
-; EDA_TIME_SCALE                       ; 1 ps                           ; --            ; --                   ; eda_simulation         ;
-; IP_TOOL_NAME                         ; RAM: 1-PORT                    ; --            ; --                   ; --                     ;
-; IP_TOOL_NAME                         ; RAM: 1-PORT                    ; --            ; --                   ; --                     ;
-; IP_TOOL_VERSION                      ; 13.0                           ; --            ; --                   ; --                     ;
-; IP_TOOL_VERSION                      ; 13.0                           ; --            ; --                   ; --                     ;
-; MISC_FILE                            ; RAM2_bb.v                      ; --            ; --                   ; --                     ;
-; MISC_FILE                            ; RAM1_bb.v                      ; --            ; --                   ; --                     ;
-; PARTITION_COLOR                      ; 16764057                       ; --            ; Top_Level_ModelSim_v ; Top                    ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING          ; --            ; Top_Level_ModelSim_v ; Top                    ;
-; PARTITION_NETLIST_TYPE               ; SOURCE                         ; --            ; Top_Level_ModelSim_v ; Top                    ;
-; TOP_LEVEL_ENTITY                     ; Top_Level_ModelSim_v           ; Processor     ; --                   ; --                     ;
-+--------------------------------------+--------------------------------+---------------+----------------------+------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                       ;
++--------------------------------------+---------------------------------+---------------+----------------------+------------------------+
+; Assignment Name                      ; Value                           ; Default Value ; Entity Name          ; Section Id             ;
++--------------------------------------+---------------------------------+---------------+----------------------+------------------------+
+; COMPILER_SIGNATURE_ID                ; 105927187240262.149066364112044 ; --            ; --                   ; --                     ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                              ; --            ; --                   ; Top_Level_ModelSim_v_t ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; Top_Level_ModelSim_v_t          ; --            ; --                   ; eda_simulation         ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                     ; --            ; --                   ; eda_simulation         ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)       ; <None>        ; --                   ; --                     ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                 ; --            ; --                   ; eda_simulation         ;
+; EDA_TEST_BENCH_FILE                  ; Top_Level_ModelSim_v_t.v        ; --            ; --                   ; Top_Level_ModelSim_v_t ;
+; EDA_TEST_BENCH_MODULE_NAME           ; Top_Level_ModelSim_v_t          ; --            ; --                   ; Top_Level_ModelSim_v_t ;
+; EDA_TEST_BENCH_NAME                  ; Top_Level_ModelSim_v_t          ; --            ; --                   ; eda_simulation         ;
+; EDA_TIME_SCALE                       ; 1 ps                            ; --            ; --                   ; eda_simulation         ;
+; IP_TOOL_NAME                         ; RAM: 1-PORT                     ; --            ; --                   ; --                     ;
+; IP_TOOL_NAME                         ; RAM: 1-PORT                     ; --            ; --                   ; --                     ;
+; IP_TOOL_VERSION                      ; 13.0                            ; --            ; --                   ; --                     ;
+; IP_TOOL_VERSION                      ; 13.0                            ; --            ; --                   ; --                     ;
+; MISC_FILE                            ; RAM2_bb.v                       ; --            ; --                   ; --                     ;
+; MISC_FILE                            ; RAM1_bb.v                       ; --            ; --                   ; --                     ;
+; PARTITION_COLOR                      ; 16764057                        ; --            ; Top_Level_ModelSim_v ; Top                    ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING           ; --            ; Top_Level_ModelSim_v ; Top                    ;
+; PARTITION_NETLIST_TYPE               ; SOURCE                          ; --            ; Top_Level_ModelSim_v ; Top                    ;
+; TOP_LEVEL_ENTITY                     ; Top_Level_ModelSim_v            ; Processor     ; --                   ; --                     ;
++--------------------------------------+---------------------------------+---------------+----------------------+------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -107,12 +107,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:26     ; 1.0                     ; 604 MB              ; 00:00:17                           ;
-; Fitter                    ; 00:02:35     ; 1.0                     ; 1038 MB             ; 00:02:16                           ;
-; Assembler                 ; 00:00:15     ; 1.0                     ; 550 MB              ; 00:00:07                           ;
-; TimeQuest Timing Analyzer ; 00:00:27     ; 1.0                     ; 634 MB              ; 00:00:17                           ;
-; EDA Netlist Writer        ; 00:00:13     ; 1.0                     ; 544 MB              ; 00:00:11                           ;
-; Total                     ; 00:03:56     ; --                      ; --                  ; 00:03:08                           ;
+; Analysis & Synthesis      ; 00:00:18     ; 1.0                     ; 566 MB              ; 00:00:16                           ;
+; Fitter                    ; 00:02:34     ; 1.0                     ; 990 MB              ; 00:02:29                           ;
+; Assembler                 ; 00:00:08     ; 1.0                     ; 527 MB              ; 00:00:07                           ;
+; TimeQuest Timing Analyzer ; 00:00:17     ; 1.0                     ; 608 MB              ; 00:00:15                           ;
+; EDA Netlist Writer        ; 00:00:10     ; 1.0                     ; 536 MB              ; 00:00:09                           ;
+; Total                     ; 00:03:27     ; --                      ; --                  ; 00:03:16                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -121,11 +121,11 @@ applicable agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; LAPTOP-VI741MNF  ; Windows 7 ; 6.2        ; x86_64         ;
-; Fitter                    ; LAPTOP-VI741MNF  ; Windows 7 ; 6.2        ; x86_64         ;
-; Assembler                 ; LAPTOP-VI741MNF  ; Windows 7 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; LAPTOP-VI741MNF  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; LAPTOP-VI741MNF  ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; Sean             ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; Sean             ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; Sean             ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; Sean             ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; Sean             ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
