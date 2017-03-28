@@ -1,20 +1,17 @@
 `define LRLI
 `define RET
  
-module ControlUnitFSM(
-	Instr;	//Instruction
-	CLK;		//Clock
-	CW;		//Control Word
-	);
+module ControlUnitFSM(Instr, CLK, CW);
+	input [15:0]Instr;
+	input CLK;
+	output reg [52:0]CW;
 	
-	wire input [15:0] Instr;
-	wire input CLK;
-	reg output [52:0] CW;
+	//case (Instr)
+	//	default:
+	//endcase
 	
-	case (Instr)
-		default:
 endmodule 
 
-module ControlUnitDecoder_0 (
+//module ControlUnitDecoder_0 (
 	
-);
+//);

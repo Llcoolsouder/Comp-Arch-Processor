@@ -97,8 +97,8 @@ stack	b2v_inst(
 	.pop(StS[0]),
 	.data(gdfx_temp0),
 	.out(SYNTHESIZED_WIRE_7));
-	defparam	b2v_inst.depth = 256;
-	defparam	b2v_inst.width = 16;
+	defparam	b2v_inst.DEPTH = 256;
+	defparam	b2v_inst.WIDTH = 16;
 
 
 stack_mux	b2v_inst1(
