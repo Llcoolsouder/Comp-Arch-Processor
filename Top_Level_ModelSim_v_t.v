@@ -194,7 +194,7 @@ module Top_Level_ModelSim_v_t;
 	SS_t		<=	2'b01;
 	
 	#20
-	//CLR
+	//CLR STACK <-JK. Not actually clearing
 	PS_t		<=	2'b01;
 	IR_L_t	<=	1;
 	DA_t		<=	3'b000;

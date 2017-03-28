@@ -2,6 +2,5 @@
 <LOG_ROOT>
 	<PROJECT NAME="Processor">
 		<CBX_INST_ENTRY INSTANCE_NAME="|Top_Level_ModelSim_v|RAM1:b2v_inst3|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_96i1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Top_Level_ModelSim_v|rom_case:b2v_inst15|altsyncram:WideOr8_rtl_0" CBX_FILE_NAME="altsyncram_5521.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

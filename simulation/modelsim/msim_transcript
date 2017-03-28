@@ -1,0 +1,184 @@
+# Reading C:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do Processor_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor {C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/Top_Level_ModelSim_v.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Top_Level_ModelSim_v
+# 
+# Top level modules:
+# 	Top_Level_ModelSim_v
+# vlog -vlog01compat -work work +incdir+C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor {C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/RAM1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module RAM1
+# 
+# Top level modules:
+# 	RAM1
+# vlog -vlog01compat -work work +incdir+C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor {C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/TWOtoONE_MUX.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module TWOtoONE_MUX
+# 
+# Top level modules:
+# 	TWOtoONE_MUX
+# vlog -vlog01compat -work work +incdir+C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor {C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/rom_case.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module rom_case
+# 
+# Top level modules:
+# 	rom_case
+# vlog -vlog01compat -work work +incdir+C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor {C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/reg16bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module reg16bit
+# 
+# Top level modules:
+# 	reg16bit
+# vlog -vlog01compat -work work +incdir+C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor {C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/PC.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module PC
+# 
+# Top level modules:
+# 	PC
+# vlog -vlog01compat -work work +incdir+C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor {C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/mux3to8.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux3to8
+# 
+# Top level modules:
+# 	mux3to8
+# vlog -vlog01compat -work work +incdir+C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor {C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/IR.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module IR
+# 
+# Top level modules:
+# 	IR
+# vlog -vlog01compat -work work +incdir+C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor {C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/FOURtoONE_MUX.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FOURtoONE_MUX
+# 
+# Top level modules:
+# 	FOURtoONE_MUX
+# vlog -vlog01compat -work work +incdir+C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor {C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/decoder.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module decoder
+# 
+# Top level modules:
+# 	decoder
+# vlog -vlog01compat -work work +incdir+C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor {C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/CarryLookaheadAdder.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CarryLookaheadAdder
+# 
+# Top level modules:
+# 	CarryLookaheadAdder
+# vlog -vlog01compat -work work +incdir+C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor {C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/ALU_16bit_v.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU_16bit_v
+# 
+# Top level modules:
+# 	ALU_16bit_v
+# vlog -vlog01compat -work work +incdir+C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor {C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/ALU_4bit_v.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU_4bit_v
+# -- Compiling module and5_1
+# -- Compiling module or5_0
+# 
+# Top level modules:
+# 	ALU_4bit_v
+# vlog -vlog01compat -work work +incdir+C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor {C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/stack_mux.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module stack_mux
+# 
+# Top level modules:
+# 	stack_mux
+# vlog -vlog01compat -work work +incdir+C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor {C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/stack.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module stack
+# 
+# Top level modules:
+# 	stack
+# vlog -vlog01compat -work work +incdir+C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor {C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/status.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module status
+# 
+# Top level modules:
+# 	status
+# vlog -vlog01compat -work work +incdir+C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor {C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/registerfile_v.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module RegisterFile_v
+# 
+# Top level modules:
+# 	RegisterFile_v
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor {C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/Top_Level_ModelSim_v_t.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Top_Level_ModelSim_v_t
+# ** Warning: C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/Top_Level_ModelSim_v_t.v(80): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/Top_Level_ModelSim_v_t.v(93): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/Top_Level_ModelSim_v_t.v(152): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/Top_Level_ModelSim_v_t.v(329): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/Top_Level_ModelSim_v_t.v(345): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/Top_Level_ModelSim_v_t.v(360): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/Top_Level_ModelSim_v_t.v(375): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/Top_Level_ModelSim_v_t.v(390): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/Top_Level_ModelSim_v_t.v(405): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/Top_Level_ModelSim_v_t.v(418): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Top_Level_ModelSim_v_t
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs="+acc"  Top_Level_ModelSim_v_t
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps Top_Level_ModelSim_v_t 
+# Loading work.Top_Level_ModelSim_v_t
+# Loading work.Top_Level_ModelSim_v
+# Loading work.stack
+# Loading work.stack_mux
+# Loading work.status
+# Loading work.IR
+# Loading work.rom_case
+# Loading work.ALU_16bit_v
+# Loading work.ALU_4bit_v
+# Loading work.FOURtoONE_MUX
+# Loading work.TWOtoONE_MUX
+# Loading work.CarryLookaheadAdder
+# Loading work.or5_0
+# Loading work.and5_1
+# Loading work.RAM1
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.RegisterFile_v
+# Loading work.decoder
+# Loading work.reg16bit
+# Loading work.mux3to8
+# Loading work.PC
+# ** Warning: (vsim-3017) C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/Top_Level_ModelSim_v.v(169): [TFMPC] - Too few port connections. Expected 4, found 3.
+# 
+#         Region: /Top_Level_ModelSim_v_t/dut/b2v_inst14
+# ** Warning: (vsim-3722) C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/Top_Level_ModelSim_v.v(169): [TFMPC] - Missing connection for port 'out'.
+# 
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Break in Module Top_Level_ModelSim_v_t at C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/Top_Level_ModelSim_v_t.v line 423
+# Simulation Breakpoint: Break in Module Top_Level_ModelSim_v_t at C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/Top_Level_ModelSim_v_t.v line 423
+# MACRO ./Processor_run_msim_rtl_verilog.do PAUSED at line 33

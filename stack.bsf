@@ -66,12 +66,12 @@ applicable agreement for further details.
 		(line (pt 176 32)(pt 160 32)(line_width 3))
 	)
 	(parameter
-		"width"
+		"WIDTH"
 		"16"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter
-		"depth"
+		"DEPTH"
 		"256"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
