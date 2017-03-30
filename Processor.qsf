@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV GX"
 set_global_assignment -name DEVICE AUTO
-set_global_assignment -name TOP_LEVEL_ENTITY Top_Level_ModelSim_v
+set_global_assignment -name TOP_LEVEL_ENTITY ControlUnit_v
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "09:49:49  MARCH 02, 2017"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
@@ -82,7 +82,7 @@ set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
 set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH Top_Level_ModelSim_v_t -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH ControlUnit_v_t -section_id eda_simulation
 set_global_assignment -name VERILOG_FILE stack_mux.v
 set_global_assignment -name VERILOG_FILE stack.v
 set_global_assignment -name VERILOG_FILE status.v
@@ -90,8 +90,22 @@ set_global_assignment -name VERILOG_FILE Top_Level_ModelSim_v_t.v
 set_global_assignment -name EDA_TEST_BENCH_NAME Top_Level_ModelSim_v_t -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id Top_Level_ModelSim_v_t
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME Top_Level_ModelSim_v_t -section_id Top_Level_ModelSim_v_t
-set_global_assignment -name EDA_TEST_BENCH_FILE Top_Level_ModelSim_v_t.v -section_id Top_Level_ModelSim_v_t
 set_global_assignment -name VERILOG_FILE Control_Unit.v
+set_global_assignment -name VERILOG_FILE CPU_Decoder00.v
+set_global_assignment -name VERILOG_FILE CPU_Decoder01.v
+set_global_assignment -name VERILOG_FILE CPU_Decoder11.v
+set_global_assignment -name VERILOG_FILE reg.v
+set_global_assignment -name BDF_FILE ControlUnit.bdf
+set_global_assignment -name VERILOG_FILE register.v
+set_global_assignment -name VERILOG_FILE "Three_to _Eight_MUX45bit.v"
+set_global_assignment -name VERILOG_FILE Two_to_Four_MUX45bit.v
+set_global_assignment -name VERILOG_FILE ControlUnit_v.v
+set_global_assignment -name VERILOG_FILE ControlUnit_v_t.v
+set_global_assignment -name EDA_TEST_BENCH_FILE Top_Level_ModelSim_v_t.v -section_id Top_Level_ModelSim_v_t
+set_global_assignment -name EDA_TEST_BENCH_NAME ControlUnit_v_t -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id ControlUnit_v_t
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME ControlUnit_v_t -section_id ControlUnit_v_t
+set_global_assignment -name EDA_TEST_BENCH_FILE ControlUnit_v_t.v -section_id ControlUnit_v_t
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
