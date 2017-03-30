@@ -1,6 +1,6 @@
 Assembler report for Processor
-Mon Mar 27 21:44:08 2017
-Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+Thu Mar 30 09:39:22 2017
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -10,7 +10,7 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/Processor.sof
+  5. Assembler Device Options: C:/Users/baseb_000/Documents/Lonnies_PC-AND_IR/Processor.sof
   6. Assembler Messages
 
 
@@ -37,11 +37,11 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Mon Mar 27 21:44:08 2017 ;
+; Assembler Status      ; Successful - Thu Mar 30 09:39:22 2017 ;
 ; Revision Name         ; Processor                             ;
-; Top-level Entity Name ; Top_Level_ModelSim_v                  ;
-; Family                ; Cyclone IV GX                         ;
-; Device                ; EP4CGX30CF23C6                        ;
+; Top-level Entity Name ; ControlUnitGPIO                       ;
+; Family                ; Cyclone III                           ;
+; Device                ; EP3C16F484C6                          ;
 +-----------------------+---------------------------------------+
 
 
@@ -77,24 +77,24 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+-------------------------------------------------------------------------+
-; Assembler Generated Files                                               ;
-+-------------------------------------------------------------------------+
-; File Name                                                               ;
-+-------------------------------------------------------------------------+
-; C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/Processor.sof ;
-+-------------------------------------------------------------------------+
++--------------------------------------------------------------+
+; Assembler Generated Files                                    ;
++--------------------------------------------------------------+
+; File Name                                                    ;
++--------------------------------------------------------------+
+; C:/Users/baseb_000/Documents/Lonnies_PC-AND_IR/Processor.sof ;
++--------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/lonni/OneDrive/Documents/New-Comp-Arch-Processor/Processor.sof ;
-+----------------+----------------------------------------------------------------------------------+
-; Option         ; Setting                                                                          ;
-+----------------+----------------------------------------------------------------------------------+
-; Device         ; EP4CGX30CF23C6                                                                   ;
-; JTAG usercode  ; 0x00828FC5                                                                       ;
-; Checksum       ; 0x00828FC5                                                                       ;
-+----------------+----------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/baseb_000/Documents/Lonnies_PC-AND_IR/Processor.sof ;
++----------------+-----------------------------------------------------------------------+
+; Option         ; Setting                                                               ;
++----------------+-----------------------------------------------------------------------+
+; Device         ; EP3C16F484C6                                                          ;
+; JTAG usercode  ; 0x000D9C0E                                                            ;
+; Checksum       ; 0x000D9C0E                                                            ;
++----------------+-----------------------------------------------------------------------+
 
 
 +--------------------+
@@ -102,15 +102,15 @@ applicable agreement for further details.
 +--------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
-    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Mon Mar 27 21:43:59 2017
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Thu Mar 30 09:39:21 2017
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off Processor -c Processor
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 558 megabytes
-    Info: Processing ended: Mon Mar 27 21:44:08 2017
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:07
+    Info: Peak virtual memory: 439 megabytes
+    Info: Processing ended: Thu Mar 30 09:39:22 2017
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 
