@@ -14,7 +14,7 @@
 
 // PROGRAM		"Quartus II 64-Bit"
 // VERSION		"Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
-// CREATED		"Wed Apr 05 21:49:56 2017"
+// CREATED		"Thu Apr 06 10:33:23 2017"
 
 module ControlUnit_v(
 	CLK,
@@ -27,7 +27,7 @@ input wire	CLK;
 input wire	[15:0] IR;
 output wire	[45:0] CW;
 
-wire	[0:0] CW_ALTERA_SYNTHESIZED;
+wire	[45:0] CW_ALTERA_SYNTHESIZED;
 wire	[45:0] R0;
 wire	[45:0] R1;
 wire	[45:0] R2;
@@ -80,7 +80,6 @@ CPU_Decoder01	b2v_inst1(
 	.SS(R1[2:1]));
 
 
-
 CPU_Decoder10	b2v_inst2(
 	.State(SYNTHESIZED_WIRE_5),
 	.IR(IR),
@@ -122,10 +121,11 @@ CPU_Decoder11	b2v_inst3(
 
 
 register	b2v_inst4(
-	.data(CW_ALTERA_SYNTHESIZED),
+	.data(CW_ALTERA_SYNTHESIZED[0]),
 	.load(SYNTHESIZED_WIRE_4),
 	.clock(CLK),
 	.out(SYNTHESIZED_WIRE_5));
+
 
 
 Two_to_Four_MUX45bit	b2v_inst7(
@@ -134,7 +134,8 @@ Two_to_Four_MUX45bit	b2v_inst7(
 	.R1(R1),
 	.R2(R3),
 	.R3(R2),
-	.Q(CW));
+	.Q(CW_ALTERA_SYNTHESIZED));
 
+assign	CW = CW_ALTERA_SYNTHESIZED;
 
 endmodule

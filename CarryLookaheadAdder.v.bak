@@ -1,7 +1,0 @@
-module CarryLookaheadAdder(A, B, Cin, S, P, G);
-	input A, B, Cin;
-	output S, P, G;
-	
-	assign S= A^B;
-	assign P= A|B
-	assign G= A&B

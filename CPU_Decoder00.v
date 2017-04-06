@@ -33,6 +33,7 @@ module CPU_Decoder00(IR,PS,IR_L,AA,BA,DA,WR,Clr, FS,Cin,MuxD,MuxA,K,MemWrite,SS,
 		FS[0] <= 0;
 		Cin <= IR[12]&~IR[11];
 		MuxD <= 5'b00100;
+		MuxA<=0;
 		K[15:8] <= 8'b00000000;
 		K[7:0] <= IR[7:0];
 		MemWrite <= 0;

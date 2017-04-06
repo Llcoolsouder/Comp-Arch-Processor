@@ -25,7 +25,7 @@ module CPU_Decoder11(IR, PS, IR_L, AA, BA, DA, WR, Clr, FS, Cin, MuxD, MuxA, K, 
     WR <=1;
     Clr <= 0;
     FS[4:0] <= 5'b01010;
-    MuxD[3:0] <= 5'b00100;
+    MuxD[4:0] <= 5'b00100;
     MuxA <= 1;
     K[15:11] <= 5'b00000;
     K[10:0] <= IR[10:0];

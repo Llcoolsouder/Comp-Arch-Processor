@@ -8,7 +8,7 @@ module PC (CLK, PS, D, AD, out);
 	always @(posedge CLK)begin
 		case (PS)
 			2'b00: out = out;
-			2'b01: out = out+1;
+			2'b01: out = out+1'b1;
 			2'b10: out = D;
 			2'b11: out = out+AD;
 		endcase
