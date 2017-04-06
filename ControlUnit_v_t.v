@@ -1,12 +1,12 @@
 module ControlUnit_v_t;
     reg CLK_t;
     reg [15:0]IR_t;
-	 wire [45:0]CW_t;
+    wire [45:0]CW_t;
     
     ControlUnit_v dut(
     .CLK(CLK_t),
     .IR(IR_t),
-	 .CW(CW_t)
+    .CW(CW_t)
     );
     
     initial begin
@@ -17,7 +17,7 @@ module ControlUnit_v_t;
     
     //**********Begin test**************
     initial begin
-    //00 Operations 5 op DA, 8bit lit
+    //00 Operations 5 op, DA, 8bit lit
     
     #20//ADDI
     IR_t[15:0]<=16'b0000100100000001;//reg 1 lit 1
@@ -86,7 +86,48 @@ module ControlUnit_v_t;
     
     
     //10 Operations
-    //#20
+    #20//LRLI(EX0)
+    IR_t[15:0]<=16'b1000010001001010;//DA=1,AA=1,BA=2
+    
+    #20//LDI
+    IR_t[15:0]<=16'b1010000100000001;//reg 1 lit 1
+    
+    #20//STI
+    IR_t[15:0]<=16'b1010101000000001;//reg2 lit 1
+    
+    #20//Push
+    IR_t[15:0]<=16'b1000000001001010;//DA=1,AA=1,BA=2
+    
+    #20//Pop
+    IR_t[15:0]<=16'b1000001001001010;//DA=1,AA=1,BA=2
+    
+    #20//STR
+    IR_t[15:0]<=16'b1000101001001010;//DA=1,AA=1,BA=2
+    
+    #20//LDR
+    IR_t[15:0]<=16'b1000100001001010;//DA=1,AA=1,BA=2
+    
+    #20//CALL(EX0)
+    IR_t[15:0]<=16'b1001110001001010;//DA=1,AA=1,BA=2
+    
+    #20//RET
+    IR_t[15:0]<=16'b1001111001001010;//DA=1,AA=1,BA=2
+    
+    #20//BRZ
+    IR_t[15:0]<=16'b1011001100000001;//reg 3 lit 1
+    
+    #20//BRN
+    IR_t[15:0]<=16'b1011110000000001;//reg 4 lit 1
+    
+    #20//BSET
+    IR_t[15:0]<=16'b1001001001001010;//DA=1,AA=1,BA=2
+    
+    #20//BCLR
+    IR_t[15:0]<=16'b1001000001001010;//DA=1,AA=1,BA=2
+    
+    #20//JMPR
+    IR_t[15:0]<=16'b1001101001001010;//DA=1,AA=1,BA=2
+    
     
     //11 Operation 2 bit op, 3bit DA, 11 bit lit
     #20
@@ -94,4 +135,4 @@ module ControlUnit_v_t;
     
     $stop; 
     end 
-endmodule
+endmodule 

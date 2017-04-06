@@ -14,7 +14,7 @@
 
 // PROGRAM		"Quartus II 64-Bit"
 // VERSION		"Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
-// CREATED		"Thu Mar 30 09:00:46 2017"
+// CREATED		"Wed Apr 05 21:49:56 2017"
 
 module ControlUnit_v(
 	CLK,
@@ -31,16 +31,17 @@ wire	[0:0] CW_ALTERA_SYNTHESIZED;
 wire	[45:0] R0;
 wire	[45:0] R1;
 wire	[45:0] R2;
+wire	[45:0] R3;
+wire	SYNTHESIZED_WIRE_5;
 wire	SYNTHESIZED_WIRE_4;
-wire	SYNTHESIZED_WIRE_3;
 
-assign	SYNTHESIZED_WIRE_3 = 1;
+assign	SYNTHESIZED_WIRE_4 = 1;
 
 
 
 
 CPU_Decoder00	b2v_inst(
-	.State(SYNTHESIZED_WIRE_4),
+	.State(SYNTHESIZED_WIRE_5),
 	.IR(IR),
 	.IR_L(R0[43]),
 	.WR(R0[33]),
@@ -60,7 +61,7 @@ CPU_Decoder00	b2v_inst(
 
 
 CPU_Decoder01	b2v_inst1(
-	.State(SYNTHESIZED_WIRE_4),
+	.State(SYNTHESIZED_WIRE_5),
 	.IR(IR),
 	.IR_L(R1[43]),
 	.WR(R1[33]),
@@ -80,8 +81,28 @@ CPU_Decoder01	b2v_inst1(
 
 
 
+CPU_Decoder10	b2v_inst2(
+	.State(SYNTHESIZED_WIRE_5),
+	.IR(IR),
+	.IR_L(R3[43]),
+	.WR(R3[33]),
+	.Clr(R3[32]),
+	.Cin(R3[26]),
+	.MuxA(R3[20]),
+	.MemWrite(R3[3]),
+	.NS(R3[0]),
+	.AA(R3[42:40]),
+	.BA(R3[39:37]),
+	.DA(R3[36:34]),
+	.FS(R3[31:27]),
+	.K(R3[19:4]),
+	.MuxD(R3[25:21]),
+	.PS(R3[45:44]),
+	.SS(R3[2:1]));
+
+
 CPU_Decoder11	b2v_inst3(
-	.State(SYNTHESIZED_WIRE_4),
+	.State(SYNTHESIZED_WIRE_5),
 	.IR(IR),
 	.IR_L(R2[43]),
 	.WR(R2[33]),
@@ -102,16 +123,16 @@ CPU_Decoder11	b2v_inst3(
 
 register	b2v_inst4(
 	.data(CW_ALTERA_SYNTHESIZED),
-	.load(SYNTHESIZED_WIRE_3),
+	.load(SYNTHESIZED_WIRE_4),
 	.clock(CLK),
-	.out(SYNTHESIZED_WIRE_4));
+	.out(SYNTHESIZED_WIRE_5));
 
 
 Two_to_Four_MUX45bit	b2v_inst7(
 	.QA(IR[15:14]),
 	.R0(R0),
 	.R1(R1),
-	
+	.R2(R3),
 	.R3(R2),
 	.Q(CW));
 
