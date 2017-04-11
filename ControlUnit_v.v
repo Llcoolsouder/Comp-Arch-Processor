@@ -38,8 +38,6 @@ wire	SYNTHESIZED_WIRE_4;
 assign	SYNTHESIZED_WIRE_4 = 1;
 
 
-
-
 CPU_Decoder00	b2v_inst(
 	.State(SYNTHESIZED_WIRE_5),
 	.IR(IR),

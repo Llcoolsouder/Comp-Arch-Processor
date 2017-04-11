@@ -14,14 +14,15 @@
 
 // PROGRAM		"Quartus II 64-Bit"
 // VERSION		"Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
-// CREATED		"Mon Apr 10 20:43:03 2017"
+// CREATED		"Mon Apr 10 22:58:26 2017"
 
-module Core(
+module Core_v(
 	clock_50,
-	IR,
 	Cout,
 	Z,
 	N,
+	IRout,
+	PC,
 	R0,
 	R1,
 	R2,
@@ -29,15 +30,17 @@ module Core(
 	R4,
 	R5,
 	R6,
-	R7
+	R7,
+	ROM
 );
 
 
 input wire	clock_50;
-input wire	[15:0] IR;
 output wire	Cout;
 output wire	Z;
 output wire	N;
+output wire	[15:0] IRout;
+output wire	[7:0] PC;
 output wire	[15:0] R0;
 output wire	[15:0] R1;
 output wire	[15:0] R2;
@@ -46,6 +49,7 @@ output wire	[15:0] R4;
 output wire	[15:0] R5;
 output wire	[15:0] R6;
 output wire	[15:0] R7;
+output wire	[15:0] ROM;
 
 wire	[15:0] B;
 wire	[45:0] CW;
@@ -53,14 +57,17 @@ wire	[15:0] gdfx_temp0;
 wire	[4:0] MD;
 wire	[15:0] PC_out;
 wire	[2:0] StS;
-wire	[15:0] SYNTHESIZED_WIRE_9;
 wire	[15:0] SYNTHESIZED_WIRE_10;
+wire	[15:0] SYNTHESIZED_WIRE_11;
 wire	[15:0] SYNTHESIZED_WIRE_2;
 wire	[15:0] SYNTHESIZED_WIRE_4;
-wire	[15:0] SYNTHESIZED_WIRE_6;
-wire	SYNTHESIZED_WIRE_7;
-wire	[15:0] SYNTHESIZED_WIRE_8;
+wire	[15:0] SYNTHESIZED_WIRE_5;
+wire	[15:0] SYNTHESIZED_WIRE_7;
+wire	SYNTHESIZED_WIRE_8;
+wire	[15:0] SYNTHESIZED_WIRE_9;
 
+assign	IRout = SYNTHESIZED_WIRE_4;
+assign	ROM = SYNTHESIZED_WIRE_11;
 
 
 
@@ -71,7 +78,7 @@ stack	b2v_inst(
 	.push(StS[1]),
 	.pop(StS[0]),
 	.data(gdfx_temp0),
-	.out(SYNTHESIZED_WIRE_8));
+	.out(SYNTHESIZED_WIRE_9));
 	defparam	b2v_inst.DEPTH = 256;
 	defparam	b2v_inst.WIDTH = 16;
 
@@ -82,26 +89,26 @@ stack_mux	b2v_inst1(
 
 
 status	b2v_inst10(
-	.data(SYNTHESIZED_WIRE_9),
+	.data(SYNTHESIZED_WIRE_10),
 	.Z(Z),
 	.N(N));
 
-assign	gdfx_temp0[15] = CW[21] ? SYNTHESIZED_WIRE_10[15] : 1'bz;
-assign	gdfx_temp0[14] = CW[21] ? SYNTHESIZED_WIRE_10[14] : 1'bz;
-assign	gdfx_temp0[13] = CW[21] ? SYNTHESIZED_WIRE_10[13] : 1'bz;
-assign	gdfx_temp0[12] = CW[21] ? SYNTHESIZED_WIRE_10[12] : 1'bz;
-assign	gdfx_temp0[11] = CW[21] ? SYNTHESIZED_WIRE_10[11] : 1'bz;
-assign	gdfx_temp0[10] = CW[21] ? SYNTHESIZED_WIRE_10[10] : 1'bz;
-assign	gdfx_temp0[9] = CW[21] ? SYNTHESIZED_WIRE_10[9] : 1'bz;
-assign	gdfx_temp0[8] = CW[21] ? SYNTHESIZED_WIRE_10[8] : 1'bz;
-assign	gdfx_temp0[7] = CW[21] ? SYNTHESIZED_WIRE_10[7] : 1'bz;
-assign	gdfx_temp0[6] = CW[21] ? SYNTHESIZED_WIRE_10[6] : 1'bz;
-assign	gdfx_temp0[5] = CW[21] ? SYNTHESIZED_WIRE_10[5] : 1'bz;
-assign	gdfx_temp0[4] = CW[21] ? SYNTHESIZED_WIRE_10[4] : 1'bz;
-assign	gdfx_temp0[3] = CW[21] ? SYNTHESIZED_WIRE_10[3] : 1'bz;
-assign	gdfx_temp0[2] = CW[21] ? SYNTHESIZED_WIRE_10[2] : 1'bz;
-assign	gdfx_temp0[1] = CW[21] ? SYNTHESIZED_WIRE_10[1] : 1'bz;
-assign	gdfx_temp0[0] = CW[21] ? SYNTHESIZED_WIRE_10[0] : 1'bz;
+assign	gdfx_temp0[15] = CW[21] ? SYNTHESIZED_WIRE_11[15] : 1'bz;
+assign	gdfx_temp0[14] = CW[21] ? SYNTHESIZED_WIRE_11[14] : 1'bz;
+assign	gdfx_temp0[13] = CW[21] ? SYNTHESIZED_WIRE_11[13] : 1'bz;
+assign	gdfx_temp0[12] = CW[21] ? SYNTHESIZED_WIRE_11[12] : 1'bz;
+assign	gdfx_temp0[11] = CW[21] ? SYNTHESIZED_WIRE_11[11] : 1'bz;
+assign	gdfx_temp0[10] = CW[21] ? SYNTHESIZED_WIRE_11[10] : 1'bz;
+assign	gdfx_temp0[9] = CW[21] ? SYNTHESIZED_WIRE_11[9] : 1'bz;
+assign	gdfx_temp0[8] = CW[21] ? SYNTHESIZED_WIRE_11[8] : 1'bz;
+assign	gdfx_temp0[7] = CW[21] ? SYNTHESIZED_WIRE_11[7] : 1'bz;
+assign	gdfx_temp0[6] = CW[21] ? SYNTHESIZED_WIRE_11[6] : 1'bz;
+assign	gdfx_temp0[5] = CW[21] ? SYNTHESIZED_WIRE_11[5] : 1'bz;
+assign	gdfx_temp0[4] = CW[21] ? SYNTHESIZED_WIRE_11[4] : 1'bz;
+assign	gdfx_temp0[3] = CW[21] ? SYNTHESIZED_WIRE_11[3] : 1'bz;
+assign	gdfx_temp0[2] = CW[21] ? SYNTHESIZED_WIRE_11[2] : 1'bz;
+assign	gdfx_temp0[1] = CW[21] ? SYNTHESIZED_WIRE_11[1] : 1'bz;
+assign	gdfx_temp0[0] = CW[21] ? SYNTHESIZED_WIRE_11[0] : 1'bz;
 
 assign	gdfx_temp0[15] = CW[24] ? SYNTHESIZED_WIRE_2[15] : 1'bz;
 assign	gdfx_temp0[14] = CW[24] ? SYNTHESIZED_WIRE_2[14] : 1'bz;
@@ -141,45 +148,45 @@ assign	gdfx_temp0[0] = CW[22] ? PC_out[0] : 1'bz;
 IR	b2v_inst14(
 	.CLK(clock_50),
 	.L(CW[43]),
-	.in(SYNTHESIZED_WIRE_10)
-	);
+	.in(SYNTHESIZED_WIRE_11),
+	.out(SYNTHESIZED_WIRE_4));
 
 
 rom_case	b2v_inst15(
-	.address(PC_out[7:0]),
-	.out(SYNTHESIZED_WIRE_10));
+	.PC(PC_out[7:0]),
+	.out(SYNTHESIZED_WIRE_11));
 
 
-ControlUnit	b2v_inst16(
+ControlUnit_v	b2v_inst16(
 	.CLK(clock_50),
-	.IR(IR),
+	.IR(SYNTHESIZED_WIRE_4),
 	.CW(CW));
 
 
-ALU_16bit	b2v_inst2(
+ALU_16bit_v	b2v_inst2(
 	.Cin(CW[26]),
-	.A(SYNTHESIZED_WIRE_4),
+	.A(SYNTHESIZED_WIRE_5),
 	.B(B),
 	.FS(CW[31:27]),
 	.Cout(Cout),
-	.F(SYNTHESIZED_WIRE_9));
+	.F(SYNTHESIZED_WIRE_10));
 
-assign	gdfx_temp0[15] = CW[23] ? SYNTHESIZED_WIRE_9[15] : 1'bz;
-assign	gdfx_temp0[14] = CW[23] ? SYNTHESIZED_WIRE_9[14] : 1'bz;
-assign	gdfx_temp0[13] = CW[23] ? SYNTHESIZED_WIRE_9[13] : 1'bz;
-assign	gdfx_temp0[12] = CW[23] ? SYNTHESIZED_WIRE_9[12] : 1'bz;
-assign	gdfx_temp0[11] = CW[23] ? SYNTHESIZED_WIRE_9[11] : 1'bz;
-assign	gdfx_temp0[10] = CW[23] ? SYNTHESIZED_WIRE_9[10] : 1'bz;
-assign	gdfx_temp0[9] = CW[23] ? SYNTHESIZED_WIRE_9[9] : 1'bz;
-assign	gdfx_temp0[8] = CW[23] ? SYNTHESIZED_WIRE_9[8] : 1'bz;
-assign	gdfx_temp0[7] = CW[23] ? SYNTHESIZED_WIRE_9[7] : 1'bz;
-assign	gdfx_temp0[6] = CW[23] ? SYNTHESIZED_WIRE_9[6] : 1'bz;
-assign	gdfx_temp0[5] = CW[23] ? SYNTHESIZED_WIRE_9[5] : 1'bz;
-assign	gdfx_temp0[4] = CW[23] ? SYNTHESIZED_WIRE_9[4] : 1'bz;
-assign	gdfx_temp0[3] = CW[23] ? SYNTHESIZED_WIRE_9[3] : 1'bz;
-assign	gdfx_temp0[2] = CW[23] ? SYNTHESIZED_WIRE_9[2] : 1'bz;
-assign	gdfx_temp0[1] = CW[23] ? SYNTHESIZED_WIRE_9[1] : 1'bz;
-assign	gdfx_temp0[0] = CW[23] ? SYNTHESIZED_WIRE_9[0] : 1'bz;
+assign	gdfx_temp0[15] = CW[23] ? SYNTHESIZED_WIRE_10[15] : 1'bz;
+assign	gdfx_temp0[14] = CW[23] ? SYNTHESIZED_WIRE_10[14] : 1'bz;
+assign	gdfx_temp0[13] = CW[23] ? SYNTHESIZED_WIRE_10[13] : 1'bz;
+assign	gdfx_temp0[12] = CW[23] ? SYNTHESIZED_WIRE_10[12] : 1'bz;
+assign	gdfx_temp0[11] = CW[23] ? SYNTHESIZED_WIRE_10[11] : 1'bz;
+assign	gdfx_temp0[10] = CW[23] ? SYNTHESIZED_WIRE_10[10] : 1'bz;
+assign	gdfx_temp0[9] = CW[23] ? SYNTHESIZED_WIRE_10[9] : 1'bz;
+assign	gdfx_temp0[8] = CW[23] ? SYNTHESIZED_WIRE_10[8] : 1'bz;
+assign	gdfx_temp0[7] = CW[23] ? SYNTHESIZED_WIRE_10[7] : 1'bz;
+assign	gdfx_temp0[6] = CW[23] ? SYNTHESIZED_WIRE_10[6] : 1'bz;
+assign	gdfx_temp0[5] = CW[23] ? SYNTHESIZED_WIRE_10[5] : 1'bz;
+assign	gdfx_temp0[4] = CW[23] ? SYNTHESIZED_WIRE_10[4] : 1'bz;
+assign	gdfx_temp0[3] = CW[23] ? SYNTHESIZED_WIRE_10[3] : 1'bz;
+assign	gdfx_temp0[2] = CW[23] ? SYNTHESIZED_WIRE_10[2] : 1'bz;
+assign	gdfx_temp0[1] = CW[23] ? SYNTHESIZED_WIRE_10[1] : 1'bz;
+assign	gdfx_temp0[0] = CW[23] ? SYNTHESIZED_WIRE_10[0] : 1'bz;
 
 
 RAM1	b2v_inst3(
@@ -190,7 +197,7 @@ RAM1	b2v_inst3(
 	.q(SYNTHESIZED_WIRE_2));
 
 
-RegisterFile	b2v_inst4(
+RegisterFile_v	b2v_inst4(
 	.WR(CW[33]),
 	.Clear(CW[32]),
 	.Clock_50(clock_50),
@@ -198,8 +205,8 @@ RegisterFile	b2v_inst4(
 	.BA(CW[39:37]),
 	.D(gdfx_temp0),
 	.DA(CW[36:34]),
-	.A(SYNTHESIZED_WIRE_4),
-	.B(SYNTHESIZED_WIRE_6),
+	.A(SYNTHESIZED_WIRE_5),
+	.B(SYNTHESIZED_WIRE_7),
 	.R0(R0),
 	.R1(R1),
 	.R2(R2),
@@ -217,22 +224,22 @@ PC	b2v_inst5(
 	.PS(CW[45:44]),
 	.out(PC_out));
 
-assign	B[15] = SYNTHESIZED_WIRE_7 ? SYNTHESIZED_WIRE_6[15] : 1'bz;
-assign	B[14] = SYNTHESIZED_WIRE_7 ? SYNTHESIZED_WIRE_6[14] : 1'bz;
-assign	B[13] = SYNTHESIZED_WIRE_7 ? SYNTHESIZED_WIRE_6[13] : 1'bz;
-assign	B[12] = SYNTHESIZED_WIRE_7 ? SYNTHESIZED_WIRE_6[12] : 1'bz;
-assign	B[11] = SYNTHESIZED_WIRE_7 ? SYNTHESIZED_WIRE_6[11] : 1'bz;
-assign	B[10] = SYNTHESIZED_WIRE_7 ? SYNTHESIZED_WIRE_6[10] : 1'bz;
-assign	B[9] = SYNTHESIZED_WIRE_7 ? SYNTHESIZED_WIRE_6[9] : 1'bz;
-assign	B[8] = SYNTHESIZED_WIRE_7 ? SYNTHESIZED_WIRE_6[8] : 1'bz;
-assign	B[7] = SYNTHESIZED_WIRE_7 ? SYNTHESIZED_WIRE_6[7] : 1'bz;
-assign	B[6] = SYNTHESIZED_WIRE_7 ? SYNTHESIZED_WIRE_6[6] : 1'bz;
-assign	B[5] = SYNTHESIZED_WIRE_7 ? SYNTHESIZED_WIRE_6[5] : 1'bz;
-assign	B[4] = SYNTHESIZED_WIRE_7 ? SYNTHESIZED_WIRE_6[4] : 1'bz;
-assign	B[3] = SYNTHESIZED_WIRE_7 ? SYNTHESIZED_WIRE_6[3] : 1'bz;
-assign	B[2] = SYNTHESIZED_WIRE_7 ? SYNTHESIZED_WIRE_6[2] : 1'bz;
-assign	B[1] = SYNTHESIZED_WIRE_7 ? SYNTHESIZED_WIRE_6[1] : 1'bz;
-assign	B[0] = SYNTHESIZED_WIRE_7 ? SYNTHESIZED_WIRE_6[0] : 1'bz;
+assign	B[15] = SYNTHESIZED_WIRE_8 ? SYNTHESIZED_WIRE_7[15] : 1'bz;
+assign	B[14] = SYNTHESIZED_WIRE_8 ? SYNTHESIZED_WIRE_7[14] : 1'bz;
+assign	B[13] = SYNTHESIZED_WIRE_8 ? SYNTHESIZED_WIRE_7[13] : 1'bz;
+assign	B[12] = SYNTHESIZED_WIRE_8 ? SYNTHESIZED_WIRE_7[12] : 1'bz;
+assign	B[11] = SYNTHESIZED_WIRE_8 ? SYNTHESIZED_WIRE_7[11] : 1'bz;
+assign	B[10] = SYNTHESIZED_WIRE_8 ? SYNTHESIZED_WIRE_7[10] : 1'bz;
+assign	B[9] = SYNTHESIZED_WIRE_8 ? SYNTHESIZED_WIRE_7[9] : 1'bz;
+assign	B[8] = SYNTHESIZED_WIRE_8 ? SYNTHESIZED_WIRE_7[8] : 1'bz;
+assign	B[7] = SYNTHESIZED_WIRE_8 ? SYNTHESIZED_WIRE_7[7] : 1'bz;
+assign	B[6] = SYNTHESIZED_WIRE_8 ? SYNTHESIZED_WIRE_7[6] : 1'bz;
+assign	B[5] = SYNTHESIZED_WIRE_8 ? SYNTHESIZED_WIRE_7[5] : 1'bz;
+assign	B[4] = SYNTHESIZED_WIRE_8 ? SYNTHESIZED_WIRE_7[4] : 1'bz;
+assign	B[3] = SYNTHESIZED_WIRE_8 ? SYNTHESIZED_WIRE_7[3] : 1'bz;
+assign	B[2] = SYNTHESIZED_WIRE_8 ? SYNTHESIZED_WIRE_7[2] : 1'bz;
+assign	B[1] = SYNTHESIZED_WIRE_8 ? SYNTHESIZED_WIRE_7[1] : 1'bz;
+assign	B[0] = SYNTHESIZED_WIRE_8 ? SYNTHESIZED_WIRE_7[0] : 1'bz;
 
 assign	B[15] = CW[20] ? CW[19] : 1'bz;
 assign	B[14] = CW[20] ? CW[18] : 1'bz;
@@ -251,24 +258,25 @@ assign	B[2] = CW[20] ? CW[6] : 1'bz;
 assign	B[1] = CW[20] ? CW[5] : 1'bz;
 assign	B[0] = CW[20] ? CW[4] : 1'bz;
 
-assign	SYNTHESIZED_WIRE_7 =  ~CW[20];
+assign	SYNTHESIZED_WIRE_8 =  ~CW[20];
 
-assign	gdfx_temp0[15] = CW[25] ? SYNTHESIZED_WIRE_8[15] : 1'bz;
-assign	gdfx_temp0[14] = CW[25] ? SYNTHESIZED_WIRE_8[14] : 1'bz;
-assign	gdfx_temp0[13] = CW[25] ? SYNTHESIZED_WIRE_8[13] : 1'bz;
-assign	gdfx_temp0[12] = CW[25] ? SYNTHESIZED_WIRE_8[12] : 1'bz;
-assign	gdfx_temp0[11] = CW[25] ? SYNTHESIZED_WIRE_8[11] : 1'bz;
-assign	gdfx_temp0[10] = CW[25] ? SYNTHESIZED_WIRE_8[10] : 1'bz;
-assign	gdfx_temp0[9] = CW[25] ? SYNTHESIZED_WIRE_8[9] : 1'bz;
-assign	gdfx_temp0[8] = CW[25] ? SYNTHESIZED_WIRE_8[8] : 1'bz;
-assign	gdfx_temp0[7] = CW[25] ? SYNTHESIZED_WIRE_8[7] : 1'bz;
-assign	gdfx_temp0[6] = CW[25] ? SYNTHESIZED_WIRE_8[6] : 1'bz;
-assign	gdfx_temp0[5] = CW[25] ? SYNTHESIZED_WIRE_8[5] : 1'bz;
-assign	gdfx_temp0[4] = CW[25] ? SYNTHESIZED_WIRE_8[4] : 1'bz;
-assign	gdfx_temp0[3] = CW[25] ? SYNTHESIZED_WIRE_8[3] : 1'bz;
-assign	gdfx_temp0[2] = CW[25] ? SYNTHESIZED_WIRE_8[2] : 1'bz;
-assign	gdfx_temp0[1] = CW[25] ? SYNTHESIZED_WIRE_8[1] : 1'bz;
-assign	gdfx_temp0[0] = CW[25] ? SYNTHESIZED_WIRE_8[0] : 1'bz;
+assign	gdfx_temp0[15] = CW[25] ? SYNTHESIZED_WIRE_9[15] : 1'bz;
+assign	gdfx_temp0[14] = CW[25] ? SYNTHESIZED_WIRE_9[14] : 1'bz;
+assign	gdfx_temp0[13] = CW[25] ? SYNTHESIZED_WIRE_9[13] : 1'bz;
+assign	gdfx_temp0[12] = CW[25] ? SYNTHESIZED_WIRE_9[12] : 1'bz;
+assign	gdfx_temp0[11] = CW[25] ? SYNTHESIZED_WIRE_9[11] : 1'bz;
+assign	gdfx_temp0[10] = CW[25] ? SYNTHESIZED_WIRE_9[10] : 1'bz;
+assign	gdfx_temp0[9] = CW[25] ? SYNTHESIZED_WIRE_9[9] : 1'bz;
+assign	gdfx_temp0[8] = CW[25] ? SYNTHESIZED_WIRE_9[8] : 1'bz;
+assign	gdfx_temp0[7] = CW[25] ? SYNTHESIZED_WIRE_9[7] : 1'bz;
+assign	gdfx_temp0[6] = CW[25] ? SYNTHESIZED_WIRE_9[6] : 1'bz;
+assign	gdfx_temp0[5] = CW[25] ? SYNTHESIZED_WIRE_9[5] : 1'bz;
+assign	gdfx_temp0[4] = CW[25] ? SYNTHESIZED_WIRE_9[4] : 1'bz;
+assign	gdfx_temp0[3] = CW[25] ? SYNTHESIZED_WIRE_9[3] : 1'bz;
+assign	gdfx_temp0[2] = CW[25] ? SYNTHESIZED_WIRE_9[2] : 1'bz;
+assign	gdfx_temp0[1] = CW[25] ? SYNTHESIZED_WIRE_9[1] : 1'bz;
+assign	gdfx_temp0[0] = CW[25] ? SYNTHESIZED_WIRE_9[0] : 1'bz;
 
+assign	PC[7:0] = PC_out[7:0];
 
 endmodule

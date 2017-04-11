@@ -1,30 +1,108 @@
-module rom_case(out, address);
-	output reg[15:0] out;
-	input [7:0] address; //address- 8 deep memory
-	
-	always @(address)//* begin //@(a)
-	begin
-		case(address)
-		//address		binary instruction //Assembly optional
-		8'h00: out = 16'b1100000000000000; //LDI R0, 0
-		8'h01: out = 16'b1100100000000000; //LDI R1, 1
-		8'h02: out = 16'b1101000000000010; //LDI R2, 2
-		8'h03: out = 16'b1101100000000011; //LDI R3, 3
-		8'h04: out = 16'b1110000000000100; //LDI R4, 4
-		8'h05: out = 16'b1110100000000101; //LDI R5, 5
-		8'h06: out = 16'b1111000000000110; //LDI R6, 6
-		8'h07: out = 16'b1111100000000111; //LDI R7, 7
-		8'h08: out = 16'b0010100100001000; //ORI R1, 8 R1 should be 9
-		8'h09: out = 16'b0110100010011100; //ADD R2, R3, R4 R2 should be 7
-		8'h0A: out = 16'b0111000011011000; //SHL R3, R3 R3 should be 6
-		8'h0B: out = 16'b1010100101000001; //ST R1, 65
-		8'h0C: out = 16'b1011100100000011; //BRN R1, 3 should be false and con
-		8'h0D: out = 16'b0110110001010001; //SUB R1, R2, R1 R1 should be -2
-		8'h0E: out = 16'b1010010001000001; //LD R4, 65 R4 should be 9
-		8'h0F: out = 16'b1011100111110001; //BRN R1, -15 should be true and br
-		//...more instructions
-		8'hFF: out = 16'b1001100000000000; //JMPI,0
-		default: out = 16'b0000000000000000; //NOP
-	endcase
-end
-endmodule // rom_case
+module rom_case(out, PC);
+   output reg[15:0] out;
+   input [7:0] PC; 
+    
+   always @* begin
+		case(PC)
+			//CLR
+			 8'b0 : out[15:0]<=16'b0100000000001010;//DA=0,AA=X,BA=X
+			 //CLR
+			 8'b1 : out[15:0]<=16'b0100000000001010;//DA=0,AA=X,BA=X
+			  //CLR
+			 8'b10 : out[15:0]<=16'b0100000001001010;//DA=1,AA=X,BA=X
+			  //CLR
+			 8'b11 : out[15:0]<=16'b0100000010001010;//DA=2,AA=X,BA=X
+			  //CLR
+			 8'b100 : out[15:0]<=16'b010000001101010;//DA=3,AA=X,BA=X
+			  //CLR
+			 8'b101 : out[15:0]<=16'b0100000100001010;//DA=4,AA=X,BA=X
+			  //CLR
+			 8'b110 : out[15:0]<=16'b0100000101001010;//DA=5,AA=X,BA=X
+			  //CLR
+			 8'b111 : out[15:0]<=16'b0100000110001010;//DA=6,AA=X,BA=X
+			  //CLR
+			 8'b1000 : out[15:0]<=16'b0100000111001010;//DA=7,AA=X,BA=X
+			 //ADDI
+			 8'b1001 : out[15:0]<=16'b0000100100000001;//reg 1 lit 1
+			 //SUBI
+			 8'b1010 : out[15:0]<=16'b0001001000000001;//reg2 lit 1
+			 //ANDI
+			 8'b1011 : out[15:0]<=16'b0001101100000001;//reg 3 lit 1
+			 //ORI
+			 8'b1100 : out[15:0]<=16'b0010110000000001;//reg 4 lit 1
+			 //XORI
+			 8'b1101 : out[15:0]<=16'b0011010100000001;//reg 5 lit 1
+			 
+			 //01 Operations 7 op code DA,AA,BA
+			  //INC
+			 8'b1110 : out[15:0]<=16'b0110000001001000;//DA=1,AA=1,BA=X
+			 //ADD
+			 8'b1111 : out[15:0]<=16'b0110100001001010;//DA=1,AA=1,BA=2
+			 //ADDC
+			 8'b10000 : out[15:0]<=16'b0110101001001010;//DA=1,AA=1,BA=2
+			 //SUB
+			 8'b10001 : out[15:0]<=16'b0110110001001010;//DA=1,AA=1,BA=2
+			 //DEC
+			 8'b10010 : out[15:0]<=16'b0110010001001000;//DA=1,AA=1,BA=X
+			 //NEG
+			 8'b10011 : out[15:0]<=16'b0110001011001000;//DA=3,AA=1,BA=X
+			 //SHR
+			 8'b10100 : out[15:0]<=16'b0111001001001010;//DA=1,AA=1,BA=X
+			 //SHL
+			 8'b10101 : out[15:0]<=16'b0111000001001010;//DA=1,AA=1,B=X
+			 //CLR
+			 8'b10110 : out[15:0]<=16'b0100000001001010;//DA=1,AA=X,BA=X
+			 //SET
+			 8'b10111 : out[15:0]<=16'b0101111001001010;//DA=1,AA=X,BA=X
+			 //NOT
+			 8'b11000 :out[15:0]<=16'b0100011101001010;//DA=5,AA=1,BA=X
+			 //AND
+			 8'b11001 : out[15:0]<=16'b0101000001001010;//DA=1,AA=1,BA=2
+			 //OR
+			 8'b11010 : out[15:0]<=16'b0101110001001010;//DA=1,AA=1,BA=2
+			 //XOR
+			 8'b11011 : out[15:0]<=16'b0100110001001010;//DA=1,AA=1,BA=2
+			 //MOVA
+			 8'b11100 : out[15:0]<=16'b0101100111001010;//DA=7,AA=1,BA=X
+			 //MOVB
+			 8'b11101 : out[15:0]<=16'b0101010110001010;//DA=6,AA=X,BA=2
+			 
+			 //10 Operations
+			 //LRLI(EX0)
+			 8'b11110 : out[15:0]<=16'b1000010001001010;//DA=1,AA=1,BA=2
+			 //LRLI(EX1)
+			 8'b11111 : out[15:0]<=16'b0000000000000001;//constant = 1
+			 //LDI
+			 8'b100000 : out[15:0]<=16'b1010000100000001;//reg 1 lit 1
+			 //STI
+			 8'b100001 : out[15:0]<=16'b1010101000000001;//reg2 lit 1
+			 //Push
+			 8'b100010 : out[15:0]<=16'b1000000001001010;//DA=1,AA=1,BA=2
+			 //Pop
+			 8'b100011 : out[15:0]<=16'b1000001001001010;//DA=1,AA=1,BA=2
+			 //STR
+			 8'b100100 : out[15:0]<=16'b1000101001001010;//DA=1,AA=1,BA=2
+			 //LDR
+			 8'b100101 : out[15:0]<=16'b1000100001001010;//DA=1,AA=1,BA=2
+			 //CALL(EX0)
+			 8'b100110 : out[15:0]<=16'b1001110001001010;//DA=1,AA=1,BA=2
+			 //RET
+			 8'b100111 : out[15:0]<=16'b1001111001001010;//DA=1,AA=1,BA=2
+			 //BRZ
+			 8'b101000 : out[15:0]<=16'b1011001100000001;//reg 3 lit 1
+			 //BRN
+			 8'b101001 : out[15:0]<=16'b1011110000000001;//reg 4 lit 1
+			 //BSET
+			 8'b101010 : out[15:0]<=16'b1001001001001010;//DA=1,AA=1,BA=2
+			 //BCLR
+			 8'b101011 : out[15:0]<=16'b1001000001001010;//DA=1,AA=1,BA=2
+			 //JMPR
+			 8'b101100 : out[15:0]<=16'b1001101001001010;//DA=1,AA=1,BA=2
+			 
+			 //11 Operation 2 bit op, 3bit DA, 11 bit lit 
+			 8'b101101 : out[15:0] <= 16'b1101100000000001; //DA is reg 3 and literal is d1
+			 
+			 default: out = 16'b0000000000000000; //NOP
+		endcase
+	end
+endmodule 

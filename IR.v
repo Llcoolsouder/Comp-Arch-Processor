@@ -6,7 +6,7 @@ module IR (CLK, L, in, out);
 	
 	always @(posedge CLK) begin
 		if (L) begin
-			out=in;
+			out<=in;
 		end 
 	end
 endmodule
