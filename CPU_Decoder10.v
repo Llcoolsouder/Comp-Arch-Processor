@@ -19,7 +19,7 @@ module CPU_Decoder10(IR, PS, IR_L, AA, BA, DA, WR, Clr, FS, Cin, MuxD, MuxA, K, 
     
     always @* begin
     
-    PS[0] <= ~IR[11]|~State&IR[13]|IR[11]&~IR[10]|~State&IR[10]&~IR[9];
+    PS[0] <= ~IR[11]|~State&IR[13]|IR[11]&~IR[10];
     PS[1] <= State&IR[13]&IR[12]|~State&IR[12]&IR[11]&IR[10]&IR[9]|State&IR[12];
     IR_L <=State&IR[13]|~IR[11]&~IR[10]|IR[11]&IR[10]|~IR[12]&IR[11]|IR[11]&IR[10];
     //AA

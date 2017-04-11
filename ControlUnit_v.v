@@ -14,7 +14,7 @@
 
 // PROGRAM		"Quartus II 64-Bit"
 // VERSION		"Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
-// CREATED		"Thu Apr 06 10:33:23 2017"
+// CREATED		"Mon Apr 10 20:35:24 2017"
 
 module ControlUnit_v(
 	CLK,

@@ -14,9 +14,9 @@
 
 // PROGRAM		"Quartus II 64-Bit"
 // VERSION		"Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
-// CREATED		"Mon Apr 10 19:58:17 2017"
+// CREATED		"Mon Apr 10 20:43:03 2017"
 
-module Core_v(
+module Core(
 	clock_50,
 	IR,
 	Cout,
@@ -150,13 +150,13 @@ rom_case	b2v_inst15(
 	.out(SYNTHESIZED_WIRE_10));
 
 
-ControlUnit_v	b2v_inst16(
+ControlUnit	b2v_inst16(
 	.CLK(clock_50),
 	.IR(IR),
 	.CW(CW));
 
 
-ALU_16bit_v	b2v_inst2(
+ALU_16bit	b2v_inst2(
 	.Cin(CW[26]),
 	.A(SYNTHESIZED_WIRE_4),
 	.B(B),
@@ -190,7 +190,7 @@ RAM1	b2v_inst3(
 	.q(SYNTHESIZED_WIRE_2));
 
 
-RegisterFile_v	b2v_inst4(
+RegisterFile	b2v_inst4(
 	.WR(CW[33]),
 	.Clear(CW[32]),
 	.Clock_50(clock_50),
