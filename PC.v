@@ -5,6 +5,10 @@ module PC (CLK, PS, D, AD, out);
 	input [15:0] AD;
 	output  reg [15:0]out;
 	
+	initial begin 
+		out <= 0;
+	end
+	
 	always @(posedge CLK)begin
 		case (PS)
 			2'b00: out = out;
