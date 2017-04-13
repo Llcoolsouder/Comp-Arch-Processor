@@ -22,7 +22,7 @@ module CPU_Decoder01(IR,PS,IR_L,AA,BA,DA,WR,Clr, FS,Cin,MuxD,MuxA,K,MemWrite,SS,
     FS[3]<=IR[12];
     FS[2]<=IR[11]|IR[13]&~IR[11]&IR[10];
     FS[1]<=IR[11]&IR[10]|~IR[11]&IR[10]&~IR[9]|IR[13]&~IR[12]&~IR[11];
-    FS[0]<=IR[9];
+    FS[0]<=~IR[11]&IR[9]|IR[11]&IR[10]&IR[9];
     PS[1:0]<=2'b01;
     
     IR_L <= 1'b1;
@@ -36,11 +36,11 @@ module CPU_Decoder01(IR,PS,IR_L,AA,BA,DA,WR,Clr, FS,Cin,MuxD,MuxA,K,MemWrite,SS,
     
     Clr <= 1'b0;
     
-    Cin<=~IR[11]&~IR[10]|~IR[11]&IR[9]|IR[11]&IR[10]&~IR[9]|IR[11]&~IR[10]&IR[9];
+    Cin<=~IR[11]|~IR[10]&IR[9]|IR[10]&~IR[9];
     
     MuxD[4:0]<=5'b00100;
     
-    MuxA<= IR[13]&~IR[12]&~IR[11]&~IR[10]&IR[9];
+    MuxA<= IR[13]&~IR[12]&~IR[11]&IR[10]&~IR[9];
     
     K[15:0]<=16'b0000000000000001;
     
