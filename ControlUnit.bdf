@@ -372,9 +372,9 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 264 24 448 328)
-	(text "CPU_Decoder00" (rect 5 0 87 12)(font "Arial" ))
-	(text "inst" (rect 8 288 25 300)(font "Arial" ))
+	(rect 264 664 448 968)
+	(text "CPU_Decoder10" (rect 5 0 87 12)(font "Arial" ))
+	(text "inst2" (rect 8 288 31 300)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -499,9 +499,60 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 264 664 448 968)
-	(text "CPU_Decoder10" (rect 5 0 87 12)(font "Arial" ))
-	(text "inst2" (rect 8 288 31 300)(font "Arial" ))
+	(rect 304 1304 440 1416)
+	(text "register" (rect 5 0 41 12)(font "Arial" ))
+	(text "inst4" (rect 8 96 31 108)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "data" (rect 0 0 21 12)(font "Arial" ))
+		(text "data" (rect 21 27 42 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "load" (rect 0 0 20 12)(font "Arial" ))
+		(text "load" (rect 21 43 41 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "clock" (rect 0 0 25 12)(font "Arial" ))
+		(text "clock" (rect 21 59 46 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 136 32)
+		(output)
+		(text "out" (rect 0 0 15 12)(font "Arial" ))
+		(text "out" (rect 103 27 118 39)(font "Arial" ))
+		(line (pt 136 32)(pt 120 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 120 96))
+	)
+)
+(symbol
+	(rect 208 1328 240 1344)
+	(text "VCC" (rect 7 0 27 10)(font "Arial" (font_size 6)))
+	(text "inst5" (rect 3 5 26 17)(font "Arial" )(invisible))
+	(port
+		(pt 16 16)
+		(output)
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(line (pt 16 16)(pt 16 8))
+	)
+	(drawing
+		(line (pt 8 8)(pt 24 8))
+	)
+)
+(symbol
+	(rect 264 24 448 328)
+	(text "CPU_Decoder00" (rect 5 0 87 12)(font "Arial" ))
+	(text "inst" (rect 8 288 25 300)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -623,57 +674,6 @@ applicable agreement for further details.
 	)
 	(drawing
 		(rectangle (rect 16 16 168 288))
-	)
-)
-(symbol
-	(rect 304 1304 440 1416)
-	(text "register" (rect 5 0 41 12)(font "Arial" ))
-	(text "inst4" (rect 8 96 31 108)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "data" (rect 0 0 21 12)(font "Arial" ))
-		(text "data" (rect 21 27 42 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "load" (rect 0 0 20 12)(font "Arial" ))
-		(text "load" (rect 21 43 41 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "clock" (rect 0 0 25 12)(font "Arial" ))
-		(text "clock" (rect 21 59 46 71)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64))
-	)
-	(port
-		(pt 136 32)
-		(output)
-		(text "out" (rect 0 0 15 12)(font "Arial" ))
-		(text "out" (rect 103 27 118 39)(font "Arial" ))
-		(line (pt 136 32)(pt 120 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 120 96))
-	)
-)
-(symbol
-	(rect 208 1328 240 1344)
-	(text "VCC" (rect 7 0 27 10)(font "Arial" (font_size 6)))
-	(text "inst5" (rect 3 5 26 17)(font "Arial" )(invisible))
-	(port
-		(pt 16 16)
-		(output)
-		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
-		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
-		(line (pt 16 16)(pt 16 8))
-	)
-	(drawing
-		(line (pt 8 8)(pt 24 8))
 	)
 )
 (connector

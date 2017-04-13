@@ -260,6 +260,22 @@ applicable agreement for further details.
 		(line (pt 78 12)(pt 82 8))
 	)
 )
+(pin
+	(output)
+	(rect 16 368 192 384)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "CW[45..0]" (rect 90 0 140 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
 (symbol
 	(rect 1008 -192 1192 -80)
 	(text "RAM1" (rect 5 0 34 12)(font "Arial" ))
@@ -883,35 +899,6 @@ applicable agreement for further details.
 	(annotation_block (parameter)(rect 888 80 1072 128))
 )
 (symbol
-	(rect -88 232 64 328)
-	(text "ControlUnit" (rect 5 0 66 14)(font "Arial" (font_size 8)))
-	(text "inst16" (rect 8 80 37 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "IR[15..0]" (rect 0 0 46 14)(font "Arial" (font_size 8)))
-		(text "IR[15..0]" (rect 21 27 67 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "CLK" (rect 0 0 23 14)(font "Arial" (font_size 8)))
-		(text "CLK" (rect 21 43 44 57)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 152 32)
-		(output)
-		(text "CW[45..0]" (rect 0 0 55 14)(font "Arial" (font_size 8)))
-		(text "CW[45..0]" (rect 76 27 131 41)(font "Arial" (font_size 8)))
-		(line (pt 152 32)(pt 136 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 136 80))
-	)
-)
-(symbol
 	(rect -96 -48 72 32)
 	(text "rom_case" (rect 5 0 53 12)(font "Arial" ))
 	(text "inst15" (rect 8 64 37 76)(font "Arial" ))
@@ -926,7 +913,7 @@ applicable agreement for further details.
 		(pt 168 32)
 		(output)
 		(text "out[15..0]" (rect 0 0 47 12)(font "Arial" ))
-		(text "out[15..0]" (rect 108 27 147 39)(font "Arial" ))
+		(text "out[15..0]" (rect 108 27 155 39)(font "Arial" ))
 		(line (pt 168 32)(pt 152 32)(line_width 3))
 	)
 	(drawing
@@ -967,6 +954,35 @@ applicable agreement for further details.
 	)
 	(drawing
 		(rectangle (rect 16 16 152 96))
+	)
+)
+(symbol
+	(rect -88 232 64 328)
+	(text "ControlUnit" (rect 5 0 66 14)(font "Arial" (font_size 8)))
+	(text "inst16" (rect 8 80 37 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "IR[15..0]" (rect 0 0 46 14)(font "Arial" (font_size 8)))
+		(text "IR[15..0]" (rect 21 27 67 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "CLK" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "CLK" (rect 21 43 44 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 152 32)
+		(output)
+		(text "CW[45..0]" (rect 0 0 55 14)(font "Arial" (font_size 8)))
+		(text "CW[45..0]" (rect 76 27 131 41)(font "Arial" (font_size 8)))
+		(line (pt 152 32)(pt 136 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 136 80))
 	)
 )
 (connector
@@ -1689,12 +1705,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "CW[45..0]" (rect 72 211 84 261)(font "Arial" )(vertical)(invisible))
-	(pt 88 264)
-	(pt 88 216)
-	(bus)
-)
-(connector
 	(text "B[15..0]" (rect 704 261 716 299)(font "Arial" )(vertical)(invisible))
 	(pt 720 216)
 	(pt 720 304)
@@ -1765,6 +1775,32 @@ applicable agreement for further details.
 (connector
 	(pt 88 120)
 	(pt 88 200)
+	(bus)
+)
+(connector
+	(pt 88 352)
+	(pt 0 352)
+	(bus)
+)
+(connector
+	(text "CW[45..0]" (rect 72 211 84 261)(font "Arial" )(vertical)(invisible))
+	(pt 88 216)
+	(pt 88 264)
+	(bus)
+)
+(connector
+	(pt 88 264)
+	(pt 88 352)
+	(bus)
+)
+(connector
+	(pt 0 352)
+	(pt 0 376)
+	(bus)
+)
+(connector
+	(pt 0 376)
+	(pt 16 376)
 	(bus)
 )
 (junction (pt -112 112))

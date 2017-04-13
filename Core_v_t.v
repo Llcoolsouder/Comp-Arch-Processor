@@ -1,6 +1,7 @@
 module Core_v_t;
     reg clock_50_t;
 	 wire Cout_t, Z_t, N_t;
+	 wire [45:0] CW_t;
 	 wire [15:0] R0_t, R1_t, R2_t, R3_t, R4_t, R5_t, R6_t, R7_t;
 	 wire [15:0] IRout_t, ROM_t;
 	 wire [7:0]PC_t;
@@ -13,6 +14,7 @@ module Core_v_t;
 		.Cout(Cout_t),
 		.Z(Z_t),
 		.N(N_t),
+		.CW(CW_t),
 		.R0(R0_t),
 		.R1(R1_t),
 		.R2(R2_t),
