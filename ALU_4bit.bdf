@@ -183,7 +183,7 @@ applicable agreement for further details.
 	(input)
 	(rect -4168 -1632 -3992 -1616)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "A_previous_bit" (rect 5 0 79 12)(font "Arial" ))
+	(text "A_previous_bit" (rect 5 0 78 12)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 92 12)(pt 117 12))
@@ -199,7 +199,7 @@ applicable agreement for further details.
 	(input)
 	(rect -432 -304 -264 -288)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "A_next_bit" (rect 5 0 57 12)(font "Arial" ))
+	(text "A_next_bit" (rect 5 0 56 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -3468,14 +3468,6 @@ applicable agreement for further details.
 	(pt -3832 -1688)
 )
 (connector
-	(pt -3848 -1688)
-	(pt -3848 -1368)
-)
-(connector
-	(pt -3848 -1368)
-	(pt -3848 -1352)
-)
-(connector
 	(pt -3880 -1720)
 	(pt -3832 -1720)
 )
@@ -4754,6 +4746,14 @@ applicable agreement for further details.
 (connector
 	(pt -3936 -1624)
 	(pt -3992 -1624)
+)
+(connector
+	(pt -3848 -1688)
+	(pt -3848 -1368)
+)
+(connector
+	(pt -3848 -1368)
+	(pt -3848 -1352)
 )
 (junction (pt -3832 -1688))
 (junction (pt -3784 -1752))

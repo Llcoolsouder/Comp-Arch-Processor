@@ -21,7 +21,7 @@ module CPU_Decoder01(IR,PS,IR_L,AA,BA,DA,WR,Clr, FS,Cin,MuxD,MuxA,K,MemWrite,SS,
     FS[4]<=IR[13];
     FS[3]<=IR[12];
     FS[2]<=IR[11]|IR[13]&~IR[11]&IR[10];
-    FS[1]<=IR[11]&IR[10]|~IR[11]&IR[10]&~IR[9]|IR[13]&~IR[12]&~IR[11];
+    FS[1]<=IR[11]&IR[10]|IR[10]&~IR[9]|IR[13]&~IR[12]&~IR[11]&IR[9];
     FS[0]<=~IR[11]&IR[9]|IR[11]&IR[10]&IR[9];
     PS[1:0]<=2'b01;
     
