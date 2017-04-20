@@ -13,17 +13,21 @@
 // applicable agreement for further details.
 
 // PROGRAM		"Quartus II 64-Bit"
-// VERSION		"Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
-// CREATED		"Mon Apr 10 20:35:24 2017"
+// VERSION		"Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
+// CREATED		"Thu Apr 20 09:06:01 2017"
 
 module ControlUnit_v(
 	CLK,
+	N,
+	Z,
 	IR,
 	CW
 );
 
 
 input wire	CLK;
+input wire	N;
+input wire	Z;
 input wire	[15:0] IR;
 output wire	[45:0] CW;
 
@@ -36,6 +40,8 @@ wire	SYNTHESIZED_WIRE_5;
 wire	SYNTHESIZED_WIRE_4;
 
 assign	SYNTHESIZED_WIRE_4 = 1;
+
+
 
 
 CPU_Decoder00	b2v_inst(
@@ -79,6 +85,8 @@ CPU_Decoder01	b2v_inst1(
 
 
 CPU_Decoder10	b2v_inst2(
+	.N(N),
+	.Z(Z),
 	.State(SYNTHESIZED_WIRE_5),
 	.IR(IR),
 	.IR_L(R3[43]),

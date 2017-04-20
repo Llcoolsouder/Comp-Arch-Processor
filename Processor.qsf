@@ -38,10 +38,10 @@
 
 set_global_assignment -name FAMILY "Cyclone III"
 set_global_assignment -name DEVICE EP3C16F484C6
-set_global_assignment -name TOP_LEVEL_ENTITY rom_case
+set_global_assignment -name TOP_LEVEL_ENTITY Core_v
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "09:49:49  MARCH 02, 2017"
-set_global_assignment -name LAST_QUARTUS_VERSION 13.1
+set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name VERILOG_FILE Top_Level_ModelSim_v.v
 set_global_assignment -name QIP_FILE RAM2.qip
 set_global_assignment -name QIP_FILE RAM1.qip
