@@ -2,11 +2,9 @@ module rom_case(out, PC);
     output reg[15:0] out;
     input [7:0] PC; //address- 8 deep memory
     
-    always @(PC)//* begin //@(a)
-    begin
+    always @(PC) begin
         case(PC)
-         
-            
+   
         //CLR
         8'b00000000 : out[15:0]<=16'b0100000001001010;//DA=1,AA=X,BA=X
     
@@ -78,7 +76,7 @@ module rom_case(out, PC);
         
         //10 Operations
         //LRLI(EX0)
-        8'b00010110 : out[15:0]<=16'b1000010001001010;//DA=1,AA=1,BA=2
+        8'b00010110 : out[15:0]<=16'b1000010001001010;//DA=1,AA=X,BA=X
         
         //LRLI(EX1)
         8'b00010111 : out[15:0]<=16'b0000000000000001;//constant = 1
@@ -102,10 +100,10 @@ module rom_case(out, PC);
         8'b00011101 : out[15:0]<=16'b1000100001001010;//DA=1,AA=1,BA=2
         
         //CALL(EX0)
-        8'b00011110 : out[15:0]<=16'b1001110001001010;//DA=1,AA=1,BA=2
+        8'b00011110 : out[15:0]<=16'b1001110000000100;//lit = 4
         
         //RET
-        8'b00011111 : out[15:0]<=16'b1001111001001010;//DA=1,AA=1,BA=2
+        8'b00011111 : out[15:0]<=16'b1001111001001010;//do not cares
         
         //BRZ
         8'b00100000 : out[15:0]<=16'b1011001100000001;//reg 3 lit 1
@@ -126,10 +124,8 @@ module rom_case(out, PC);
         //11 Operation 2 bit op, 3bit DA, 11 bit lit
         
         8'b00100101 : out[15:0] <= 16'b1101100000000001; //DA is reg 3 and literal is d1
-            default: out = 16'b0000000000000000; //NOP
-        
-        
-        
+        default: out = 16'b0000000000000000; //NOP
+
         endcase
     end
 endmodule // rom_case

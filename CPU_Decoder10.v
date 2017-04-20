@@ -59,13 +59,7 @@ module CPU_Decoder10(IR, PS, IR_L, AA, BA, DA, WR, Clr, FS, Cin, MuxD, MuxA, K, 
 			  
 		 casex(IR[15:9])
 			  7'b10100xx: DA[2:0] <=IR[10:8];  //LDI
-			  7'b1000010: DA[2:0] <=IR[8:6];   //LRLI EX0
-			  7'b1000001: DA[2:0] <=IR[8:6];   //POP
-			  7'b1000101: DA[2:0] <=IR[8:6];   //STR
-			  7'b1000100: DA[2:0] <=IR[8:6];   //LDR
-			  7'b1001001: DA[2:0] <=IR[8:6];   //BSET
-			  7'b1001000: DA[2:0] <=IR[8:6];   //BCLR
-			  default: DA[2:0]<=3'b000;
+			  default: DA[2:0]<=IR[8:6];
 		 endcase
 		 
 		 if (State==0) begin
@@ -73,7 +67,7 @@ module CPU_Decoder10(IR, PS, IR_L, AA, BA, DA, WR, Clr, FS, Cin, MuxD, MuxA, K, 
 					7'b10100xx: K[15:0] <= {{8{1'b0}}, IR[7:0]}; //LDI
 					7'b10101xx: K[15:0] <= {{8{1'b0}}, IR[7:0]}; //STI
 					7'b1001001: K[15:0] <= 16'b1 << IR[5:2];   //Bit Set
-					7'b1001000: K[15:0] <= 16'b1 << IR[5:2];   //Bit Clear 
+					7'b1001000: K[15:0] <= ~(16'b1 << IR[5:2]);   //Bit Clear 
 					default: K[15:0]<=3'h0000;
 			  endcase
 		 end

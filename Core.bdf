@@ -949,7 +949,7 @@ applicable agreement for further details.
 		(pt 168 32)
 		(output)
 		(text "out[15..0]" (rect 0 0 47 12)(font "Arial" ))
-		(text "out[15..0]" (rect 108 27 147 39)(font "Arial" ))
+		(text "out[15..0]" (rect 108 27 155 39)(font "Arial" ))
 		(line (pt 168 32)(pt 152 32)(line_width 3))
 	)
 	(drawing
@@ -1235,40 +1235,6 @@ applicable agreement for further details.
 	(pt 568 256)
 )
 (connector
-	(pt 264 -48)
-	(pt 896 -48)
-)
-(connector
-	(pt 792 -16)
-	(pt 896 -16)
-	(bus)
-)
-(connector
-	(pt 792 -224)
-	(pt 792 -128)
-	(bus)
-)
-(connector
-	(pt 792 -128)
-	(pt 792 -16)
-	(bus)
-)
-(connector
-	(pt 848 -32)
-	(pt 848 0)
-	(bus)
-)
-(connector
-	(pt 848 0)
-	(pt 848 16)
-	(bus)
-)
-(connector
-	(pt 1072 -48)
-	(pt 1128 -48)
-	(bus)
-)
-(connector
 	(pt 1176 -48)
 	(pt 1288 -48)
 	(bus)
@@ -1341,21 +1307,6 @@ applicable agreement for further details.
 	(pt 696 16)
 	(pt 848 16)
 	(bus)
-)
-(connector
-	(text "StS[2]" (rect 858 -32 888 -20)(font "Arial" ))
-	(pt 896 -32)
-	(pt 848 -32)
-)
-(connector
-	(text "StS[1]" (rect 858 0 888 12)(font "Arial" ))
-	(pt 896 0)
-	(pt 848 0)
-)
-(connector
-	(text "StS[0]" (rect 858 16 888 28)(font "Arial" ))
-	(pt 896 16)
-	(pt 848 16)
 )
 (connector
 	(pt 1192 712)
@@ -1462,14 +1413,6 @@ applicable agreement for further details.
 (connector
 	(pt 264 432)
 	(pt 296 432)
-)
-(connector
-	(pt 264 -144)
-	(pt 264 -48)
-)
-(connector
-	(pt 264 -48)
-	(pt 264 432)
 )
 (connector
 	(text "CW[32]" (rect 194 400 231 412)(font "Arial" ))
@@ -1801,6 +1744,63 @@ applicable agreement for further details.
 (connector
 	(pt 0 376)
 	(pt 16 376)
+	(bus)
+)
+(connector
+	(pt 264 -48)
+	(pt 896 -48)
+)
+(connector
+	(pt 792 -16)
+	(pt 896 -16)
+	(bus)
+)
+(connector
+	(pt 1128 -48)
+	(pt 1072 -48)
+	(bus)
+)
+(connector
+	(text "StS[2]" (rect 858 -32 888 -20)(font "Arial" ))
+	(pt 848 -32)
+	(pt 896 -32)
+)
+(connector
+	(text "StS[1]" (rect 858 0 888 12)(font "Arial" ))
+	(pt 848 0)
+	(pt 896 0)
+)
+(connector
+	(text "StS[0]" (rect 858 16 888 28)(font "Arial" ))
+	(pt 848 16)
+	(pt 896 16)
+)
+(connector
+	(pt 264 -144)
+	(pt 264 -48)
+)
+(connector
+	(pt 264 -48)
+	(pt 264 432)
+)
+(connector
+	(pt 792 -224)
+	(pt 792 -128)
+	(bus)
+)
+(connector
+	(pt 792 -128)
+	(pt 792 -16)
+	(bus)
+)
+(connector
+	(pt 848 -32)
+	(pt 848 0)
+	(bus)
+)
+(connector
+	(pt 848 0)
+	(pt 848 16)
 	(bus)
 )
 (junction (pt -112 112))
