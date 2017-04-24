@@ -32,7 +32,7 @@ module Core_v_t;
     end 
 	 
     initial begin
-		#2000 
+		#3000 
 		$stop;
 	 end
 endmodule 
