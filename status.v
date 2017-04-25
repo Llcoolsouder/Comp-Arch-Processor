@@ -7,7 +7,7 @@ module status(data, Z, N);
 			Z <= 1;
 			N <= 0;
 		end
-		else if (data < 0)begin
+		else if (data[15] == 1'b1)begin
 			Z <= 0;
 			N <= 1;
 		end
