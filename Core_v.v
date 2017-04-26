@@ -14,7 +14,7 @@
 
 // PROGRAM		"Quartus II 64-Bit"
 // VERSION		"Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
-// CREATED		"Thu Apr 20 09:06:53 2017"
+// CREATED		"Wed Apr 26 16:20:19 2017"
 
 module Core_v(
 	clock_50,
@@ -58,7 +58,7 @@ wire	[45:0] CW_ALTERA_SYNTHESIZED;
 wire	[15:0] gdfx_temp0;
 wire	[15:0] IR;
 wire	[4:0] MD;
-wire	[15:0] PC_out;
+wire	[15:0] PC_ALTERA_SYNTHESIZED;
 wire	[2:0] StS;
 wire	[15:0] SYNTHESIZED_WIRE_11;
 wire	[15:0] SYNTHESIZED_WIRE_12;
@@ -132,22 +132,22 @@ assign	gdfx_temp0[2] = CW_ALTERA_SYNTHESIZED[24] ? SYNTHESIZED_WIRE_2[2] : 1'bz;
 assign	gdfx_temp0[1] = CW_ALTERA_SYNTHESIZED[24] ? SYNTHESIZED_WIRE_2[1] : 1'bz;
 assign	gdfx_temp0[0] = CW_ALTERA_SYNTHESIZED[24] ? SYNTHESIZED_WIRE_2[0] : 1'bz;
 
-assign	gdfx_temp0[15] = CW_ALTERA_SYNTHESIZED[22] ? PC_out[15] : 1'bz;
-assign	gdfx_temp0[14] = CW_ALTERA_SYNTHESIZED[22] ? PC_out[14] : 1'bz;
-assign	gdfx_temp0[13] = CW_ALTERA_SYNTHESIZED[22] ? PC_out[13] : 1'bz;
-assign	gdfx_temp0[12] = CW_ALTERA_SYNTHESIZED[22] ? PC_out[12] : 1'bz;
-assign	gdfx_temp0[11] = CW_ALTERA_SYNTHESIZED[22] ? PC_out[11] : 1'bz;
-assign	gdfx_temp0[10] = CW_ALTERA_SYNTHESIZED[22] ? PC_out[10] : 1'bz;
-assign	gdfx_temp0[9] = CW_ALTERA_SYNTHESIZED[22] ? PC_out[9] : 1'bz;
-assign	gdfx_temp0[8] = CW_ALTERA_SYNTHESIZED[22] ? PC_out[8] : 1'bz;
-assign	gdfx_temp0[7] = CW_ALTERA_SYNTHESIZED[22] ? PC_out[7] : 1'bz;
-assign	gdfx_temp0[6] = CW_ALTERA_SYNTHESIZED[22] ? PC_out[6] : 1'bz;
-assign	gdfx_temp0[5] = CW_ALTERA_SYNTHESIZED[22] ? PC_out[5] : 1'bz;
-assign	gdfx_temp0[4] = CW_ALTERA_SYNTHESIZED[22] ? PC_out[4] : 1'bz;
-assign	gdfx_temp0[3] = CW_ALTERA_SYNTHESIZED[22] ? PC_out[3] : 1'bz;
-assign	gdfx_temp0[2] = CW_ALTERA_SYNTHESIZED[22] ? PC_out[2] : 1'bz;
-assign	gdfx_temp0[1] = CW_ALTERA_SYNTHESIZED[22] ? PC_out[1] : 1'bz;
-assign	gdfx_temp0[0] = CW_ALTERA_SYNTHESIZED[22] ? PC_out[0] : 1'bz;
+assign	gdfx_temp0[15] = CW_ALTERA_SYNTHESIZED[22] ? PC_ALTERA_SYNTHESIZED[15] : 1'bz;
+assign	gdfx_temp0[14] = CW_ALTERA_SYNTHESIZED[22] ? PC_ALTERA_SYNTHESIZED[14] : 1'bz;
+assign	gdfx_temp0[13] = CW_ALTERA_SYNTHESIZED[22] ? PC_ALTERA_SYNTHESIZED[13] : 1'bz;
+assign	gdfx_temp0[12] = CW_ALTERA_SYNTHESIZED[22] ? PC_ALTERA_SYNTHESIZED[12] : 1'bz;
+assign	gdfx_temp0[11] = CW_ALTERA_SYNTHESIZED[22] ? PC_ALTERA_SYNTHESIZED[11] : 1'bz;
+assign	gdfx_temp0[10] = CW_ALTERA_SYNTHESIZED[22] ? PC_ALTERA_SYNTHESIZED[10] : 1'bz;
+assign	gdfx_temp0[9] = CW_ALTERA_SYNTHESIZED[22] ? PC_ALTERA_SYNTHESIZED[9] : 1'bz;
+assign	gdfx_temp0[8] = CW_ALTERA_SYNTHESIZED[22] ? PC_ALTERA_SYNTHESIZED[8] : 1'bz;
+assign	gdfx_temp0[7] = CW_ALTERA_SYNTHESIZED[22] ? PC_ALTERA_SYNTHESIZED[7] : 1'bz;
+assign	gdfx_temp0[6] = CW_ALTERA_SYNTHESIZED[22] ? PC_ALTERA_SYNTHESIZED[6] : 1'bz;
+assign	gdfx_temp0[5] = CW_ALTERA_SYNTHESIZED[22] ? PC_ALTERA_SYNTHESIZED[5] : 1'bz;
+assign	gdfx_temp0[4] = CW_ALTERA_SYNTHESIZED[22] ? PC_ALTERA_SYNTHESIZED[4] : 1'bz;
+assign	gdfx_temp0[3] = CW_ALTERA_SYNTHESIZED[22] ? PC_ALTERA_SYNTHESIZED[3] : 1'bz;
+assign	gdfx_temp0[2] = CW_ALTERA_SYNTHESIZED[22] ? PC_ALTERA_SYNTHESIZED[2] : 1'bz;
+assign	gdfx_temp0[1] = CW_ALTERA_SYNTHESIZED[22] ? PC_ALTERA_SYNTHESIZED[1] : 1'bz;
+assign	gdfx_temp0[0] = CW_ALTERA_SYNTHESIZED[22] ? PC_ALTERA_SYNTHESIZED[0] : 1'bz;
 
 
 IR	b2v_inst14(
@@ -158,7 +158,7 @@ IR	b2v_inst14(
 
 
 rom_case	b2v_inst15(
-	.PC(PC_out[7:0]),
+	.PC(PC_ALTERA_SYNTHESIZED[7:0]),
 	.out(SYNTHESIZED_WIRE_12));
 
 
@@ -229,7 +229,7 @@ PC	b2v_inst5(
 	.AD(CW_ALTERA_SYNTHESIZED[19:4]),
 	.D(gdfx_temp0),
 	.PS(CW_ALTERA_SYNTHESIZED[45:44]),
-	.out(PC_out));
+	.out(PC_ALTERA_SYNTHESIZED));
 
 assign	B[15] = SYNTHESIZED_WIRE_9 ? SYNTHESIZED_WIRE_8[15] : 1'bz;
 assign	B[14] = SYNTHESIZED_WIRE_9 ? SYNTHESIZED_WIRE_8[14] : 1'bz;
@@ -286,6 +286,6 @@ assign	gdfx_temp0[0] = CW_ALTERA_SYNTHESIZED[25] ? SYNTHESIZED_WIRE_10[0] : 1'bz
 
 assign	CW = CW_ALTERA_SYNTHESIZED;
 assign	IRout = IR;
-assign	PC[7:0] = PC_out[7:0];
+assign	PC[7:0] = PC_ALTERA_SYNTHESIZED[7:0];
 
 endmodule
