@@ -68,6 +68,16 @@ module CPU_Decoder10(N, Z, IR, PS, IR_L, AA, BA, DA, WR, Clr, FS, Cin, MuxD, Mux
 			SS[1:0]<=2'b00;
 			NS<=1'b0;
 		end
+		else if(IR[15:9] == 1001110 && State == 0)begin
+				PS[1:0] <= 2'b00;
+				IR_L <= 0;
+				WR <=0;
+				Clr <= 0;
+				MuxD[4:0] <= 5'b00010;
+				SS[1:0] <= 2'b01;
+				NS<=1;
+				
+		end
 		else begin 												//General case
 			 PS[0] <= IR[13]|~IR[11]|~State&IR[11]&IR[10]&~IR[9]|IR[11]&~IR[10];
 			 PS[1] <= State&IR[11]|IR[12]&IR[11]&IR[9];
@@ -96,6 +106,7 @@ module CPU_Decoder10(N, Z, IR, PS, IR_L, AA, BA, DA, WR, Clr, FS, Cin, MuxD, Mux
 			 NS <= ~State&~IR[13]&IR[10]&~IR[9];
     
 			 casex(IR[15:9])
+				  7'b1000101: AA[2:0] <=IR[8:6];//STR
 				  7'b10101xx: AA[2:0] <=IR[10:8];//STI
 				  7'b10110xx: AA[2:0] <=IR[10:8];//BRZ
 				  7'b10111xx: AA[2:0] <=IR[10:8];//BRN
@@ -105,7 +116,7 @@ module CPU_Decoder10(N, Z, IR, PS, IR_L, AA, BA, DA, WR, Clr, FS, Cin, MuxD, Mux
 				  7'b1001101: AA[2:0] <=IR[5:3];//JMPR
 				  default: AA[2:0]<=3'b000;
 			 endcase
-				  
+			   
 			 casex(IR[15:9])
 				  7'b10100xx: DA[2:0] <=IR[10:8];  //LDI
 				  7'b1000010: DA[2:0] <=IR[8:6]; //LRLI EX1
@@ -113,7 +124,22 @@ module CPU_Decoder10(N, Z, IR, PS, IR_L, AA, BA, DA, WR, Clr, FS, Cin, MuxD, Mux
 				  7'b1001000: DA[2:0] <=IR[8:6]; //BCLR
 				  default: DA[2:0]<=IR[8:6];
 			 endcase
+			 //STR FS bits
+			 if(IR[15:9] == 7'b1000101) begin
+				FS[4:0] <= 5'b01100;
+			 end
+
 			 
+			 if(IR[15:9] == 7'b 1000010 && State == 0) begin
+				MuxD[4:0] <= 5'b00001;
+				WR <= 1;
+				DA[2:0] <= IR[8:6];
+				NS <=1;
+			 end
+			 if(IR[15:9] == 7'b 1000010 && State == 1) begin
+				WR <= 0;
+				NS <=0;
+			 end
 			 if (State==0) begin
 				  casex(IR[15:9])
 						7'b10100xx: K[15:0] <= {{8{1'b0}}, IR[7:0]}; //LDI
@@ -126,10 +152,9 @@ module CPU_Decoder10(N, Z, IR, PS, IR_L, AA, BA, DA, WR, Clr, FS, Cin, MuxD, Mux
 			 end
 			 
 			 else if(State == 1'b1) begin 
-				  casex(IR[15:0])
-						7'b1000010: K[15:0] <= IR[15:0];       //LRLI EX1
+				  casex(IR[15:9])
 						7'b1001110: K[15:0] <={{7{1'b0}}, IR[8:0]};  //Call EX 1
-						default: K[15:0]<=3'h0000;
+						default: K[15:0] <= IR[15:0];
 				  endcase
 			 end
 		end
