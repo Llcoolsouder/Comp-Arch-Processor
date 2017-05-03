@@ -71,7 +71,7 @@ applicable agreement for further details.
 	(input)
 	(rect 224 280 392 296)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "AD1" (rect 5 0 27 12)(font "Arial" ))
+	(text "AD1" (rect 5 0 26 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -87,7 +87,7 @@ applicable agreement for further details.
 	(input)
 	(rect 224 448 392 464)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "AD2" (rect 5 0 27 12)(font "Arial" ))
+	(text "AD2" (rect 5 0 26 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -103,7 +103,7 @@ applicable agreement for further details.
 	(input)
 	(rect 224 616 392 632)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "AD3" (rect 5 0 27 12)(font "Arial" ))
+	(text "AD3" (rect 5 0 26 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -119,7 +119,7 @@ applicable agreement for further details.
 	(input)
 	(rect 224 784 392 800)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "AD4" (rect 5 0 27 12)(font "Arial" ))
+	(text "AD4" (rect 5 0 26 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -135,7 +135,7 @@ applicable agreement for further details.
 	(input)
 	(rect 224 952 392 968)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "AD5" (rect 5 0 27 12)(font "Arial" ))
+	(text "AD5" (rect 5 0 26 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -151,7 +151,7 @@ applicable agreement for further details.
 	(input)
 	(rect 224 1120 392 1136)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "AD6" (rect 5 0 27 12)(font "Arial" ))
+	(text "AD6" (rect 5 0 26 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -167,7 +167,7 @@ applicable agreement for further details.
 	(input)
 	(rect 224 1288 392 1304)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "AD7" (rect 5 0 27 12)(font "Arial" ))
+	(text "AD7" (rect 5 0 26 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -183,7 +183,7 @@ applicable agreement for further details.
 	(input)
 	(rect 224 80 392 96)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "WRITE" (rect 5 0 41 12)(font "Arial" ))
+	(text "WRITE" (rect 5 0 40 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -199,7 +199,7 @@ applicable agreement for further details.
 	(input)
 	(rect 224 112 392 128)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "AD0" (rect 5 0 27 12)(font "Arial" ))
+	(text "AD0" (rect 5 0 26 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -343,7 +343,7 @@ applicable agreement for further details.
 	(bidir)
 	(rect 688 64 864 80)
 	(text "BIDIR" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "I/O_7" (rect 90 0 117 12)(font "Arial" ))
+	(text "IO_7" (rect 90 0 113 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 56 4)(pt 78 4))
@@ -360,7 +360,7 @@ applicable agreement for further details.
 	(bidir)
 	(rect 688 232 864 248)
 	(text "BIDIR" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "I/O_6" (rect 90 0 117 12)(font "Arial" ))
+	(text "IO_6" (rect 90 0 113 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 56 4)(pt 78 4))
@@ -377,7 +377,7 @@ applicable agreement for further details.
 	(bidir)
 	(rect 688 400 864 416)
 	(text "BIDIR" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "I/O_5" (rect 90 0 117 12)(font "Arial" ))
+	(text "IO_5" (rect 90 0 113 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 56 4)(pt 78 4))
@@ -394,7 +394,7 @@ applicable agreement for further details.
 	(bidir)
 	(rect 696 568 872 584)
 	(text "BIDIR" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "I/O_4" (rect 90 0 117 12)(font "Arial" ))
+	(text "IO_4" (rect 90 0 113 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 56 4)(pt 78 4))
@@ -411,7 +411,7 @@ applicable agreement for further details.
 	(bidir)
 	(rect 696 736 872 752)
 	(text "BIDIR" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "I/O_3" (rect 90 0 117 12)(font "Arial" ))
+	(text "IO_3" (rect 90 0 113 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 56 4)(pt 78 4))
@@ -428,7 +428,7 @@ applicable agreement for further details.
 	(bidir)
 	(rect 696 904 872 920)
 	(text "BIDIR" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "I/O_2" (rect 90 0 117 12)(font "Arial" ))
+	(text "IO_2" (rect 90 0 113 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 56 4)(pt 78 4))
@@ -445,7 +445,7 @@ applicable agreement for further details.
 	(bidir)
 	(rect 696 1072 872 1088)
 	(text "BIDIR" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "I/O_1" (rect 90 0 117 12)(font "Arial" ))
+	(text "IO_1" (rect 90 0 113 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 56 4)(pt 78 4))
@@ -462,7 +462,7 @@ applicable agreement for further details.
 	(bidir)
 	(rect 696 1240 872 1256)
 	(text "BIDIR" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "I/O_0" (rect 90 0 117 12)(font "Arial" ))
+	(text "IO_0" (rect 90 0 113 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 56 4)(pt 78 4))

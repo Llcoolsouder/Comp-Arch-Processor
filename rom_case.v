@@ -27,7 +27,7 @@ module rom_case(out, PC); //10
         8'b00000110 : out[15:0]<=16'b1111100000000111; //REG 7 GETS 7
         
         //STI
-        8'b00000111 : out[15:0]<=16'b1010111000000001;//reg6 lit 1 STORES REGISTER 6 AT MEMORY ADDR 1
+        8'b00000111 : out[15:0]<=16'b1010110000001000;//reg4 lit 1 STORES REGISTER 4 AT MEMORY ADDR 8
         
         //LDI
         8'b00001000 : out[15:0]<=16'b1010010100000001;//reg 5 lit 1 LOADS MEMORY 1 INTO R5
