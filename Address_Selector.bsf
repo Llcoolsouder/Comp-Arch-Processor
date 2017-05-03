@@ -33,8 +33,8 @@ applicable agreement for further details.
 	(port
 		(pt 184 32)
 		(output)
-		(text "Q[9..0]" (rect 0 0 27 12)(font "Arial" ))
-		(text "Q[9..0]" (rect 136 27 163 39)(font "Arial" ))
+		(text "Q[16..0]" (rect 0 0 30 12)(font "Arial" ))
+		(text "Q[16..0]" (rect 133 27 163 39)(font "Arial" ))
 		(line (pt 184 32)(pt 168 32)(line_width 3))
 	)
 	(port
