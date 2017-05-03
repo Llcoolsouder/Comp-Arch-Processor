@@ -43,7 +43,7 @@ module key2ascii(input wire [7:0] key_code, output reg [7:0] ascii_code);
 			8'h5a: ascii_code = 8'h0d; //enter
 			8'h66: ascii_code = 8'h08; //backspace
 			
-			default: ascii_code = 8'h2a; //*
+			default: ascii_code = 8'h00; //*
 		endcase
 	end
 endmodule
