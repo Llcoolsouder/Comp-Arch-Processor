@@ -1,4 +1,4 @@
-module address_selector(
+module Address_Selector(
 	input [15:0]ADD,
 	output  reg [16:0]Q,
 	output reg RAM_S

@@ -13,19 +13,24 @@
 // applicable agreement for further details.
 
 // PROGRAM		"Quartus II 64-Bit"
-// VERSION		"Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
-// CREATED		"Wed May 03 13:15:49 2017"
+// VERSION		"Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
+// CREATED		"Sat May 06 14:04:45 2017"
 
 module Core_v(
 	CLOCK_50,
+	PS2_KBCLK,
+	PS2_KBDAT,
 	Cout,
 	Z,
 	N,
+	RAM_S,
+	address,
 	CW,
 	GPIO0_D,
 	IRout,
 	LEDG,
 	PC,
+	Q,
 	R0,
 	R1,
 	R2,
@@ -39,14 +44,19 @@ module Core_v(
 
 
 input wire	CLOCK_50;
+input wire	PS2_KBCLK;
+input wire	PS2_KBDAT;
 output wire	Cout;
 output wire	Z;
 output wire	N;
+output wire	RAM_S;
+output wire	[15:0] address;
 output wire	[45:0] CW;
 inout wire	[15:0] GPIO0_D;
 output wire	[15:0] IRout;
 output wire	[7:0] LEDG;
 output wire	[7:0] PC;
+output wire	[16:0] Q;
 output wire	[15:0] R0;
 output wire	[15:0] R1;
 output wire	[15:0] R2;
@@ -98,6 +108,7 @@ wire	[15:0] SYNTHESIZED_WIRE_49;
 
 assign	Z = SYNTHESIZED_WIRE_6;
 assign	N = SYNTHESIZED_WIRE_5;
+assign	RAM_S = SYNTHESIZED_WIRE_53;
 assign	ROM = SYNTHESIZED_WIRE_51;
 
 
@@ -196,7 +207,7 @@ ControlUnit_v	b2v_inst16(
 	.CW(CW_ALTERA_SYNTHESIZED));
 
 
-GPIO_A	b2v_inst17(
+GPIO_A_v	b2v_inst17(
 	.CLK(CLOCK_50),
 	.DIR(D[1]),
 	.WRITE(D[0]),
@@ -235,7 +246,7 @@ GPIO_A	b2v_inst17(
 	.READ_7(SYNTHESIZED_WIRE_11));
 
 
-GPIO_A	b2v_inst18(
+GPIO_A_v	b2v_inst18(
 	.CLK(CLOCK_50),
 	.DIR(D[1]),
 	.WRITE(D[0]),
@@ -272,14 +283,6 @@ GPIO_A	b2v_inst18(
 	.READ_5(SYNTHESIZED_WIRE_41),
 	.READ_6(SYNTHESIZED_WIRE_10),
 	.READ_7(SYNTHESIZED_WIRE_8));
-
-
-PS2	b2v_inst19(
-	.CLOCK_50(CLOCK_50),
-	
-	
-	.LED({LEDG[7],LEDG[6],LEDG[5],LEDG[4],LEDG[3],LEDG[2],LEDG[1],LEDG[0]}),
-	.ps2out(SYNTHESIZED_WIRE_9));
 
 
 ALU_16bit_v	b2v_inst2(
@@ -667,6 +670,14 @@ assign	SYNTHESIZED_WIRE_54[1] = AD[16] ? SYNTHESIZED_WIRE_46[1] : 1'bz;
 assign	SYNTHESIZED_WIRE_54[0] = AD[16] ? SYNTHESIZED_WIRE_46[0] : 1'bz;
 
 
+PS2_v	b2v_inst42(
+	.CLOCK_50(CLOCK_50),
+	.PS2_KBdata(PS2_KBDAT),
+	.PS2_KBclock(PS2_KBCLK),
+	.LED({LEDG[7],LEDG[6],LEDG[5],LEDG[4],LEDG[3],LEDG[2],LEDG[1],LEDG[0]}),
+	.ps2out(SYNTHESIZED_WIRE_9));
+
+
 PC	b2v_inst5(
 	.CLK(CLOCK_50),
 	.AD(CW_ALTERA_SYNTHESIZED[19:4]),
@@ -727,8 +738,10 @@ assign	D[2] = CW_ALTERA_SYNTHESIZED[25] ? SYNTHESIZED_WIRE_49[2] : 1'bz;
 assign	D[1] = CW_ALTERA_SYNTHESIZED[25] ? SYNTHESIZED_WIRE_49[1] : 1'bz;
 assign	D[0] = CW_ALTERA_SYNTHESIZED[25] ? SYNTHESIZED_WIRE_49[0] : 1'bz;
 
+assign	address = B;
 assign	CW = CW_ALTERA_SYNTHESIZED;
 assign	IRout = IR;
 assign	PC[7:0] = PC_ALTERA_SYNTHESIZED[7:0];
+assign	Q = AD;
 
 endmodule

@@ -119,7 +119,7 @@ applicable agreement for further details.
 	(bidir)
 	(rect 1008 200 1184 216)
 	(text "BIDIR" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "I/O" (rect 90 0 105 12)(font "Arial" ))
+	(text "IO" (rect 90 0 101 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 56 4)(pt 78 4))

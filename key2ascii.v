@@ -10,7 +10,7 @@ module key2ascii(input wire [7:0] key_code, output reg [7:0] ascii_code);
 			8'h36: ascii_code = 8'h36; //6
 			8'h3d: ascii_code = 8'h37; //7
 			8'h3e: ascii_code = 8'h38; //8
-			8'h1c: ascii_code = 8'h39; //9
+//			8'h1c: ascii_code = 8'h39; //9
 			
 			8'h1c: ascii_code = 8'h41; //A
 			8'h32: ascii_code = 8'h42; //B
@@ -46,4 +46,4 @@ module key2ascii(input wire [7:0] key_code, output reg [7:0] ascii_code);
 			default: ascii_code = 8'h00; //*
 		endcase
 	end
-endmodule
+endmodule 

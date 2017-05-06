@@ -68,8 +68,8 @@ applicable agreement for further details.
 	(port
 		(pt 160 48)
 		(bidir)
-		(text "I/O" (rect 0 0 15 14)(font "Arial" (font_size 8)))
-		(text "I/O" (rect 124 43 139 57)(font "Arial" (font_size 8)))
+		(text "IO" (rect 0 0 11 14)(font "Arial" (font_size 8)))
+		(text "IO" (rect 128 43 139 57)(font "Arial" (font_size 8)))
 		(line (pt 160 48)(pt 144 48))
 	)
 	(drawing

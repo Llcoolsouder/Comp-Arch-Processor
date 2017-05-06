@@ -476,7 +476,7 @@ applicable agreement for further details.
 	(text "VCC" (rect 4 7 24 17)(font "Arial" (font_size 6)))
 )
 (symbol
-	(rect 480 24 640 152)
+	(rect 488 24 648 152)
 	(text "GPIO_Single_Cell" (rect 5 0 101 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 112 25 124)(font "Arial" ))
 	(port
@@ -524,8 +524,8 @@ applicable agreement for further details.
 	(port
 		(pt 160 48)
 		(bidir)
-		(text "I/O" (rect 0 0 15 14)(font "Arial" (font_size 8)))
-		(text "I/O" (rect 124 43 139 57)(font "Arial" (font_size 8)))
+		(text "IO" (rect 0 0 11 14)(font "Arial" (font_size 8)))
+		(text "IO" (rect 128 43 139 57)(font "Arial" (font_size 8)))
 		(line (pt 160 48)(pt 144 48))
 	)
 	(drawing
@@ -581,8 +581,8 @@ applicable agreement for further details.
 	(port
 		(pt 160 48)
 		(bidir)
-		(text "I/O" (rect 0 0 15 14)(font "Arial" (font_size 8)))
-		(text "I/O" (rect 124 43 139 57)(font "Arial" (font_size 8)))
+		(text "IO" (rect 0 0 11 14)(font "Arial" (font_size 8)))
+		(text "IO" (rect 128 43 139 57)(font "Arial" (font_size 8)))
 		(line (pt 160 48)(pt 144 48))
 	)
 	(drawing
@@ -638,8 +638,8 @@ applicable agreement for further details.
 	(port
 		(pt 160 48)
 		(bidir)
-		(text "I/O" (rect 0 0 15 14)(font "Arial" (font_size 8)))
-		(text "I/O" (rect 124 43 139 57)(font "Arial" (font_size 8)))
+		(text "IO" (rect 0 0 11 14)(font "Arial" (font_size 8)))
+		(text "IO" (rect 128 43 139 57)(font "Arial" (font_size 8)))
 		(line (pt 160 48)(pt 144 48))
 	)
 	(drawing
@@ -695,8 +695,8 @@ applicable agreement for further details.
 	(port
 		(pt 160 48)
 		(bidir)
-		(text "I/O" (rect 0 0 15 14)(font "Arial" (font_size 8)))
-		(text "I/O" (rect 124 43 139 57)(font "Arial" (font_size 8)))
+		(text "IO" (rect 0 0 11 14)(font "Arial" (font_size 8)))
+		(text "IO" (rect 128 43 139 57)(font "Arial" (font_size 8)))
 		(line (pt 160 48)(pt 144 48))
 	)
 	(drawing
@@ -752,8 +752,8 @@ applicable agreement for further details.
 	(port
 		(pt 160 48)
 		(bidir)
-		(text "I/O" (rect 0 0 15 14)(font "Arial" (font_size 8)))
-		(text "I/O" (rect 124 43 139 57)(font "Arial" (font_size 8)))
+		(text "IO" (rect 0 0 11 14)(font "Arial" (font_size 8)))
+		(text "IO" (rect 128 43 139 57)(font "Arial" (font_size 8)))
 		(line (pt 160 48)(pt 144 48))
 	)
 	(drawing
@@ -809,8 +809,8 @@ applicable agreement for further details.
 	(port
 		(pt 160 48)
 		(bidir)
-		(text "I/O" (rect 0 0 15 14)(font "Arial" (font_size 8)))
-		(text "I/O" (rect 124 43 139 57)(font "Arial" (font_size 8)))
+		(text "IO" (rect 0 0 11 14)(font "Arial" (font_size 8)))
+		(text "IO" (rect 128 43 139 57)(font "Arial" (font_size 8)))
 		(line (pt 160 48)(pt 144 48))
 	)
 	(drawing
@@ -866,8 +866,8 @@ applicable agreement for further details.
 	(port
 		(pt 160 48)
 		(bidir)
-		(text "I/O" (rect 0 0 15 14)(font "Arial" (font_size 8)))
-		(text "I/O" (rect 124 43 139 57)(font "Arial" (font_size 8)))
+		(text "IO" (rect 0 0 11 14)(font "Arial" (font_size 8)))
+		(text "IO" (rect 128 43 139 57)(font "Arial" (font_size 8)))
 		(line (pt 160 48)(pt 144 48))
 	)
 	(drawing
@@ -923,8 +923,8 @@ applicable agreement for further details.
 	(port
 		(pt 160 48)
 		(bidir)
-		(text "I/O" (rect 0 0 15 14)(font "Arial" (font_size 8)))
-		(text "I/O" (rect 124 43 139 57)(font "Arial" (font_size 8)))
+		(text "IO" (rect 0 0 11 14)(font "Arial" (font_size 8)))
+		(text "IO" (rect 128 43 139 57)(font "Arial" (font_size 8)))
 		(line (pt 160 48)(pt 144 48))
 	)
 	(drawing
@@ -938,22 +938,6 @@ applicable agreement for further details.
 (connector
 	(pt 448 1248)
 	(pt 480 1248)
-)
-(connector
-	(pt 392 56)
-	(pt 456 56)
-)
-(connector
-	(pt 456 56)
-	(pt 480 56)
-)
-(connector
-	(pt 392 72)
-	(pt 448 72)
-)
-(connector
-	(pt 448 72)
-	(pt 480 72)
 )
 (connector
 	(pt 480 1264)
@@ -1048,14 +1032,6 @@ applicable agreement for further details.
 	(pt 440 1096)
 )
 (connector
-	(pt 392 88)
-	(pt 440 88)
-)
-(connector
-	(pt 440 88)
-	(pt 480 88)
-)
-(connector
 	(pt 440 88)
 	(pt 440 256)
 )
@@ -1092,24 +1068,12 @@ applicable agreement for further details.
 	(pt 432 608)
 )
 (connector
-	(pt 480 104)
-	(pt 432 104)
-)
-(connector
-	(pt 432 104)
-	(pt 392 104)
-)
-(connector
 	(pt 432 104)
 	(pt 432 272)
 )
 (connector
 	(pt 432 272)
 	(pt 432 440)
-)
-(connector
-	(pt 480 120)
-	(pt 392 120)
 )
 (connector
 	(pt 480 288)
@@ -1130,10 +1094,6 @@ applicable agreement for further details.
 (connector
 	(pt 392 1296)
 	(pt 480 1296)
-)
-(connector
-	(pt 688 72)
-	(pt 640 72)
 )
 (connector
 	(pt 640 240)
@@ -1252,11 +1212,6 @@ applicable agreement for further details.
 	(pt 696 744)
 )
 (connector
-	(pt 640 56)
-	(pt 688 56)
-	(bus)
-)
-(connector
 	(pt 640 224)
 	(pt 688 224)
 	(bus)
@@ -1290,6 +1245,51 @@ applicable agreement for further details.
 	(pt 640 1232)
 	(pt 696 1232)
 	(bus)
+)
+(connector
+	(pt 688 56)
+	(pt 648 56)
+	(bus)
+)
+(connector
+	(pt 688 72)
+	(pt 648 72)
+)
+(connector
+	(pt 392 56)
+	(pt 456 56)
+)
+(connector
+	(pt 392 72)
+	(pt 448 72)
+)
+(connector
+	(pt 392 88)
+	(pt 440 88)
+)
+(connector
+	(pt 392 104)
+	(pt 432 104)
+)
+(connector
+	(pt 456 56)
+	(pt 488 56)
+)
+(connector
+	(pt 448 72)
+	(pt 488 72)
+)
+(connector
+	(pt 440 88)
+	(pt 488 88)
+)
+(connector
+	(pt 432 104)
+	(pt 488 104)
+)
+(connector
+	(pt 392 120)
+	(pt 488 120)
 )
 (junction (pt 456 56))
 (junction (pt 448 72))
