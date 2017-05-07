@@ -1,0 +1,19 @@
+module rom_case(out, PC); //10
+    output reg[15:0] out;
+    input [7:0] PC; //address- 8 deep memory
+    
+    always @(PC) begin
+        case(PC)
+		//LDI
+        8'b00000000 : out[15:0]<=16'b1010001000001000; //LOADS MEMORY 8 INTO R2
+		  
+		//STI
+		8'b00000001:  out[15:0]<=16'b1010101000000000; //Write R2 to AD 0
+        
+        //JUMPR
+        8'b00000010 : out[15:0]<=16'b1001101011111101; //JUMP TO ADDRESS to 0
+            
+        default: out = 16'b0000000000000000; //NOP
+        endcase
+    end
+endmodule // rom_case

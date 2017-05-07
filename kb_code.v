@@ -26,7 +26,7 @@ ps2_rx ps2_rx_unit
 	.ps2d(ps2d), .ps2c(ps2c),
 	.rx_done_tick(scan_done_tick), .dout(scan_out));
 
-	// i n s t a n t i a t e f i f o b u f f e r
+	// instantiate fifo buffer
 fifo #(.B(8), .W(W_SIZE)) fifo_key_unit
 (.clk(clk), .reset(reset), .rd(rd-key-code),
 .wr(got_code_tick) , .w_data(scan_out),

@@ -1,0 +1,31 @@
+module rom_case(out, PC); //10
+    output reg[15:0] out;
+    input [7:0] PC; //address- 8 deep memory
+    
+    always @(PC) begin
+        case(PC)
+		//LDI
+        8'b00000000 : out[15:0]<=16'b1010000000001000;//LOADS MEMORY 8 INTO R0
+    
+        //NEG
+        8'b00000001 : out[15:0]<=16'b0110001001000000;//NEG R0 PUT IN R1
+        
+        //BRN
+        8'b00000010 : out[15:0]<=16'b1011100100000010;//BRANCH 2 IF R1 IS NEG
+        
+        //JUMPR
+        8'b00000011 : out[15:0]<=16'b1001101011111100; //JUMP TO ADDRESS 0
+        
+        //LRI
+        8'b00000100 : out[15:0]<=16'b1110100000000011; //REG 5 GETS 3
+        
+        //STI
+        8'b00000101 : out[15:0]<=16'b1010110100000001;//STORES REGISTER 5 AT MEMORY ADDR 1
+        
+        //JUMPR
+        8'b00000110 : out[15:0]<=16'b1001101011111001; //JUMP TO ADDRESS IN R3
+            
+        default: out = 16'b0000000000000000; //NOP
+        endcase
+    end
+endmodule // rom_case
