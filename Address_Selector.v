@@ -1,17 +1,16 @@
-module Address_Selector(
-	input [15:0]ADD,
-	output  reg [16:0]Q,
-	output reg RAM_S
-	);
+module Address_Selector(ADD, Q, RAM_S);
+	input [15:0]ADD;
+	output  reg [16:0]Q;
+	output reg RAM_S;
 	
-	always @* begin
+	always @(ADD) begin
 		if (ADD[15:0]<17) begin
 			RAM_S<=1'b0;
 		end 
 		else begin
 			RAM_S<=1'b1;
 		end
-		case (ADD)
+		case (ADD[15:0])
 			16'h0000: 	Q<=17'b00000000000000001;
 			16'h0001: 	Q<=17'b00000000000000010;
 			16'h0002: 	Q<=17'b00000000000000100;

@@ -478,9 +478,41 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1528 56 1704 72)
+	(rect 1528 64 1704 80)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "RAM_S" (rect 90 0 126 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 2112 360 2288 376)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "READ[15..0]" (rect 90 0 152 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 1288 424 1464 440)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "D[15..0]" (rect 90 0 130 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -3431,11 +3463,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1288 -224)
-	(pt 1288 -48)
-	(bus)
-)
-(connector
 	(text "D[15..0]" (rect 1272 632 1312 644)(font "Arial" )(invisible))
 	(pt 1272 648)
 	(pt 1288 648)
@@ -3451,11 +3478,6 @@ applicable agreement for further details.
 	(text "D[15..0]" (rect 1272 584 1312 596)(font "Arial" )(invisible))
 	(pt 1272 600)
 	(pt 1288 600)
-	(bus)
-)
-(connector
-	(pt 1288 472)
-	(pt 1288 512)
 	(bus)
 )
 (connector
@@ -3532,18 +3554,8 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 2112 496)
-	(pt 2112 432)
-	(bus)
-)
-(connector
 	(pt 2080 560)
 	(pt 2112 560)
-	(bus)
-)
-(connector
-	(pt 2112 560)
-	(pt 2112 496)
 	(bus)
 )
 (connector
@@ -3562,18 +3574,8 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 2112 688)
-	(pt 2112 624)
-	(bus)
-)
-(connector
 	(pt 2080 752)
 	(pt 2112 752)
-	(bus)
-)
-(connector
-	(pt 2112 752)
-	(pt 2112 688)
 	(bus)
 )
 (connector
@@ -3584,11 +3586,6 @@ applicable agreement for further details.
 (connector
 	(pt 2112 880)
 	(pt 2112 816)
-	(bus)
-)
-(connector
-	(pt 2112 816)
-	(pt 2112 752)
 	(bus)
 )
 (connector
@@ -3605,22 +3602,8 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 2056 544)
-	(pt 2056 528)
-)
-(connector
-	(pt 2136 464)
-	(pt 2136 528)
-	(bus)
-)
-(connector
 	(pt 2056 608)
 	(pt 2056 592)
-)
-(connector
-	(pt 2136 528)
-	(pt 2136 592)
-	(bus)
 )
 (connector
 	(pt 2056 672)
@@ -3684,11 +3667,6 @@ applicable agreement for further details.
 	(pt 2136 592)
 )
 (connector
-	(text "AD[2]" (rect 2066 512 2094 524)(font "Arial" )(invisible))
-	(pt 2056 528)
-	(pt 2136 528)
-)
-(connector
 	(text "AD[1]" (rect 2066 448 2094 460)(font "Arial" )(invisible))
 	(pt 2056 464)
 	(pt 2136 464)
@@ -3727,18 +3705,8 @@ applicable agreement for further details.
 	(pt 1360 -88)
 )
 (connector
-	(pt 1288 -48)
-	(pt 1288 472)
-	(bus)
-)
-(connector
 	(pt 2112 248)
 	(pt 2080 248)
-	(bus)
-)
-(connector
-	(pt 2112 248)
-	(pt 2112 432)
 	(bus)
 )
 (connector
@@ -3756,36 +3724,6 @@ applicable agreement for further details.
 	(pt 2056 224)
 )
 (connector
-	(pt 1512 -136)
-	(pt 1512 -120)
-	(bus)
-)
-(connector
-	(pt 1512 -152)
-	(pt 1512 -136)
-	(bus)
-)
-(connector
-	(pt 1512 -168)
-	(pt 1512 -152)
-	(bus)
-)
-(connector
-	(pt 1512 -184)
-	(pt 1512 -168)
-	(bus)
-)
-(connector
-	(pt 1512 -200)
-	(pt 1512 -184)
-	(bus)
-)
-(connector
-	(pt 1512 -216)
-	(pt 1512 -200)
-	(bus)
-)
-(connector
 	(pt 264 120)
 	(pt 1536 120)
 )
@@ -3794,88 +3732,8 @@ applicable agreement for further details.
 	(pt 1568 248)
 )
 (connector
-	(pt 1568 -248)
-	(pt 1560 -248)
-)
-(connector
-	(pt 1568 -264)
-	(pt 1552 -264)
-)
-(connector
-	(pt 1568 -280)
-	(pt 1544 -280)
-)
-(connector
-	(text "AD[9]" (rect 1522 -136 1550 -124)(font "Arial" ))
-	(pt 1568 -120)
-	(pt 1512 -120)
-)
-(connector
-	(text "AD[10]" (rect 1522 -152 1556 -140)(font "Arial" ))
-	(pt 1568 -136)
-	(pt 1512 -136)
-)
-(connector
-	(text "AD[11]" (rect 1522 -168 1556 -156)(font "Arial" ))
-	(pt 1568 -152)
-	(pt 1512 -152)
-)
-(connector
-	(pt 1568 -296)
-	(pt 1536 -296)
-)
-(connector
-	(pt 1536 -296)
-	(pt 1536 120)
-)
-(connector
-	(text "AD[12]" (rect 1522 -184 1556 -172)(font "Arial" ))
-	(pt 1568 -168)
-	(pt 1512 -168)
-)
-(connector
-	(text "AD[13]" (rect 1522 -200 1556 -188)(font "Arial" ))
-	(pt 1568 -184)
-	(pt 1512 -184)
-)
-(connector
-	(text "AD[14]" (rect 1522 -216 1556 -204)(font "Arial" ))
-	(pt 1568 -200)
-	(pt 1512 -200)
-)
-(connector
-	(text "AD[15]" (rect 1522 -232 1556 -220)(font "Arial" ))
-	(pt 1568 -216)
-	(pt 1512 -216)
-)
-(connector
-	(text "AD[16]" (rect 1522 -248 1556 -236)(font "Arial" ))
-	(pt 1568 -232)
-	(pt 1512 -232)
-)
-(connector
-	(pt 1744 -296)
-	(pt 1960 -296)
-	(bus)
-)
-(connector
-	(pt 1960 -296)
-	(pt 1960 -360)
-	(bus)
-)
-(connector
 	(pt 1960 -360)
 	(pt 2008 -360)
-	(bus)
-)
-(connector
-	(pt 1744 -264)
-	(pt 1976 -264)
-	(bus)
-)
-(connector
-	(pt 1976 -264)
-	(pt 1976 -296)
 	(bus)
 )
 (connector
@@ -3884,33 +3742,8 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1744 -232)
-	(pt 2008 -232)
-	(bus)
-)
-(connector
-	(pt 1744 -200)
-	(pt 1976 -200)
-	(bus)
-)
-(connector
-	(pt 1976 -200)
-	(pt 1976 -168)
-	(bus)
-)
-(connector
 	(pt 1976 -168)
 	(pt 2008 -168)
-	(bus)
-)
-(connector
-	(pt 1744 -168)
-	(pt 1960 -168)
-	(bus)
-)
-(connector
-	(pt 1960 -168)
-	(pt 1960 -104)
 	(bus)
 )
 (connector
@@ -3919,43 +3752,13 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1744 -136)
-	(pt 1944 -136)
-	(bus)
-)
-(connector
-	(pt 1944 -136)
-	(pt 1944 -40)
-	(bus)
-)
-(connector
 	(pt 1944 -40)
 	(pt 2008 -40)
 	(bus)
 )
 (connector
-	(pt 1744 -104)
-	(pt 1928 -104)
-	(bus)
-)
-(connector
-	(pt 1928 -104)
-	(pt 1928 24)
-	(bus)
-)
-(connector
 	(pt 1928 24)
 	(pt 2008 24)
-	(bus)
-)
-(connector
-	(pt 1744 -72)
-	(pt 1912 -72)
-	(bus)
-)
-(connector
-	(pt 1912 -72)
-	(pt 1912 88)
 	(bus)
 )
 (connector
@@ -3966,16 +3769,6 @@ applicable agreement for further details.
 (connector
 	(pt 2136 224)
 	(pt 2136 400)
-	(bus)
-)
-(connector
-	(pt 1512 -400)
-	(pt 1512 -232)
-	(bus)
-)
-(connector
-	(pt 1512 -232)
-	(pt 1512 -216)
 	(bus)
 )
 (connector
@@ -4137,11 +3930,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 2112 88)
-	(pt 2112 248)
-	(bus)
-)
-(connector
 	(text "AD[16]" (rect 2042 40 2076 52)(font "Arial" )(invisible))
 	(pt 2032 56)
 	(pt 2136 56)
@@ -4180,44 +3968,6 @@ applicable agreement for further details.
 	(text "AD[9]" (rect 2016 -402 2028 -374)(font "Arial" )(vertical)(invisible))
 	(pt 2032 -376)
 	(pt 2032 -400)
-)
-(connector
-	(pt 1744 -88)
-	(pt 1752 -88)
-)
-(connector
-	(pt 1744 -120)
-	(pt 1752 -120)
-)
-(connector
-	(pt 1744 -152)
-	(pt 1752 -152)
-)
-(connector
-	(pt 1744 -184)
-	(pt 1752 -184)
-)
-(connector
-	(pt 1744 -216)
-	(pt 1752 -216)
-)
-(connector
-	(pt 1744 -56)
-	(pt 1752 -56)
-)
-(connector
-	(text "AD[16..0]" (rect 1504 40 1551 52)(font "Arial" )(invisible))
-	(pt 1504 56)
-	(pt 1512 56)
-	(bus)
-)
-(connector
-	(pt 1744 -248)
-	(pt 1752 -248)
-)
-(connector
-	(pt 1744 -280)
-	(pt 1752 -280)
 )
 (connector
 	(text "D[1]" (rect 1386 504 1407 516)(font "Arial" ))
@@ -4327,11 +4077,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1320 56)
-	(pt 1312 56)
-	(bus)
-)
-(connector
 	(text "B[15..0]" (rect 674 200 712 212)(font "Arial" )(invisible))
 	(pt 664 216)
 	(pt 720 216)
@@ -4341,54 +4086,6 @@ applicable agreement for further details.
 	(pt 720 216)
 	(pt 1312 216)
 	(bus)
-)
-(connector
-	(pt 1312 56)
-	(pt 1312 160)
-	(bus)
-)
-(connector
-	(pt 1312 160)
-	(pt 1312 216)
-	(bus)
-)
-(connector
-	(pt 1512 -120)
-	(pt 1512 56)
-	(bus)
-)
-(connector
-	(pt 1512 56)
-	(pt 1512 160)
-	(bus)
-)
-(connector
-	(pt 1504 72)
-	(pt 1528 72)
-)
-(connector
-	(pt 1232 -104)
-	(pt 1360 -104)
-)
-(connector
-	(pt 1360 -104)
-	(pt 1528 -104)
-)
-(connector
-	(pt 1528 -104)
-	(pt 1528 64)
-)
-(connector
-	(pt 1528 64)
-	(pt 1528 72)
-)
-(connector
-	(pt 1752 584)
-	(pt 1752 576)
-)
-(connector
-	(pt 1752 576)
-	(pt 1744 576)
 )
 (connector
 	(pt 1752 648)
@@ -4578,6 +4275,311 @@ applicable agreement for further details.
 	(pt 1568 560)
 )
 (connector
+	(pt 1512 576)
+	(pt 1512 592)
+	(bus)
+)
+(connector
+	(pt 1512 592)
+	(pt 1512 608)
+	(bus)
+)
+(connector
+	(pt 1512 608)
+	(pt 1512 624)
+	(bus)
+)
+(connector
+	(pt 1512 624)
+	(pt 1512 640)
+	(bus)
+)
+(connector
+	(pt 1512 560)
+	(pt 1512 576)
+	(bus)
+)
+(connector
+	(pt 1512 640)
+	(pt 1512 656)
+	(bus)
+)
+(connector
+	(pt 1512 656)
+	(pt 1512 672)
+	(bus)
+)
+(connector
+	(pt 1536 248)
+	(pt 1536 496)
+)
+(connector
+	(pt 1752 576)
+	(pt 1752 584)
+)
+(connector
+	(pt 1744 576)
+	(pt 1752 576)
+)
+(connector
+	(text "AD[16..0]" (rect 1504 40 1551 52)(font "Arial" )(invisible))
+	(pt 1512 56)
+	(pt 1504 56)
+	(bus)
+)
+(connector
+	(pt 1312 56)
+	(pt 1320 56)
+	(bus)
+)
+(connector
+	(pt 1512 56)
+	(pt 1512 160)
+	(bus)
+)
+(connector
+	(pt 1312 56)
+	(pt 1312 160)
+	(bus)
+)
+(connector
+	(pt 1312 160)
+	(pt 1312 216)
+	(bus)
+)
+(connector
+	(pt 1504 72)
+	(pt 1528 72)
+)
+(connector
+	(pt 1232 -104)
+	(pt 1360 -104)
+)
+(connector
+	(pt 1360 -104)
+	(pt 1528 -104)
+)
+(connector
+	(pt 1528 -104)
+	(pt 1528 72)
+)
+(connector
+	(pt 1560 -248)
+	(pt 1568 -248)
+)
+(connector
+	(pt 1552 -264)
+	(pt 1568 -264)
+)
+(connector
+	(pt 1544 -280)
+	(pt 1568 -280)
+)
+(connector
+	(pt 1752 -280)
+	(pt 1744 -280)
+)
+(connector
+	(pt 1752 -248)
+	(pt 1744 -248)
+)
+(connector
+	(text "AD[16]" (rect 1522 -248 1556 -236)(font "Arial" ))
+	(pt 1512 -232)
+	(pt 1568 -232)
+)
+(connector
+	(text "AD[15]" (rect 1522 -232 1556 -220)(font "Arial" ))
+	(pt 1512 -216)
+	(pt 1568 -216)
+)
+(connector
+	(pt 1752 -216)
+	(pt 1744 -216)
+)
+(connector
+	(text "AD[14]" (rect 1522 -216 1556 -204)(font "Arial" ))
+	(pt 1512 -200)
+	(pt 1568 -200)
+)
+(connector
+	(text "AD[13]" (rect 1522 -200 1556 -188)(font "Arial" ))
+	(pt 1512 -184)
+	(pt 1568 -184)
+)
+(connector
+	(text "AD[12]" (rect 1522 -184 1556 -172)(font "Arial" ))
+	(pt 1512 -168)
+	(pt 1568 -168)
+)
+(connector
+	(text "AD[11]" (rect 1522 -168 1556 -156)(font "Arial" ))
+	(pt 1512 -152)
+	(pt 1568 -152)
+)
+(connector
+	(text "AD[10]" (rect 1522 -152 1556 -140)(font "Arial" ))
+	(pt 1512 -136)
+	(pt 1568 -136)
+)
+(connector
+	(text "AD[9]" (rect 1522 -136 1550 -124)(font "Arial" ))
+	(pt 1512 -120)
+	(pt 1568 -120)
+)
+(connector
+	(pt 1536 -296)
+	(pt 1568 -296)
+)
+(connector
+	(pt 1960 -296)
+	(pt 1744 -296)
+	(bus)
+)
+(connector
+	(pt 1960 -360)
+	(pt 1960 -296)
+	(bus)
+)
+(connector
+	(pt 1976 -264)
+	(pt 1744 -264)
+	(bus)
+)
+(connector
+	(pt 1976 -296)
+	(pt 1976 -264)
+	(bus)
+)
+(connector
+	(pt 2008 -232)
+	(pt 1744 -232)
+	(bus)
+)
+(connector
+	(pt 1976 -200)
+	(pt 1744 -200)
+	(bus)
+)
+(connector
+	(pt 1976 -168)
+	(pt 1976 -200)
+	(bus)
+)
+(connector
+	(pt 1960 -168)
+	(pt 1744 -168)
+	(bus)
+)
+(connector
+	(pt 1960 -104)
+	(pt 1960 -168)
+	(bus)
+)
+(connector
+	(pt 1944 -136)
+	(pt 1744 -136)
+	(bus)
+)
+(connector
+	(pt 1944 -40)
+	(pt 1944 -136)
+	(bus)
+)
+(connector
+	(pt 1928 -104)
+	(pt 1744 -104)
+	(bus)
+)
+(connector
+	(pt 1928 24)
+	(pt 1928 -104)
+	(bus)
+)
+(connector
+	(pt 1912 -72)
+	(pt 1744 -72)
+	(bus)
+)
+(connector
+	(pt 1912 88)
+	(pt 1912 -72)
+	(bus)
+)
+(connector
+	(pt 1752 -184)
+	(pt 1744 -184)
+)
+(connector
+	(pt 1752 -152)
+	(pt 1744 -152)
+)
+(connector
+	(pt 1752 -120)
+	(pt 1744 -120)
+)
+(connector
+	(pt 1752 -88)
+	(pt 1744 -88)
+)
+(connector
+	(pt 1752 -56)
+	(pt 1744 -56)
+)
+(connector
+	(pt 1512 -400)
+	(pt 1512 -232)
+	(bus)
+)
+(connector
+	(pt 1512 -232)
+	(pt 1512 -216)
+	(bus)
+)
+(connector
+	(pt 1512 -216)
+	(pt 1512 -200)
+	(bus)
+)
+(connector
+	(pt 1512 -200)
+	(pt 1512 -184)
+	(bus)
+)
+(connector
+	(pt 1512 -184)
+	(pt 1512 -168)
+	(bus)
+)
+(connector
+	(pt 1512 -168)
+	(pt 1512 -152)
+	(bus)
+)
+(connector
+	(pt 1512 -152)
+	(pt 1512 -136)
+	(bus)
+)
+(connector
+	(pt 1512 -136)
+	(pt 1512 -120)
+	(bus)
+)
+(connector
+	(pt 1512 -120)
+	(pt 1512 56)
+	(bus)
+)
+(connector
+	(pt 1536 -296)
+	(pt 1536 120)
+)
+(connector
+	(pt 1536 120)
+	(pt 1536 248)
+)
+(connector
 	(pt 1544 -280)
 	(pt 1544 512)
 )
@@ -4602,53 +4604,89 @@ applicable agreement for further details.
 	(pt 1560 552)
 )
 (connector
-	(pt 1512 576)
-	(pt 1512 592)
-	(bus)
-)
-(connector
-	(pt 1512 592)
-	(pt 1512 608)
-	(bus)
-)
-(connector
-	(pt 1512 608)
-	(pt 1512 624)
-	(bus)
-)
-(connector
-	(pt 1512 624)
-	(pt 1512 640)
-	(bus)
-)
-(connector
-	(text "AD[7..0],AD[16..9]" (rect 1496 283 1588 295)(font "Arial" ))
+	(text "AD[7..0]" (rect 1472 315 1513 327)(font "Arial" ))
 	(pt 1512 160)
 	(pt 1512 560)
 	(bus)
 )
 (connector
-	(pt 1512 560)
-	(pt 1512 576)
+	(pt 2112 496)
+	(pt 2112 560)
 	(bus)
 )
 (connector
-	(pt 1512 640)
-	(pt 1512 656)
+	(pt 2056 544)
+	(pt 2056 528)
+)
+(connector
+	(text "AD[2]" (rect 2066 512 2094 524)(font "Arial" )(invisible))
+	(pt 2136 528)
+	(pt 2056 528)
+)
+(connector
+	(pt 2136 464)
+	(pt 2136 528)
 	(bus)
 )
 (connector
-	(pt 1512 656)
-	(pt 1512 672)
+	(pt 2136 528)
+	(pt 2136 592)
 	(bus)
 )
 (connector
-	(pt 1536 120)
-	(pt 1536 248)
+	(pt 2112 624)
+	(pt 2112 688)
+	(bus)
 )
 (connector
-	(pt 1536 248)
-	(pt 1536 496)
+	(pt 2112 688)
+	(pt 2112 752)
+	(bus)
+)
+(connector
+	(pt 2112 752)
+	(pt 2112 816)
+	(bus)
+)
+(connector
+	(pt 2112 88)
+	(pt 2112 248)
+	(bus)
+)
+(connector
+	(pt 2112 248)
+	(pt 2112 368)
+	(bus)
+)
+(connector
+	(pt 2112 368)
+	(pt 2112 432)
+	(bus)
+)
+(connector
+	(pt 2112 432)
+	(pt 2112 496)
+	(bus)
+)
+(connector
+	(pt 1288 -224)
+	(pt 1288 -48)
+	(bus)
+)
+(connector
+	(pt 1288 -48)
+	(pt 1288 432)
+	(bus)
+)
+(connector
+	(pt 1288 432)
+	(pt 1288 472)
+	(bus)
+)
+(connector
+	(pt 1288 472)
+	(pt 1288 512)
+	(bus)
 )
 (junction (pt -112 112))
 (junction (pt 1288 512))
@@ -4755,4 +4793,5 @@ applicable agreement for further details.
 (junction (pt -176 432))
 (junction (pt 1312 160))
 (junction (pt 1512 160))
-(junction (pt 1528 64))
+(junction (pt 2112 368))
+(junction (pt 1288 432))
