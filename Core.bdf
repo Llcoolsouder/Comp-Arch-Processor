@@ -525,6 +525,22 @@ applicable agreement for further details.
 	)
 )
 (pin
+	(output)
+	(rect 704 -96 880 -80)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "MemWrite" (rect 90 0 139 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
 	(bidir)
 	(rect 1752 736 1928 752)
 	(text "BIDIR" (rect 1 0 25 10)(font "Arial" (font_size 6)))
@@ -3481,10 +3497,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 704 -112)
-	(pt 704 552)
-)
-(connector
 	(text "CW[3]" (rect 258 -128 289 -116)(font "Arial" ))
 	(pt 248 -112)
 	(pt 704 -112)
@@ -4088,14 +4100,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1752 648)
-	(pt 1752 640)
-)
-(connector
-	(pt 1752 640)
-	(pt 1744 640)
-)
-(connector
 	(pt 1752 496)
 	(pt 1744 496)
 	(bus)
@@ -4164,54 +4168,6 @@ applicable agreement for further details.
 	(pt 1984 880)
 	(pt 1984 720)
 	(bus)
-)
-(connector
-	(pt 1752 520)
-	(pt 1752 512)
-)
-(connector
-	(pt 1752 512)
-	(pt 1744 512)
-)
-(connector
-	(pt 1752 552)
-	(pt 1752 544)
-)
-(connector
-	(pt 1752 544)
-	(pt 1744 544)
-)
-(connector
-	(pt 1752 712)
-	(pt 1752 704)
-)
-(connector
-	(pt 1752 704)
-	(pt 1744 704)
-)
-(connector
-	(pt 1752 744)
-	(pt 1752 736)
-)
-(connector
-	(pt 1752 736)
-	(pt 1744 736)
-)
-(connector
-	(pt 1752 616)
-	(pt 1752 608)
-)
-(connector
-	(pt 1752 608)
-	(pt 1744 608)
-)
-(connector
-	(pt 1752 680)
-	(pt 1752 672)
-)
-(connector
-	(pt 1752 672)
-	(pt 1744 672)
 )
 (connector
 	(pt 1544 512)
@@ -4312,14 +4268,6 @@ applicable agreement for further details.
 (connector
 	(pt 1536 248)
 	(pt 1536 496)
-)
-(connector
-	(pt 1752 576)
-	(pt 1752 584)
-)
-(connector
-	(pt 1744 576)
-	(pt 1752 576)
 )
 (connector
 	(text "AD[16..0]" (rect 1504 40 1551 52)(font "Arial" )(invisible))
@@ -4688,6 +4636,78 @@ applicable agreement for further details.
 	(pt 1288 512)
 	(bus)
 )
+(connector
+	(pt 704 -112)
+	(pt 704 -88)
+)
+(connector
+	(pt 704 -88)
+	(pt 704 552)
+)
+(connector
+	(pt 1752 736)
+	(pt 1752 744)
+)
+(connector
+	(pt 1744 736)
+	(pt 1752 736)
+)
+(connector
+	(pt 1752 704)
+	(pt 1752 712)
+)
+(connector
+	(pt 1744 704)
+	(pt 1752 704)
+)
+(connector
+	(pt 1752 672)
+	(pt 1752 680)
+)
+(connector
+	(pt 1744 672)
+	(pt 1752 672)
+)
+(connector
+	(pt 1752 640)
+	(pt 1752 648)
+)
+(connector
+	(pt 1744 640)
+	(pt 1752 640)
+)
+(connector
+	(pt 1752 608)
+	(pt 1752 616)
+)
+(connector
+	(pt 1744 608)
+	(pt 1752 608)
+)
+(connector
+	(pt 1752 576)
+	(pt 1752 584)
+)
+(connector
+	(pt 1744 576)
+	(pt 1752 576)
+)
+(connector
+	(pt 1752 544)
+	(pt 1752 552)
+)
+(connector
+	(pt 1744 544)
+	(pt 1752 544)
+)
+(connector
+	(pt 1752 512)
+	(pt 1752 520)
+)
+(connector
+	(pt 1744 512)
+	(pt 1752 512)
+)
 (junction (pt -112 112))
 (junction (pt 1288 512))
 (junction (pt 1288 600))
@@ -4795,3 +4815,4 @@ applicable agreement for further details.
 (junction (pt 1512 160))
 (junction (pt 2112 368))
 (junction (pt 1288 432))
+(junction (pt 704 -88))

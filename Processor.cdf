@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP3C16F484) Path("C:/Users/lonni/OneDrive/Documents/new-comp-arch-processor/") File("Processor.sof") MfrSpec(OpMask(1));
+		Device PartName(EP3C16F484) Path("E:/Users/Lonnie II/Desktop/Code/New-Comp-Arch-Processor/") File("Processor.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

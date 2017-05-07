@@ -12,6 +12,7 @@ module Core_v_t;
 	 wire [7:0]PC_t;
 	 wire [15:0]READ_t;
 	 wire [15:0]D_t;
+	 wire MemWrite_t;
     
     Core_v dut(
 		.CLOCK_50(CLOCK_50_t),
@@ -37,8 +38,9 @@ module Core_v_t;
 		.R6(R6_t),
 		.R7(R7_t),
 		.Q(Q_t),
-		.READ(READ_t)
-		.D(D_t)
+		.READ(READ_t),
+		.D(D_t),
+		.MemWrite(MemWrite_t)
     );
     
     initial begin
