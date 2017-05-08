@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect -352 424 -176 440)
+	(rect -488 424 -312 440)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "CLOCK_50" (rect 9 0 64 12)(font "Arial" ))
 	(pt 176 8)
@@ -34,7 +34,7 @@ applicable agreement for further details.
 		(line (pt 117 12)(pt 121 8))
 	)
 	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect -408 440 -352 456))
+	(annotation_block (location)(rect -544 440 -488 456))
 )
 (pin
 	(input)
@@ -2697,6 +2697,34 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 160 304))
 	)
 )
+(symbol
+	(rect -296 400 -144 480)
+	(text "clock_div" (rect 5 0 52 12)(font "Arial" ))
+	(text "inst19" (rect 8 64 37 76)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk_in" (rect 0 0 28 12)(font "Arial" ))
+		(text "clk_in" (rect 21 27 49 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 152 32)
+		(output)
+		(text "clk_out" (rect 0 0 35 12)(font "Arial" ))
+		(text "clk_out" (rect 102 27 137 39)(font "Arial" ))
+		(line (pt 152 32)(pt 136 32))
+	)
+	(parameter
+		"MAX"
+		"2"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 136 64))
+	)
+	(annotation_block (parameter)(rect -320 360 -136 392))
+)
 (connector
 	(pt -96 112)
 	(pt -112 112)
@@ -4052,18 +4080,6 @@ applicable agreement for further details.
 	(pt 1568 264)
 )
 (connector
-	(pt -184 432)
-	(pt -176 432)
-)
-(connector
-	(pt -176 432)
-	(pt -112 432)
-)
-(connector
-	(pt -112 432)
-	(pt 264 432)
-)
-(connector
 	(pt 104 -16)
 	(pt 104 -8)
 	(bus)
@@ -4708,6 +4724,18 @@ applicable agreement for further details.
 	(pt 1744 512)
 	(pt 1752 512)
 )
+(connector
+	(pt -312 432)
+	(pt -296 432)
+)
+(connector
+	(pt -144 432)
+	(pt -112 432)
+)
+(connector
+	(pt -112 432)
+	(pt 264 432)
+)
 (junction (pt -112 112))
 (junction (pt 1288 512))
 (junction (pt 1288 600))
@@ -4730,7 +4758,6 @@ applicable agreement for further details.
 (junction (pt 248 384))
 (junction (pt 248 368))
 (junction (pt 264 432))
-(junction (pt -112 432))
 (junction (pt 248 400))
 (junction (pt 248 416))
 (junction (pt 248 616))
@@ -4810,9 +4837,9 @@ applicable agreement for further details.
 (junction (pt 1544 512))
 (junction (pt 1552 528))
 (junction (pt 1560 544))
-(junction (pt -176 432))
 (junction (pt 1312 160))
 (junction (pt 1512 160))
 (junction (pt 2112 368))
 (junction (pt 1288 432))
 (junction (pt 704 -88))
+(junction (pt -112 432))
