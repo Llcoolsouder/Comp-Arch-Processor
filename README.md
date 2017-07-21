@@ -3,6 +3,7 @@ This is the project for Rowan University's Computer Architecture class, ECE 0924
 under the Direction of Professor Michael Muhlbaier.
 
 Our project is a Harvard architecture processor with tristate data buses.
+See full documentation [here](Processor_Doc.pdf).
 
 Team Members:  
         Lonnie L. Souder II  
