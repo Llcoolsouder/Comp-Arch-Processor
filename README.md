@@ -5,8 +5,8 @@ under the Direction of Professor Michael Muhlbaier.
 Our project is a Harvard architecture processor with tristate data busses.
 
 Team Members:
-	Lonnie L. Souder II
-	Jacob Epifano
-	Sean McGuire
-	Ardit Pranvoku
-	Ryan Drexel
+        Lonnie L. Souder II  
+        Jacob Epifano (@jrepifano)  
+	Sean McGuire (@mcguires5)  
+        Ardit Pranvoku  
+        Ryan Drexel  
