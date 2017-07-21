@@ -6,7 +6,7 @@ Our project is a Harvard architecture processor with tristate data busses.
 
 Team Members:
         Lonnie L. Souder II  
-        Jacob Epifano (@jrepifano)  
-	Sean McGuire (@mcguires5)  
+        Jacob Epifano (https://github.com/jrepifano)  
+	Sean McGuire (https://github.com/mcguires5)  
         Ardit Pranvoku  
         Ryan Drexel  
